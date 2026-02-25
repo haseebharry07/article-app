@@ -1,8 +1,10 @@
+const expressLayouts = require("express-ejs-layouts");
 const multer = require("multer");
 const path = require("path");  // Add at the top with other requires
 const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
+
 
 const app = express();
 
@@ -16,6 +18,8 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));  // 👈 ADD THIS
+app.use(expressLayouts);
+app.set("layout", "layout");  // default layout file: layout.ejs
 // Routes
 const Article = require("./models/Article");
 // Multer Storage config
@@ -33,7 +37,8 @@ const upload = multer({ storage });
 // Home → list articles
 app.get("/", async (req, res) => {
   const articles = await Article.find().sort({ createdAt: -1 });
-  res.render("articles/index", { articles });
+  res.render("articles/index", { articles,      title: "Articles" // Pass title variable
+ });
 });
 
 // New article form
@@ -65,7 +70,7 @@ app.post("/articles", upload.single("image"), async (req, res) => {
 // Edit article form
 app.get("/articles/edit/:id", async (req, res) => {
   const article = await Article.findById(req.params.id);
-  res.render("articles/edit", { article });
+  res.render("articles/edit", { article,title: article.title + " | Articles" });
 });
 
 // Update article
@@ -78,7 +83,7 @@ app.get("/articles/:id", async (req, res) => {
       return res.status(404).send("Article not found");
     }
 
-    res.render("articles/article-details", { article });
+    res.render("articles/article-details", { article,title: article.title + " | Articles" });
   } catch (err) {
     console.error(err);
     res.status(500).send("Server Error");

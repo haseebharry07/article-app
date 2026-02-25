@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- views/partials/head.ejs -->
+<meta charset="UTF-8">
+<title><%= title || "Articles" %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<!-- Google AdSense Script (or any other scripts you want in head) -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6671708465235770"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">MyArticles</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page content -->
+    <main>
+        <%- body %>
+    </main>
+
+    <footer class="footer">
+        <p>© <%= new Date().getFullYear() %> MyArticles. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
