@@ -1,0 +1,9 @@
+<h1>Edit Article</h1>
+
+<form action="/articles/<%= article._id %>?_method=PUT" method="POST">
+  <input type="text" name="title" value="<%= article.title %>" />
+  <br>
+  <textarea name="content"><%= article.content %></textarea>
+  <br>
+  <button>Update</button>
+</form>

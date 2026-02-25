@@ -1,0 +1,38 @@
+.article-details-page {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.article-detail-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.article-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.article-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.article-website a {
+    color: #1e90ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 1.5rem;
+    }
+
+    .article-description {
+        font-size: 1rem;
+    }
+}

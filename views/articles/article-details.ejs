@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= article.title %> | MyArticles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-container">
+    <div class="logo">MyArticles</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container article-details-page">
+
+  <section class="article-detail">
+    <% if (article.image) { %>
+      <img src="/uploads/<%= article.image %>" alt="<%= article.title %>" class="article-detail-image">
+    <% } %>
+
+    <h1 class="article-title"><%= article.title %></h1>
+    <p class="meta">Published on: <%= new Date(article.createdAt).toLocaleString() %></p>
+
+    <p class="article-description">
+      <%= article.description || article.content %>
+    </p>
+
+    <% if (article.websiteURL) { %>
+      <p class="article-website">
+        Product/Website: <a href="<%= article.websiteURL %>" target="_blank"><%= article.websiteURL %></a>
+      </p>
+    <% } %>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <%= new Date().getFullYear() %> MyArticles. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
