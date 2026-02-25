@@ -43,7 +43,7 @@ app.get("/", async (req, res) => {
 
 // New article form
 app.get("/articles/new", (req, res) => {
-  res.render("articles/new");
+  res.render("articles/new", { title: "Create New Article | MyArticles" });
 });
 
 // Create article
