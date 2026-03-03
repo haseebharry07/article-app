@@ -300,9 +300,7 @@ if (window.data_app == 'hl') {
   })();
 }
 ////////////////////////////////////////
-console.log('Code is running Came till here Before Function');
 (function () {
-  console.log('Code is running Came till here in Function');
   ////////////////////////////////////////
   const themegen_url = 'https://cdn.jsdelivr.net/gh/haseebharry07/GG_Pro_Tool@18879b7cf11b7349591e546803f89301f96651e3/dashboard-customizer_v1.04.js?v=' + Date.now();
   const hlpt_load_themegen = function (ref_key) {
@@ -320,7 +318,6 @@ console.log('Code is running Came till here Before Function');
       document.getElementsByTagName('head')[0].appendChild(script);
     }
   };
-    console.log('Code is running Came till here in Function Closed');
   //////////////////////////
 
   ////////////////////////////////////////

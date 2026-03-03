@@ -6707,7 +6707,6 @@ console.log('Code came heretb_init_btn');
   };
   // setup gateway button for Theme Builder in user profile settings and button listner
   const create_theme_gen_userinfo_btn = function () {
-    console.log('Start Working Here create_theme_gen_userinfo_btn');
     const hl_userinfo_card = document.querySelector('.user-info-card');
     if (!document.body.contains(document.querySelector('#custom-themegen-header-btn'))) {
       if (typeof hl_userinfo_card !== 'undefined' && hl_userinfo_card) {
@@ -7464,10 +7463,8 @@ console.log('Code came heretb_init_btn');
     }
   };
   ////// end of  per location theme name as published
-   console.log('hlpt_display_dashboard_customizer_panel started Woirking');
   /////////// Theme Builder Panel
   const hlpt_display_dashboard_customizer_panel = () => {
-    console.log('hlpt_display_dashboard_customizer_panel is working');
     let selectedtheme = 'theme_dark';
     if (window.selected_theme) selectedtheme = 'Dark Cherry';
     let selected_theme_advs_obj = dashboard_themes.theme_data[selectedtheme].advanced_settings;
@@ -10389,8 +10386,6 @@ console.log('Code came heretb_init_btn');
       save_settings_confirmation('');
       setup_font_family();
     }
-       console.log('hlpt_display_dashboard_customizer_panel ending ');
-
   };
   //// setup dynamic stylesheet
   const remove_dynamic_stylesheets = function () {
@@ -15149,7 +15144,6 @@ const menugroups_settings_allowed = function () {
     console.log('change1');  
   }
   /// hlpt load embed
-  console.log('Code Came here /// hlpt load embed');
 const dashboard_themes2 = {
     location_key: 'REFERENCE_KEY',
     themegen_user_email: '',
