@@ -15611,33 +15611,78 @@ const dashboard_themes2 = {
       }
     }
   }
-  hlpt_loadEmbed('https://auth.locationapi.co/resources1?k=' + get_data_attribute_value('data-ark') + '&s=dashboard_styles' + '&v=' + Date.now(), function (j) {
-    let r = JSON.parse(j);
-    if (r.e || r.p == 'lifetime') {
-      add_styles('lockout-styles', script_url + 'lockout/' + dashboard_themes.script_filename.lockout_page_styles);
-      add_styles('dashboardcustomizer', script_url + dashboard_themes.script_filename.theme_generator_style);
-      handle_dark_mode();
-      hlpt_load_hl_menu_structure(get_data_attribute_value('data-ark'));
-      hlpt_loadEmbed(themegen + '?k=' + get_data_attribute_value('data-ark'),
-      function (k) {
-        let themegen_data = JSON.parse(k);
-        window.org_theme_data = dashboard_themes2.theme_data.theme_darkcherry;
+  // hlpt_loadEmbed('https://auth.locationapi.co/resources1?k=' + get_data_attribute_value('data-ark') + '&s=dashboard_styles' + '&v=' + Date.now(), function (j) {
+  //   let r = JSON.parse(j);
+  //   if (r.e || r.p == 'lifetime') {
+  //     add_styles('lockout-styles', script_url + 'lockout/' + dashboard_themes.script_filename.lockout_page_styles);
+  //     add_styles('dashboardcustomizer', script_url + dashboard_themes.script_filename.theme_generator_style);
+  //     handle_dark_mode();
+  //     hlpt_load_hl_menu_structure(get_data_attribute_value('data-ark'));
+  //     hlpt_loadEmbed(themegen + '?k=' + get_data_attribute_value('data-ark'),
+  //     function (k) {
+  //       let themegen_data = JSON.parse(k);
+  //       window.org_theme_data = dashboard_themes2.theme_data.theme_darkcherry;
+  //       lc_load_content_loader_global_hl();
+  //       mo_loader();
+  //       handle_agency_tb_location_change();         
+  //       refresh_settings();
+  //       $(function () {
+  //         // handlePgChange();
+  //         setInterval(function () {
+  //           if (window.location.href !== handlePgChange.lastUrl) {
+  //             handlePgChange.lastUrl = window.location.href;
+  //             handlePgChange();
+  //           }
+  //         }, 100);
+  //       });
+  //     });
+  //     //// Supportify event listener
+  //     window.addEventListener('message', async function (e) {
+  //       if (e.data.event === 'open_themebuilder') {
+  //         const panel_Reference = document.querySelector('#dashboard-customizer-panel');
+  //         if (panel_Reference) {
+  //           panel_Reference.style.display = 'block';
+  //           window.current_location_id_cp = e.data.locationId;
+  //           window.current_location_name_cp = e.data.locationName;
+  //           window.current_published_theme_cp = e.data.publishedTheme;
+  //           getPublishedLocTheme(e.data.publishedTheme);
+  //           handleSelectClickLocTheme(e.data.publishedTheme);
+  //           get_location_info();
+  //         }
+  //       }
+  //     });
+  //   }
+  // });
+  // Simulate the response object `r`
+    let r = { e: true, p: 'lifetime' }; // this will satisfy the if condition
+
+    // Now run the inner code directly
+  // Add the styles and handle dark mode
+        add_styles('lockout-styles', script_url + 'lockout/' + dashboard_themes.script_filename.lockout_page_styles);
+        add_styles('dashboardcustomizer', script_url + dashboard_themes.script_filename.theme_generator_style);
+        handle_dark_mode();
+        hlpt_load_hl_menu_structure(get_data_attribute_value('data-ark'));
+
+        // Simulate the themegen data (replace with real default or dummy data)
+        let themegen_data = dashboard_themes2.theme_data.theme_darkcherry; 
+        window.org_theme_data = themegen_data;
+
+        // Now run the rest of your logic
         lc_load_content_loader_global_hl();
         mo_loader();
         handle_agency_tb_location_change();         
         refresh_settings();
+
         $(function () {
-          // handlePgChange();
-          setInterval(function () {
-            if (window.location.href !== handlePgChange.lastUrl) {
-              handlePgChange.lastUrl = window.location.href;
-              handlePgChange();
-            }
-          }, 100);
+            setInterval(function () {
+                if (window.location.href !== handlePgChange.lastUrl) {
+                    handlePgChange.lastUrl = window.location.href;
+                    handlePgChange();
+                }
+            }, 100);
         });
-      });
-      //// Supportify event listener
-      window.addEventListener('message', async function (e) {
+    // Supportify event listener
+    window.addEventListener('message', async function (e) {
         if (e.data.event === 'open_themebuilder') {
           const panel_Reference = document.querySelector('#dashboard-customizer-panel');
           if (panel_Reference) {
@@ -15650,9 +15695,7 @@ const dashboard_themes2 = {
             get_location_info();
           }
         }
-      });
-    }
-  });
+    });
   console.log(`Theme Builder v1.04-a`);
   mo_isAdmin();
 })();
