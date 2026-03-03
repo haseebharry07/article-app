@@ -1,0 +1,245 @@
+:root {
+  /* primary  buttons */
+  --hlpt-adv-primary-btn-radius: 5px;
+  /* secondary buttons normal */
+  --hlpt-adv-secondary-btn-radius: 5px;
+  /* default buttons normal */
+  --hlpt-adv-default-btn-radius: 5px;
+  --hlpt-adv-default-btn-noradius: 0px;
+  /* default-light buttons normal */
+  --hlpt-adv-default-light-btn-radius: 5px;
+  --hlpt-adv-default-light-btn-noradius: 0px;
+  --n-bar-color: var(--hlpt-primary-theme-color) !important;
+  --n-tab-text-color-active: var(--hlpt-primary-theme-color) !important;
+}
+
+/* headerbg color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .container-fluid {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg), var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc), var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+}
+
+/* DEFAULT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active {
+  border-radius: var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active:hover {
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active:hover {
+  border-radius: var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) !important;
+}
+
+/* DEFAULT LIGHT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-row.justify-start.items-center.topmenu-nav a:first-child,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-row.justify-start.items-center.topmenu-nav a:nth-child(2) {
+  border-radius: var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-row.justify-start.items-center.topmenu-nav a:last-child {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:last-child {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:last-child:hover {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body #app a:hover span .sidebar-v2-agency,
+body #app a.active span .sidebar-v2-agency,
+body #app #sidebar-v2 .hl_nav-header nav a.active span,
+body #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app #sidebar-v2 nav a:hover span i::before,
+body #app #sidebar-v2 nav a.active span i::before,
+body #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-primary-theme-bg-color) !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a:hover span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.active span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  outline: none;
+}
+
+/* bug fixes 3-8-2023 */
+
+/* DEFAULT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_funnels.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_funnels,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_funnels:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.active:nth-child(2),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.active:hover:nth-child(2),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a:nth-child(2),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a:hover:nth-child(2) {
+  border-radius: var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_courses {
+  border-radius: var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:last-child,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover:last-child,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active:last-child,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav #tb_contacts-settings-top {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_url-redirects,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_url-redirects.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_url-redirects:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_online-listings,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_online-listings.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a#tb_online-listings:hover {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+/* DEFAULT LIGHT BTN */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-row.justify-start.items-center.topmenu-nav a:last-child {
+  border-radius: var(--hlpt-adv-default-btn-noradius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-radius) var(--hlpt-adv-default-btn-noradius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #tb_calendar-settings-top {
+  margin-left: 1px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #tb_appointment-divider {
+  display: none;
+}
+
+/* DEFAULT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.inline-flex.items-center.px-2\.5.py-1\.5.border.border-transparent.text-md.font-medium.rounded.shadow-sm.text-white.bg-blue-600.hover\:bg-blue-700,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded-md.shadow-sm.bg-white.text-green-600.hover\:text-green-700.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-green-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded-md.shadow-sm.text-white.bg-green-600.hover\:bg-green-700.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-green-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app div#dropZone label#import-file {
+  background: var(--hlpt-adv-default-btn-bg-color) !important;
+  color: var(--hlpt-adv-default-btn-text-color) !important;
+  border-color: var(--hlpt-adv-default-btn-border-color) !important;
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.inline-flex.items-center.px-2\.5.py-1\.5.border.border-transparent.text-md.font-medium.rounded.shadow-sm.text-white.bg-blue-600.hover\:bg-blue-700:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded-md.shadow-sm.bg-white.text-green-600.hover\:text-green-700.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-green-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded-md.shadow-sm.text-white.bg-green-600.hover\:bg-green-700.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-green-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app div#dropZone label#import-file:hover {
+  background: var(--hlpt-adv-default-btn-bg-hover-color) !important;
+  color: var(--hlpt-adv-default-btn-text-hover-color) !important;
+  border-color: var(--hlpt-adv-default-btn-border-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels .hl_funnels--settings button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500 {
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels .hl_funnels--settings button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover {
+  color: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage .n-button--default-type:not(.icon-only):not(.hl-active-btn),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #funnel-url-info,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage .n-button--default-type:not(.icon-only):not(.hl-active-btn):hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #funnel-url-info {
+  color: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+}
+
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'].hidden.group-hover\:block.origin-top-right.absolute.right-0.mt-2.w-max.rounded-md.shadow-lg.py-1.bg-white.ring-1.ring-black.ring-opacity-5.focus\:outline-none.z-40,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'].hidden.group-hover\:block.origin-top-right.absolute.right-0.mt-2.w-max.rounded-md.shadow-lg.py-1.bg-white.ring-1.ring-black.ring-opacity-5.focus\:outline-none.z-40 {
+  padding: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 .text-primary-700 {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 {
+  border-color: var(--hlpt-adv-primary-btn-bdr-color) !important;
+  border-width: 1px !important;
+  box-shadow: 1px 1px 3px 0px #e9e9e9 !important;
+}
+
+/* custom menu new css to hover color fix */
+
+body #app #sidebar-v2 nav a.custom-link:hover span i::before,
+body #app #sidebar-v2 nav a.custom-link.active span i::before {
+  color: var(--hlpt-left-nav-icon-color) !important;
+  outline: none;
+}

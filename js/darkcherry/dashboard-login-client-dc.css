@@ -1,0 +1,323 @@
+/************* HLPT Login Theme **************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Minimistic Cliet CSS for custom window */
+  /* EDITABLE OPTIONS */
+  /* THEME COLORS */
+
+  --hlpt-primary-theme-color: #dfb603;
+  --hlpt-primary-theme-color-tint: #dfb6031a;
+  --hlpt-primary-theme-bg-color: #363c79ff;
+  --hlpt-primary-theme-bg-color-tint: #363c791a;
+  --hlpt-secondary-theme-bg-color: #22275f;
+  --hlpt-secondary-theme-bg-color-tint: #22275f1a;
+
+  --hlpt-left-nav-color: #ffffffff;
+  --hlpt-left-nav-hover-color: var(--hlpt-secondary-theme-bg-color);
+  --hlpt-left-nav-active-color: var(--hlpt-secondary-theme-bg-color);
+
+  /* LOGO IMAGE AND COVER IMAGES */
+  /* --custom-loading-icon: url('https://cdn2.locationapi.co/themegenerator/images/thedemologo_upload.svg'); */
+  --custom-loading-icon: url('');
+  --hlpt-main-body-image: url('https://cdn2.locationapi.co/dashboardstyle/themes/images/login-left-bg_saas.png');
+
+  /* FONT FAMILY AND OTHER LOGIN PAGE TEXT UPDATES */
+  --hlpt-primary-font-family: 'Poppins', sans-serif;
+  --hlpt-footer-note: 'Having trouble logging in or resetting your password? Contact your admin.';
+
+  --hlpt-secondary-theme-color: rgb(255, 0, 0, 1);
+
+  /* this overrides the default colors in the base css */
+  /* --hlpt-login-logo-url: url('https://yourbrandimagehere.com/images'); */
+  --hlpt-login-logo-url: url('https://yourimage.com/pngimage.png');
+  --hlpt-primary-text-color: #ffffff;
+  --hlpt-main-font: var(--hlpt-primary-font-family);
+  --hlpt-main-body-bg: #ffffff !important;
+  /* var(--hlpt-secondary-theme-bg-color) !important;  */
+  --hlpt-main-body-bg-login: var(--hlpt-secondary-theme-bg-color) !important;
+  --hlpt-primary-input-text-color: var(--hlpt-primary-theme-bg-color) !important;
+  --hlpt-login-logo: var(--hlpt-login-logo-url) !important;
+  --hlpt-main-body-image-overlay: #0000 !important;
+  --hlpt-main-login-bg: #00263d00 !important;
+  --hlpt-login-heading-color: #f2f2f2 !important;
+  --hlpt-login-input-color: var(--hlpt-primary-input-text-color) !important;
+  --hlpt-login-input-bg: #f2f2f2 !important;
+
+  --hlpt-primary-button-color-opacity: var(--hlpt-primary-theme-color-tint);
+  --hlpt-primary-button-border-color: var(--hlpt-primary-theme-color);
+  --hlpt-primary-button-text-color: #ffffff;
+  --hlpt-primary-button-radius: 50px;
+
+  --hlpt-login-input-border: #ebd776 !important;
+  --hlpt-login-error-color: #ff0000 !important;
+  --hlpt-login-success-color: #00c29b !important;
+  --hlpt-login-forgot-pass-color: #ffffff !important;
+  --hlpt-login-button-bg: var(--hlpt-primary-theme-color) !important;
+  --hlpt-login-button-color: #ffffff !important;
+  --hlpt-login-button-hover-bg: #00263d !important;
+  --hlpt-login-button-hover-color: #ffffff !important;
+  --hlpt-login-foot-note-color: #ffffff !important;
+  --hlpt-login-foot-note-link-color: var(--hlpt-primary-theme-color) !important;
+
+  --htpt-login-style-a-button-border: var(--hlpt-login-input-bg) !important;
+  --htpt-login-style-a-main-font: var(--hlpt-main-font) !important;
+
+  --hlpt-header-note-color: var(--hlpt-primary-text-color) !important;
+  --hlpt-footer-note-color: var(--hlpt-primary-text-color) !important;
+}
+
+.hl_login--body .card .card-body .forgot-password {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.hl_login--body .card .card-body .foot-note a {
+  color: var(--hlpt-login-foot-note-link-color) !important;
+}
+
+.hl_login--body .card .login-card-heading h2.heading2:before {
+  width: auto;
+  height: 115px;
+  margin: 0 auto !important;
+  bottom: 20px !important;
+}
+
+@media only screen and (max-width: 980px) {
+  .hl_login--body .card .login-card-heading h2.heading2:before {
+    width: auto;
+    height: 90px;
+  }
+
+  .hl_login--body .card .card-body {
+    margin-top: 80px !important;
+  }
+
+  .hl_login--body .heading2 {
+    font-size: 19px !important;
+  }
+}
+
+.hl_login--body .card .card-body .hl-btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 3px solid var(--hlpt-primary-button-border-color) !important;
+  border-radius: var(--hlpt-primary-button-radius) !important;
+}
+
+.hl_login--body .card .card-body input {
+  border: 2px solid var(--hlpt-primary-theme-bg-color) !important;
+  color: #fff !important;
+  padding: 15px 20px !important;
+  border-radius: 10px !important;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 1 !important;
+}
+
+.hl_login--body .card button.hl-btn.justify-center.w-full.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white.bg-curious-blue-500.hover\:bg-curious-blue-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-600 {
+  padding: 15px 25px !important;
+  background-color: var(--hlpt-login-button-bg) !important;
+  border: 2px solid var(--hlpt-primary-button-border-color) !important;
+  font-family: var(--htpt-login-style-a-main-font) !important;
+  color: var(--hlpt-primary-button-text-color) !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  opacity: 1 !important;
+}
+
+.hl_login--body .heading2 {
+  font-weight: 600;
+  color: var(--hlpt-login-heading-color) !important;
+  font-size: 19px !important;
+}
+
+.focus\:ring-curious-blue-600:focus {
+  --tw-ring-color: var(--hlpt-primary-button-color-opacity) !important;
+}
+
+.focus\:ring-curious-blue-500:focus {
+  --tw-ring-color: var(--hlpt-primary-input-border-color) !important;
+}
+
+.hl_login--body .container-fluid:before,
+.hl_login--body .container-fluid>div:not(.card):before {
+  /* gradient */
+  background: var(--hlpt-primary-theme-bg-color) !important;
+  background: -moz-linear-gradient(15deg, var(--hlpt-primary-theme-bg-color) 0%, var(--hlpt-secondary-theme-bg-color) 100%) !important;
+  background: -webkit-linear-gradient(15deg, var(--hlpt-primary-theme-bg-color) 0%, var(--hlpt-secondary-theme-bg-color) 100%) !important;
+  background: linear-gradient(-290deg, var(--hlpt-primary-theme-bg-color) 0%, var(--hlpt-secondary-theme-bg-color) 100%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-secondary-theme-bg-color)', endColorstr='var(--hlpt-secondary-theme-bg-color)', GradientType=1) !important;
+  outline: none;
+
+  display: none !important;
+}
+
+[multiple]:focus,
+[type='date']:focus,
+[type='datetime-local']:focus,
+[type='email']:focus,
+[type='month']:focus,
+[type='number']:focus,
+[type='password']:focus,
+[type='search']:focus,
+[type='tel']:focus,
+[type='text']:focus,
+[type='time']:focus,
+[type='url']:focus,
+[type='week']:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  --tw-ring-color: var(--hlpt-secondary-theme-bg-color) !important;
+}
+
+/* login page css */
+
+.hl_login {
+  background: #f7f7f7 !important;
+}
+
+.hl_login--body .card .card-body {
+  height: unset !important;
+}
+
+.hl_login--header {
+  display: block !important;
+  background: unset !important;
+  border-bottom: unset !important;
+  margin-bottom: unset !important;
+  position: absolute;
+  right: 0 !important;
+  top: 0 !important;
+  left: 0;
+  width: 50%;
+  padding-top: 140px !important;
+  z-index: 99999;
+  display: flex !important;
+  margin: auto !important;
+}
+
+.hl_login--header a img {
+  max-height: 110px !important;
+  /* background-image: var(--hlpt-login-logo); */
+  /* content: var(--hlpt-main-body-image) !important; */
+  /* content: var(--hlpt-login-logo-url) !important; */
+}
+
+.hl_login--body .card .login-card-heading h2.heading2:before {
+  display: none !important;
+}
+
+.hl_login--header {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1400px) {
+  .hl_login--body .card {
+    max-width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .hl_login--header {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hl_login--header {
+    padding-top: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hl_login--header {
+    padding-top: 80px !important;
+  }
+}
+
+/* additional css for darkcherry theme */
+
+body .hl_login--body {
+  background: var(--hlpt-primary-theme-bg-color) !important;
+}
+
+.sidebar-v2-agency .hl_login {
+  height: 100vh !important;
+  background: var(--hlpt-primary-theme-bg-color) !important;
+}
+
+/* security code */
+.hl_login--body .container-fluid,
+.hl_login--body .container-fluid>div:not(.card) {
+  display: unset !important;
+}
+
+.hl_login--body .card::after,
+.hl_login--body .container-fluid::after,
+.hl_login--body .container-fluid>div:not(.card)::after {
+  display: none !important;
+}
+
+.hl_login--body .card .card-body input::placeholder {
+  color: var(--hlpt-primary-input-text-color) !important;
+}
+
+.hl_login--body .card .card-body input::placeholder {
+  color: var(--hlpt-primary-input-text-color) !important;
+}
+
+.hl_login--body .card .card-body input {
+  background: var(--hlpt-primary-theme-bg-color) !important;
+  color: var(--hlpt-primary-input-text-color) !important;
+  background: #f2f2f2 !important;
+}
+
+.hl_login--body .login-card-heading h2.heading2::after {
+  content: var(--hlpt-header-note);
+  color: var(--hlpt-header-note-color);
+}
+
+.hl_login--body p.foot-note::before {
+  color: var(--hlpt-footer-note-color) !important;
+}
+
+@media screen and (max-height: 800px) {
+  .hl_login--header {
+    padding-top: 140px !important;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .hl_login--header {
+    padding-top: 120px !important;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .hl_login--header {
+    padding-top: 100px !important;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hl_login--header {
+    padding-top: 70px !important;
+  }
+}
+
+@media screen and (max-height: 550px) {
+  .hl_login--header {
+    padding-top: 60px !important;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .hl_login--header {
+    padding-top: 40px !important;
+  }
+}

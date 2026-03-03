@@ -1,0 +1,2140 @@
+:root {
+  --scrollbar-sidebar-track-background: rgba(0, 0, 0, 0);
+  --scrollbar-sidebar-track-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  --scrollbar-sidebar-track-border-radius: 100px;
+
+  /* --scrollbar-sidebar-handle-background: rgba(0, 0, 0, 0.4);
+  --scrollbar-sidebar-handle-background-hover: rgba(26, 3, 3, 0.05); */
+
+  /* --hlpt-adv-help-btn-icon-bg-hover-col: --hlpt-adv-mainnav-hover-active-bg-color !important;
+  --hlpt-adv-notification-btn-icon-bg-hover-col: --hlpt-adv-mainnav-hover-active-bg-color !important;
+  --hlpt-adv-viewchangelogs-btn-icon-bg-hover-col: --hlpt-adv-mainnav-hover-active-bg-color !important;
+  --hlpt-adv-phone-btn-icon-bg-hover-col: --hlpt-adv-mainnav-hover-active-bg-color !important;
+  --hlpt-adv-zappychatbot-btn-icon-bg-hover-col: --hlpt-adv-mainnav-hover-active-bg-color !important;
+  --hlpt-adv-zappychatbot-btn-icon-bg-hover-col: --hlpt-adv-mainnav-hover-active-bg-color !important; */
+}
+
+/* main css */
+.sidebar-v2-location #sidebar-v2 .h-screen .h-screen,
+.sidebar-v2-agency #sidebar-v2 .h-screen .h-screen {
+  background-color: var(--sidebar-menu-bg-color) !important;
+  outline: none;
+}
+
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 0px 10px 150px 10px !important;
+}
+
+body .sidebar-v2-agency #sidebar-v2 .hl_nav-settings>nav>a#sb_agency-settings {
+  margin-bottom: 30px;
+}
+
+body #app .sidebar-v2-agency .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities),
+body #app .sidebar-v2-location .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities) {
+  /* background-color: var(--secondary-color) !important; */
+  outline: none;
+}
+
+#app .sidebar-v2-location .hl_header .topmenu-nav {
+  padding-top: 10px !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header {
+  position: absolute;
+  left: 5px !important;
+  width: 56px;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  bottom: 0px !important;
+  top: unset;
+  transform: unset !important;
+  margin: 0 !important;
+  background: unset;
+  box-shadow: unset !important;
+  border: unset !important;
+  z-index: 9;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header>.container-fluid {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: unset !important;
+  padding: 0 !important;
+  align-items: center;
+  justify-content: center;
+  max-height: unset;
+  background: transparent !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header>.container-fluid .dropdown.bootstrap-select.hl_header--picker.fit-width.show {
+  position: absolute;
+  top: -9999999999999999999px;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body #app .sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls:last-child>div,
+body #app .sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls:last-child>a {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location.v2-open .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show:not(.dropdown-menu.dropdown-menu-right.rounded-lg.font-medium.text-sm.leading-4.not-italic.w-full.show) {
+  transform: unset !important;
+  top: unset !important;
+  bottom: 0px !important;
+  left: 195px !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location .hl_header .container-fluid .hl_header--dropdown a:not(.dropdown-item)+div {
+  top: unset;
+  bottom: 0;
+  left: 220px !important;
+  border-radius: 10px !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls:last-child {
+  margin-bottom: 10px;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location #sidebar-v2 .hl_nav-header {
+  max-height: 60vh !important;
+  overflow-y: auto;
+  padding-bottom: 90px;
+  padding-bottom: 10px;
+  overflow-x: hidden;
+}
+
+/* 
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not(
+    [data-location-name='audit-location-v2']
+  ):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not(
+    [data-location-name='smtp-service-v2']
+  ):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not(
+    [data-location-name='domain-settings-v2']
+  ):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not(
+    [data-location-name='pipeline-settings-v2']
+  )
+  #app
+  .sidebar-v2-location.v2-open
+  header.hl_header
+  > .container-fluid
+  .hl_header--controls:last-child {
+  margin-left: 70px;
+} */
+
+/* body #app .sidebar-v2-location.v2-open .hl_header .hl_header--controls {
+  margin-left: unset !important;
+  width: unset !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  width: 180px !important;
+} */
+
+/* body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls #helpDeskCtrlAdvTop {
+  top: 185px !important;
+  left: 30px !important;
+}
+
+#helpDeskCtrlAdvTop {
+  margin-left: 0px !important;
+  padding-bottom: 10px !important;
+  position: absolute !important;
+  top: 90px !important;
+  left: 25px !important;
+}
+.sidebar-v2-agency.v2-collapse #helpDeskCtrlAdvTop {
+  left: 9px !important;
+  z-index: 99999 !important;
+  top: 120px !important;
+} */
+
+/* #app .sidebar-v2-location .hl_header a#azFaqCtrl,
+#app .sidebar-v2-agency .hl_header a#azFaqCtrl {
+  position: absolute !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+
+  top: -45px !important;
+  left: 24px !important;
+  width: 184px !important;
+  text-align: left;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  border-radius: 5px;
+  padding-left: 11px;
+  padding-bottom: 4px;
+  min-height: 36px;
+  padding-top: 3px !important;
+}
+
+#app .sidebar-v2-agency .hl_header a#azFaqCtrl {
+  top: -95px !important;
+  left: 20px !important;
+} */
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a.dropdown-toggle,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body #app .sidebar-v2-location.v2-open .hl_header--controls:last-child a.hlpt-custom-menu.top-menu--item,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item) a:not(.company-settings-link--a) {
+  display: flex !important;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a.dropdown-toggle:before {
+  content: 'Phone';
+}
+
+/* 
+body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle[data-class='preference--options']:after {
+  position: absolute;
+  transform: translate(55px, 0px);
+} */
+
+/* 
+ body #app .sidebar-v2-agency .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities):hover {
+  background-color: var(--tertiary-color) !important;
+  
+}
+ */
+
+/* body #app .sidebar-v2-location .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities):hover,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 10px 10px 360px 15px !important;
+}
+ */
+
+/*  
+#helpDeskCtrlAdvTop {
+  margin-left: 0px !important;
+  padding-bottom: 10px !important;
+} */
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options']):after {
+  content: 'Notifications' !important;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 16px;
+  position: relative;
+  transform: translate(-20px, 0px);
+}
+
+body:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a.hl_header--avatar:not(.dropdown-item):before {
+  content: 'Profile' !important;
+}
+
+body #app .sidebar-v2-location .hl_header .container-fluid a.btn-circle,
+body #app .sidebar-v2-location .hl_header .container-fluid span.btn-circle {
+  width: 35px !important;
+}
+
+/* 
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon.icon-plus:before {
+  content: ' ';
+  background-image: var(--contacts-icon-plus);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.fa.fa-filter:before {
+  content: ' ';
+  background-image: var(--contacts-icon-filter);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.fa.fa-robot:before {
+  content: ' ';
+  background-image: var(--contacts-icon-robot);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon-sms-gray:before {
+  content: ' ';
+  background-image: var(--contacts-icon-sms);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon-email-svg-gray:before {
+  content: ' ';
+  background-image: var(--contacts-icon-email);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon.icon-tag-add:before {
+  content: ' ';
+  background-image: var(--contacts-icon-addtag);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon.icon-tag-delete:before {
+  content: ' ';
+  background-image: var(--contacts-icon-removetag);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon.icon-trash:before {
+  content: ' ';
+  background-image: var(--contacts-icon-delete);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.fas.fa-star:before {
+  content: ' ';
+  background-image: var(--contacts-icon-review);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon.icon-download:before {
+  content: ' ';
+  background-image: var(--contacts-icon-export);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.icon.icon-share-1:before {
+  content: ' ';
+  background-image: var(--icon-people-import);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .btn i.fas.fa-object-group:before {
+  content: ' ';
+  background-image: var(--contacts-icon-merge);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+section#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left button#transfer-contact i.icon.icon-user:before {
+  content: ' ';
+  background-image: var(--contacts-icon-transfer);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 24px;
+  aspect-ratio: 1;
+  display: inline-block;
+} */
+body #app .sidebar-v2-agency header.hl_header {
+  position: absolute;
+  left: 0 !important;
+  width: 56px;
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  bottom: 0px !important;
+  top: unset;
+  transform: unset !important;
+  margin: 0 !important;
+  background: unset;
+  box-shadow: unset !important;
+  border: unset !important;
+}
+
+/* body #app .sidebar-v2-agency header.hl_header > .container-fluid {
+  display: flex !important;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: unset !important;
+  padding: 0 !important;
+  align-items: center;
+  justify-content: center;
+  max-height: unset;
+  background-color: transparent;
+} */
+
+body #app .sidebar-v2-agency header.hl_header>.container-fluid .dropdown.bootstrap-select.hl_header--picker.fit-width.show {
+  position: absolute;
+  top: -9999999999999999999px;
+}
+
+body #app .sidebar-v2-agency header.hl_header>.container-fluid .hl_header--controls:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+body #app .sidebar-v2-agency header.hl_header>.container-fluid .hl_header--controls:last-child>div,
+body #app .sidebar-v2-agency header.hl_header>.container-fluid .hl_header--controls:last-child>a {
+  margin-left: 0;
+  margin-bottom: 5px;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show {
+  transform: unset !important;
+  top: unset !important;
+  bottom: 0px !important;
+  left: 215px !important;
+}
+
+body #app .sidebar-v2-agency header.hl_header>.container-fluid .hl_header--controls:last-child {
+  margin-bottom: 24px;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header {
+  max-height: 53vh !important;
+}
+
+body #app .sidebar-v2-agency.v2-open header.hl_header>.container-fluid .hl_header--controls:last-child {
+  margin-left: 25px;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a.dropdown-toggle,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body #app .sidebar-v2-agency.v2-collapse .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body #app .sidebar-v2-agency.v2-open .hl_header--controls:last-child a.hlpt-custom-menu.top-menu--item,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item) {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: relative;
+  background-color: transparent;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:after {
+  content: 'Notifications';
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 12px;
+  position: absolute;
+  transform: translate(56px, 0px);
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options']):hover::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options']):hover::after {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header--controls:last-child a.hlpt-custom-menu.top-menu--item:after {
+  content: '';
+  font-size: 14px !important;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 12px;
+  position: absolute;
+  transform: translate(400px, 0px);
+}
+
+#helpDeskCtrlAdvTop .dots-cont::after {
+  content: 'Support';
+  color: var(--sidebar-menu-textmenu-color) !important;
+  padding-left: 22px !important;
+  position: relative !important;
+  top: -5px !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item):before {
+  content: 'Profile';
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 12px;
+  position: absolute;
+  transform: translate(46px, -2px);
+}
+
+body #app .sidebar-v2-agency .hl_header .container-fluid a.btn-circle,
+body #app .sidebar-v2-agency .hl_header .container-fluid span.btn-circle {
+  width: 35px !important;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings {
+  padding-left: 7px !important;
+}
+
+body #app .v2-open.sidebar-v2-agency #sidebar-v2 .hl_nav-settings {
+  bottom: 6.7rem !important;
+  padding-left: 17px !important;
+}
+
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='payments']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='opportunities']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='conversations']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='reporting']>span {
+  font-size: 0px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='payments']>span:after {
+    content: 'Invoices';
+    font-size: 14px;
+  }
+
+  .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='opportunities']>span:after {
+    content: 'Pipeline';
+    font-size: 14px;
+  }
+
+  .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='reporting']>span:after {
+    content: 'Reports';
+    font-size: 14px;
+  }
+
+  .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='conversations']>span:after {
+    content: 'Inbox';
+    font-size: 14px;
+  }
+}
+
+body #app .sidebar-v2-location div#sidebar-v2:not(.hl_fixed-width) #location-switcher-sidbar-v2+div:not(.hl_nav-header):after {
+  transform: translate(3px, 46px);
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .preference--options a#canny_logs-toggle.btn-circle:after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle:after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .preference--options a#canny_logs-toggle.btn-circle:after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle:after {
+  content: 'Changelog';
+}
+
+body:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location.v2-open .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show:not(.dropdown-menu.dropdown-menu-right.rounded-lg.font-medium.text-sm.leading-4.not-italic.w-full.show) {
+  bottom: 45px !important;
+  left: -10px !important;
+}
+
+@media only screen and (max-height: 980px) {
+
+  body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header,
+  body:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location #sidebar-v2 .hl_nav-header {
+    max-height: 55.5vh !important;
+  }
+
+  body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header {
+    max-height: 49vh !important;
+  }
+}
+
+@media only screen and (max-height: 810px) {
+
+  body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header,
+  body:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location #sidebar-v2 .hl_nav-header {
+    max-height: 47vh !important;
+  }
+}
+
+@media only screen and (max-height: 810px) {
+  body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header {
+    max-height: 43vh !important;
+  }
+}
+
+@media only screen and (max-height: 740px) {
+
+  body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header,
+  body:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location #sidebar-v2 .hl_nav-header {
+    max-height: 32vh !important;
+  }
+}
+
+body:not([data-scheme-mode='dark']):not([data-hlpt-theme-mode='default']):not([data-hlpt-theme-mode='hlpt3']):not([data-hlpt-theme-mode='hlpt2']):not([data-hlpt-theme-mode='hlpt1']):not([data-hlpt-theme-mode='hlpt4']) .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a .agency_sidebar_svg path,
+body:not([data-scheme-mode='dark']):not([data-hlpt-theme-mode='default']):not([data-hlpt-theme-mode='hlpt3']):not([data-hlpt-theme-mode='hlpt2']):not([data-hlpt-theme-mode='hlpt1']):not([data-hlpt-theme-mode='hlpt4']) .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a>span>i,
+body:not([data-scheme-mode='dark']):not([data-hlpt-theme-mode='default']):not([data-hlpt-theme-mode='hlpt3']):not([data-hlpt-theme-mode='hlpt2']):not([data-hlpt-theme-mode='hlpt1']):not([data-hlpt-theme-mode='hlpt4']) .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav .hlpt-agency-custom-setting svg path {
+  color: var(--white-color);
+  stroke: var(--white-color);
+}
+
+.sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--controls a#canny_logs-toggle .fa-bullhorn:before {
+  /* content: ' ';
+  width: 20px;
+  height: 20px;
+  display: inline-block; */
+  background: none !important;
+}
+
+/* client css */
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings nav {
+  padding-bottom: 150px !important;
+  margin-left: -10px !important;
+}
+
+body .sidebar-v2-agency #sidebar-v2 .hl_nav-settings>nav>a#sb_agency-settings {
+  margin-bottom: 5px;
+}
+
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings>nav>a#sb_agency-settings {
+  margin-left: 0px;
+  padding-top: 10px !important;
+  width: 196px !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header {
+  width: 229px !important;
+  background-color: var(--sidebar-menu-bg-color) !important;
+  border-top: 0px solid #e9e9e9 !important;
+}
+
+body #app .sidebar-v2-location .hl_header .container-fluid span.btn-circle {
+  width: unset !important;
+}
+
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle i {
+  display: block !important;
+  color: #999 !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header--controls:last-child a.helpiconstyles::after {
+  content: 'Need Help';
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: -25px;
+  position: absolute;
+  transform: translate(40px, 0px);
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover::after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover::after {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header--controls #hl_header--help-icon {
+  padding-left: 0px !important;
+  color: var(--sidebar-menu-textmenu-color) !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a.dropdown-toggle::before {
+  overflow: visible !important;
+  text-overflow: ellipsis !important;
+  margin-left: 20px !important;
+  transform: unset !important;
+  left: 47px !important;
+  position: relative !important;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  font-weight: 500 !important;
+}
+
+body #app .sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls:last-child>div,
+body #app .sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls:last-child>a {
+  margin-bottom: 6px !important;
+  margin-top: 6px !important;
+}
+
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 0px 10px 150px 10px !important;
+  background-color: var(--sidebar-menu-bg-color) !important;
+  /* border-top: 0px solid #e9e9e9 !important; */
+  background: transparent !important;
+}
+
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 10px 10px 320px 5px !important;
+}
+
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-settings nav {
+  padding: 10px 10px 360px 10px !important;
+}
+
+/* #app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-header nav,
+#app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav,
+#app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 10px 10px 320px 5px !important;
+} */
+
+.h-screen.overflow-auto.hl_topbar-tabs.hl_without-topbar {
+  padding-top: 40px !important;
+}
+
+.hl_topbar-tabs.hl_without-topbar {
+  padding-top: 55px !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header {
+  z-index: 51 !important;
+}
+
+body #app .sidebar-v2-agency header.hl_header {
+  width: 224px !important;
+}
+
+body #app .sidebar-v2-agency .hl_header--controls {
+  width: 100% !important;
+}
+
+body #app .sidebar-v2-agency .fa.fa-bullhorn {
+  padding-left: 10px !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .preference--options a#canny_logs-toggle.btn-circle::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .preference--options a#canny_logs-toggle.btn-circle::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle::after {
+  padding-left: 14px !important;
+}
+
+.flex.flex-col.absolute.bottom-3\.5.w-full.hl_nav-settings {
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+body #app .sidebar-v2-agency .hl_header.--agency #hl_header--help-icon .left-nav-icon.hl_header--help-icon::after {
+  content: 'Need Help';
+}
+
+body #app .sidebar-v2-agency .hl_header .hl_header--controls a#hl_header--help-icon.btn.btn-circle {
+  padding-left: 13px !important;
+}
+
+body #app .v2-collapse.sidebar-v2-agency #sidebar-v2 .hl_nav-settings {
+  bottom: 15.7rem !important;
+  left: 5px !important;
+}
+
+body #app .sidebar-v2-agency .hl_header .hl_header--controls .left-nav-icon.canny_logs-toggle {
+  position: relative;
+  left: 7px;
+  width: 21px !important;
+}
+
+body #app .sidebar-v2-agency.v2-open header.hl_header>.container-fluid .hl_header--controls:last-child {
+  margin-left: 0px !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle:hover::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid a#recent_activities-toggle.btn-circle:hover::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid a#hl_header--help-icon div.left-nav-icon.hl_header--help-icon:hover::after,
+body #app .sidebar-v2-agency.v2-open .hl_header--controls a#lang_translate_btn:hover i,
+body #app .sidebar-v2-agency.v2-open .hl_header--controls a#lang_translate_btn:hover i::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle:hover::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#recent_activities-toggle.btn-circle:hover::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#hl_header--help-icon div.left-nav-icon.hl_header--help-icon:hover::after,
+body #app .sidebar-v2-location.v2-open .hl_header--controls a#lang_translate_btn:hover i,
+body #app .sidebar-v2-location.v2-open .hl_header--controls a#lang_translate_btn:hover i::after,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover span~span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover
+
+/* body #app .sidebar-v2-agency.v2-open .hl_header--controls #langTranslate:hover a#lang_translate_btn::after,
+body #app .sidebar-v2-agency.v2-open .hl_header--controls #langTranslate:hover a#lang_translate_btn i.fa-language  */
+  {
+  color: var(--primary-color) !important;
+}
+
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_app-media div.left-nav-icon.sb_app-media,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_launchpad div.left-nav-icon.sb_launchpad,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_ai-employee-promo div.left-nav-icon.sb_ai-employee-promo,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_dashboard div.left-nav-icon.sb_dashboard,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_conversations div.left-nav-icon.sb_conversations,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_calendars div.left-nav-icon.sb_calendars,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_contacts div.left-nav-icon.sb_contacts,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_opportunities div.left-nav-icon.sb_opportunities,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_payments div.left-nav-icon.sb_payments,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_email-marketing div.left-nav-icon.sb_email-marketing,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_automation div.left-nav-icon.sb_automation,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_sites div.left-nav-icon.sb_sites,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_memberships div.left-nav-icon.sb_memberships,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_reputation div.left-nav-icon.sb_reputation,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_reporting div.left-nav-icon.sb_reporting,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_location-mobile-app div.left-nav-icon.sb_location-mobile-app,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#d07f5a3c-659d-40f9-a59c-b114006a686c div.left-nav-icon.d07f5a3c-659d-40f9-a59c-b114006a686c,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#eade827b-ea11-4ec4-aa64-e308ef6a2694 div.left-nav-icon.eade827b-ea11-4ec4-aa64-e308ef6a2694,
+body .sidebar-v2-location .hl_header--controls a#canny_logs-toggle div.left-nav-icon.canny_logs-toggle,
+body .sidebar-v2-location .hl_header--controls a#recent_activities-toggle div.left-nav-icon.recent_activities-toggle,
+body #app .v2-open.sidebar-v2-location #sidebar-v2 nav a#sb_settings div.left-nav-icon.sb_settings,
+body .sidebar-v2-location .hl_header--controls a#phone_dialer_access div.left-nav-icon.phone_dialer_access {
+  width: 20px;
+  height: 20px;
+  margin-right: 14px !important;
+}
+
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_email-marketing div.left-nav-icon.sb_email-marketing,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_automation div.left-nav-icon.sb_automation,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_reputation div.left-nav-icon.sb_reputation,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_reporting div.left-nav-icon.sb_reporting,
+body .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_location-mobile-app div.left-nav-icon.sb_location-mobile-app,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle div.left-nav-icon.recent_activities-toggle,
+body #app .v2-open.sidebar-v2-location #sidebar-v2 nav a#sb_settings div.left-nav-icon.sb_settings {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px !important;
+}
+
+/* //////////// */
+body #app .sidebar-v2-agency header.hl_header {
+  z-index: 50 !important;
+}
+
+/* body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle.active:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-location.v2-open .hl_header--controls #hl_header--help-icon i::after {
+  color: var(--hlpt-adv-help-btn-icon-hover-col) !important;
+} */
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle.active div.left-nav-icon.recent_activities-toggle svg .fa-primary,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle.active div.left-nav-icon.recent_activities-toggle svg .fa-secondary,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover div.left-nav-icon.recent_activities-toggle svg .fa-primary,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover div.left-nav-icon.recent_activities-toggle svg .fa-secondary {
+  fill: var(--hlpt-adv-help-btn-icon-hover-col) !important;
+  stroke: none !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle div.left-nav-icon.recent_activities-toggle svg .fa-primary,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle div.left-nav-icon.recent_activities-toggle svg .fa-secondary {
+  fill: var(--sidebar-font) !important;
+  stroke: none !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header--controls:last-child a.helpiconstyles::after {
+  top: 2px !important;
+  left: 50px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header--controls #hl_header--help-icon .left-nav-icon.hl_header--help-icon {
+  margin-left: 5px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header--controls #hl_header--help-icon {
+  position: relative;
+}
+
+body #app .v2-open.sidebar-v2-location #sidebar-v2 nav a#sb_reputation-management div.left-nav-icon.sb_reputation-management,
+body #app .v2-open.sidebar-v2-location #sidebar-v2 nav a#sb_tags div.left-nav-icon.sb_tags {
+  width: 26px;
+  height: 26px;
+  margin-right: 18px;
+  margin-left: -5px;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle div.left-nav-icon.recent_activities-toggle svg .fa-secondary {
+  fill: var(--hlpt-left-nav-icon-color) !important;
+  stroke: none !important;
+}
+
+.hl_header--avatar.dropdown-toggle {
+  margin-top: 5px !important;
+}
+
+.dropdown-menu.dropdown-menu-right.show.dialer-center {
+  bottom: unset !important;
+  right: unset !important;
+  left: 220px !important;
+  top: -260px !important;
+}
+
+.left-nav-icon.phone_dialer_access {
+  width: 22px !important;
+  height: 22px !important;
+  position: absolute;
+  left: 0;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle::after,
+body #app .sidebar-v2-agency .hl_header.--agency #hl_header--help-icon .left-nav-icon.hl_header--help-icon::after {
+  font-size: 0.85rem !important;
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover .call-info-box {
+  transform: scale(1) !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location header.hl_header {
+  bottom: 0px !important;
+  padding-bottom: 40px !important;
+  padding-top: 0px !important;
+  z-index: 99 !important;
+  width: 222px !important;
+  background: transparent !important;
+}
+
+/* 
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not(
+    [data-location-name='audit-location-v2']
+  ):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not(
+    [data-location-name='smtp-service-v2']
+  ):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not(
+    [data-location-name='domain-settings-v2']
+  ):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not(
+    [data-location-name='pipeline-settings-v2']
+  )
+  #app
+  .sidebar-v2-location
+  header.hl_header
+  > .container-fluid
+  .hl_header--controls:last-child {
+  margin-left: 0px !important;
+} */
+
+body #app .sidebar-v2-location .hl_header #hl_header--help-icon div.left-nav-icon.hl_header--help-icon {
+  width: 20px;
+  height: 20px;
+}
+
+body .sidebar-v2-location .hl_header--controls a#canny_logs-toggle div.left-nav-icon.canny_logs-toggle {
+  margin-right: 5px !important;
+}
+
+/* hover box for header control icons */
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret {
+  width: 185px !important;
+  border-radius: 7px !important;
+  padding-top: 7px !important;
+  padding-bottom: 4px !important;
+  height: 36px;
+  /* left: -3px !important; */
+  /* position: relative !important; */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+  scale: 1 !important;
+  transition: transform 0.3s ease !important;
+  transform-origin: center center !important;
+  transform: scale(1) !important;
+  cursor: pointer;
+}
+
+/* hover box for header control icons */
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret {
+  width: 190px !important;
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  background: var(--tertiary-color) !important;
+  transform: scale(1.07) !important;
+}
+
+#app .v2-collapse.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover,
+#app .v2-collapse.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover,
+#app .v2-collapse.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+#app .v2-collapse.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  background: var(--tertiary-color) !important;
+  transform: scale(1.07) !important;
+}
+
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret {
+  display: none !important;
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span:after,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span:after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  position: absolute !important;
+  display: block !important;
+  left: 15px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span:after,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span:after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  left: 8px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:not(.preference--options):not([data-class='preference--options'])::after,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:not(.preference--options):not([data-class='preference--options'])::after {
+  margin-left: 0px;
+  position: absolute;
+  transform: translate(0px, 0px);
+  left: 50px;
+}
+
+body:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a.hl_header--avatar:not(.dropdown-item)::before {
+  transform: translate(26px, 6px) !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle::after {
+  padding-left: 0px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#canny_logs-toggle .Canny_BadgeContainer,
+body #app .v2-open.sidebar-v2-agency .hl_header .container-fluid a#canny_logs-toggle .Canny_BadgeContainer {
+  right: 140px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a.dropdown-toggle::before {
+  margin-left: 23px !important;
+  padding-right: 70px !important;
+}
+
+body #app .v2-open.sidebar-v2-location #sidebar-v2 #sb_settings {
+  margin-bottom: 5px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access::before,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access::before {
+  left: 12px !important;
+  top: -5px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access .left-nav-icon.phone_dialer_access,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access .left-nav-icon.phone_dialer_access {
+  top: 0px;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover a.dropdown-toggle::before,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover a.dropdown-toggle::before,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item):hover::before {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span::after,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span {
+  left: 5px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span {
+  left: 15px !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options'])::after {
+  left: 48px !important;
+}
+
+#app .v2-open.sidebar-v2-agency .hl_header.--agency .container-fluid .hl_header--controls a#canny_logs-toggle {
+  width: 190px !important;
+  border-radius: 7px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  height: 36px;
+  left: -10px !important;
+  position: absolute !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+  scale: 1 !important;
+  transition: transform 0.3s ease !important;
+  transform-origin: center center !important;
+  transform: scale(1) !important;
+  top: -34px !important;
+  padding-left: 10px !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:not(.preference--options):not([data-class='preference--options'])::after {
+  left: 35px !important;
+}
+
+body #app .v2-open.sidebar-v2-agency .hl_header .container-fluid a#canny_logs-toggle .Canny_BadgeContainer {
+  right: 155px !important;
+}
+
+#app .v2-open.sidebar-v2-agency .hl_header.--agency .container-fluid .hl_header--controls a#canny_logs-toggle::after {
+  left: 36px !important;
+}
+
+#app .v2-open.sidebar-v2-agency .hl_header.--agency .container-fluid .hl_header--controls a#canny_logs-toggle:hover {
+  transition: transform 0.3s ease !important;
+  transform-origin: center center !important;
+  transform: scale(1.05) !important;
+}
+
+body #app .v2-open.sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings {
+  transition: transform 0.3s ease !important;
+  transform-origin: center center !important;
+  transform: scale(1) !important;
+}
+
+body #app .v2-open.sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover {
+  transition: transform 0.3s ease !important;
+  transform-origin: center center !important;
+  transform: scale(1.05) !important;
+}
+
+body #app .v2-open.sidebar-v2-agency #sidebar-v2 nav a {
+  width: 100% !important;
+  margin-left: 0px !important;
+}
+
+/* body #app .sidebar-v2-agency .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities) */
+body #app .sidebar-v2-location .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities) {
+  /* background-color: unset !important; */
+  outline: none;
+}
+
+body #app .v2-collapse.sidebar-v2-location .hl_header--collapse {
+  width: 60px !important;
+  max-width: 60px !important;
+  /* overflow: hidden; */
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle {
+  margin-left: 6px !important;
+  outline: none;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle {
+  margin-left: 2px !important;
+  outline: none;
+}
+
+.sidebar-v2-location .hl_wrapper #conversations.hl_wrapper--inner {
+  margin-top: -19px !important;
+}
+
+/* BOT FAQS */
+body #app .sidebar-v2-location.v2-open .hl_header .fa-user-robot:before,
+body #app .sidebar-v2-agency.v2-open .hl_header .fa-user-robot:before {
+  content: '\e04b';
+  font-size: 30px !important;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  display: none !important;
+}
+
+body #app .sidebar-v2-location .hl_header .hl_header--controls #azFaqCtrl.btn.btn-circle,
+body #app .sidebar-v2-agency .hl_header .hl_header--controls #azFaqCtrl.btn.btn-circle {
+  background-color: unset !important;
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#azFaqCtrl:hover,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#azFaqCtrl:hover {
+  background: var(--tertiary-color) !important;
+  transform: scale(1.07) !important;
+}
+
+body[data-name='company-settings-v2'] .sidebar-v2-location .hl_header--controls a#azFaqCtrl,
+body[data-name='company-settings-v2'] .sidebar-v2-location .hl_header--controls,
+body[data-name='company-settings-v2'] .sidebar-v2-agency .hl_header--controls a#azFaqCtrl,
+body[data-name='company-settings-v2'] .sidebar-v2-agency .hl_header--controls {
+  display: none !important;
+}
+
+#launchpad,
+#dashboard {
+  padding-top: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav {
+  background-color: #fff !important;
+  padding-bottom: 5px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings .sidebar-v2-location #sidebar-v2 .hl_nav-header,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings {
+  width: 222px !important;
+  margin-bottom: -15px !important;
+  margin-left: -5px !important;
+}
+
+.v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-settings .sidebar-v2-location #sidebar-v2 .hl_nav-header,
+.v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-settings {
+  width: 54px !important;
+  overflow: hidden !important;
+  padding-bottom: 310px;
+  background: #fff !important;
+}
+
+body #app .v2-open.sidebar-v2-location #sidebar-v2 #sb_settings {
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  width: 190px !important;
+  margin-bottom: 10px !important;
+  margin-left: 5px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header #azFaqCtrl:after,
+body #app .sidebar-v2-agency.v2-open .hl_header #azFaqCtrl:after {
+  content: 'Bot' !important;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  font-size: 0.85rem !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  position: absolute !important;
+  top: 3px;
+  left: 50px;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header #azFaqCtrl:hover::after,
+body #app .sidebar-v2-agency.v2-open .hl_header #azFaqCtrl:hover::after {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agecny .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  /* color: var(--hlpt-primary-theme-color) !important; */
+  --fa-primary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-primary-opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-secondary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-primary-opacity: 1 !important;
+}
+
+body #app .v2-open.sidebar-v2-location #sidebar-v2 nav a#sb_settings span.left-nav-icon.sb_settings {
+  margin-right: 12px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  margin-top: 0px !important;
+  color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  --fa-primary-color: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .fa-user-robot:before,
+body #app .sidebar-v2-agency.v2-open .hl_header .fa-user-robot:before {
+  font-size: 24px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  left: 5px !important;
+}
+
+/* #app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret {
+  left: -3px !important;
+} */
+
+.hlpt_tt_view-changelog .b-tooltip,
+.hlpt_tt_notificationis .b-tooltip,
+.hlpt_tt_need-help .b-tooltip,
+.b-tooltip {
+  display: none !important;
+}
+
+/* body #app .sidebar-v2-agency.v2-open .hl_header--controls a#helpDeskCtrlAdvTop:after {
+  content: 'Support';
+  font-size: 14px !important;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 12px;
+  position: absolute;
+  transform: translate(400px, 0px);
+} */
+
+#helpDeskCtrlAdvTop .dots-cont {
+  position: absolute !important;
+  bottom: -6px !important;
+  left: 11px !important;
+}
+
+#helpDeskCtrlAdvTop .dots-cont .dot {
+  background-color: #fff !important;
+}
+
+#helpDeskCtrlAdvTop:hover .dots-cont .dot {
+  background: var(--primaryColor) !important;
+}
+
+.widget_opened .toggle-up-close {
+  top: -30px !important;
+  width: 25px !important;
+  height: 25px !important;
+  left: 4px !important;
+}
+
+.widget_opened .toggle-up-close i {
+  color: #fff !important;
+}
+
+.closemetoggle {
+  font-size: 15px !important;
+}
+
+a#helpDeskCtrlAdvTop {
+  transition: width 0.5s ease !important;
+  transition: scale 0.5s ease !important;
+  position: relative;
+  position: relative;
+  top: 8px !important;
+  left: 13px !important;
+}
+
+.sidebar-v2-agency a#helpDeskCtrlAdvTop {
+  top: -45px !important;
+  left: 12px !important;
+}
+
+.sidebar-v2-location a#helpDeskCtrlAdvTop {
+  top: 7px !important;
+  left: 15px !important;
+}
+
+.v2-open.sidebar-v2-agency .hl_header--controls #helpDeskCtrlAdvTop {
+  padding-bottom: 1px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  position: relative !important;
+  left: 0px !important;
+  top: 4px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header--controls>.hl_header--controls,
+#app .sidebar-v2-location.v2-open .hl_header--controls>.hl_header--controls {
+  padding-left: 0px !important;
+}
+
+a#canny_logs-toggle {
+  position: relative !important;
+  left: -15px !important;
+  margin-top: -3px !important;
+  margin-bottom: -3px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header--controls,
+#app .sidebar-v2-location.v2-open .hl_header--controls {
+  position: relative !important;
+  width: 215px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header--controls,
+#app .sidebar-v2-location.v2-open .hl_header--controls {
+  position: relative !important;
+  width: 215px !important;
+}
+
+#app .sidebar-v2-location.v2-open .hl_header--controls {
+  position: relative !important;
+  width: 205px !important;
+  left: -6px;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .hl_header--controls a.hl_header--avatar.dropdown-toggle {
+  /* margin-top: 45px !important; */
+  margin-bottom: 10px !important;
+}
+
+#app .sidebar-v2-location .hl_header--controls #azFaqCtrl,
+#app .sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  position: relative !important;
+  left: 5px !important;
+  /* top: 45px !important; */
+  width: 180px !important;
+  padding-left: 18px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+}
+
+#app .sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  left: 5px !important;
+  top: -45px !important;
+}
+
+#app .sidebar-v2-location .hl_header--controls #azFaqCtrl {
+  left: 1px !important;
+  top: 5px !important;
+}
+
+#app .sidebar-v2-location .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret {
+  /* left: -14px !important; */
+  position: relative !important;
+  padding-left: 12px !important;
+  /* left: -16px !important; */
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:not(.preference--options):not([data-class='preference--options'])::after {
+  left: 46px !important;
+}
+
+body #app .sidebar-v2-location .hl_header #hl_header--help-icon span.left-nav-icon.hl_header--help-icon,
+body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span.left-nav-icon.recent_activities-toggle,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  font-size: 20px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #phone_dialer_access,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #phone_dialer_access:hover {
+  background: transparent !important;
+}
+
+body #app .sidebar-v2-location .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher,
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher {
+  left: unset !important;
+  max-height: 500px !important;
+  top: -260px !important;
+  right: -360px !important;
+}
+
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher {
+  left: unset !important;
+  max-height: 500px !important;
+  top: -360px !important;
+  right: -360px !important;
+}
+
+body #app .sidebar-v2-location .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher .hl_v2_tip-arrow-right,
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher .hl_v2_tip-arrow-right {
+  right: unset !important;
+  left: -10px !important;
+  border-right: 10px solid var(--hlpt-main-white-color) !important;
+  border-left: unset !important;
+  top: 75% !important;
+}
+
+body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--dropdown .call-info-box,
+body #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--dropdown .call-info-box {
+  position: absolute;
+  z-index: 9999999;
+  left: -10px !important;
+}
+
+body #app .call-info-box {
+  min-width: 215px !important;
+}
+
+body iframe#canny-changelog-iframe {
+  right: unset !important;
+  top: unset !important;
+  bottom: 40px !important;
+  left: 233px !important;
+}
+
+#sidebar-v2 .overflow-y-auto.overflow-x-hidden {
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--scrollbar-sidebar-handle-background) var(--scrollbar-sidebar-track-background) !important;
+}
+
+#sidebar-v2 .overflow-y-auto.overflow-x-hidden::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+#sidebar-v2 .overflow-y-auto.overflow-x-hidden::-webkit-scrollbar-track {
+  background: var(--scrollbar-sidebar-track-background) !important;
+  box-shadow: var(--scrollbar-sidebar-track-shadow) !important;
+  border-radius: var(--scrollbar-sidebar-track-border-radius) !important;
+}
+
+#sidebar-v2 .overflow-y-auto.overflow-x-hidden::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-sidebar-handle-background) !important;
+  border-radius: var(--scrollbar-sidebar-track-border-radius) !important;
+}
+
+#sidebar-v2 .overflow-y-auto.overflow-x-hidden::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-sidebar-handle-background-hover) !important;
+}
+
+/* agency settings for header controls */
+
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 0px 10px 160px 5px !important;
+}
+
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  padding: 0px 10px 150px 10px !important;
+}
+
+#app #locationCRMBuilder {
+  margin-top: 0px !important;
+}
+
+body #app .sidebar-v2-agency .hl_wrapper {
+  padding-top: 0px !important;
+}
+
+.sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings>nav>a#sb_agency-settings {
+  margin-bottom: 0px !important;
+}
+
+#app .sidebar-v2-agency .hl_header.--agency {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0) !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid {
+  height: unset !important;
+  padding: 5px 10px 10px 7px;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav {
+  width: 99% !important;
+  margin-left: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle {
+  background-color: transparent !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  background-color: transparent !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a.hl_header--avatar:not(.dropdown-item):before {
+  transform: translate(50px, 12px);
+}
+
+.sidebar-v2-agency .hl_header .container-fluid .hl_header--dropdown a:not(.dropdown-item) .avatar {
+  padding-top: 20px !important;
+}
+
+#app .v2-collapse.sidebar-v2-location .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret {
+  left: 15px !important;
+}
+
+#app .v2-collapse.sidebar-v2-location .hl_header .container-fluid .hl_header--controls #recent_activities-toggle,
+#app .v2-collapse.sidebar-v2-location .hl_header .container-fluid .hl_header--controls #hl_header--help-icon {
+  padding-left: 0px !important;
+  margin-left: 7px !important;
+}
+
+#app .v2-collapse.sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle {
+  left: -7px !important;
+}
+
+.sidebar-v2-location .hl_without-topbar div#calendarSetupPage {
+  padding-top: 45px !important;
+}
+
+.sidebar-v2-location .hl_topbar-tabs #workflowBuilder {
+  padding-top: 10px !important;
+}
+
+#app .sidebar-v2-location a#helpDeskCtrl span.sr-only {
+  font-size: 14px !important;
+}
+
+#app .sidebar-v2-location a#helpDeskCtrl {
+  padding-top: 10px !important;
+}
+
+#app .sidebar-v2-location a#helpDeskCtrl i {
+  width: 24px !important;
+  height: 24px !important;
+  margin-left: 13px !important;
+  margin-top: 5px !important;
+}
+
+#app .sidebar-v2-location a#helpDeskCtrl span.sr-only {
+  margin-left: 11px !important;
+  font-size: 14px !important;
+  color: var(--sidebar-font) !important;
+  padding-top: 5px !important;
+}
+
+/* ADVANCED SETTINGS */
+
+#launchpadHome {
+  margin-top: -30px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav {
+  width: 100% !important;
+}
+
+.sidebar-v2-location #globalSearchOpener+div#quickActions:before {
+  font-size: 12px !important;
+  padding-left: 3px !important;
+}
+
+/* 
+a#helpDeskCtrlAdvTop .classic-icon::after {
+  content: 'Support';
+} */
+
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#canny_logs-toggle,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#canny_logs-toggle,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#hl_header--help-icon,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#hl_header--help-icon {
+  margin-left: 15px !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#canny_logs-toggle,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#canny_logs-toggle {
+  margin-left: 23px !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#canny_logs-toggle {
+  margin-left: 10px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  left: 4px !important;
+}
+
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  left: 0px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  left: 7px !important;
+}
+
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span {
+  left: 22px !important;
+}
+
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle {
+  margin-left: 15px !important;
+}
+
+body #app .sidebar-v2-agency header.hl_header.--agency.hl_header--collapse {
+  width: 57px !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item) {
+  margin-left: 13px !important;
+}
+
+#helpDeskCtrlAdvTop {
+  transform: scale(0.75);
+}
+
+#helpDeskCtrlAdvTop .dots-cont::after {
+  font-size: 1.15rem !important;
+}
+
+/* 
+div#userflow-ui div.userflowjs-launcher {
+  position: fixed !important;
+  top: 0px !important;
+  left: 0px !important;
+  top: 155px !important;
+}
+
+div#userflow-ui div.userflowjs-launcher:hover {
+  width: 230px !important;
+} */
+
+div#userflow-ui {
+  position: fixed !important;
+  width: 200px !important;
+  height: 35px !important;
+  left: 8px !important;
+  bottom: 10px !important;
+  z-index: 199 !important;
+  margin-top: 15px !important;
+}
+
+div#userflow-ui div.userflowjs-launcher {
+  position: absolute !important;
+  transform: none !important;
+  position: absolute !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+/* 
+div#userflow-ui div.userflowjs-launcher {
+  font-weight: bold !important;
+  background-color: rgb(31, 175, 118) !important;
+  background-color: rgb(31, 175, 118, 0) !important;
+  background: transparent !important;
+  background: var(--sidebar-menu-textmenu-active-hover-color) !important;
+
+  font-size: 12px !important;
+  margin-left: -1% !important;
+  letter-spacing: 0px !important;
+  font-family: 'Open Sans' !important;
+  height: 35px !important;
+  width: auto !important;
+  margin-top: 10px !important;
+  border-radius: 10px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: block !important;
+  outline: 1px solid var(--primary-color) !important;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  outline-offset: 3px !important;
+  margin-left: 10px !important;
+  top: 85px !important;
+  width: 206px !important;
+  color: var(--primary-color) !important;
+  transition: width 0.5s ease !important;
+  transition: scale 0.5s ease !important;
+  scale: (1);
+  text-align: left !important;
+  padding-top: 2px !important;
+}
+ */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #phone_dialer_access:hover {
+  background-color: transparent !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar {
+  padding-top: 20px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_settings--body.hl_v2_stettings--body.hl_without-topbar .col-sm-6.col-md-3 .card-integration {
+  margin-top: 45px;
+}
+
+body #app .sidebar-v2-location .bg-blue-100.px-4.py-1.rounded-lg.font-medium {
+  position: absolute !important;
+  top: 130px !important;
+  left: 230px !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>*+*,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>*+* {
+  margin-left: 4px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg), var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc), var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+}
+
+body #app .sidebar-v2-location .dropdown-menu.dropdown-menu-right.show.dialer-center:hover {
+  background-color: none !important;
+}
+
+body #app .dropdown-menu.dropdown-menu-right.show.dialer-center .power-dialer-main .dialerView .call-buttons .dial-numbers .dial-item .number {
+  background: none !important;
+}
+
+body #app .sidebar-v2-location .dropdown-menu.dropdown-menu-right.show.dialer-center a:not(:last-child):hover {
+  background-color: transparent !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover a.dropdown-toggle::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid a#canny_logs-toggle.btn-circle:hover::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:not(.preference--options):not([data-class='preference--options']):hover::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header--controls a.helpiconstyles:hover::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header #azFaqCtrl:hover::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header #azFaqCtrl:hover::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header--avatar.dropdown-toggle:hover,
+.hl_header--avatar.dropdown-toggle:hover {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl:hover i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl:hover i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-primary-opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #dashboard {
+  padding-top: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle div.avatar_img {
+  background-color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle:hover div.avatar_img {
+  background-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret .hl_header--avatar.dropdown-toggle:hover::before {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+/* collapse menu */
+
+#app .v2-collapse.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>.hl_header--controls a#canny_logs-toggle {
+  margin-left: -5px !important;
+}
+
+body #app .v2-collapse.sidebar-v2-agency .hl_header.--agency #hl_header--help-icon .left-nav-icon.hl_header--help-icon {
+  left: 8px !important;
+}
+
+#app .v2-collapse.sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  left: -20px !important;
+}
+
+#app .v2-collapse.sidebar-v2-agency .hl_header div.avatar_img {
+  left: 10px !important;
+}
+
+#app .v2-collapse.sidebar-v2-location header.hl_header>.container-fluid .hl_header--controls {
+  margin-left: 0px !important;
+  width: 85px !important;
+}
+
+#app .v2-collapse.sidebar-v2-location .hl_header .container-fluid .hl_header--controls #recent_activities-toggle,
+#app .v2-collapse.sidebar-v2-location .hl_header .container-fluid .hl_header--controls #hl_header--help-icon,
+#app .v2-collapse.sidebar-v2-locationsidebar-v2-location .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item) {
+  left: 10px;
+}
+
+#app .v2-collapse.sidebar-v2-location .hl_header--controls #azFaqCtrl,
+#app .v2-collapse.sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  width: 50px !important;
+}
+
+/* translation */
+
+body #app #lang_translate_btn,
+.btn.lang_btn {
+  background: none;
+  padding-left: 20px !important;
+}
+
+body #app #langTranslate i::after {
+  content: 'Translations' !important;
+  font-size: 0.85rem !important;
+  font-weight: 500;
+  color: var(--sidebar-menu-textmenu-color) !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  position: absolute !important;
+  top: 10px;
+  left: 50px;
+  text-overflow: ellipsis;
+}
+
+body #app #langTranslate:hover i::after {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+body #app #lang_translate_btn,
+.btn.lang_btn {
+  width: 195px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.dropdown_lang ul {
+  top: -350px !important;
+  left: 210px !important;
+}
+
+span.left-nav-icon.lang_translate_btn {
+  display: none !important;
+}
+
+body #app #langTranslate:hover {
+  background: var(--tertiary-color) !important;
+  transform: scale(1.035);
+  transition: 0.3s;
+}
+
+body #app #langTranslate:hover a i {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location .hl_wrapper #conversations.hl_wrapper--inner {
+  margin-top: -18px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar {
+  padding-top: 15px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar #calendarSetupPage {
+  padding-top: 50px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar .hl_reputation {
+  padding-top: 0rem;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar .card-integration {
+  margin-top: 45px !important;
+}
+
+.expandleftnav {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 999 !important;
+  border: 0px solid #e2e2e2 !important;
+  width: 35px !important;
+  height: 35px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 3px !important;
+  cursor: pointer;
+  color: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer .expandleftnav {
+  display: none;
+}
+
+/* bug fixed 11-8-2023 */
+.hlpt_tt_an-error-has-ocurred-please-try-again-twilio-error .b-tooltip {
+  display: block !important;
+}
+
+/* .hl_nav-settings {
+  position: relative;
+} */
+
+.show-button {
+  display: block;
+}
+
+.show-button {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  rotate: 0deg;
+  z-index: 9999999;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.hl_nav-settings.showhide-btn .show-button i {
+  rotate: 0deg;
+  transition: all 0.3s;
+}
+
+.hl_nav-settings.showhide-btn.showhide-mainnav .show-button i {
+  rotate: 180deg;
+  transition: all 0.3s;
+}
+
+.hl_nav-settings .btn-expand-menu {
+  padding: 15px !important;
+  background: var(--hlpt-primary-theme-tint-color) !important;
+  width: 22px;
+  height: 22px;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#dialer-error-toggle::before {
+  display: none !important;
+}
+
+body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--dropdown .call-info-box,
+body #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--dropdown .call-info-box {
+  z-index: 99999999 !important;
+  left: 30px !important;
+  top: -70px !important;
+}
+
+#phone_dialer_access .btn.btn-circle.d-flex.justify-content-center.align-items-center.btn-green-light svg {
+  background: #fff !important;
+  filter: grayscale(9) !important;
+  opacity: 0 !important;
+}
+
+body #app .sidebar-v2-agency .hl_header.--agency {
+  z-index: 111 !important;
+}
+
+body #app #location-dashboard {
+  margin-top: -48px !important;
+}
+
+body #app #CalendarsFeatureDiscovery .feature-discovery-main-container .rounded-full.border-gray-300.p-\[7px\].border-\[1px\].bg-white.cursor-pointer.w-fit.right-\[20px\].shadow-sm {
+  margin: -25px !important;
+  margin-left: 15px !important;
+}
+
+body #app #CalendarsFeatureDiscovery .feature-discovery-main-container .absolute.right-\[20px\].bg-white.border-\[1px\].border-gray-200.rounded-2xl.z-10.shadow-lg.w-\[370px\].pb-\[16px\].max-h-\[850px\].h-auto.overflow-y-scroll.mt-\[15px\] {
+  left: 210px !important;
+  bottom: -250px !important;
+}
+
+body #app #CalendarsFeatureDiscovery {
+  position: relative !important;
+  top: 8px !important;
+}
+
+.sidebar-v2-location #conversations {
+  padding-top: 18px !important;
+}
+
+body #app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-header {
+  max-width: 55px !important;
+  width: 55px !important;
+}
+
+body #app .v2-collapse.sidebar-v2-location .hl_header--controls #helpDeskCtrlAdvTop .dots-cont::after {
+  content: '' !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location.v2-collapse .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show {
+  transform: unset !important;
+  top: unset !important;
+  bottom: 0px !important;
+  left: 56px !important;
+}
+
+#app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-header {
+  max-height: calc(100vh - 580px) !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-header {
+  max-height: calc(100vh - 580px) !important;
+}
+
+#app .v2-collapse.sidebar-v2-location #sidebar-v2 .w-full.hl_nav-settings .show-button {
+  display: none !important;
+}

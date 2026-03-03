@@ -47,10 +47,10 @@ app.get("/articles/new", (req, res) => {
 });
 
 // Create article
-app.post("/articles", upload.single("image"), async (req, res) => {
+// Create article
+app.post("/articles", async (req, res) => {
   try {
-    const { title, description } = req.body;       // must match form
-    const image = req.file ? req.file.filename : null;
+    const { title, description, image } = req.body; // image is URL
 
     // Validate required fields
     if (!title || !description) {
@@ -58,7 +58,11 @@ app.post("/articles", upload.single("image"), async (req, res) => {
     }
 
     // Save to DB
-    await Article.create({ title, description, image });
+    await Article.create({
+      title,
+      description,
+      image: image || null, // store null if no URL provided
+    });
 
     res.redirect("/");
   } catch (err) {

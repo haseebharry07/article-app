@@ -1,0 +1,3170 @@
+@import url(https://kit.fontawesome.com/5e5db45630.css);
+
+/* ********************************************************************* */
+/*              THEME BUILDER ADVANCED SETTINGS                          */
+/* ********************************************************************* */
+/* advanced settings css starts here */
+:root {
+  --dynamic-font-family: 'Poppins';
+  --dynamic-font-family-h1: 'Poppins';
+  --dynamic-font-family-h2: 'Poppins';
+  --dynamic-font-family-h3: 'Poppins';
+  --dynamic-font-family-h4: 'Poppins';
+  --dynamic-font-family-sidemenu: 'Poppins';
+  --dynamic-font-family-topmenu: 'Poppins';
+  /* override lp color to tb color */
+  --cp-lp-icon-col: var(--hlpt-primary-theme-color) !important;
+  /* --cp-lp-btn-col: var(--sidebar-button-background-hover) !important; */
+  --cp-lp-txt-col: var(--cp-lp-txt-col) !important;
+  --cp-lp-title-col: var(--cp-lp-title-col) !important;
+
+  --cp-lp-title-col: var(--hlpt-adv-bodycontent-h1-text-col) !important;
+  --cp-lp-btn-col: var(--hlpt-adv-primary-btn-bg-color) !important;
+  --cp-lp-txt-col: var(--hlpt-adv-bodycontent-text-col) !important;
+
+  --login-input-background-color: var(--hlpt-primary-theme-color-tint);
+  /* primary buttons normal */
+  --hlpt-adv-primary-btn-bg-color: #2942ff;
+  --hlpt-adv-primary-btn-text-color: #2942ff;
+  --hlpt-adv-primary-btn-border-color: #2942ff;
+  --hlpt-adv-primary-btn-radius: 5px;
+  /* primary  buttons hover */
+  --hlpt-adv-primary-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-primary-btn-text-hover-color: #2942ff;
+  --hlpt-adv-primary-btn-border-hover-color: #2942ff;
+  /* secondary buttons normal */
+  --hlpt-adv-secondary-btn-bg-color: #ffffff;
+  --hlpt-adv-secondary-btn-text-color: #2942ff;
+  --hlpt-adv-secondary-btn-border-color: #e2e2e2;
+  --hlpt-adv-secondary-btn-radius: 5px;
+  /* secondary  buttons hover */
+  --hlpt-adv-secondary-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-secondary-btn-text-hover-color: #ffffff;
+  --hlpt-adv-secondary-btn-border-hover-color: #2942ff;
+  /* default buttons normal */
+  --hlpt-adv-default-btn-bg-color: #ffffff;
+  --hlpt-adv-default-btn-text-color: #2942ff;
+  --hlpt-adv-default-btn-border-color: #e2e2e2;
+  --hlpt-adv-default-btn-radius: 5px;
+  /* default  buttons hover */
+  --hlpt-adv-default-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-default-btn-text-hover-color: #ffffff;
+  --hlpt-adv-default-btn-border-hover-color: #2942ff;
+  /* default-light buttons normal */
+  --hlpt-adv-default-light-btn-bg-color: #ffffff;
+  --hlpt-adv-default-light-btn-text-color: #2942ff;
+  --hlpt-adv-default-light-btn-border-color: #e2e2e2;
+  --hlpt-adv-default-light-btn-radius: 5px;
+  /* default-light  buttons hover */
+  --hlpt-adv-default-light-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-default-light-btn-text-hover-color: #ffffff;
+  --hlpt-adv-default-light-btn-border-hover-color: #2942ff;
+
+  /* header buttons profile color */
+  --hlpt-adv-profile-btn-icon-col: #ffffff;
+  --hlpt-adv-profile-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-profile-btn-icon-bg-col: #bd9275;
+  --hlpt-adv-profile-btn-icon-bg-hover-col: #bd9275;
+  /* header buttons help color */
+  --hlpt-adv-help-btn-icon-col: #ffffff;
+  --hlpt-adv-help-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-help-btn-icon-bg-col: #188bf6;
+  --hlpt-adv-help-btn-icon-bg-hover-col: #188bf6;
+  /* header buttons notification color */
+  --hlpt-adv-notification-btn-icon-col: #ffffff;
+  --hlpt-adv-notification-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-notification-btn-icon-bg-col: #ff6600;
+  --hlpt-adv-notification-btn-icon-bg-hover-col: #ff6600;
+  /* header buttons viewchangelogs color */
+  --hlpt-adv-viewchangelogs-btn-icon-col: #ffffff;
+  --hlpt-adv-viewchangelogs-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-viewchangelogs-btn-icon-bg-col: #036146;
+  --hlpt-adv-viewchangelogs-btn-icon-bg-hover-col: #036146;
+  /* header buttons phone color */
+  --hlpt-adv-phone-btn-icon-col: #ffffff;
+  --hlpt-adv-phone-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-phone-btn-icon-bg-col: #30ca30;
+  --hlpt-adv-phone-btn-icon-bg-hover-col: #30ca30;
+  /* header buttons zappychatbot color */
+  --hlpt-adv-zappychatbot-btn-icon-col: #ffffff;
+  --hlpt-adv-zappychatbot-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-zappychatbot-btn-icon-bg-col: #0f45f5;
+  --hlpt-adv-zappychatbot-btn-icon-bg-hover-col: #0f45f5;
+  /* header buttons guidetour color */
+  --hlpt-adv-guidetour-btn-icon-col: #492cdd;
+  --hlpt-adv-guidetour-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-guidetour-btn-icon-bg-col: #cc97fd;
+  --hlpt-adv-guidetour-btn-icon-bg-hover-col: #cc97fd;
+  /* header gradient color */
+  --hlpt-adv-headerbgcolor-start-col: #ffffff;
+  --hlpt-adv-headerbgcolor-end-col: #ffffff;
+  --hlpt-adv-headerbgcolor-stop-perc: 50;
+  --hlpt-adv-headerbgcolor-gradient-deg: 90;
+
+  /* bodycontent gradient color */
+  --hlpt-adv-bodycontentbgcolor-start-col: #ffffff;
+  --hlpt-adv-bodycontentbgcolor-end-col: #ffffff;
+  --hlpt-adv-bodycontentbgcolor-stop-perc: 50;
+  --hlpt-adv-bodycontentbgcolor-gradient-deg: 90;
+
+  /* bodycontent - text color */
+  --hlpt-adv-bodycontent-text-col: #ff0000;
+
+  /* bodycontent - h1 and h2 color and size  */
+  --hlpt-adv-bodycontent-h1-text-col: #ff00ff;
+  --hlpt-adv-bodycontent-h2-text-col: #ff00ff;
+  --hlpt-adv-bodycontent-h1-text-size: 55;
+  --hlpt-adv-bodycontent-h2-text-size: 35;
+
+  /* leftsidebar gradient color */
+  --hlpt-adv-leftsidebarbgcolor-start-col: #ffffff;
+  --hlpt-adv-leftsidebarbgcolor-end-col: #ffffff;
+  --hlpt-adv-leftsidebarbgcolor-stop-perc: 50;
+  --hlpt-adv-leftsidebarbgcolor-gradient-deg: 90;
+
+  /* mainnav - text hover, icon hover, hover-active background colors */
+  --hlpt-adv-mainnav-text-hover-color: #666666;
+  --hlpt-adv-mainnav-icon-hover-color: #999999;
+  --hlpt-adv-mainnav-hover-active-bg-color: rgba(15, 69, 245, 0.178);
+  --hlpt-adv-mainnav-text-hover-color-tint: #66666673;
+
+  /* replacenavlinks -  rename main nav lable and replace icon Media Storage  */
+  --hlpt-adv-mainnav-replace-mediastorage-label: 'Media Storage';
+  --hlpt-adv-mainnav-replace-mediastorage-icon: '\\f03e';
+
+  /* replacenavlinks -  rename main nav lable and replace icon LAUNCHPAD  */
+  --hlpt-adv-mainnav-replace-launchpad-label: 'Launch Pad';
+  --hlpt-adv-mainnav-replace-launchpad-icon: '\\e4e2';
+
+  /* replacenavlinks -  rename main nav lable and replace icon Season of AI  */
+  --hlpt-adv-mainnav-replace-aiemployeepromo-label: 'Season of AI';
+  --hlpt-adv-mainnav-replace-aiemployeepromo-icon: '\\f890';
+
+  /* replacenavlinks -  rename main nav lable and replace icon dashboard  */
+  --hlpt-adv-mainnav-replace-dashboard-label: 'Dashboard';
+  --hlpt-adv-mainnav-replace-dashboard-icon: '\\f625';
+  /* replacenavlinks -  rename main nav lable and replace icon conversations  */
+  --hlpt-adv-mainnav-replace-conversations-label: 'Conversations';
+  --hlpt-adv-mainnav-replace-conversations-icon: '\\e1e7';
+  /* replacenavlinks -  rename main nav lable and replace icon calendars  */
+  --hlpt-adv-mainnav-replace-calendars-label: 'Calendars';
+  --hlpt-adv-mainnav-replace-calendars-icon: '\\f073';
+  /* replacenavlinks -  rename main nav lable and replace icon contacts  */
+  --hlpt-adv-mainnav-replace-contacts-label: 'Contacts';
+  --hlpt-adv-mainnav-replace-contacts-icon: '\\f2bb';
+  /* replacenavlinks -  rename main nav lable and replace icon opportunities  */
+  --hlpt-adv-mainnav-replace-opportunities-label: 'Opportunities';
+  --hlpt-adv-mainnav-replace-opportunities-icon: '\\f652';
+  /* replacenavlinks -  rename main nav lable and replace icon payments  */
+  --hlpt-adv-mainnav-replace-payments-label: 'Payments';
+  --hlpt-adv-mainnav-replace-payments-icon: '\\e5d9';
+  /* replacenavlinks -  rename main nav lable and replace icon marketing  */
+  --hlpt-adv-mainnav-replace-marketing-label: 'Marketing';
+  --hlpt-adv-mainnav-replace-marketing-icon: '\\e4e8';
+  /* replacenavlinks -  rename main nav lable and replace icon automation  */
+  --hlpt-adv-mainnav-replace-automation-label: 'Automation';
+  --hlpt-adv-mainnav-replace-automation-icon: '\\e5d5';
+  /* replacenavlinks -  rename main nav lable and replace icon sites  */
+  --hlpt-adv-mainnav-replace-sites-label: 'Sites';
+  --hlpt-adv-mainnav-replace-sites-icon: '\\f1ea';
+  /* replacenavlinks -  rename main nav lable and replace icon memberships  */
+  --hlpt-adv-mainnav-replace-memberships-label: 'Memberships';
+  --hlpt-adv-mainnav-replace-memberships-icon: '\\f559';
+  /* replacenavlinks -  rename main nav lable and replace icon reputation  */
+  --hlpt-adv-mainnav-replace-reputation-label: 'Reputation';
+  --hlpt-adv-mainnav-replace-reputation-icon: '\\f587';
+  /* replacenavlinks -  rename main nav lable and replace icon reporting  */
+  --hlpt-adv-mainnav-replace-reporting-label: 'Reporting';
+  --hlpt-adv-mainnav-replace-reporting-icon: '\\e473';
+  /* replacenavlinks -  rename main nav lable and replace icon mobileapp  */
+  --hlpt-adv-mainnav-replace-mobileapp-label: 'Mobile App';
+  --hlpt-adv-mainnav-replace-mobileapp-icon: '\\f3cd';
+  /* replacenavlinks -  rename main nav lable and replace icon settings  */
+  --hlpt-adv-mainnav-replace-settings-label: 'Settings';
+  --hlpt-adv-mainnav-replace-settings-icon: '\\e5e9';
+  /* replacenavlinks -  rename settings lable and replace icon businessinfo  */
+  --hlpt-adv-mainnav-replace-businessinfo-label: 'Business Info';
+  --hlpt-adv-mainnav-replace-businessinfo-icon: '\\f0b1';
+  /* replacenavlinks -  rename settings lable and replace icon companybilling  */
+  --hlpt-adv-mainnav-replace-companybilling-label: 'Company Billing';
+  --hlpt-adv-mainnav-replace-companybilling-icon: '\\f555';
+  /* replacenavlinks -  rename settings lable and replace icon myprofile  */
+  --hlpt-adv-mainnav-replace-myprofile-label: 'My Profile';
+  --hlpt-adv-mainnav-replace-myprofile-icon: '\\f007';
+  /* replacenavlinks -  rename settings lable and replace icon mystaff  */
+  --hlpt-adv-mainnav-replace-mystaff-label: 'My Staff';
+  --hlpt-adv-mainnav-replace-mystaff-icon: '\\f007';
+  /* replacenavlinks -  rename settings lable and replace icon pipelines  */
+  --hlpt-adv-mainnav-replace-pipelines-label: 'Pipelines';
+  --hlpt-adv-mainnav-replace-pipelines-icon: '\\f662';
+  /* replacenavlinks -  rename settings lable and replace icon calendar  */
+  --hlpt-adv-mainnav-replace-calendar-label: 'Calendar';
+  --hlpt-adv-mainnav-replace-calendar-icon: '\\e0d6';
+  /* replacenavlinks -  rename settings lable and replace icon phonenumbers  */
+  --hlpt-adv-mainnav-replace-phonenumbers-label: 'Phone System';
+  --hlpt-adv-mainnav-replace-phonenumbers-icon: '\\f67d';
+  /* replacenavlinks -  rename settings lable and replace icon whatsapp  */
+  --hlpt-adv-mainnav-replace-whatsapp-label: 'WhatsApp';
+  --hlpt-adv-mainnav-replace-whatsapp-icon: '\\f4b0';
+  /* replacenavlinks -  rename settings lable and replace icon reputationmanagement  */
+  --hlpt-adv-mainnav-replace-reputationmanagement-label: 'Reputation Management';
+  --hlpt-adv-mainnav-replace-reputationmanagement-icon: '\\e036';
+  /* replacenavlinks -  rename settings lable and replace icon customfields  */
+  --hlpt-adv-mainnav-replace-customfields-label: 'Custom Fields';
+  --hlpt-adv-mainnav-replace-customfields-icon: '\\e531';
+  /* replacenavlinks -  rename settings lable and replace icon customvalues  */
+  --hlpt-adv-mainnav-replace-customvalues-label: 'Custom Values';
+  --hlpt-adv-mainnav-replace-customvalues-icon: '\\f7ea';
+  /* replacenavlinks -  rename settings lable and replace icon managescoring  */
+  --hlpt-adv-mainnav-replace-managescoring-label: 'Manage Scoring';
+  --hlpt-adv-mainnav-replace-managescoring-icon: '\\e41c';
+  /* replacenavlinks -  rename settings lable and replace icon domains  */
+  --hlpt-adv-mainnav-replace-domains-label: 'Domains';
+  --hlpt-adv-mainnav-replace-domains-icon: '\\f0ac';
+  /* replacenavlinks -  rename settings lable and replace icon externaltracking  */
+  --hlpt-adv-mainnav-replace-externaltracking-label: 'External Tracking';
+  --hlpt-adv-mainnav-replace-externaltracking-icon: '\e60e';
+  /* replacenavlinks -  rename settings lable and replace icon media  */
+  --hlpt-adv-mainnav-replace-media-label: 'Media';
+  --hlpt-adv-mainnav-replace-media-icon: '\\f03d';
+  /* replacenavlinks -  rename settings lable and replace icon urlredirects  */
+  --hlpt-adv-mainnav-replace-urlredirects-label: 'URL Redirects';
+  --hlpt-adv-mainnav-replace-urlredirects-icon: '\\f5eb';
+  /* replacenavlinks -  rename settings lable and replace icon integrations  */
+  --hlpt-adv-mainnav-replace-integrations-label: 'Integrations';
+  --hlpt-adv-mainnav-replace-integrations-icon: '\\f126';
+  /* replacenavlinks -  rename settings lable and replace icon pintegrations  */
+  --hlpt-adv-mainnav-replace-pintegrations-label: 'Private Integrations';
+  --hlpt-adv-mainnav-replace-pintegrations-icon: '\\e4ad';
+  /* replacenavlinks -  rename settings lable and replace icon brandboards  */
+  --hlpt-adv-mainnav-replace-brandboards-label: 'Brand Boards';
+  --hlpt-adv-mainnav-replace-brandboards-icon: '\\f53f';
+  /* replacenavlinks -  rename settings lable and replace icon emailservices  */
+  --hlpt-adv-mainnav-replace-emailservices-label: 'Email Services';
+  --hlpt-adv-mainnav-replace-emailservices-icon: '\\e16f';
+
+  /* replacenavlinks -  rename settings lable and replace icon kb  */
+  --hlpt-adv-mainnav-replace-knowledgebase-label: 'Knowledge Base';
+  --hlpt-adv-mainnav-replace-knowledgebase-icon: '\f5da';
+
+  /* replacenavlinks -  rename settings lable and replace icon conversationproviders  */
+  --hlpt-adv-mainnav-replace-conversationproviders-label: 'Conversation Providers';
+  --hlpt-adv-mainnav-replace-conversationproviders-icon: '\\f328';
+  /* replacenavlinks -  rename settings lable and replace icon tags  */
+  --hlpt-adv-mainnav-replace-tags-label: 'Tags';
+  --hlpt-adv-mainnav-replace-tags-icon: '\\f02c';
+  /* replacenavlinks -  rename settings lable and replace icon labs  */
+  --hlpt-adv-mainnav-replace-labs-label: 'Labs';
+  --hlpt-adv-mainnav-replace-labs-icon: '\\e5f1';
+  /* replacenavlinks -  rename settings lable and replace icon auditlogs  */
+  --hlpt-adv-mainnav-replace-auditlogs-label: 'Audit Logs';
+  --hlpt-adv-mainnav-replace-auditlogs-icon: '\\e5d8';
+  /* replacenavlinks -  rename settings lable and replace icon brandboards  */
+  --hlpt-adv-mainnav-replace-brandboards-label: 'Brand Boards';
+  --hlpt-adv-mainnav-replace-brandboards-icon: '\\f53f';
+  /* replacenavlinks -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-companies-label: 'Companies';
+  --hlpt-adv-mainnav-replace-companies-icon: '\\e0cc';
+  /* conversationaisettings -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-conversationaisettings-label: ' Conversation AI';
+  --hlpt-adv-mainnav-replace-conversationaisettings-icon: '\\f544';
+  /* conversationaisettingsv2 -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-conversationaisettingsv2-label: ' Conversation AI V2';
+  --hlpt-adv-mainnav-replace-conversationaisettingsv2-icon: '\\e4a7';
+  /* aiagents -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-aiagents-label: ' AI Agents';
+  --hlpt-adv-mainnav-replace-aiagents-icon: '\\f4fb';
+  /* objects -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-objects-label: ' Objects';
+  --hlpt-adv-mainnav-replace-objects-icon: '\\e49e';
+
+  /* conversationaisettingsv2 -  rename settings lable and replace icon companies  */
+  /* --hlpt-adv-mainnav-replace-conversationaisettingsv2-icon: '\e4a7'; */
+  /* Ai agent -  rename settings lable and replace icon companies  */
+  /* --hlpt-adv-mainnav-replace-aiagent-icon: '\f4fb'; */
+  /* objects -  rename settings lable and replace icon companies  */
+  /* --hlpt-adv-mainnav-replace-objects-icon: '\e49e'; */
+
+
+  /* loading icon height  */
+  --hlpt-adv-loadingicon-size: 70;
+  --custom-loading-icon-height: var(--hlpt-adv-loadingicon-size) !important;
+  --custom-loading-icon-width: 180px !important;
+
+  /* ****************** */
+  /* other assignments */
+  --hlpt-main-green-button-background-color: var(--hlpt-adv-primary-btn-bg-color);
+  --hlpt-main-green-button-border: var(--hlpt-adv-primary-btn-border-color);
+  --hlpt-main-green-button-font-color: var(--hlpt-adv-primary-btn-text-color);
+  --button-radius-continue: var(--hlpt-adv-primary-btn-radius);
+
+  /* new dashboard advanced settings colors */
+  --hlpt-adv-chart-lead-color: #2439d4;
+  --hlpt-adv-chart-open-color: var(--hlpt-adv-chart-lead-color) !important;
+  --hlpt-adv-chart-won-color: #30ca30;
+  --hlpt-adv-chart-lost-color: #c90101;
+  --hlpt-adv-chart-abandoned-color: #ff0000;
+
+  --hlpt-main-orange-color: rgb(223, 146, 3);
+
+  /* dynamic color and width vars for scrollbar */
+  /* --dashboard-scrollbar-thumb-color: var(--hlpt-adv-scrollbarthumb-col);
+  --dashboard-scrollbar-track-color: var(--hlpt-adv-scrollbartrack-col);
+  --dashboard-scrollbar-width: var(--hlpt-adv-scrollbar-width);
+  --dashboard-scrollbar-width-firefox: thin; */
+
+  --hlpt-adv-scrollbarthumb-col: rgba(0, 0, 0, 0.2);
+  --hlpt-adv-scrollbartrack-col: rgba(0, 0, 0, 0);
+  --hlpt-adv-scrollbar-width: 8px;
+  --dashboard-scrollbar-width-firefox: thin;
+  --scrollbar-sidebar-track-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+
+/* loading icon size */
+/* .lds-ring div:nth-child(1) {
+  height: var(--hlpt-adv-loadingicon-size) !important;
+  background: var(--custom-loading-icon) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
+}
+
+#app .hl-loader-container .lds-ring {
+  outline: none !important;
+}
+
+.lds-ring {
+  display: inline-block !important;
+  position: relative !important;
+  width: var(--custom-loading-icon-width) !important;
+  height: var(--custom-loading-icon-height) !important;
+}
+
+.lds-ring div {
+  position: absolute !important;
+  border-radius: 0 !important;
+  background: #fff !important;
+  animation: fadeloader 5s infinite;
+}
+
+#app .hl-loader-container .lds-ring div {
+  border: 0px solid var(--hlpt-primary-theme-color) !important;
+  animation: fadeloader 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite !important;
+  animation-delay: 1.1s !important;
+  border-color: transparent transparent transparent transparent !important;
+}
+
+.lds-ring div:nth-child(2) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(3) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(4) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(5) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(1) {
+  position: absolute !important;
+  width: var(--custom-loading-icon-width) !important;
+  height: var(--custom-loading-icon-height) !important;
+  background-color: transparent !important;
+  background: var(--custom-loading-icon) !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  display: block !important;
+  -webkit-animation: fadeloader 5s infinite !important;
+  -moz-animation: fadeloader 5s infinite !important;
+  animation: fadeloader 5s infinite !important;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeloader {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+} */
+
+/* .app-loader .hl-loader-container .lds-ring {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  border-radius: 500px !important;
+  border: 10px dotted #ff0000 !important;
+} */
+/* 
+.lds-ring div {
+  animation: fadeloader 5s infinite;
+}
+
+#app .hl-loader-container .lds-ring div {
+  border: 0px solid var(--hlpt-primary-theme-color) !important;
+  animation: fadeloader 1.5s cubic-bezier(0.5, 0, 0.5, 1) infinite !important;
+  animation-delay: 1.1s !important;
+  border-color: transparent transparent transparent transparent !important;
+}
+
+.lds-ring div:nth-child(2) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(3) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(4) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(5) {
+  display: none !important;
+}
+
+.lds-ring div:nth-child(1) {
+  background-color: transparent !important;
+  -webkit-animation: fadeloader 5s infinite !important;
+  -moz-animation: fadeloader 5s infinite !important;
+  animation: fadeloader 5s infinite !important;
+}
+
+@keyframes fadeloader {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+} */
+
+/* main hl loading */
+
+#app .overflow-x-hidden::-webkit-scrollbar {
+  outline: none;
+  width: var(--hlpt-adv-scrollbar-width) !important;
+  border-radius: var(--dashboard-form-input-textarea-border-radius) !important;
+}
+
+#app #sidebar-v2 .hl_nav-header::-webkit-scrollbar {
+  width: var(--hlpt-adv-scrollbar-width) !important;
+  outline: none;
+  border-radius: var(--dashboard-form-input-textarea-border-radius) !important;
+}
+
+#app .overflow-x-hidden::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 100px var(--hlpt-adv-scrollbartrack-col) !important;
+}
+
+#app #sidebar-v2 .hl_nav-header::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 100px var(--hlpt-adv-scrollbarthumb-col) !important;
+}
+
+#app .hl_nav-header {
+  scrollbar-color: var(--hlpt-adv-scrollbarthumb-col) var(--hlpt-adv-scrollbartrack-col) !important;
+  scrollbar-width: var(--dashboard-scrollbar-width-firefox) !important;
+}
+
+#app .hl_nav-header::-webkit-scrollbar {
+  width: var(--hlpt-adv-scrollbar-width) !important;
+  border-radius: var(--dashboard-form-input-textarea-border-radius) !important;
+}
+
+#app .hl_nav-header::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 100px var(--hlpt-adv-scrollbartrack-col) !important;
+}
+
+#app .hl_nav-header::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 100px var(--hlpt-adv-scrollbarthumb-col) !important;
+}
+
+#app .hl_nav-header-without-footer {
+  scrollbar-color: var(--hlpt-adv-scrollbarthumb-col) var(--hlpt-adv-scrollbartrack-col) !important;
+  scrollbar-width: var(--dashboard-scrollbar-width-firefox) !important;
+}
+
+#app .hl_nav-header-without-footer::-webkit-scrollbar {
+  width: var(--hlpt-adv-scrollbar-width) !important;
+  border-radius: var(--dashboard-form-input-textarea-border-radius) !important;
+}
+
+#app .hl_nav-header-without-footer::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 100px var(--hlpt-adv-scrollbartrack-col) !important;
+}
+
+#app .hl_nav-header-without-footer::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 100px var(--hlpt-adv-scrollbarthumb-col) !important;
+}
+
+/* body content text color */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_wrapper :not(button .processing-stats),
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_wrapper :not(button.green-btn),
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_wrapper :not(button.n-button.n-button--primary-type.n-button--medium-type) {
+  /* color: var(--hlpt-adv-bodycontent-text-col) !important; */
+  /* color: #ff0000 !important; */
+  outline: none;
+}
+
+/* this is temp to hide the red notification bar */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_error.hl_alert_twilio.text-white.warning {
+  display: none !important;
+  /* outline: none; */
+}
+
+/* this is temporary for checking */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 #sb_divider-1 {
+  background: #00000000 !important;
+  outline: none;
+  opacity: 1 !important;
+}
+
+/* YEXT AND WORDPRESS BANNER */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #yext_promo_and_setup_banners.hidebanner,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #wordpress_promo_banner.hidebanner {
+  display: none !important;
+}
+
+/* profile btn */
+/* original 
+.hl_header div.avatar_img,
+.hl_header div.avatar_img:hover {
+  background-color: #bd9275 !important;
+}
+*/
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img {
+  color: var(--hlpt-adv-profile-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img:hover {
+  color: var(--hlpt-adv-profile-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img {
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img:hover {
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600 {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600:hover {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+}
+
+/* help btn */
+/*
+.hl_header a#hl_header--help-icon,
+.hl_header a#hl_header--help-icon:hover {
+  outline: none;
+  background: #188bf6 !important;
+}
+*/
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon i {
+  color: var(--hlpt-adv-help-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon:hover i {
+  color: var(--hlpt-adv-help-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon {
+  background-color: var(--hlpt-adv-help-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon:hover {
+  background-color: var(--hlpt-adv-help-btn-icon-bg-hover-col) !important;
+}
+
+/* notifications  recent activities toggle  btn */
+/*
+.hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities,
+.hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover,
+.hl_header a#recent_activities-toggle,
+.hl_header a#recent_activities-toggle:hover {
+  outline: none;
+  background-color: #f60 !important;
+  background: #f60 !important;
+  border-color: #f60 !important;
+  color: #fff !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities i {
+  color: var(--hlpt-adv-notification-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover i {
+  color: var(--hlpt-adv-notification-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities {
+  background-color: var(--hlpt-adv-notification-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover {
+  background-color: var(--hlpt-adv-notification-btn-icon-bg-hover-col) !important;
+}
+
+/* viewchangelogs canny_logs-toggle  btn */
+/*
+.hl_header a#canny_logs-toggle,
+.hl_header a#canny_logs-toggle:hover {
+  outline: none;
+  background-color: #036146 !important;
+  border-color: #036146 !important;
+  color: #fff !important;
+} */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .Canny_Badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .Canny_Badge {
+  top: -4px !important;
+  right: -2px !important;
+  border: orange !important;
+  background: orange !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#canny_logs-toggle i {
+  color: var(--hlpt-adv-viewchangelogs-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#canny_logs-toggle:hover i {
+  color: var(--hlpt-adv-viewchangelogs-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#canny_logs-toggle {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#canny_logs-toggle:hover {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-hover-col) !important;
+}
+
+/* phone  btn */
+/*
+.btn.btn-green-dark,
+.btn.btn-green-dark:hover,
+.hl_header span.btn.btn-green-dark,
+.hl_header span.btn.btn-circle.btn-green-lt,
+.hl_header span.btn.btn-green-dark:hover,
+.hl_header span.btn.btn-circle.btn-green-lt:hover {
+  background-color: #27ae60 !important;
+  border-color: #27ae60 !important;
+  color: var(--button-icon-color) !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a .btn.btn-green-dark i {
+  color: var(--hlpt-adv-phone-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a:hover .btn.btn-green-dark i {
+  color: var(--hlpt-adv-phone-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a .btn.btn-green-dark {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a:hover .btn.btn-green-dark {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+}
+
+/* zappychatbot  btn */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--controls a#azFaqCtrl i {
+  color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--controls a#azFaqCtrl:hover i {
+  color: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--controls a#azFaqCtrl {
+  background-color: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--controls a#azFaqCtrl {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--controls a#azFaqCtrl:hover {
+  background-color: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+}
+
+/* guidetour  btn */
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  color: var(--hlpt-adv-guidetour-btn-icon-col) !important;
+  height: 30px !important;
+  margin-top: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover {
+  color: var(--hlpt-adv-guidetour-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  background-color: var(--hlpt-adv-guidetour-btn-icon-bg-col) !important;
+  outline: 1px solid var(--hlpt-adv-guidetour-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover {
+  background-color: var(--hlpt-adv-guidetour-btn-icon-bg-hover-col) !important;
+  outline: 1px solid var(--hlpt-adv-guidetour-btn-icon-bg-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  color: var(--hlpt-adv-guidetour-btn-icon-col) !important;
+}
+
+/* headerbg color gradient with advance degree and percentage stop options */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .container-fluid {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(
+      var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%
+    ),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(
+      var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%
+    ),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg), var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc), var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+} */
+
+/* leftsidebar color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#sidebar-v2.default-bg-color,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2.default-bg-color,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2.default-bg-color {
+  background: var(--hlpt-adv-leftsidebarbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-leftsidebarbgcolor-gradient-deg),
+      var(--hlpt-adv-leftsidebarbgcolor-start-col) var(--hlpt-adv-leftsidebarbgcolor-stop-perc),
+      var(--hlpt-adv-leftsidebarbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-leftsidebarbgcolor-gradient-deg),
+      var(--hlpt-adv-leftsidebarbgcolor-start-col) var(--hlpt-adv-leftsidebarbgcolor-stop-perc),
+      var(--hlpt-adv-leftsidebarbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-leftsidebarbgcolor-gradient-deg),
+      var(--hlpt-adv-leftsidebarbgcolor-start-col) var(--hlpt-adv-leftsidebarbgcolor-stop-perc),
+      var(--hlpt-adv-leftsidebarbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-leftsidebarbgcolor-start-col)', endColorstr='var(--hlpt-adv-leftsidebarbgcolor-end-col)', GradientType=1);
+}
+
+/* bodycontent color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_wrapper {
+  background: var(--hlpt-adv-bodycontent-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-bodycontent-gradient-deg), var(--hlpt-adv-bodycontent-start-col) var(--hlpt-adv-bodycontent-stop-perc), var(--hlpt-adv-bodycontent-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-bodycontent-gradient-deg), var(--hlpt-adv-bodycontent-start-col) var(--hlpt-adv-bodycontent-stop-perc), var(--hlpt-adv-bodycontent-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-bodycontent-gradient-deg), var(--hlpt-adv-bodycontent-start-col) var(--hlpt-adv-bodycontent-stop-perc), var(--hlpt-adv-bodycontent-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-bodycontent-start-col)', endColorstr='var(--hlpt-adv-bodycontent-end-col)', GradientType=1);
+}
+
+/* mainnav - text hover, icon hover, hover-active background colors */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a:hover span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a.active span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a:hover span {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+/* settings */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a:hover {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+/* DOUBLE COLOR FOR LEFT NAV ICONS -GRADIENT */
+/* .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a::before,
+.sidebar-v2-agency #sidebar-v2 a span.h-5.w-5.mr-2 i::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a::before,
+.sidebar-v2-location #sidebar-v2 a span.h-5.w-5.mr-2 i::before {
+  background: linear-gradient(
+    -30deg,
+    var(--hlpt-adv-mainnav-text-hover-color-tint) 0%,
+    var(--hlpt-adv-mainnav-text-hover-color-tint) 34.5%,
+    var(--hlpt-adv-mainnav-text-hover-color-tint) 45%,
+    var(--hlpt-left-nav-icon-color) 45%,
+    var(--hlpt-left-nav-icon-color) 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 a:hover span.h-5.w-5.mr-2 i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 a:hover span.h-5.w-5.mr-2 i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_settings:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_agency-settings:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_settings.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_agency-settings.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 #sb_settings:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 #sb_agency-settings:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 #sb_settings.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 #sb_agency-settings.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a#sb_calendars:hover::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a#sb_calendars.active::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_agency-settings:hover::before {
+  color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon LAUNCHPAD  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_app-media span::after {
+  content: var(--hlpt-adv-mainnav-replace-mediastorage-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_app-media::before {
+  content: var(--hlpt-adv-mainnav-replace-mediastorage-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon LAUNCHPAD  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_launchpad span::after {
+  content: var(--hlpt-adv-mainnav-replace-launchpad-label) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon Season of AI  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ai-employee-promo span::after {
+  content: var(--hlpt-adv-mainnav-replace-aiemployeepromo-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_launchpad::before {
+  content: var(--hlpt-adv-mainnav-replace-launchpad-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ai-employee-promo::before {
+  content: var(--hlpt-adv-mainnav-replace-aiemployeepromo-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon dashboard  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_dashboard span::after {
+  content: var(--hlpt-adv-mainnav-replace-dashboard-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_dashboard::before {
+  content: var(--hlpt-adv-mainnav-replace-dashboard-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon conversations  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversations span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversations-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversations::before {
+  content: var(--hlpt-adv-mainnav-replace-conversations-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon calendars  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_calendars span::after {
+  content: var(--hlpt-adv-mainnav-replace-calendars-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_calendars::before {
+  content: var(--hlpt-adv-mainnav-replace-calendars-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon contacts  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_contacts span::after {
+  content: var(--hlpt-adv-mainnav-replace-contacts-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_contacts::before {
+  content: var(--hlpt-adv-mainnav-replace-contacts-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon opportunities  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_opportunities span::after {
+  content: var(--hlpt-adv-mainnav-replace-opportunities-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_opportunities::before {
+  content: var(--hlpt-adv-mainnav-replace-opportunities-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon payments  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_payments span::after {
+  content: var(--hlpt-adv-mainnav-replace-payments-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_payments::before {
+  content: var(--hlpt-adv-mainnav-replace-payments-icon) !important;
+}
+
+/* aiagents -  rename main nav lable and replace icon aiagents  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] a[id="sb_AI Agents"] span::after {
+  content: var(--hlpt-adv-mainnav-replace-aiagents-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] a[id="sb_AI Agents"]::before {
+  content: var(--hlpt-adv-mainnav-replace-aiagents-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon marketing  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_email-marketing span::after {
+  content: var(--hlpt-adv-mainnav-replace-marketing-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_email-marketing::before {
+  content: var(--hlpt-adv-mainnav-replace-marketing-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon automation  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_automation span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ span::after {
+  content: var(--hlpt-adv-mainnav-replace-automation-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_automation::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_::before {
+  content: var(--hlpt-adv-mainnav-replace-automation-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon sites  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_sites span::after {
+  content: var(--hlpt-adv-mainnav-replace-sites-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_sites::before {
+  content: var(--hlpt-adv-mainnav-replace-sites-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon memberships  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_memberships span::after {
+  content: var(--hlpt-adv-mainnav-replace-memberships-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_memberships::before {
+  content: var(--hlpt-adv-mainnav-replace-memberships-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reputation  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_reputation span::after {
+  content: var(--hlpt-adv-mainnav-replace-reputation-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_reputation::before {
+  content: var(--hlpt-adv-mainnav-replace-reputation-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reporting  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_reporting span::after {
+  content: var(--hlpt-adv-mainnav-replace-reporting-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_reporting::before {
+  content: var(--hlpt-adv-mainnav-replace-reporting-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon app-marketplace  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_app-marketplace span::after {
+  content: var(--hlpt-adv-mainnav-replace-app-marketplace-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_app-marketplace::before {
+  content: var(--hlpt-adv-mainnav-replace-app-marketplace-icon) !important;
+}
+
+/* mobileapp -  rename main nav lable and replace icon mobileapp  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_location-mobile-app span::after {
+  content: var(--hlpt-adv-mainnav-replace-mobileapp-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_location-mobile-app::before {
+  content: var(--hlpt-adv-mainnav-replace-mobileapp-icon) !important;
+}
+
+/* sb_settings */
+/* replacenavlinks -  rename main nav lable and replace icon businessinfo  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_business_info span::after {
+  content: var(--hlpt-adv-mainnav-replace-businessinfo-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_business_info::before {
+  content: var(--hlpt-adv-mainnav-replace-businessinfo-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon companybilling  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_saas-billing span::after {
+  content: var(--hlpt-adv-mainnav-replace-companybilling-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_saas-billing::before {
+  content: var(--hlpt-adv-mainnav-replace-companybilling-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon myprofile  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_profile span::after {
+  content: var(--hlpt-adv-mainnav-replace-myprofile-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_profile::before {
+  content: var(--hlpt-adv-mainnav-replace-myprofile-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon mystaff  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_my-staff span::after {
+  content: var(--hlpt-adv-mainnav-replace-mystaff-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_my-staff::before {
+  content: var(--hlpt-adv-mainnav-replace-mystaff-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pipelines  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_pipeline span::after {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_pipeline::before {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pipelines new */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_Opportunities-Pipelines span::after {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_Opportunities-Pipelines::before {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon calendar  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_nav-header-without-footer #sb_calendars span::after {
+  content: var(--hlpt-adv-mainnav-replace-calendar-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_nav-header-without-footer #sb_calendars::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars span::before {
+  content: var(--hlpt-adv-mainnav-replace-calendar-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon phonenumbers  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_phone-system span::after {
+  content: var(--hlpt-adv-mainnav-replace-phonenumbers-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_phone-system::before {
+  content: var(--hlpt-adv-mainnav-replace-phonenumbers-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon whatsapp  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_whatsapp span::after {
+  content: var(--hlpt-adv-mainnav-replace-whatsapp-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_whatsapp::before {
+  content: var(--hlpt-adv-mainnav-replace-whatsapp-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reputationmanagement  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_reputation-management span::after {
+  content: var(--hlpt-adv-mainnav-replace-reputationmanagement-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_reputation-management::before {
+  content: var(--hlpt-adv-mainnav-replace-reputationmanagement-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon customfields  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_custom-fields-settings span::after {
+  content: var(--hlpt-adv-mainnav-replace-customfields-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_custom-fields-settings::before {
+  content: var(--hlpt-adv-mainnav-replace-customfields-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon customvalues  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_custom-values span::after {
+  content: var(--hlpt-adv-mainnav-replace-customvalues-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_custom-values::before {
+  content: var(--hlpt-adv-mainnav-replace-customvalues-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon managescoring  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_manage-scoring span::after {
+  content: var(--hlpt-adv-mainnav-replace-managescoring-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_manage-scoring::before {
+  content: var(--hlpt-adv-mainnav-replace-managescoring-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon domains  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_domains span::after {
+  content: var(--hlpt-adv-mainnav-replace-domains-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_domains::before {
+  content: var(--hlpt-adv-mainnav-replace-domains-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon externaltracking  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_external-tracking span::after {
+  content: var(--hlpt-adv-mainnav-replace-externaltracking-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_external-tracking::before {
+  content: var(--hlpt-adv-mainnav-replace-externaltracking-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon domains  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_domains-urlRedirects span::after {
+  content: var(--hlpt-adv-mainnav-replace-domains-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_domains-urlRedirects::before {
+  content: var(--hlpt-adv-mainnav-replace-domains-icon) !important;
+}
+
+
+
+
+/* replacenavlinks -  rename main nav lable and replace icon media  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_media span::after {
+  content: var(--hlpt-adv-mainnav-replace-media-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_media::before {
+  content: var(--hlpt-adv-mainnav-replace-media-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon urlredirects  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_url-redirects span::after {
+  content: var(--hlpt-adv-mainnav-replace-urlredirects-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_url-redirects::before {
+  content: var(--hlpt-adv-mainnav-replace-urlredirects-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon integrations  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_integrations span::after {
+  content: var(--hlpt-adv-mainnav-replace-integrations-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_integrations::before {
+  content: var(--hlpt-adv-mainnav-replace-integrations-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pintegrations  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_undefined span::after {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_undefined::before {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pintegrations  */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] a[id^="sb_common.sidebar.privateIntegrations"] span::after {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] a[id^="sb_common.sidebar.privateIntegrations"]::before {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-icon) !important;
+} */
+
+
+
+/* replacenavlinks -  rename main nav lable and replace icon pintegrations  */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] a[id^="sb_common.sidebar.privateIntegrations"] span::after {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] a[id^="sb_common.sidebar.privateIntegrations"]::before {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-icon) !important;
+} */
+
+/* replacenavlinks -  rename main nav lable and replace icon brandboards  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_brand-boards span::after {
+  content: var(--hlpt-adv-mainnav-replace-brandboards-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_brand-boards::before {
+  content: var(--hlpt-adv-mainnav-replace-brandboards-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon emailservices  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_location-email-services span::after {
+  content: var(--hlpt-adv-mainnav-replace-emailservices-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_location-email-services::before {
+  content: var(--hlpt-adv-mainnav-replace-emailservices-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_knowledge-base-settings::before {
+  content: var(--hlpt-adv-mainnav-replace-knowledgebase-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon conversationproviders  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversations_providers span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversationproviders-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversations_providers::before {
+  content: var(--hlpt-adv-mainnav-replace-conversationproviders-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon tags  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_tags span::after {
+  content: var(--hlpt-adv-mainnav-replace-tags-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_tags::before {
+  content: var(--hlpt-adv-mainnav-replace-tags-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon labs  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_labs span::after {
+  content: var(--hlpt-adv-mainnav-replace-labs-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_labs::before {
+  content: var(--hlpt-adv-mainnav-replace-labs-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon auditlogs  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_audit-logs-location span::after {
+  content: var(--hlpt-adv-mainnav-replace-auditlogs-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_audit-logs-location::before {
+  content: var(--hlpt-adv-mainnav-replace-auditlogs-icon) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon companies  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_business-settings-v2 span::after {
+  content: var(--hlpt-adv-mainnav-replace-companies-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_business-settings-v2::before {
+  content: var(--hlpt-adv-mainnav-replace-companies-icon) !important;
+}
+
+/* conversationaisettings -  rename main nav lable and replace icon conversationaisettings  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversationaisettings-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings::before {
+  content: var(--hlpt-adv-mainnav-replace-conversationaisettings-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings span {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+/* conversationaisettings -  rename main nav lable and replace icon conversationaisettings  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_knowledge-base-settings span::after {
+  content: var(--hlpt-adv-mainnav-replace-knowledgebase-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_knowledge-base-settings::before {
+  content: var(--hlpt-adv-mainnav-replace-knowledgebase-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_knowledge-base-settings span {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+
+/* conversationaisettingsv2 -  rename main nav lable and replace icon conversationaisettingsv2  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings_v2 span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversationaisettingsv2-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings_v2::before {
+  content: var(--hlpt-adv-mainnav-replace-conversationaisettingsv2-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings_v2 span {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+/* aiagents -  rename main nav lable and replace icon aiagents  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ai_agent_settings span::after {
+  content: var(--hlpt-adv-mainnav-replace-aiagents-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ai_agent_settings::before {
+  content: var(--hlpt-adv-mainnav-replace-aiagents-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ai_agent_settings span {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] a[id="sb_AI Agents"] span {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+/* objects -  rename main nav lable and replace icon objects  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_objects span::after {
+  content: var(--hlpt-adv-mainnav-replace-objects-label) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_objects::before {
+  content: var(--hlpt-adv-mainnav-replace-objects-icon) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_objects span {
+  margin-left: 0px;
+  margin-top: 5px;
+}
+
+/* this css appy to hl theme directly not customizer just to check the UI we may need to remove this later  for sure. to make the cleanwhite new theme as while frost white or crystal clear*/
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location .hl_wrapper {
+  box-shadow: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .default-bg-color,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2.default-bg-color {
+  box-shadow: 0 0 1.5rem 0 rgba(136, 152, 170, 0.1) !important;
+  z-index: 99 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .md\:hidden.lg\:block.xl\:block.absolute.-right-2.bottom-5.z-50 {
+  bottom: unset !important;
+  top: 15px !important;
+  z-index: 9 !important;
+  right: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_collapse-button,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_collapse-button {
+  background: none !important;
+  color: var(--hlpt-left-nav-color) !important;
+  margin-bottom: 9px !important;
+  font-size: 23px !important;
+  rotate: -90deg;
+  padding: 2px !important;
+  border: 0px solid #e2e2e2;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_collapse-button::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_collapse-button::before {
+  content: '\f68e' !important;
+  top: -5px !important;
+  position: relative;
+  color: var(--hlpt-left-nav-color) !important;
+  right: -5px !important;
+  font-family: 'Font Awesome 6 Pro' !important;
+}
+
+.flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars:hover::before,
+.hl_nav-header-without-footer nav #sb_calendars:hover::before,
+.hl_nav-header-without-footer nav #sb_calendars span:hover::before {
+  color: var(--hlpt-left-nav-color) !important;
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+/* content body */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .min-w-full.divide-y.divide-gray-200.h-full.w-full.main-table.table-fixed {
+  background-color: #fff !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button-temp {
+  color: var(--hlpt-adv-bodycontent-text-col) !important;
+}
+
+/* bodycontent - h1 and h2 color and size  */
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app h1:not(#dashboard-customizer-panel h1),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .launchpad-title p:not(#dashboard-customizer-panel p),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .launchpad-title p::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad .launchpad-title p::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad .launchpad-title p:not(#dashboard-customizer-panel p) {
+  color: var(--hlpt-adv-bodycontent-h1-text-col) !important;
+  font-size: var(--hlpt-adv-bodycontent-h1-text-size) !important;
+  line-height: auto !important;
+  font-weight: 800 !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app h1:not(#dashboard-customizer-panel h1):not(#child_app):not(#child_app *),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .launchpad-title p:not(#dashboard-customizer-panel p):not(#child_app):not(#child_app *),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .launchpad-title p::after:not(#child_app):not(#child_app *),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad .launchpad-title p::after:not(#child_app):not(#child_app *),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad .launchpad-title p:not(#dashboard-customizer-panel p):not(#child_app):not(#child_app *) {
+
+  color: var(--hlpt-adv-bodycontent-h1-text-col) !important;
+  font-size: var(--hlpt-adv-bodycontent-h1-text-size) !important;
+  line-height: auto !important;
+  font-weight: 800 !important;
+}
+
+
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app section.hl_wrapper.hl_without-topbar .card-header h2,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_allphonenumber--container.hl_without-topbar h2,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_without-topbar .hl_wrapper-text-widget--root .header h4,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #ads-title,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #review-link h3,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_controls .hl_controls--left h2,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_controls .hl_controls--left h3,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_settings--controls h2,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_settings--controls-left h2,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #customers .text-2xl.font-light.text-gray-600.mb-3.hl_contact-restore,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_topbar-tabs.hl_without-topbar h2,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #smartlists div.hl_controls.hl_smartlists--controls h3,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl-header-content .hl-title-container .title.hl-display-sm-medium,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_without-topbar .font-semibold.text-2xl.text-gray-700 {
+  color: var(--hlpt-adv-bodycontent-h2-text-col) !important;
+  font-size: var(--hlpt-adv-bodycontent-h2-text-size) !important;
+  line-height: auto !important;
+  font-weight: 700 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] {
+  /* color: var(--hlpt-adv-bodycontent-h2-text-col) !important;
+  font-size: var(--hlpt-adv-bodycontent-h2-text-size) !important;
+  line-height: auto !important; */
+  outline: none;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body #app a:hover span .sidebar-v2-agency,
+body #app a.active span .sidebar-v2-agency,
+body #app #sidebar-v2 .hl_nav-header nav a.active span,
+body #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app #sidebar-v2 nav a:hover span i::before,
+body #app #sidebar-v2 nav a.active span i::before,
+body #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-primary-theme-color) !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a:hover span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.active span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a#sb_calendars.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a#sb_calendars:hover span::after,
+/* settings locations */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a#hl_nav-settings:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a#hl_nav-settings.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_agency-settings:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_agency-settings.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a.active span::after {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  outline: none;
+}
+
+/* left side bar icon hover color */
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+/* settings */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-settings nav a:hover::before {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i {
+  --fa-primary-color: var(--hlpt-primary-theme-color) !important;
+  opacity: 1 !important;
+}
+
+/* body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-primary-theme-color) !important;
+  opacity: 1 !important;
+} */
+
+body #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+/* 
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+} */
+
+/* left side bar icon hover color */
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+/* BUTTONS */
+
+/* PRIMARY BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .agency-dash .processing-stats,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .green-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .n-button.n-button--primary-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a.btn.btn-primary.btn-sched,
+body[data-hlpt-tsg='hlpt-advanced-settings'] section.hl_wrapper.hl_topbar-tabs button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-select__BV_toggle_,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-filters__BV_toggle_,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle_,
+body[data-hlpt-tsg='hlpt-advanced-settings'] section#calender-v2 button.btn.btn-light.btn-sm,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-prev,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-next,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#send_review_request_btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.hl-table-button.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-success,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_billing--method button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.btn.add-balance,
+body[data-hlpt-tsg='hlpt-advanced-settings'] span.btn.btn-primary.btn-keep-height,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_save_btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#smsChangePhoto,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#sms_settings_save,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.w-full.justify-center.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white.bg-curious-blue-500.hover\:bg-curious-blue-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-600,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-intSettings__btn--connect-shopify,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#emil_settings_save,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-form-builder__btn--refresh-data,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper.hl_topbar-tabs section#smartlists.hl_wrapper--inner>div.hl_controls.hl_smartlists--controls .hl_controls--right button#hl_smartlists--filter-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .globalSearchModal .flex.flex-row.w-full.items-center.py-2\.5.px-2\.5.cursor-pointer.active.bg-curious-blue-100,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #clone-funnel-step-current-funnel-button,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button#payments__btn--save-paypal-live,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button#payments__btn--save-paypal-sandbox,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #share.n-button--primary-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #preview-page.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #edit-page.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 .flex.flex-row.gap-2.bg-primary-600.text-white.px-2.rounded-2xl.py-\[2px\].items-center.text-\[12px\].font-semibold,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #add-record-btn {
+  background: var(--hlpt-adv-primary-btn-bg-color) !important;
+  border-color: var(--hlpt-adv-primary-btn-border-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-primary-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .n-button--primary-type:hover {
+  border-color: var(--hlpt-adv-primary-btn-border-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .agency-dash .processing-stats:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .green-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a.btn.btn-primary.btn-sched:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] section.hl_wrapper.hl_topbar-tabs button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-filters__BV_toggle_:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle_:hover body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-select__BV_toggle_:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-prev:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-next:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#send_review_request_btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.hl-table-button.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-success:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_billing--method button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.btn.add-balance:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] span.btn.btn-primary.btn-keep-height:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_save_btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#smsChangePhoto:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#sms_settings_save:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.w-full.justify-center.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white.bg-curious-blue-500.hover\:bg-curious-blue-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-600:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-intSettings__btn--connect-shopify:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#emil_settings_save:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-form-builder__btn--refresh-data,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper.hl_topbar-tabs section#smartlists.hl_wrapper--inner>div.hl_controls.hl_smartlists--controls .hl_controls--right button#hl_smartlists--filter-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .n-button.n-button--primary-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #funnel-website-btn-primary.n-button.n-button--primary-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .globalSearchModal .flex.flex-row.w-full.items-center.py-2\.5.px-2\.5.cursor-pointer.active.bg-curious-blue-100:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #clone-funnel-step-current-funnel-button:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button#payments__btn--save-paypal-live:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button#payments__btn--save-paypal-sandbox:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #share.n-button--primary-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #preview-page.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #edit-page.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery:hover .feature-discovery-main-container .bg-primary-50 .flex.flex-row.gap-2.bg-primary-600.text-white.px-2.rounded-2xl.py-\[2px\].items-center.text-\[12px\].font-semibold,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #add-record-btn:hover {
+  background: var(--hlpt-adv-primary-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-primary-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-primary-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .n-button--primary-type:hover {
+  border-color: var(--hlpt-adv-primary-btn-border-hover-color) !important;
+}
+
+/* SECONDARY BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #funnel-website-btn-secondary.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #forms-btn-secondary.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #surveys-btn-secondary.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-outline-primary {
+  background: var(--hlpt-adv-secondary-btn-bg-color) !important;
+  color: var(--hlpt-adv-secondary-btn-text-color) !important;
+  border-color: var(--hlpt-adv-secondary-btn-border-color) !important;
+  border-radius: var(--hlpt-adv-secondary-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #funnel-website-btn-secondary.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #forms-btn-secondary.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #surveys-btn-secondary.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-outline-primary:hover {
+  background: var(--hlpt-adv-secondary-btn-bg-hover-color) !important;
+  color: var(--hlpt-adv-secondary-btn-text-hover-color) !important;
+  border-color: var(--hlpt-adv-secondary-btn-border-hover-color) !important;
+  border-radius: var(--hlpt-adv-secondary-btn-radius) !important;
+}
+
+/* DEFAULT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.h-\[44px\].ml-auto.cursor-pointer.\[border\:1px_solid_\#155eef\].p-\[10px_18px\].bg-\[\#155EEF\].rounded-\[8px\].shadow-\[0px_1px_2px_rgba\(16\,_24\,_40\,_0\.05\)\].box-border.overflow-hidden.flex.flex-row.items-center.justify-center.gap-\[8px\],
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-\[\#155EEF\],
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#pg-funnel-pages__btn-funnel-control-page-import,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper .hl_wrapper--inner.hl_funnels .container-fluid .tab-content div#steps-tab .hl_funnels--steps .hl_funnels--card .hl_funnels--card-main .tab-content div#overview-tab .hl_funnels--overview .row.hl_funnels-steps-pages .control-block>.steps-item--image .import-funnel-website-wrapper a.btn-primary,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#visit-funnel-url {
+  background: var(--hlpt-adv-default-btn-bg-color) !important;
+  color: var(--hlpt-adv-default-btn-text-color) !important;
+  border-color: var(--hlpt-adv-default-btn-border-color) !important;
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#preview-link .n-button__content {
+  color: var(--hlpt-adv-default-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button.h-\[44px\].ml-auto.cursor-pointer.\[border\:1px_solid_\#155eef\].p-\[10px_18px\].bg-\[\#155EEF\].rounded-\[8px\].shadow-\[0px_1px_2px_rgba\(16\,_24\,_40\,_0\.05\)\].box-border.overflow-hidden.flex.flex-row.items-center.justify-center.gap-\[8px\]:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-\[\#155EEF\]:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#pg-funnel-pages__btn-funnel-control-page-import:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper .hl_wrapper--inner.hl_funnels .container-fluid .tab-content div#steps-tab .hl_funnels--steps .hl_funnels--card .hl_funnels--card-main .tab-content div#overview-tab .hl_funnels--overview .row.hl_funnels-steps-pages .control-block>.steps-item--image .import-funnel-website-wrapper a.btn-primary:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#visit-funnel-url:hover {
+  background: var(--hlpt-adv-default-btn-bg-hover-color) !important;
+  color: var(--hlpt-adv-default-btn-text-hover-color) !important;
+  border-color: var(--hlpt-adv-default-btn-border-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#preview-link:hover .n-button__content {
+  color: var(--hlpt-adv-default-btn-text-hover-color) !important;
+}
+
+/* DEFAULT LIGHT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-curious-blue-100,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-blue-600,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.btn.outline-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper .hl_wrapper--inner.hl_funnels .container-fluid .tab-content div#steps-tab .hl_funnels--steps .hl_funnels--card .hl_funnels--card-main .tab-content div#overview-tab .hl_funnels--overview .row.hl_funnels-steps-pages .control-block>.steps-item--image .import-funnel-website-wrapper a.outline-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app span.flex.justify-center.items-center.font-medium.py-1.ml-2.px-2.text-white.rounded-full.bg-blue-600.border.border-blue-700,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.flex.cursor-pointer.sort-option.inline-flex.items-center.px-2\.5.py-0\.5.border.border-transparent.text-xs.font-medium.rounded.shadow-sm.text-white.bg-blue-600,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#preview-link,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .sidebar-v2-location .new-channel-bar .nav-item .nav-link.active {
+  background: var(--hlpt-adv-default-light-btn-bg-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#preview-link .n-button__content {
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-curious-blue-100:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .bg-blue-600:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.btn.outline-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper .hl_wrapper--inner.hl_funnels .container-fluid .tab-content div#steps-tab .hl_funnels--steps .hl_funnels--card .hl_funnels--card-main .tab-content div#overview-tab .hl_funnels--overview .row.hl_funnels-steps-pages .control-block>.steps-item--image .import-funnel-website-wrapper a.outline-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app span.flex.justify-center.items-center.font-medium.py-1.ml-2.px-2.text-white.rounded-full.bg-blue-600.border.border-blue-700:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.flex.cursor-pointer.sort-option.inline-flex.items-center.px-2\.5.py-0\.5.border.border-transparent.text-xs.font-medium.rounded.shadow-sm.text-white.bg-blue-600:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#preview-link:hover,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .sidebar-v2-location .new-channel-bar .nav-item .nav-link.active:hover {
+  background: var(--hlpt-adv-default-light-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage button#preview-link:hover .n-button__content {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+/* 
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span.left-nav-icon i {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+} */
+
+/* REMOVE RENAME LEFT NAV ITEMS FOR TRANSLATIONS */
+#dashboard-customizer-panel .rename-deactivate {
+  display: block;
+}
+
+#sb_app-media span,
+#sb_launchpad span,
+#sb_ai-employee-promo span,
+#sb_dashboard span,
+#sb_conversations span,
+#sb_calendars span,
+#sb_contacts span,
+#sb_opportunities span,
+#sb_payments span,
+#sb_email-marketing span,
+#sb_automation span,
+#sb_sites span,
+#sb_memberships span,
+#sb_reputation span,
+#sb_reporting span,
+#sb_app-marketplace span,
+
+#sb_location-mobile-app span,
+/* #sb_settings span, */
+#sb_business_info span,
+#sb_saas-billing span,
+#sb_profile span,
+#sb_my-staff span,
+#sb_pipeline span,
+#sb_Opportunities-Pipelines span,
+#sb_calendars span,
+#sb_conversation_ai_settings span,
+#sb_conversation_ai_settings_v2 span,
+#sb_ai_agent_settings span,
+a[id="sb_AI Agents"] span,
+#sb_objects span,
+#sb_phone-system span,
+#sb_whatsapp span,
+#sb_reputation-management span,
+#sb_custom-fields-settings span,
+#sb_custom-values span,
+#sb_manage-scoring span,
+#sb_domains span,
+#sb_domains-urlRedirects span,
+#sb_media span,
+#sb_url-redirects span,
+#sb_integrations span,
+#sb_undefined span,
+a[id^="sb_common.sidebar.privateIntegrations"] span,
+a[id^="sb_common.sidebar.lcIntegrations"] span,
+#sb_brand-boards span,
+#sb_tags span,
+#sb_location-email-services span,
+#sb_conversations_providers span,
+#sb_audit-logs-location span,
+#sb_business-settings-v2 span,
+#sb_external-tracking span {
+  font-size: unset !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_app-media span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_launchpad span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_ai-employee-promo span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_dashboard span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_conversations span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_calendars span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_contacts span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_opportunities span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_payments span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_email-marketing span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_automation span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_ span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_sites span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_memberships span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_reputation span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_reporting span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_app-marketplace span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_location-mobile-app span,
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_settings span, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_business_info span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_saas-billing span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_profile span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_my-staff span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_pipeline span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_Opportunities-Pipelines span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_calendars span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_conversation_ai_settings span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_conversation_ai_settings_v2 span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_ai_agent_settings span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a[id="sb_AI Agents"] span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_objects span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_phone-system span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_whatsapp span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_reputation-management span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_custom-fields-settings span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_custom-values span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_manage-scoring span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_domains span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_domains-urlRedirects span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_media span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_url-redirects span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_integrations span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_undefined span,
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app a[id^="sb_common.sidebar.privateIntegrations"] span, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_brand-boards span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_tags span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_labs span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_location-email-services span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_conversations_providers span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_audit-logs-location span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_business-settings-v2 span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_external-tracking span {
+  font-size: 0 !important;
+}
+
+/* NEW FILE  TO DEACTIVE RENAME LEFT NAV */
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_app-media span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_launchpad span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_ai-employee-promo span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_dashboard span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_conversations span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_calendars span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_contacts span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_opportunities span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_payments span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_email-marketing span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_automation span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_ span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_sites span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_memberships span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_reputation span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_reporting span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_app-marketplace span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_location-mobile-app span,
+/* body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_settings span, */
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_business_info span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_saas-billing span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_profile span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_my-staff span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_pipeline span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_Opportunities-Pipelines span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_calendars span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_conversation_ai_settings span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_conversation_ai_settings_v2 span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_ai_agent_settings span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app a[id="sb_AI Agents"] span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_objects span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_phone-system span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_whatsapp span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_reputation-management span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_custom-fields-settings span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_custom-values span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_manage-scoring span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_domains span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_domains-urlRedirects span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_media span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_url-redirects span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_integrations span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_undefined span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app a[id^="sb_common.sidebar.privateIntegrations"] span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app a[id^="sb_common.sidebar.lcIntegrations"] span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_brand-boards span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_tags span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_labs span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_location-email-services span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_conversations_providers span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_audit-logs-location span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_business-settings-v2 span,
+body[data-hlpt-tsgl='hlpt-e-lang'] #app #sb_external-tracking span {
+  font-size: 0.875rem !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon LAUNCHPAD  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_app-media span::after {
+  content: var(--hlpt-adv-mainnav-replace-mediastorage-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon LAUNCHPAD  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_launchpad span::after {
+  content: var(--hlpt-adv-mainnav-replace-launchpad-label) !important;
+  display: none !important;
+}
+
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_ai-employee-promo span::after {
+  content: var(--hlpt-adv-mainnav-replace-aiemployeepromo-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon dashboard  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_dashboard span::after {
+  content: var(--hlpt-adv-mainnav-replace-dashboard-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon conversations  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_conversations span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversations-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon calendars  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_calendars span::after {
+  content: var(--hlpt-adv-mainnav-replace-calendars-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon contacts  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_contacts span::after {
+  content: var(--hlpt-adv-mainnav-replace-contacts-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon opportunities  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_opportunities span::after {
+  content: var(--hlpt-adv-mainnav-replace-opportunities-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon payments  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_payments span::after {
+  content: var(--hlpt-adv-mainnav-replace-payments-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon marketing  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_email-marketing span::after {
+  content: var(--hlpt-adv-mainnav-replace-marketing-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon automation  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_automation span::after,
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_ span::after {
+  content: var(--hlpt-adv-mainnav-replace-automation-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon sites  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_sites span::after {
+  content: var(--hlpt-adv-mainnav-replace-sites-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon memberships  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_memberships span::after {
+  content: var(--hlpt-adv-mainnav-replace-memberships-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reputation  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_reputation span::after {
+  content: var(--hlpt-adv-mainnav-replace-reputation-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reporting  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_reporting span::after {
+  content: var(--hlpt-adv-mainnav-replace-reporting-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reporting  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_app-marketplace span::after {
+  content: var(--hlpt-adv-mainnav-replace-app-marketplace-label) !important;
+  display: none !important;
+}
+
+/* mobileapp -  rename main nav lable and replace icon mobileapp  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_location-mobile-app span::after {
+  content: var(--hlpt-adv-mainnav-replace-mobileapp-label) !important;
+  display: none !important;
+}
+
+/* sb_settings */
+/* replacenavlinks -  rename main nav lable and replace icon businessinfo  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_business_info span::after {
+  content: var(--hlpt-adv-mainnav-replace-businessinfo-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon companybilling  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_saas-billing span::after {
+  content: var(--hlpt-adv-mainnav-replace-companybilling-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon myprofile  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_profile span::after {
+  content: var(--hlpt-adv-mainnav-replace-myprofile-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon mystaff  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_my-staff span::after {
+  content: var(--hlpt-adv-mainnav-replace-mystaff-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pipelines  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_pipeline span::after {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pipelines  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_Opportunities-Pipelines span::after {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon calendar  */
+body[data-hlpt-tsgl='hlpt-e-lang'] .hl_nav-header-without-footer #sb_calendars span::after {
+  content: var(--hlpt-adv-mainnav-replace-calendar-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon phonenumbers  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_phone-system span::after {
+  content: var(--hlpt-adv-mainnav-replace-phonenumbers-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon whatsapp  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_whatsapp span::after {
+  content: var(--hlpt-adv-mainnav-replace-whatsapp-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon reputationmanagement  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_reputation-management span::after {
+  content: var(--hlpt-adv-mainnav-replace-reputationmanagement-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon customfields  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_custom-fields-settings span::after {
+  content: var(--hlpt-adv-mainnav-replace-customfields-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon customvalues  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_custom-values span::after {
+  content: var(--hlpt-adv-mainnav-replace-customvalues-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon managescoring  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_manage-scoring span::after {
+  content: var(--hlpt-adv-mainnav-replace-managescoring-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon domains  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_domains span::after {
+  content: var(--hlpt-adv-mainnav-replace-domains-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon sb_domains-urlRedirects  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_domains-urlRedirects span::after {
+  content: var(--hlpt-adv-mainnav-replace-domains-label) !important;
+  display: none !important;
+}
+
+
+
+/* replacenavlinks -  rename main nav lable and replace icon media  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_media span::after {
+  content: var(--hlpt-adv-mainnav-replace-media-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon urlredirects  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_url-redirects span::after {
+  content: var(--hlpt-adv-mainnav-replace-urlredirects-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon integrations  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_integrations span::after {
+  content: var(--hlpt-adv-mainnav-replace-integrations-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pintegrations  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_undefined span::after {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon pintegrations  */
+body[data-hlpt-tsgl='hlpt-e-lang'] a[id^="sb_common.sidebar.privateIntegrations"] span::after {
+  content: var(--hlpt-adv-mainnav-replace-pintegrations-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon integrations  */
+body[data-hlpt-tsgl='hlpt-e-lang'] a[id^="sb_common.sidebar.lcIntegrations"] span::after {
+  content: var(--hlpt-adv-mainnav-replace-integrations-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon brandboards  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_brand-boards span::after {
+  content: var(--hlpt-adv-mainnav-replace-brandboards-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon emailservices  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_location-email-services span::after {
+  content: var(--hlpt-adv-mainnav-replace-emailservices-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon conversationproviders  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_conversations_providers span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversationproviders-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon tags  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_tags span::after {
+  content: var(--hlpt-adv-mainnav-replace-tags-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon labs  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_labs span::after {
+  content: var(--hlpt-adv-mainnav-replace-labs-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon auditlogs  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_audit-logs-location span::after {
+  content: var(--hlpt-adv-mainnav-replace-auditlogs-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon companies  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_business-settings-v2 span::after {
+  content: var(--hlpt-adv-mainnav-replace-companies-label) !important;
+  display: none !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon externaltracking  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_external-tracking span::after {
+  content: var(--hlpt-adv-mainnav-replace-externaltracking-label) !important;
+  display: none !important;
+}
+
+/* conversationaisettings -  rename main nav lable and replace icon conversationaisettings  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_conversation_ai_settings span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversationaisettings-label) !important;
+  display: none !important;
+}
+
+/* conversationaisettingsv2 -  rename main nav lable and replace icon conversationaisettingsv2  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_conversation_ai_settings_v2 span::after {
+  content: var(--hlpt-adv-mainnav-replace-conversationaisettingsv2-label) !important;
+  display: none !important;
+}
+
+/* aiagents -  rename main nav lable and replace icon aiagents  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_ai_agent_settings span::after,
+body[data-hlpt-tsgl='hlpt-e-lang'] a[id="sb_AI Agents"] span::after {
+  content: var(--hlpt-adv-mainnav-replace-aiagents-label) !important;
+  display: none !important;
+}
+
+/* objects -  rename main nav lable and replace icon objects  */
+body[data-hlpt-tsgl='hlpt-e-lang'] #sb_objects span::after {
+  content: var(--hlpt-adv-mainnav-replace-objects-label) !important;
+  display: none !important;
+}
+
+body[data-hlpt-tsgl='hlpt-e-lang'] #dashboard-customizer-panel .rename-deactivate {
+  display: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.flex.cursor-pointer.sort-option.inline-flex.items-center.px-2\.5.py-0\.5.border.border-transparent.text-xs.font-medium.rounded.shadow-sm.text-white.bg-blue-600 {
+  background: var(--hlpt-adv-default-light-btn-bg-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.flex.cursor-pointer.sort-option.inline-flex.items-center.px-2\.5.py-0\.5.border.border-transparent.text-xs.font-medium.rounded.shadow-sm.text-white.bg-blue-600:hover {
+  background: var(--hlpt-adv-default-light-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.flex.cursor-pointer.sort-option.inline-flex.items-center.px-2\.5.py-0\.5.border.border-transparent.text-xs.font-medium.rounded.shadow-sm.text-white.bg-blue-600 {
+  /* background: var(--hlpt-adv-primary-btn-bg-color) !important; */
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+/* replacenavlinks -  rename main nav lable and replace icon whatsapp  */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_whatsapp span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_labs span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_brand-boards span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_knowledge-base-settings span.hl_new_badge::after {
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_conversation_ai_settings_v2 span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_ai_agent_settings span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a[id="sb_AI Agents"] span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_objects span.hl_new_badge::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_knowledge-base-settings span.hl_new_badge::after {
+  display: none !important;
+}
+
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_whatsapp span~span.hl_new_badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_labs span~span.hl_new_badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_brand-boards span~span.hl_new_badge,
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_conversation_ai_settings_v2 span~span.hl_new_badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_ai_agent_settings span~span.hl_new_badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a[id="sb_AI Agents"] span~span.hl_new_badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_objects span~span.hl_new_badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_knowledge-base-settings span~span.hl_new_badge {
+  font-size: 10px !important;
+  position: relative !important;
+  left: 8px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app section.hl_wrapper.hl_without-topbar div#location-dashboard .hl-card-header .truncate.mr-2 .text-gray-900.hl-text-md-medium {
+  color: var(--hlpt-adv-bodycontent-h2-text-col) !important;
+  font-size: var(--hlpt-adv-bodycontent-h2-text-size) !important;
+  line-height: auto !important;
+  font-weight: 700 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #navigation-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #clone-funnel-step.n-button--default-type:not(.icon-only):not(.hl-active-btn) {
+  background: var(--hlpt-adv-primary-btn-bg-color) !important;
+  border-color: var(--hlpt-adv-primary-btn-border-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-primary-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #navigation-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #clone-funnel-step.n-button--default-type:not(.icon-only):not(.hl-active-btn):hover {
+  background: var(--hlpt-adv-primary-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-primary-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-primary-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #navigation-btn svg {
+  stroke: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #navigation-btn:hover svg {
+  stroke: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_app-media span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_launchpad span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_ai-employee-promo span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_dashboard span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_conversations span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_calendars span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_contacts span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_opportunities span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_payments span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_email-marketing span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_automation span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_ span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_sites span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_memberships span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_reputation span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_reporting span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_app-marketplace span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sb_location-mobile-app span {
+  margin-top: 5px !important;
+}
+
+#smartlists .hl_controls.hl_smartlists--controls .hl_controls--left .bulk-actions-list {
+  display: flex !important;
+}
+
+/* settings calendar settings */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars span::before {
+  color: var(--hlpt-adv-mainnav-icon-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars:hover span::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars.active:hover span::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars.active span::before {
+  color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a .hide-menu-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a .hide-menu-icon i {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #preview-link .n-button__content {
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #step-container .bg-emerald-100,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #step-container .bg-emerald-100:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnel-url-info,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnel-url-info:hover {
+  background: var(--hlpt-adv-primary-btn-bg-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #clone-funnel-step-current-funnel-button span svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #FormSubmissions #refresh_button .n-button__content svg.h-5.w-5,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #SurveySubmissions #refresh_button .n-button__content svg.h-5.w-5 {
+  stroke: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #step-container .stroke-green-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #step-container .stroke-green-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnel-url-info span svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnel-url-info:hover span svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #clone-funnel-step-current-funnel-button:hover span svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #FormSubmissions #refresh_button:hover .n-button__content svg.h-5.w-5,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #SurveySubmissions #refresh_button:hover .n-button__content svg.h-5.w-5 {
+  stroke: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #share.n-button--primary-type svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #preview-page.n-button.n-button--default-type.n-button--medium-type svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #edit-page.n-button.n-button--default-type.n-button--medium-type svg {
+  stroke: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #share.n-button--primary-type:hover svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #preview-page.n-button.n-button--default-type.n-button--medium-type:hover svg,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #funnels-steps #FunnelDetailPage #edit-page.n-button.n-button--default-type.n-button--medium-type:hover svg {
+  stroke: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+}
+
+/* bug fixed 07-03-2024 */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem:hover span~div a span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active:hover span~div a span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active span~div a span {
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+  font-weight: normal !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem span~div a span:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active span~div a span:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active span~div a.active span {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+/* primary button elements fixed */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #bookAppointment .h-4.w-4.text-white,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_smartlists--filter-btn .icon.--blue.icon-settings-2::before {
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #bookAppointment:hover .h-4.w-4.text-white,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_smartlists--filter-btn:hover .icon.--blue.icon-settings-2::before {
+  color: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+}
+
+/* what's new calendar updates header new added elems styles */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .n-badge {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 .text-primary-700 {
+  color: var(--hlpt-adv-primary-btn-bg-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 {
+  background-color: #fff !important;
+  border: 1px solid #fff !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 .flex.flex-row.gap-2.bg-primary-600.text-white.px-2.rounded-2xl.py-\[2px\].items-center.text-\[12px\].font-semibold,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery:hover .feature-discovery-main-container .bg-primary-50 .flex.flex-row.gap-2.bg-primary-600.text-white.px-2.rounded-2xl.py-\[2px\].items-center.text-\[12px\].font-semibold {
+  border-radius: 50px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery {
+  margin-right: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery .feature-discovery-main-container .bg-primary-50 {
+  border-color: var(--hlpt-adv-primary-btn-bdr-color) !important;
+}
+
+/* bug fixed for won and abandom 01-04-2024 */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#22CCEE'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(34,204,238)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(37,224,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(128,152,249)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(140,167,255)'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+  opacity: 0.9 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#22CCEE'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(34,204,238)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(37,224,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  outline: none;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(128,152,249)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(140,167,255)'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+  outline: none;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#8098F9'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:first-child[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-child(2)[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-child(3)[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:first-child[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-child(1)[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+}
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-child(2)[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path[fill='#53B1FD'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app div[class='54WVXpFXk1BSO1sEKaWZ'] .group.h-full.crm-opportunities-value svg g path[fill='rgb(83,177,253)']:last-child {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+} */
+
+/* 
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_Opportunities-Pipelines::before {
+  content: var(--hlpt-adv-mainnav-replace-opportunities-icon) !important;
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  margin-right: 10px !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_Opportunities-Pipelines::before {
+  content: var(--hlpt-adv-mainnav-replace-pipelines-icon) !important;
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  margin-right: 10px !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+} */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_nav-header-without-footer nav #sb_calendars span::before {
+  color: var(--hlpt-left-nav-icon-color) !important;
+}
+
+/* DASHBOARD DYNAMIC GRAPH COLORS */
+/* 
+
+
+/* dashboard charts colors */
+/* opportunities status */
+/* var(--hlpt-adv-chart-lead-color) !important;
+var(--hlpt-adv-chart-lost-color) !important;
+var(--hlpt-adv-chart-won-color) !important; */
+
+/* opportunities status */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.6 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status x-vue-echarts.echarts.chart>div span:first-child {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  background-color: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0 !important;
+  outline: none;
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#E6EBF8'] {
+  fill: var(--hlpt-primary-theme-bg-color) !important;
+  opacity: 0.5 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#22CCEE'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(34,204,238)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(37,224,255)'] {
+  fill: #ff0000 !important;
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+  opacity: 0.9 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(128,152,249)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(140,167,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.9 !important;
+  outline: none;
+}
+
+/* opportunities values */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(91,194,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value x-vue-echarts.echarts.chart>div span:first-child {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  background-color: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0 !important;
+  outline: none;
+  display: none !important;
+}
+
+/* CONVERSION RATE */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-conversion-rate x-vue-echarts.echarts.chart>div span:first-child {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  background-color: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0 !important;
+  outline: none;
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-conversion-rate svg g path[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-conversion-rate svg g path[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-conversion-rate svg g path[fill='#53B1FD'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-conversion-rate svg g path:nth-last-child(2)[fill='rgb(83,177,253)'] {
+  fill: var(--hlpt-primary-theme-bg-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-conversion-rate svg g path[fill='#E6EBF8'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.2 !important;
+  outline: none;
+}
+
+/* Stage Distribution */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution x-vue-echarts.echarts.chart>div span:first-child {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  background-color: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0 !important;
+  outline: none;
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(91,194,255)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.5 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#84CAFF'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(132,202,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(122,222,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(145,222,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+/* Funnel */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel x-vue-echarts.echarts.chart>div span:first-child {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  background-color: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0 !important;
+  outline: none;
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#84CAFF'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(132,202,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(145,222,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='rgb(132,202,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(132,202,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(91,194,255)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.5 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#22CCEE'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#22CCEE'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(34,204,238)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(37,224,255)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.2 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#8098F9'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#8098F9'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(128,152,249)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(140,167,255)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.4 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#A48AFB'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#A48AFB'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(180,151,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(164,138,251)'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.5 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#36BFFA'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#36BFFA'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(54,191,250)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(59,210,255)'] {
+  fill: var(--hlpt-primary-theme-bg-color) !important;
+  opacity: 0.4 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#7CD4FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='#7CD4FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(124,212,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-funnel svg g path[fill='rgb(136,233,255)'] {
+  fill: var(--hlpt-primary-theme-bg-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-stages-distribution svg g path[fill='#84ADFF'] {
+  fill: #ff0000 !important;
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+  opacity: 0.9 !important;
+  outline: none;
+}
+
+/* others */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#8098F9'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#A48AFB'] {
+  fill: var(--hlpt-primary-theme-color) !important;
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.3 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#528BFF'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='rgb(132,202,255)'] {
+  fill: var(--hlpt-primary-theme-bg-color) !important;
+  opacity: 0.4 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#67E3F9'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.3 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#36BFFA'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.5 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#7CD4FD'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.7 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-status svg g path[fill='#84CAFF'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.9 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:last-child[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(2)[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(3)[fill='#53B1FD'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(3)[fill='rgb(83,177,253)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(3)[fill='rgb(91,194,255)'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] .group.h-full.crm-opportunities-value svg g path:nth-last-child(3)[fill='rgb(25,255,255)'] {
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+  opacity: 0.8 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .graph-open-col {
+  fill: var(--hlpt-adv-chart-open-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .graph-won-col {
+  fill: var(--hlpt-adv-chart-won-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .graph-lost-col {
+  fill: var(--hlpt-adv-chart-lost-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .graph-abandoned-col {
+  fill: var(--hlpt-adv-chart-abandoned-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .graph-lead-col {
+  fill: var(--hlpt-adv-chart-lead-color) !important;
+}
+
+/* END HERS */
+
+/* .cp-icon {
+  color: var(--hlpt-left-nav-color) !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_controlpanel:hover span.cpanel svg.cp-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_controlpanel.active:hover span.cpanel svg.cp-icon {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.cpanel,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.cpanel svg.cp-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active:hover span.cpanel svg.cp-icon {
+  color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+}
+
+/* new brand baords menu link */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sb_brand-boards::before {
+  content: var(--hlpt-adv-mainnav-replace-brandboards-icon) !important;
+  /* content: '\f53f'; */
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  color: var(--hlpt-left-nav-color) !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+  margin-right: 10px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad #launchpadHome .launchpad-center-containter .launchpad-item-sub-container.lp-custom-services:hover i.integration-icon.fa-3x {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+/* bug fixed 20-09-2024 */
+
+/* top menu dropdown menuupdated colors */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'],
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'] {
+  margin-bottom: 5px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  min-height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem']:last-child {
+  margin-bottom: 0px !important;
+}
+
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem']:hover span.flex.items-center,
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'].active {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'],
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'] {
+  background: var(--hlpt-adv-default-light-btn-bg-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem']:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem']:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'].router-link-exact-active.active,
+body #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'].active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem div[role='menu'] a[role='menuitem'].active {
+  background: var(--hlpt-adv-default-light-btn-bg-hover-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app header.hl_header .justify-start {
+  background-color: none !important;
+  background: none !important;
+  /* outline: none; */
+}
+
+/* end of top menu */
+body[data-hlpt-tsg="hlpt-advanced-settings"] div#userflow-ui div.userflowjs-launcher {
+  font-family: var(--dynamic-font-family-topmenu) !important;
+  font-weight: 500 !important;
+}
+
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .sidebar-v2-agency #sidebar-v2 #sb_undefined span {
+  font-size: 14px !important;
+}
+
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .sidebar-v2-agency #sidebar-v2 a[id^="sb_common.sidebar.privateIntegrations"] span {
+  font-size: 14px !important;
+}
+
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .sidebar-v2-agency #sidebar-v2 a[id^="sb_common.sidebar.lcIntegrations"] span {
+  font-size: 14px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600 {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+  border-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600:hover {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+  border-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button#location_dashboard-btn-dashboard_switcher svg {
+  /* stroke: var(--hlpt-adv-primary-btn-text-color) !important;   */
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app button#location_dashboard-btn-dashboard_switcher:hover svg {
+  /* stroke: var(--hlpt-adv-primary-btn-text-hover-color) !important; */
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 a[id^="sb_"][id*=".custom_objects."] span.h-5.w-5.text-gray-300.custom-svg.mr-2 {
+  color: var(--hlpt-left-nav-icon-color) !important;
+}
+
+/* ai header icon */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle svg path,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle svg path {
+  fill: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  stroke: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle:hover svg path,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle:hover svg path {
+  fill: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  stroke: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  outline: none;
+}
+
+/* body #app #hl_header--copilot-icon svg circle, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon svg circle {
+  fill: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  fill: none !important;
+}
+
+/* body #app #hl_header--copilot-icon svg, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon svg {
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  border-radius: 500px !important;
+}
+
+/* body #app #hl_header--copilot-icon:hover svg, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon:hover svg {
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+  border-radius: 500px !important;
+  border: 2px solid rgba(255, 255, 255, 0.8) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon svg {
+  margin-top: -2px;
+  margin-left: -2px;
+}

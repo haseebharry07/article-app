@@ -3,7 +3,7 @@
 
   <section class="article-detail">
     <% if (article.image) { %>
-      <img src="/uploads/<%= article.image %>" alt="<%= article.title %>" class="article-detail-image">
+      <img src="<%= article.image %>" alt="<%= article.title %>" class="article-detail-image">
     <% } %>
 
     <h1 class="article-title"><%= article.title %></h1>

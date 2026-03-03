@@ -1,0 +1,3293 @@
+:root {
+  --hlpt-left-nav-color: #ffffffff;
+  --hlpt-left-nav-hover-color: var(--hlpt-secondary-theme-bg-color);
+  --hlpt-left-nav-active-color: var(--hlpt-secondary-theme-bg-color);
+  --hlpt-left-nav-icon-color: rgb(0, 0, 0, 1);
+
+  --hlpt-dashboard-darkmode-color-white: #ffffff;
+  --hlpt-dashboard-darkmode-color-softwhite: #f3f3f3;
+  --hlpt-dashboard-darkmode-color-black: #1c1c1c;
+  --hlpt-dashboard-darkmode-color-softblackk: #252525;
+  --hlpt-dashboard-darkmode-color-softblack: #333333;
+  --hlpt-dashboard-darkmode-color-darkgray: #666666;
+  --hlpt-dashboard-darkmode-color-lightgray: #999999;
+  --hlpt-dashboard-darkmode-color-lightestgray: #e2e2e2;
+
+  --hlpt-primary-theme-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  --hlpt-primary-theme-bg-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  --hlpt-secondary-theme-bg-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  --hlpt-secondary-theme-bg-color-tint: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+
+  --dashboard-panels-shadow: rgb(255 255 255 / 70%) 5px 19px 15px -15px !important;
+  --dashboard-header-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5) !important;
+  --dashboard-leftsidebar-shadow: 5px 10px 10px rgba(255, 255, 255, 0.5) !important;
+  --dashboard-panels-background: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  --dashboard-panels-border: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  --button-large-background: var(--hlpt-primary-theme-color) !important;
+
+  /* clean white root variables */
+
+  --primary-color: var(--hlpt-dashboard-darkmode-color-white);
+  --sidebar-menu-textmenu-active-hover-text-color: var(--hlpt-primary-theme-color);
+  --fade-misc-color: var(--hlpt-primary-theme-color);
+  --tertiary-color: var(--hlpt-primary-theme-color-tint);
+  --sidebar-menu-bg-color: var(--hlpt-dashboard-darkmode-color-black);
+  --main-bg-color: var(--hlpt-dashboard-darkmode-color-black);
+  --sidebar-menu-textmenu-color: var(--hlpt-dashboard-darkmode-color-softwhite);
+  --fade-sub-color: var(--gray-900);
+  --sidebar-menu-textmenu-active-hover-color: var(--hlpt-primary-theme-color-tint);
+  --default-border-style: 1px solid rgba(255 255 255 0.15) !important;
+
+  --left-nav-icon-primary-color: var(--hlpt-secondary-theme-bg-color) !important;
+  --left-nav-icon-secondary-color: var(--hlpt-secondary-theme-bg-color) !important;
+  --left-nav-icon-opacity: 0.8 !important;
+  --left-nav-icon-opacity-active: 0.9 !important;
+  --sidebar-font: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  --hlpt-main-white-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+  --hlpt-main-black-color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  --n-border: 1px solid var(--hlpt-primary-theme-color) !important;
+  --hlpt-primary-theme-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+  --primary-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+  --hlpt-primary-theme-bg-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+/* 
+* :not(button),
+* :not(n-button) {
+  color: var(--primary-color) !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color) !important;
+} */
+
+.darkMode {
+  color: rgb(191, 185, 177) !important;
+  background-color: rgb(24, 26, 27) !important;
+  border-color: rgb(38, 50, 75) !important;
+  color-scheme: dark !important;
+}
+
+.darkMode #app .hl_settings--main .card {
+  background: #1c1c1c !important;
+}
+
+.darkMode #custom-drawer .drawer-panel,
+.darkMode #custom-drawer .help-section,
+.darkMode .card-body,
+.darkMode .card-group>.card,
+.darkMode .card-header,
+.darkMode .progress,
+.darkMode #sidebar-v2 #globalSearchOpener,
+body[data-theme='default'].darkMode #sidebar-v2 #globalSearchOpener,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #location-list div[role='listitem'] div.hl_account,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #location-list div[role='listitem'] div.hl_account,
+.darkMode .datetimepicker .datepicker .pickers-container,
+.darkMode .datetimepicker .datepicker .pickers-container .custom-button,
+.darkMode .datepicker-buttons-container,
+.darkMode .datepicker-buttons-container .datepicker-button,
+.darkMode .sidebar-v2-location #sidebar-v2>div>div,
+.darkMode .sidebar-v2-agency #sidebar-v2>div>div,
+.darkMode .hl_affiliate--header {
+  background: #1c1c1c !important;
+  border-color: #252525 !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher>div:nth-child(2) input,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher>div:nth-child(2) input {
+  background: #252525 !important;
+  border-color: #323131 !important;
+}
+
+.darkMode .hl_header,
+.darkMode .card,
+.darkMode .launchpad-item-sub-container {
+  background: #1c1c1c !important;
+  border-color: #1c1c1c !important;
+}
+
+.darkMode .hl_wrapper,
+.darkMode .builderWrapper,
+.darkMode #app,
+.darkMode section#smartlists,
+.darkMode #smartlists .header-underline li.active a,
+.darkMode #smartlists .header-underline,
+.darkMode #smartlists .header-underline li.active a,
+.darkMode #smartlists .header-underline,
+.darkMode .hl_settings--body,
+.darkMode #conversations .hl_conversations--wrap,
+.darkMode .hl_chat-widget--root>div,
+.darkMode .hl_dashboard--pipeline-value .flex-row {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2,
+.darkMode .sidebar-v2-agency #sidebar-v2,
+.darkMode .hl_funnels--steps-items li.active,
+.darkMode .btn.btn-light3,
+.darkMode .sidebar-v2-agency #sidebar-v2:before {
+  background: #1c1c1c !important;
+}
+
+.darkMode .hl_nav-header-without-footer nav a span,
+.darkMode #calender-v2 #pg-calendar-v2__drpdwn--calendars-view ul li,
+.darkMode .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navtitle,
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-heading,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-heading,
+.darkMode #custom-drawer .radio-group>input~label,
+.darkMode b,
+.darkMode h1,
+.darkMode h2,
+.darkMode h3,
+.darkMode h4,
+.darkMode h5,
+.darkMode h6,
+.darkMode .card-header h1,
+.darkMode .card-header h2,
+.darkMode .card-header h3,
+.darkMode .card-header h4,
+.darkMode .card-header h5,
+.darkMode .card-header h6,
+.darkMode .card-body h1,
+.darkMode .card-body h2,
+.darkMode .card-body h3,
+.darkMode .card-body h4,
+.darkMode .card-body h5,
+.darkMode .card-body h6,
+.darkMode .hl_dashboard .card-header h1,
+.darkMode .hl_dashboard .card-header h2,
+.darkMode .hl_dashboard .card-header h3,
+.darkMode .hl_dashboard .card-header h4,
+.darkMode .hl_dashboard .card-header h5,
+.darkMode .hl_dashboard .card-header h6,
+.darkMode strong,
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div .hl_quick-actions-title,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div .hl_quick-actions-title,
+.darkMode #sidebar-v2 .tracking-wide,
+.darkMode #sidebar-v2>div>div>div.text-white,
+.darkMode .filter-option-inner-inner,
+.darkMode .launchpad-item-sub-container,
+.darkMode .card-body,
+.darkMode .table tbody tr td,
+.darkMode .datetimepicker .datepicker .pickers-container,
+.darkMode .datetimepicker .datepicker .pickers-container .custom-button,
+.darkMode .datepicker-buttons-container,
+.darkMode .datepicker-container .datepicker-days .datepicker-day .datepicker-day-text,
+.darkMode .table thead tr th,
+.darkMode .bootstrap-select .dropdown-toggle .filter-option-inner,
+.darkMode .font-normal,
+.darkMode .text-gray-900,
+.darkMode ul.header-ul li.active a,
+.darkMode .text-gray-600,
+.darkMode ul.header-ul li a,
+.darkMode .mx-2,
+.darkMode .mx-1,
+.darkMode a:not(.btn),
+.darkMode .card-info .product,
+.darkMode .text-gray-700,
+.darkMode .text-dark,
+.darkMode .dropdown-item-div div:last-child div[data-v-4a834e81]:first-child,
+.darkMode .dropdown-item-div div:last-child div[data-v-4a834e81]:last-child,
+.darkMode .dropDownLinks,
+.darkMode .darkModeIcon,
+.darkMode .privacyModeIcon i,
+.darkMode .customContactsWidget p,
+.darkMode .customContactsWidget span,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .menu-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .menu-title,
+.darkMode #conversations .messages-list--item .messages-list--text h4,
+.darkMode #conversations .messages-list--item .messages-list--text p,
+.darkMode #conversations .hl_conversations--message-header,
+.darkMode #conversations .hl_conversations--message-header h2,
+.darkMode #conversations .hl_conversations--message-header button i,
+.darkMode #sidebar-v2 nav a:hover span i,
+.darkMode #settings .card-body h2,
+.darkMode #settings .card-body h2 span.text-dark,
+.darkMode #settings .card-body h3,
+.darkMode #settings .card-body h3 span.text-dark,
+.darkMode #settings .card-body h4,
+.darkMode #settings .card-body h4 span.text-dark,
+.darkMode #settings .card-body h5,
+.darkMode #settings .card-body h5 span.text-dark,
+.darkMode #settings .card-body h6,
+.darkMode #settings .card-body h6 span.text-dark,
+.darkMode #settings .card-header p,
+.darkMode #settings .card-header h2,
+.darkMode #settings .card-header h2 span.text-dark,
+.darkMode #settings .card-header h3,
+.darkMode #settings .card-header h3 span.text-dark,
+.darkMode #settings .card-header h4,
+.darkMode #settings .card-header h4 span.text-dark,
+.darkMode #settings .card-header h5,
+.darkMode #settings .card-header h5 span.text-dark,
+.darkMode #settings .card-header h6,
+.darkMode #settings .card-header h6 span.text-dark,
+.darkMode #settings .card-header p,
+.darkMode #settings .modal-body h2,
+.darkMode #settings .modal-body h2 span.text-dark,
+.darkMode #settings .modal-body h3,
+.darkMode #settings .modal-body h3 span.text-dark,
+.darkMode #settings .modal-body h4,
+.darkMode #settings .modal-body h4 span.text-dark,
+.darkMode #settings .modal-body h5,
+.darkMode #settings .modal-body h5 span.text-dark,
+.darkMode #settings .modal-body h6,
+.darkMode #settings .modal-body h6 span.text-dark,
+.darkMode #settings .modal-body p,
+.darkMode #settings .modal-header h2,
+.darkMode #settings .modal-header h2 span.text-dark,
+.darkMode #settings .modal-header h3,
+.darkMode #settings .modal-header h3 span.text-dark,
+.darkMode #settings .modal-header h4,
+.darkMode #settings .modal-header h4 span.text-dark,
+.darkMode #settings .modal-header h5,
+.darkMode #settings .modal-header h5 span.text-dark,
+.darkMode #settings .modal-header h6,
+.darkMode #settings .modal-header h6 span.text-dark,
+.darkMode #settings .modal-header p,
+.darkMode #settings .card h2,
+.darkMode #settings .card h2 span.text-dark,
+.darkMode #settings .card h3,
+.darkMode #settings .card h3 span.text-dark,
+.darkMode #settings .card h4,
+.darkMode #settings .card h4 span.text-dark,
+.darkMode #settings .card h5,
+.darkMode #settings .card h5 span.text-dark,
+.darkMode #settings .card h6,
+.darkMode #settings .card h6 span.text-dark,
+.darkMode #settings .card p,
+.darkMode .hl_settings--body .card-body h2,
+.darkMode .hl_settings--body .card-body h2 span.text-dark,
+.darkMode .hl_settings--body .card-body h3,
+.darkMode .hl_settings--body .card-body h3 span.text-dark,
+.darkMode .hl_settings--body .card-body h4,
+.darkMode .hl_settings--body .card-body h4 span.text-dark,
+.darkMode .hl_settings--body .card-body h5,
+.darkMode .hl_settings--body .card-body h5 span.text-dark,
+.darkMode .hl_settings--body .card-body h6,
+.darkMode .hl_settings--body .card-body h6 span.text-dark,
+.darkMode .hl_settings--body .card-body p,
+.darkMode .hl_settings--body .card-body .table tbody tr td,
+.darkMode .hl_settings--body .card-header h2,
+.darkMode .hl_settings--body .card-header h2 span.text-dark,
+.darkMode .hl_settings--body .card-header h3,
+.darkMode .hl_settings--body .card-header h3 span.text-dark,
+.darkMode .hl_settings--body .card-header h4,
+.darkMode .hl_settings--body .card-header h4 span.text-dark,
+.darkMode .hl_settings--body .card-header h5,
+.darkMode .hl_settings--body .card-header h5 span.text-dark,
+.darkMode .hl_settings--body .card-header h6,
+.darkMode .hl_settings--body .card-header h6 span.text-dark,
+.darkMode .hl_settings--body .card-header p,
+.darkMode .hl_settings--body .card-header .table tbody tr td,
+.darkMode .hl_settings--body .modal-header h2,
+.darkMode .hl_settings--body .modal-header h2 span.text-dark,
+.darkMode .hl_settings--body .modal-header h3,
+.darkMode .hl_settings--body .modal-header h3 span.text-dark,
+.darkMode .hl_settings--body .modal-header h4,
+.darkMode .hl_settings--body .modal-header h4 span.text-dark,
+.darkMode .hl_settings--body .modal-header h5,
+.darkMode .hl_settings--body .modal-header h5 span.text-dark,
+.darkMode .hl_settings--body .modal-header h6,
+.darkMode .hl_settings--body .modal-header h6 span.text-dark,
+.darkMode .hl_settings--body .modal-header p,
+.darkMode .hl_settings--body .modal-header .table tbody tr td,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.darkMode #helpDeskCtrlNSW:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode #sidebar-v2 nav a:hover,
+.darkMode #sidebar-v2 nav a:hover span,
+.darkMode #sidebar-v2 nav a:hover span i,
+.darkMode #sidebar-v2 nav a:hover::before,
+.darkMode #sidebar-v2 nav a.active,
+.darkMode #sidebar-v2 nav a.active span,
+.darkMode #sidebar-v2 nav a.active span i,
+.darkMode #sidebar-v2 nav a.active:before,
+.darkMode .hl_chat-widget--root i:before,
+.darkMode .hl_chat-widget--root .header-text,
+.darkMode .hl_chat-widget--root .card-body label,
+.darkMode .hl_chat-widget--root textarea,
+.darkMode .calendar-settings .body .card .title,
+.darkMode .text-\[\#3C3C3C\],
+.darkMode .text-\[\#3C3C3CB2\],
+.darkMode .text-\[\#3c3c3cb3\],
+.darkMode .drawer-panel,
+.darkMode .hl_form-builder--sidebar .style-group label {
+  color: #fff !important;
+}
+
+.darkMode .text-\[\#2D3748\],
+.darkMode .text-\[\#3C3C3C66\] {
+  color: #696969 !important;
+}
+
+.darkMode #calender-v2 #pg-calendar-v2__btn--pagination-next,
+.darkMode #calender-v2 #pg-calendar-v2__btn--pagination-prev,
+.darkMode #calender-v2 #pg-calendar-v2__btn--reset-page,
+.darkMode #calender-v2 .dropdown:not(#pg-calendar-v2__drpdwn--calendars-view) button,
+.darkMode #pg-calendar-v2__drpdwn--calendars-view__BV_toggle_,
+.darkMode .btn.btn-primary,
+.darkMode button.dropdown-toggle,
+.darkMode .dropdown .dropdown-menu .dropdown-item,
+.darkMode .hl_tasks-list button.dropdown-toggle,
+.darkMode .dropdown-menu,
+.darkMode .launchpad-item-container,
+.darkMode .page-item.disabled .page-link,
+.darkMode .info-blue,
+.darkMode .flex-page-bar,
+.darkMode .btn.btn-light,
+.darkMode [multiple],
+.darkMode [type='date'],
+.darkMode [type='datetime-local'],
+.darkMode [type='email'],
+.darkMode [type='month'],
+.darkMode [type='number'],
+.darkMode [type='password'],
+.darkMode [type='search'],
+.darkMode [type='tel'],
+.darkMode [type='text'],
+.darkMode [type='time'],
+.darkMode [type='url'],
+.darkMode [type='week'],
+.darkMode select,
+.darkMode textarea,
+.darkMode .flex-column,
+.darkMode .bg-white,
+.darkMode .btn.btn-light:disabled,
+.darkMode .date-time-picker,
+.darkMode .modal-content,
+.darkMode .text-gray-600,
+.darkMode .modal-body,
+.darkMode .table-hl tbody tr:nth-of-type(2n),
+.darkMode .table thead tr th,
+.darkMode #form-builder .date-time-picker .field-input,
+.darkMode .hl_datepicker,
+.darkMode .dropdown-menu .dropdown-item:active,
+.darkMode .dropdown-menu .dropdown-item:focus,
+.darkMode .dropdown-menu .dropdown-item:hover,
+.darkMode .hl_reputation .hl_reputation--header,
+.darkMode .displayMode,
+.darkMode .nav-tabs,
+.darkMode .mce-panel,
+.darkMode .steps-split-test-range,
+.darkMode .hl_call--settings .audio-upload,
+.darkMode .mce-ico,
+.darkMode .mce-btn,
+.darkMode .messages-list-header,
+.darkMode .messages-list-search,
+.darkMode .hl_conversations--message-body,
+.darkMode .hl_conversations--message-header,
+.darkMode .message-body--aside,
+.darkMode .hl_conversations--message-body .message-input-wrap,
+.darkMode .message-body--aside .btn-sched-wrap,
+.darkMode .hl_conversations--message-body .message-box,
+.darkMode .message-body--aside .btn-sched-wrap,
+.darkMode .customContactsWidget,
+.darkMode .numberOfFunnelWrapper,
+.darkMode .numberOfStagesWrapper,
+.darkMode .defaultTasksWidget,
+.darkMode .headerWrapper,
+.darkMode .col-md-6,
+.darkMode .numberOfContactsWrapper,
+.darkMode .leadsWrapper,
+.darkMode .customPipeline,
+.darkMode .customConversion,
+.darkMode .customOpportunities,
+.darkMode .defaultFunnelWidget,
+.darkMode .defaultStagesWidget,
+.darkMode .columnChartWidget,
+.darkMode .pieChartWidget,
+.darkMode .numberOfOpportunitiesWrapper,
+.darkMode .columnChartHeader,
+.darkMode .pieChartHeader,
+.darkMode .donutChartWidget,
+.darkMode .barChartWidget,
+.darkMode .scatterChartWidget,
+.darkMode .barChartHeader,
+.darkMode .scatterChartHeader,
+.darkMode .donutChartHeader,
+.darkMode #hlpt_acc_sus_frame,
+.darkMode .ghl-sidepanel .flex.flex-direction-row.items-center,
+.darkMode #smartlists #colViewButton div,
+.darkMode #smartlists #hl_smartlists--filter-btn,
+.darkMode #conversations .hl_conversations--messages-list,
+.darkMode #conversations .hl_conversations--messages-list .nav-tabs,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-header,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-search,
+.darkMode #conversations .hl_conversations--messages-list h3,
+.darkMode #conversations .messages-list-search input,
+.darkMode #conversations .hl_conversations--message,
+.darkMode #conversations .message-body--aside input,
+.darkMode #dashboard>div>div:nth-child(2)>div.container-fluid>div.card-group.--wide-gutter>div>span,
+.darkMode .hl_form-builder--sidebar,
+.darkMode .hl_form-builder--sidebar .option-card,
+.darkMode #hl_smartlists-main tbody tr,
+.darkMode .ghl-table-container .n-data-table-tr,
+.darkMode .ghl-table-container .n-data-table-thead,
+.darkMode .ghl-table-container .pagination,
+.darkMode .table-container table thead tr th,
+.darkMode .table-container .n-data-table .n-data-table-th {
+  border: 1px solid #323131 !important;
+  background: #252525 !important;
+  color: #fff !important;
+}
+
+.darkMode .n-data-table .n-data-table-tr:not(.n-data-table-tr--summary) .text-gray-900:hover {
+  color: #000 !important;
+}
+
+.darkMode #conversations .hl_conversations--messages-list,
+.darkMode #conversations .hl_conversations--messages-list .nav-tabs,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-header,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-search,
+.darkMode #conversations .hl_conversations--messages-list h3,
+.darkMode #hl_header--help-icon,
+.darkMode #conversations .hl_conversations--message-header,
+.darkMode #conversations .hl_conversations--message-header button {
+  border: none !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2:before {
+  background: unset !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a .nav-title,
+.darkMode .more-thread,
+.darkMode .btn.btn-light2,
+.darkMode .hl_create-campaign .new-event-day-item .calendar-day p {
+  color: #fff !important;
+}
+
+.darkMode #hl_smartlists-main .card,
+.darkMode #hl_smartlists-main .card-body {
+  background-color: #fff !important;
+}
+
+.darkMode .customContactsWidget .numberOfContactsContent p,
+.darkMode #form-builder .nav.nav-tabs li a.active,
+.darkMode .hl_form-builder--sidebar .dragdrop-items li {
+  border: 1px solid #323131 !important;
+  background: #252525 !important;
+}
+
+.darkMode .sidebar-v2-location .hl_topbar-tabs .hl_wrapper .hl_wrapper--inner.hl_funnels .hl_funnels--card-side {
+  background: rgba(41, 205, 152, 0.1) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_topbar-tabs .hl_wrapper .hl_wrapper--inner.hl_funnels .hl_funnels--card {
+  background: 0 0 !important;
+}
+
+.darkMode .sidebar-v2-location .hl_topbar-tabs .hl_wrapper .hl_wrapper--inner.hl_funnels .hl_funnels--card-main {
+  border-color: #252525 !important;
+}
+
+.darkMode #calender-v2 #pg-calendar-v2__drpdwn--calendars-view ul,
+.darkMode .launchpad-item-sub-container {
+  background: #252525 !important;
+}
+
+.darkMode #globalSearchOpener~div#quickActions,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2,
+.darkMode #globalSearch .search-area>div:first-child,
+.darkMode .hover\:bg-gray-100:hover,
+.darkMode .text-gray-700,
+.darkMode .group:hover .group-hover\:block {
+  background: #252525 !important;
+  border-color: #252525 !important;
+}
+
+.darkMode .group:hover .group-hover\:block {
+  border: none !important;
+}
+
+.darkMode #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow,
+.darkMode #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow {
+  color: #fff !important;
+  opacity: 0.8 !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:first-child,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:first-child {
+  color: #f3f3f3 !important;
+}
+
+.darkMode .divide-x .bg-gray-100.text-gray-900,
+.darkMode #pendo-base h3 {
+  color: #000 !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:last-child,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:last-child {
+  color: #f3f3f350 !important;
+  opacity: 1 !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode #sidebar-v2 #globalSearchOpener,
+body[data-theme='default'].darkMode #sidebar-v2 #globalSearchOpener,
+.darkMode .hl_conversations--messages-list {
+  background: #252525 !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(159deg) brightness(107%) contrast(101%) !important;
+}
+
+.darkMode #sb_divider-1,
+.darkMode #settings .text-gray-700,
+.darkMode .user-list-detail .submission.current-active {
+  background: unset !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher,
+.darkMode .hl_conversations--wrap,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .default-bg-color,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2.default-bg-color,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .default-bg-color,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2.default-bg-color,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a {
+  background: #1c1c1c !important;
+}
+
+.darkMode .mx-1,
+.darkMode .more-thread a,
+.darkMode .btn.btn-light2,
+.darkMode .color-select,
+.darkMode #review-widget .two-part .copy-code-wrapper,
+.darkMode .card-integration,
+.darkMode .wrapper,
+.darkMode .drawer-panel,
+.darkMode .hl_marketing--heading.--info,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--top,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--bottom,
+.darkMode .hl_create-campaign .new-event-day-item .calendar-day-inner,
+.darkMode .hl_triggers--item,
+.darkMode .stat_card_items {
+  background: #1c1c1c !important;
+  border-color: #fff !important;
+}
+
+.darkMode tr.hover\:bg-gray-100.bg-gray-100.border-l-4.\!border-l-blue-500 {
+  background-color: #000 !important;
+}
+
+.darkMode .color-select,
+.darkMode #review-widget .two-part .copy-code-wrapper,
+.darkMode .card-integration,
+.darkMode .wrapper,
+.darkMode .darkMode .hl_marketing--heading.--info,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--top,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--bottom,
+.darkMode .hl_create-campaign .new-event-day-item .calendar-day-inner,
+.darkMode .hl_triggers--item,
+.darkMode .stat_card_items,
+.darkMode .mx-1.flex.flex-col.justify-center.items-center.bg-gray-200.font-medium.text-sm.h-6.w-6.rounded-full.capitalize {
+  border: 1px solid #fff !important;
+}
+
+.darkMode .messages-list--item:hover {
+  background-color: rgba(24, 139, 246, 0.1);
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  background-color: #1a202c !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active.divider,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover.divider {
+  background: transparent !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_v2_tip-arrow,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_v2_tip-arrow {
+  border-color: #1c1c1c !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div,
+.darkMode #globalSearch {
+  background: #111 !important;
+}
+
+.darkMode #globalSearch .search-middle-container+div {
+  background: #111 !important;
+  border-color: #1c1c1c !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_collapse-button,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_collapse-button {
+  color: #fff !important;
+  opacity: 1 !important;
+  background: unset !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #switcher-agency-switch div,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #switcher-agency-switch div {
+  border-color: #202020 !important;
+}
+
+body:not([data-menu-type='button']) #globalSearchOpener~div#quickActions {
+  margin-left: 10px !important;
+}
+
+.darkMode #globalSearchOpener~div#quickActions:before {
+  content: ' ' !important;
+  background-image: url(https://storage.googleapis.com/msgsndr/4nxeJ558ij3cRZ8jQzWh/media/6205d1e97964d98510345c66.png) !important;
+  background-size: 100% !important;
+  width: 22px !important;
+  display: inline-block !important;
+  aspect-ratio: 1 !important;
+  filter: brightness(100) !important;
+}
+
+.darkMode #globalSearch .search-area>div:first-child {
+  padding: 2% !important;
+  border-radius: 10px !important;
+}
+
+.darkMode #globalSearch .search-area>div:first-child input {
+  background: 0 0 !important;
+}
+
+.darkMode #globalSearchOpener~div#quickActions img {
+  display: none !important;
+}
+
+.darkMode #globalSearch .search-middle-container .items-start>span,
+.darkMode #globalSearch .search-area>div:first-child input,
+.darkMode .dropDownLinks:hover {
+  color: #f5f5f5 !important;
+}
+
+.darkMode .dropDownLinks:hover {
+  text-decoration: underline !important;
+}
+
+.darkMode #globalSearch .search-area {
+  color: #f3f3f3 !important;
+  background: #111 !important;
+  border-color: #1c1c1c !important;
+}
+
+.darkMode .vfm__content {
+  border: 0 !important;
+}
+
+.dropDownLinks {
+  cursor: pointer !important;
+}
+
+.dropDownPrivacy {
+  display: flex !important;
+  align-items: center !important;
+}
+
+#sidebar-v2 #globalSearchOpener {
+  background: #f3f3f3 !important;
+  border: 0.5px solid rgba(189, 189, 189, 0.5) !important;
+  border-radius: 7px !important;
+  height: 100% !important;
+}
+
+button[type='button'],
+button[type='submit'] {
+  --tw-ring-opacity: 0 !important;
+}
+
+#sidebar-v2 .tracking-wide {
+  color: #000 !important;
+}
+
+.displayMode {
+  display: flex !important;
+  width: 60% !important;
+  background-color: #f3f3f3 !important;
+  border-radius: 15px !important;
+  padding: 2% 3% !important;
+  margin: auto !important;
+}
+
+.privacyMode {
+  margin-top: 2% !important;
+  margin-left: 4% !important;
+}
+
+.darkModeIcon,
+.privacyModeIcon {
+  font-size: 12px !important;
+  color: #202020 !important;
+  cursor: pointer !important;
+  border-radius: 15px !important;
+  padding-top: 3% !important;
+  padding-bottom: 3% !important;
+}
+
+.darkModeIcon i,
+.privacyModeIcon i {
+  margin-right: 5px !important;
+  font-size: 14px !important;
+}
+
+.displayModeLight .darkModeIcon.active,
+.privacyModeOff .privacyModeIcon.active,
+.privacyModeOn .privacyModeIcon.active {
+  background-color: #fff !important;
+}
+
+.darkMode .displayModeDark .darkModeIcon.active,
+.darkMode .privacyModeOff .privacyModeIcon.active,
+.darkMode .privacyModeOn .privacyModeIcon.active {
+  background-color: #3e3e3e !important;
+}
+
+.displayModeLight,
+.displayModeDark,
+.privacyModeOff,
+.privacyModeOn {
+  width: 50% !important;
+  text-align: center !important;
+  border-radius: 15px !important;
+}
+
+.dropDownLinks {
+  font-size: 14px !important;
+  margin-left: 12% !important;
+  color: #202020 !important;
+  margin-bottom: 20px !important;
+}
+
+.dropDownSettings a,
+.dropDownHeader a {
+  color: #202020 !important;
+}
+
+.dropDownSettings a:hover span,
+.dropDownPrivacy span:hover span,
+.dropDownHeader a:hover .dropDownHeaderName {
+  color: #d9d9d9 !important;
+}
+
+.dropDownHeaderLink {
+  display: flex !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  align-items: center !important;
+}
+
+.dropDownLinks i {
+  font-size: 16px !important;
+  margin-right: 15px !important;
+}
+
+.dropdown .dropdown-menu {
+  width: 260px !important;
+}
+
+.dropdown-menu:before {
+  border: none !important;
+}
+
+.dropDownHeader {
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 5% !important;
+  padding-bottom: 3% !important;
+  border-bottom: 1px solid #eeeeee !important;
+  margin-bottom: 5% !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.dropDownHeaderIcon {
+  margin-right: 5% !important;
+}
+
+.hl_header--dropdown:not(.hl_header--phone) a.dropdown-item:not(#profile-new-sidebar-action):not(.item-target):not(#profile-old-sidebar-action) {
+  position: relative !important;
+  display: flex !important;
+  font-size: 0 !important;
+  background: rgba(255, 91, 91, 0.15) !important;
+  border-radius: 7px !important;
+  height: 40px !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 250px !important;
+  margin: 10px auto 0 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #ff5b5b !important;
+}
+
+.hl_header--dropdown:not(.hl_header--phone) a.dropdown-item:not(#profile-new-sidebar-action):not(.item-target):not(#profile-old-sidebar-action):before {
+  content: 'Logout' !important;
+  font-size: 14px !important;
+  margin: 0 auto !important;
+}
+
+.hl_header--dropdown:not(.hl_header--phone) a.dropdown-item:not(#profile-new-sidebar-action):not(.item-target):not(#profile-old-sidebar-action):after {
+  content: ' ' !important;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  position: absolute !important;
+  background-image: url(https://storage.googleapis.com/msgsndr/Jh84PQ4KwTqBjoAD7fbd/media/61d5424e3ffd83f432b57aa2.png) !important;
+  height: 22px !important;
+  width: 22px !important;
+  aspect-ratio: 1 !important;
+}
+
+.hl_header .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu>a.item-target i {
+  position: unset !important;
+  right: 0 !important;
+  background: #f5f6f8 !important;
+  padding: 8px 10px !important;
+  border-radius: 50% !important;
+  width: 35px !important;
+  height: 35px !important;
+  margin-right: 15px !important;
+  color: #607179 !important;
+  font-size: 20px !important;
+  margin-top: 0 !important;
+}
+
+.darkMode {
+  color: rgb(191, 185, 177) !important;
+  background-color: rgb(24, 26, 27) !important;
+  border-color: rgb(38, 50, 75) !important;
+  color-scheme: dark !important;
+}
+
+.darkMode #app .hl_settings--main .card {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #custom-drawer .drawer-panel,
+.darkMode #custom-drawer .help-section,
+.darkMode .card-body,
+.darkMode .card-group>.card,
+.darkMode .card-header,
+.darkMode .progress,
+.darkMode #sidebar-v2 #globalSearchOpener,
+body[data-theme='d'].darkMode #sidebar-v2 #globalSearchOpener,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #location-list div[role='listitem'] div.hl_account,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #location-list div[role='listitem'] div.hl_account,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #location-list div[role='listitem'] div.hl_account,
+.darkMode .datetimepicker .datepicker .pickers-container,
+.darkMode .datetimepicker .datepicker .pickers-container .custom-button,
+.darkMode .datepicker-buttons-container,
+.darkMode .datepicker-buttons-container .datepicker-button,
+.darkMode .sidebar-v2-location #sidebar-v2>div>div,
+.darkMode .sidebar-v2-agency #sidebar-v2>div>div,
+.darkMode .hl_affiliate--header {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher>div:nth-child(2) input,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher>div:nth-child(2) input {
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.darkMode .hl_header,
+.darkMode .card,
+.darkMode .launchpad-item-sub-container {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .hl_wrapper,
+.darkMode .builderWrapper,
+.darkMode #app,
+.darkMode section#smartlists,
+.darkMode #smartlists .header-underline li.active a,
+.darkMode #smartlists .header-underline,
+.darkMode #smartlists .header-underline li.active a,
+.darkMode #smartlists .header-underline,
+.darkMode .hl_settings--body,
+.darkMode #conversations .hl_conversations--wrap,
+.darkMode .hl_chat-widget--root>div,
+.darkMode .hl_dashboard--pipeline-value .flex-row {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2,
+.darkMode .sidebar-v2-agency #sidebar-v2,
+.darkMode .hl_funnels--steps-items li.active,
+.darkMode .btn.btn-light3,
+.darkMode .sidebar-v2-agency #sidebar-v2:before {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .hl_nav-header-without-footer nav a span,
+.darkMode #calender-v2 #pg-calendar-v2__drpdwn--calendars-view ul li,
+.darkMode .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navtitle,
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-heading,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-heading,
+.darkMode #custom-drawer .radio-group>input~label,
+.darkMode b,
+.darkMode h1,
+.darkMode h2,
+.darkMode h3,
+.darkMode h4,
+.darkMode h5,
+.darkMode h6,
+.darkMode .card-header h1,
+.darkMode .card-header h2,
+.darkMode .card-header h3,
+.darkMode .card-header h4,
+.darkMode .card-header h5,
+.darkMode .card-header h6,
+.darkMode .card-body h1,
+.darkMode .card-body h2,
+.darkMode .card-body h3,
+.darkMode .card-body h4,
+.darkMode .card-body h5,
+.darkMode .card-body h6,
+.darkMode .hl_dashboard .card-header h1,
+.darkMode .hl_dashboard .card-header h2,
+.darkMode .hl_dashboard .card-header h3,
+.darkMode .hl_dashboard .card-header h4,
+.darkMode .hl_dashboard .card-header h5,
+.darkMode .hl_dashboard .card-header h6,
+.darkMode strong,
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div .hl_quick-actions-title,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div .hl_quick-actions-title,
+.darkMode #sidebar-v2 .tracking-wide,
+.darkMode #sidebar-v2>div>div>div.text-white,
+.darkMode .filter-option-inner-inner,
+.darkMode .launchpad-item-sub-container,
+.darkMode .card-body,
+.darkMode .table tbody tr td,
+.darkMode .datetimepicker .datepicker .pickers-container,
+.darkMode .datetimepicker .datepicker .pickers-container .custom-button,
+.darkMode .datepicker-buttons-container,
+.darkMode .datepicker-container .datepicker-days .datepicker-day .datepicker-day-text,
+.darkMode .table thead tr th,
+.darkMode .bootstrap-select .dropdown-toggle .filter-option-inner,
+.darkMode .font-normal,
+.darkMode .text-gray-900,
+.darkMode ul.header-ul li.active a,
+.darkMode .text-gray-600,
+.darkMode ul.header-ul li a,
+.darkMode .mx-2,
+.darkMode .mx-1,
+.darkMode a:not(.btn),
+.darkMode .card-info .product,
+.darkMode .text-gray-700,
+.darkMode .text-dark,
+.darkMode .dropdown-item-div div:last-child div[data-v-4a834e81]:first-child,
+.darkMode .dropdown-item-div div:last-child div[data-v-4a834e81]:last-child,
+.darkMode .dropDownLinks,
+.darkMode .darkModeIcon,
+.darkMode .privacyModeIcon i,
+.darkMode .customContactsWidget p,
+.darkMode .customContactsWidget span,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .menu-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .menu-title,
+.darkMode #conversations .messages-list--item .messages-list--text h4,
+.darkMode #conversations .messages-list--item .messages-list--text p,
+.darkMode #conversations .hl_conversations--message-header,
+.darkMode #conversations .hl_conversations--message-header h2,
+.darkMode #conversations .hl_conversations--message-header button i,
+.darkMode #sidebar-v2 nav a:hover span i,
+.darkMode #settings .card-body h2,
+.darkMode #settings .card-body h2 span.text-dark,
+.darkMode #settings .card-body h3,
+.darkMode #settings .card-body h3 span.text-dark,
+.darkMode #settings .card-body h4,
+.darkMode #settings .card-body h4 span.text-dark,
+.darkMode #settings .card-body h5,
+.darkMode #settings .card-body h5 span.text-dark,
+.darkMode #settings .card-body h6,
+.darkMode #settings .card-body h6 span.text-dark,
+.darkMode #settings .card-header p,
+.darkMode #settings .card-header h2,
+.darkMode #settings .card-header h2 span.text-dark,
+.darkMode #settings .card-header h3,
+.darkMode #settings .card-header h3 span.text-dark,
+.darkMode #settings .card-header h4,
+.darkMode #settings .card-header h4 span.text-dark,
+.darkMode #settings .card-header h5,
+.darkMode #settings .card-header h5 span.text-dark,
+.darkMode #settings .card-header h6,
+.darkMode #settings .card-header h6 span.text-dark,
+.darkMode #settings .card-header p,
+.darkMode #settings .modal-body h2,
+.darkMode #settings .modal-body h2 span.text-dark,
+.darkMode #settings .modal-body h3,
+.darkMode #settings .modal-body h3 span.text-dark,
+.darkMode #settings .modal-body h4,
+.darkMode #settings .modal-body h4 span.text-dark,
+.darkMode #settings .modal-body h5,
+.darkMode #settings .modal-body h5 span.text-dark,
+.darkMode #settings .modal-body h6,
+.darkMode #settings .modal-body h6 span.text-dark,
+.darkMode #settings .modal-body p,
+.darkMode #settings .modal-header h2,
+.darkMode #settings .modal-header h2 span.text-dark,
+.darkMode #settings .modal-header h3,
+.darkMode #settings .modal-header h3 span.text-dark,
+.darkMode #settings .modal-header h4,
+.darkMode #settings .modal-header h4 span.text-dark,
+.darkMode #settings .modal-header h5,
+.darkMode #settings .modal-header h5 span.text-dark,
+.darkMode #settings .modal-header h6,
+.darkMode #settings .modal-header h6 span.text-dark,
+.darkMode #settings .modal-header p,
+.darkMode #settings .card h2,
+.darkMode #settings .card h2 span.text-dark,
+.darkMode #settings .card h3,
+.darkMode #settings .card h3 span.text-dark,
+.darkMode #settings .card h4,
+.darkMode #settings .card h4 span.text-dark,
+.darkMode #settings .card h5,
+.darkMode #settings .card h5 span.text-dark,
+.darkMode #settings .card h6,
+.darkMode #settings .card h6 span.text-dark,
+.darkMode #settings .card p,
+.darkMode .hl_settings--body .card-body h2,
+.darkMode .hl_settings--body .card-body h2 span.text-dark,
+.darkMode .hl_settings--body .card-body h3,
+.darkMode .hl_settings--body .card-body h3 span.text-dark,
+.darkMode .hl_settings--body .card-body h4,
+.darkMode .hl_settings--body .card-body h4 span.text-dark,
+.darkMode .hl_settings--body .card-body h5,
+.darkMode .hl_settings--body .card-body h5 span.text-dark,
+.darkMode .hl_settings--body .card-body h6,
+.darkMode .hl_settings--body .card-body h6 span.text-dark,
+.darkMode .hl_settings--body .card-body p,
+.darkMode .hl_settings--body .card-body .table tbody tr td,
+.darkMode .hl_settings--body .card-header h2,
+.darkMode .hl_settings--body .card-header h2 span.text-dark,
+.darkMode .hl_settings--body .card-header h3,
+.darkMode .hl_settings--body .card-header h3 span.text-dark,
+.darkMode .hl_settings--body .card-header h4,
+.darkMode .hl_settings--body .card-header h4 span.text-dark,
+.darkMode .hl_settings--body .card-header h5,
+.darkMode .hl_settings--body .card-header h5 span.text-dark,
+.darkMode .hl_settings--body .card-header h6,
+.darkMode .hl_settings--body .card-header h6 span.text-dark,
+.darkMode .hl_settings--body .card-header p,
+.darkMode .hl_settings--body .card-header .table tbody tr td,
+.darkMode .hl_settings--body .modal-header h2,
+.darkMode .hl_settings--body .modal-header h2 span.text-dark,
+.darkMode .hl_settings--body .modal-header h3,
+.darkMode .hl_settings--body .modal-header h3 span.text-dark,
+.darkMode .hl_settings--body .modal-header h4,
+.darkMode .hl_settings--body .modal-header h4 span.text-dark,
+.darkMode .hl_settings--body .modal-header h5,
+.darkMode .hl_settings--body .modal-header h5 span.text-dark,
+.darkMode .hl_settings--body .modal-header h6,
+.darkMode .hl_settings--body .modal-header h6 span.text-dark,
+.darkMode .hl_settings--body .modal-header p,
+.darkMode .hl_settings--body .modal-header .table tbody tr td,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.darkMode #helpDeskCtrlNSW:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode #sidebar-v2 nav a:hover,
+.darkMode #sidebar-v2 nav a:hover span,
+.darkMode #sidebar-v2 nav a:hover span i,
+.darkMode #sidebar-v2 nav a:hover::before,
+.darkMode #sidebar-v2 nav a.active,
+.darkMode #sidebar-v2 nav a.active span,
+.darkMode #sidebar-v2 nav a.active span i,
+.darkMode #sidebar-v2 nav a.active:before,
+.darkMode .hl_chat-widget--root i:before,
+.darkMode .hl_chat-widget--root .header-text,
+.darkMode .hl_chat-widget--root .card-body label,
+.darkMode .hl_chat-widget--root textarea,
+.darkMode .calendar-settings .body .card .title,
+.darkMode .text-\[\#3C3C3C\],
+.darkMode .text-\[\#3C3C3CB2\],
+.darkMode .text-\[\#3c3c3cb3\],
+.darkMode .drawer-panel,
+.darkMode .hl_form-builder--sidebar .style-group label {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .text-\[\#2D3748\],
+.darkMode .text-\[\#3C3C3C66\] {
+  color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode #calender-v2 #pg-calendar-v2__btn--pagination-next,
+.darkMode #calender-v2 #pg-calendar-v2__btn--pagination-prev,
+.darkMode #calender-v2 #pg-calendar-v2__btn--reset-page,
+.darkMode #calender-v2 .dropdown:not(#pg-calendar-v2__drpdwn--calendars-view) button,
+.darkMode #pg-calendar-v2__drpdwn--calendars-view__BV_toggle_,
+.darkMode .btn.btn-primary,
+.darkMode button.dropdown-toggle,
+.darkMode .dropdown .dropdown-menu .dropdown-item,
+.darkMode .hl_tasks-list button.dropdown-toggle,
+.darkMode .dropdown-menu,
+.darkMode .launchpad-item-container,
+.darkMode .page-item.disabled .page-link,
+.darkMode .info-blue,
+.darkMode .flex-page-bar,
+.darkMode .btn.btn-light,
+.darkMode [multiple],
+.darkMode [type='date'],
+.darkMode [type='datetime-local'],
+.darkMode [type='email'],
+.darkMode [type='month'],
+.darkMode [type='number'],
+.darkMode [type='password'],
+.darkMode [type='search'],
+.darkMode [type='tel'],
+.darkMode [type='text'],
+.darkMode [type='time'],
+.darkMode [type='url'],
+.darkMode [type='week'],
+.darkMode select,
+.darkMode textarea,
+.darkMode .flex-column,
+.darkMode .bg-white,
+.darkMode .btn.btn-light:disabled,
+.darkMode .date-time-picker,
+.darkMode .modal-content,
+.darkMode .text-gray-600,
+.darkMode .modal-body,
+.darkMode .table-hl tbody tr:nth-of-type(2n),
+.darkMode .table thead tr th,
+.darkMode #form-builder .date-time-picker .field-input,
+.darkMode .hl_datepicker,
+.darkMode .dropdown-menu .dropdown-item:active,
+.darkMode .dropdown-menu .dropdown-item:focus,
+.darkMode .dropdown-menu .dropdown-item:hover,
+.darkMode .hl_reputation .hl_reputation--header,
+.darkMode .displayMode,
+.darkMode .nav-tabs,
+.darkMode .mce-panel,
+.darkMode .steps-split-test-range,
+.darkMode .hl_call--settings .audio-upload,
+.darkMode .mce-ico,
+.darkMode .mce-btn,
+.darkMode .messages-list-header,
+.darkMode .messages-list-search,
+.darkMode .hl_conversations--message-body,
+.darkMode .hl_conversations--message-header,
+.darkMode .message-body--aside,
+.darkMode .hl_conversations--message-body .message-input-wrap,
+.darkMode .message-body--aside .btn-sched-wrap,
+.darkMode .hl_conversations--message-body .message-box,
+.darkMode .message-body--aside .btn-sched-wrap,
+.darkMode .customContactsWidget,
+.darkMode .numberOfFunnelWrapper,
+.darkMode .numberOfStagesWrapper,
+.darkMode .defaultTasksWidget,
+.darkMode .headerWrapper,
+.darkMode .col-md-6,
+.darkMode .numberOfContactsWrapper,
+.darkMode .leadsWrapper,
+.darkMode .customPipeline,
+.darkMode .customConversion,
+.darkMode .customOpportunities,
+.darkMode .defaultFunnelWidget,
+.darkMode .defaultStagesWidget,
+.darkMode .columnChartWidget,
+.darkMode .pieChartWidget,
+.darkMode .numberOfOpportunitiesWrapper,
+.darkMode .columnChartHeader,
+.darkMode .pieChartHeader,
+.darkMode .donutChartWidget,
+.darkMode .barChartWidget,
+.darkMode .scatterChartWidget,
+.darkMode .barChartHeader,
+.darkMode .scatterChartHeader,
+.darkMode .donutChartHeader,
+.darkMode #hlpt_acc_sus_frame,
+.darkMode .ghl-sidepanel .flex.flex-direction-row.items-center,
+.darkMode #smartlists #colViewButton div,
+.darkMode #smartlists #hl_smartlists--filter-btn,
+.darkMode #conversations .hl_conversations--messages-list,
+.darkMode #conversations .hl_conversations--messages-list .nav-tabs,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-header,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-search,
+.darkMode #conversations .hl_conversations--messages-list h3,
+.darkMode #conversations .messages-list-search input,
+.darkMode #conversations .hl_conversations--message,
+.darkMode #conversations .message-body--aside input,
+.darkMode #dashboard>div>div:nth-child(2)>div.container-fluid>div.card-group.--wide-gutter>div>span,
+.darkMode .hl_form-builder--sidebar,
+.darkMode .hl_form-builder--sidebar .option-card,
+.darkMode #hl_smartlists-main tbody tr,
+.darkMode .ghl-table-container .n-data-table-tr,
+.darkMode .ghl-table-container .n-data-table-thead,
+.darkMode .ghl-table-container .pagination,
+.darkMode .table-container table thead tr th,
+.darkMode .table-container .n-data-table .n-data-table-th {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .n-data-table .n-data-table-tr:not(.n-data-table-tr--summary) .text-gray-900:hover {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #conversations .hl_conversations--messages-list,
+.darkMode #conversations .hl_conversations--messages-list .nav-tabs,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-header,
+.darkMode #conversations .hl_conversations--messages-list .messages-list-search,
+.darkMode #conversations .hl_conversations--messages-list h3,
+.darkMode #hl_header--help-icon,
+.darkMode #conversations .hl_conversations--message-header,
+.darkMode #conversations .hl_conversations--message-header button {
+  border: none !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a .nav-title,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a .nav-fa-icon,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a .nav-title,
+.darkMode .more-thread,
+.darkMode .btn.btn-light2,
+.darkMode .hl_create-campaign .new-event-day-item .calendar-day p,
+.darkMode .sidebar-v2-location h2.pb-0.capitalize,
+.darkMode .sidebar-v2-location p,
+.sidebar-v2-location .hl_settings--body .table-wrap table.table tr td,
+.sidebar-v2-location .hl_settings--body .table-wrap table.table tr td i,
+.sidebar-v2-location #dashboard .date-time-picker .field .field-input,
+span.text-xs.px-1.mx-1.rounded-sm.search-shortcut,
+.sidebar-v2-location section#conversations button.btn.btn-light.btn-sm:hover,
+.n-button .n-button__content svg,
+#conversations,
+.sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem.active a.active,
+.hl-header-content .title,
+.hl-header-content .description,
+#contact-details span.text-center,
+.sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #switcher-agency-switch div,
+.launchpad-title,
+.sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem,
+#conversations .truncate p,
+#conversations .time-date,
+section#conversations button.btn.btn-light.btn-sm,
+#conversations .multiple-to-email,
+#conversations .text-black,
+#conversations .form-group>label,
+.hl_v2-user_switcher[data-v-3b36b51e] .hl_text-overflow,
+.hl_header--controls a i,
+.sidebar-v2-agency .hl_header .topmenu-nav .topmenu-navtitle,
+#yext_promo_banner,
+#wordpress_promo_banner,
+#dashboard .hl_tasks-list button.dropdown-toggle,
+.hl_v2-user_switcher .hl_location-title,
+section#settings .text-black,
+section#settings #card-header,
+section#settings #card-desc,
+section#settings .heading,
+section#settings .description,
+.n-tag__content,
+.personal-logo>*,
+section#settings>*,
+.flex--space-between,
+.connected-acc__overview-name,
+.recom-plan__wrap .recom-plan__plan-name,
+.snapshot-row,
+.recom-plan__duration-label,
+.recom-plan__wrap .recom-plan__features.--custom .recom-plan__feature-row,
+.recom-plan__wrap .recom-plan__section .recom-plan__section-heading,
+.recom-plan__wrap .recom-plan__section .recom-plan__section-description,
+.recom-plan__duration-curreny,
+.recom-plan__wrap .recom-plan__highlight-row,
+.profit-boxes .boxes.label,
+.label,
+i.fas.fa-question-circle,
+.profit-boxes .row,
+.saas-plan-builder__plans__save-row .btn,
+.hl_controls .hl_controls--right .bootstrap-select>.btn.dropdown-toggle:after,
+.sidebar-v2-agency .hl_header .topmenu-nav .topmenu-navitem.active,
+.n-tabs .n-tabs-tab,
+.saas-dash__top-bar .saas-dash__top-bar__page-menu li.--active,
+.saas-dash__top-bar .saas-dash__top-bar__page-name,
+.saas-plan-builder__page-heading,
+.saas-plan-builder__wrap .saas-plan-builder__overall .saas-plan-builder__overall-card .saas-plan-builder__overall-card__info,
+.saas-plan-builder__wrap .saas-plan-builder__overall .saas-plan-builder__overall-card .saas-plan-builder__overall-card__title,
+.card-body>span.description,
+.tc,
+.boxes p,
+label,
+#yext_resell .card .card-body .footer-controls,
+#agency-reselling #tab-header,
+.icon-arrow-left-2:before,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_collapse-button,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_collapse-button,
+.darkMode #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow,
+.darkMode #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2:before {
+  background: unset !important;
+}
+
+.darkMode #hl_smartlists-main .card,
+.darkMode #hl_smartlists-main .card-body {
+  background-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .customContactsWidget .numberOfContactsContent p,
+.darkMode #form-builder .nav.nav-tabs li a.active,
+.darkMode .hl_form-builder--sidebar .dragdrop-items li {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_topbar-tabs .hl_wrapper .hl_wrapper--inner.hl_funnels .hl_funnels--card-side {
+  background: rgba(41, 205, 152, 0.1) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_topbar-tabs .hl_wrapper .hl_wrapper--inner.hl_funnels .hl_funnels--card {
+  background: 0 0 !important;
+}
+
+.darkMode .sidebar-v2-location .hl_topbar-tabs .hl_wrapper .hl_wrapper--inner.hl_funnels .hl_funnels--card-main {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode #calender-v2 #pg-calendar-v2__drpdwn--calendars-view ul,
+.darkMode .launchpad-item-sub-container {
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+.darkMode #globalSearchOpener~div#quickActions,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2,
+.darkMode #globalSearch .search-area>div:first-child,
+.darkMode .hover\:bg-gray-100:hover,
+.darkMode .text-gray-700,
+.darkMode .group:hover .group-hover\:block {
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .group:hover .group-hover\:block {
+  border: none !important;
+}
+
+.darkMode #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow,
+.darkMode #sidebar-v2 #location-switcher-sidbar-v2 .hl_text-overflow {
+  opacity: 0.8 !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:first-child,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:first-child {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode .divide-x .bg-gray-100.text-gray-900,
+.darkMode #pendo-base h3 {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:last-child,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account>div:nth-child(2)>span:last-child {
+  color: #f3f3f350 !important;
+  opacity: 1 !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.darkMode #sidebar-v2 #globalSearchOpener,
+body[data-theme='default'].darkMode #sidebar-v2 #globalSearchOpener,
+.darkMode .hl_conversations--messages-list {
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a img,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1%) hue-rotate(159deg) brightness(107%) contrast(101%) !important;
+}
+
+.darkMode #sb_divider-1,
+.darkMode #settings .text-gray-700,
+.darkMode .user-list-detail .submission.current-active {
+  background: unset !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list,
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher,
+.darkMode .hl_conversations--wrap,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .default-bg-color,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2.default-bg-color,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .default-bg-color,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2.default-bg-color,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .mx-1,
+.darkMode .more-thread a,
+.darkMode .btn.btn-light2,
+.darkMode .color-select,
+.darkMode #review-widget .two-part .copy-code-wrapper,
+.darkMode .card-integration,
+.darkMode .wrapper,
+.darkMode .drawer-panel,
+.darkMode .hl_marketing--heading.--info,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--top,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--bottom,
+.darkMode .hl_create-campaign .new-event-day-item .calendar-day-inner,
+.darkMode .hl_triggers--item,
+.darkMode .stat_card_items {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode tr.hover\:bg-gray-100.bg-gray-100.border-l-4.\!border-l-blue-500 {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .color-select,
+.darkMode #review-widget .two-part .copy-code-wrapper,
+.darkMode .card-integration,
+.darkMode .wrapper,
+.darkMode .darkMode .hl_marketing--heading.--info,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--top,
+.darkMode .hl_create-campaign .new-event-day-item .event-card--bottom,
+.darkMode .hl_create-campaign .new-event-day-item .calendar-day-inner,
+.darkMode .hl_triggers--item,
+.darkMode .stat_card_items,
+.darkMode .mx-1.flex.flex-col.justify-center.items-center.bg-gray-200.font-medium.text-sm.h-6.w-6.rounded-full.capitalize {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .messages-list--item:hover {
+  background-color: rgba(24, 139, 246, 0.1);
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-theme='default'].darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active.divider,
+body[data-theme='default'].darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover.divider {
+  background: transparent !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_v2_tip-arrow,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_v2_tip-arrow {
+  border-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div,
+.darkMode .sidebar-v2-agency #sidebar-v2 #quickActions .hl_v2-quick-actions-list .hl_quick-actions-list-container>div,
+.darkMode #globalSearch {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #globalSearch .search-middle-container+div {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_collapse-button,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_collapse-button {
+  opacity: 1 !important;
+  background: unset !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #switcher-agency-switch div,
+.darkMode .sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher #switcher-agency-switch div {
+  border-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+body:not([data-menu-type='button']) #globalSearchOpener~div#quickActions {
+  margin-left: 10px !important;
+}
+
+.darkMode #globalSearchOpener~div#quickActions:before {
+  content: ' ' !important;
+  background-image: url(https://storage.googleapis.com/msgsndr/4nxeJ558ij3cRZ8jQzWh/media/6205d1e97964d98510345c66.png) !important;
+  background-size: 100% !important;
+  width: 22px !important;
+  display: inline-block !important;
+  aspect-ratio: 1 !important;
+  filter: brightness(100) !important;
+}
+
+.darkMode #globalSearch .search-area>div:first-child {
+  padding: 2% !important;
+  border-radius: 10px !important;
+}
+
+.darkMode #globalSearch .search-area>div:first-child input {
+  background: 0 0 !important;
+}
+
+.darkMode #globalSearchOpener~div#quickActions img {
+  display: none !important;
+}
+
+.darkMode #globalSearch .search-middle-container .items-start>span,
+.darkMode #globalSearch .search-area>div:first-child input,
+.darkMode .dropDownLinks:hover {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode .dropDownLinks:hover {
+  text-decoration: underline !important;
+}
+
+.darkMode #globalSearch .search-area {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .vfm__content {
+  border: 0 !important;
+}
+
+.dropDownLinks {
+  cursor: pointer !important;
+}
+
+.dropDownPrivacy {
+  display: flex !important;
+  align-items: center !important;
+}
+
+#sidebar-v2 #globalSearchOpener {
+  background: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  border: 0.5px solid rgba(189, 189, 189, 0.5) !important;
+  border-radius: 7px !important;
+  height: 100% !important;
+}
+
+button[type='button'],
+button[type='submit'] {
+  --tw-ring-opacity: 0 !important;
+}
+
+#sidebar-v2 .tracking-wide {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.displayMode {
+  display: flex !important;
+  width: 60% !important;
+  background-color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  border-radius: 15px !important;
+  padding: 2% 3% !important;
+  margin: auto !important;
+}
+
+.privacyMode {
+  margin-top: 2% !important;
+  margin-left: 4% !important;
+}
+
+.darkModeIcon,
+.privacyModeIcon {
+  font-size: 12px !important;
+  color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  cursor: pointer !important;
+  border-radius: 15px !important;
+  padding-top: 3% !important;
+  padding-bottom: 3% !important;
+}
+
+.darkModeIcon i,
+.privacyModeIcon i {
+  margin-right: 5px !important;
+  font-size: 14px !important;
+}
+
+.displayModeLight .darkModeIcon.active,
+.privacyModeOff .privacyModeIcon.active,
+.privacyModeOn .privacyModeIcon.active {
+  background-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .displayModeDark .darkModeIcon.active,
+.darkMode .privacyModeOff .privacyModeIcon.active,
+.darkMode .privacyModeOn .privacyModeIcon.active {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.displayModeLight,
+.displayModeDark,
+.privacyModeOff,
+.privacyModeOn {
+  width: 50% !important;
+  text-align: center !important;
+  border-radius: 15px !important;
+}
+
+.dropDownLinks {
+  font-size: 14px !important;
+  margin-left: 12% !important;
+  color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  margin-bottom: 20px !important;
+}
+
+.dropDownSettings a,
+.dropDownHeader a {
+  color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.dropDownSettings a:hover span,
+.dropDownPrivacy span:hover span,
+.dropDownHeader a:hover .dropDownHeaderName {
+  color: var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+}
+
+.dropDownHeaderLink {
+  display: flex !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  align-items: center !important;
+}
+
+.dropDownLinks i {
+  font-size: 16px !important;
+  margin-right: 15px !important;
+}
+
+.dropdown .dropdown-menu {
+  width: 260px !important;
+}
+
+.dropdown-menu:before {
+  border: none !important;
+}
+
+.dropDownHeader {
+  display: flex !important;
+  align-items: center !important;
+  padding-left: 5% !important;
+  padding-bottom: 3% !important;
+  border-bottom: 1px solid var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+  margin-bottom: 5% !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.dropDownHeaderIcon {
+  margin-right: 5% !important;
+}
+
+.hl_header--dropdown:not(.hl_header--phone) a.dropdown-item:not(#profile-new-sidebar-action):not(.item-target):not(#profile-old-sidebar-action) {
+  position: relative !important;
+  display: flex !important;
+  font-size: 0 !important;
+  background: rgba(255, 91, 91, 0.15) !important;
+  border-radius: 7px !important;
+  height: 40px !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 250px !important;
+  margin: 10px auto 0 !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  color: #ff5b5b !important;
+}
+
+.hl_header--dropdown:not(.hl_header--phone) a.dropdown-item:not(#profile-new-sidebar-action):not(.item-target):not(#profile-old-sidebar-action):before {
+  content: 'Logout' !important;
+  font-size: 14px !important;
+  margin: 0 auto !important;
+}
+
+.hl_header--dropdown:not(.hl_header--phone) a.dropdown-item:not(#profile-new-sidebar-action):not(.item-target):not(#profile-old-sidebar-action):after {
+  content: ' ' !important;
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+  position: absolute !important;
+  background-image: url(https://storage.googleapis.com/msgsndr/Jh84PQ4KwTqBjoAD7fbd/media/61d5424e3ffd83f432b57aa2.png) !important;
+  height: 22px !important;
+  width: 22px !important;
+  aspect-ratio: 1 !important;
+}
+
+.hl_header .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu>a.item-target i {
+  position: unset !important;
+  right: 0 !important;
+  background: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  padding: 8px 10px !important;
+  border-radius: 50% !important;
+  width: 35px !important;
+  height: 35px !important;
+  margin-right: 15px !important;
+  color: #607179 !important;
+  font-size: 20px !important;
+  margin-top: 0 !important;
+}
+
+/* new css for dark mode overides */
+
+#dashboard-customizer-panel .card-body.dashboard-customizer-card-body {
+  background: var(--hlpt-primary-theme-color) !important;
+  background: -moz-linear-gradient(top, var(--hlpt-primary-theme-color) 0%, var(--hlpt-primary-theme-color) 20.99%, #ffffff 21%, #ffffff 19%) !important;
+  background: -webkit-linear-gradient(top, var(--hlpt-primary-theme-color) 0%, var(--hlpt-primary-theme-color) 20.99%, #ffffff 21%, #ffffff 19%) !important;
+  background: linear-gradient(to bottom, var(--hlpt-primary-theme-color) 0%, var(--hlpt-primary-theme-color) 20.99%, #ffffff 21%, #ffffff 19%) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-primary-theme-color)', endColorstr='#ffffff', GradientType=0) !important;
+}
+
+#dashboard-customizer-panel .card {
+  background: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#dashboard-customizer-panel label {
+  color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.darkMode .agency-dash .card-title,
+.darkMode .agency-dash .processing-stats {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.darkMode .sidebar-v2-agency .hl_header,
+.darkMode .sidebar-v2-location .hl_header {
+  -webkit-box-shadow: var(--dashboard-header-shadow) !important;
+  box-shadow: var(--dashboard-header-shadow) !important;
+}
+
+.darkMode div#sidebar-v2 {
+  box-shadow: var(--dashboard-leftsidebar-shadow) !important;
+  z-index: 1;
+}
+
+.darkMode .col-md-6 {
+  background: unset !important;
+  border: none !important;
+}
+
+section.hl_wrapper--inner.agency-dash .card-body {
+  background: var(--dashboard-panels-background) !important;
+  border: 0px solid var(--dashboard-panels-border) !important;
+  box-shadow: var(--dashboard-panels-shadow) !important;
+}
+
+section#customers {
+  background: unset !important;
+}
+
+.card,
+section#settings .hl_settings--body .hl_settings--main.col-lg-6 .card {
+  border: 1px solid var(--dashboard-panels-border) !important;
+  box-shadow: var(--dashboard-panels-shadow) !important;
+}
+
+section#customers .card,
+.hl_new-variation--templates .template-card,
+.sidebar-v2-agency .hl_wrapper .card.hl_settings--team-management {
+  border: 1px solid var(--dashboard-panels-border) !important;
+  box-shadow: var(--dashboard-panels-shadow) !important;
+  overflow: hidden;
+}
+
+.hl_new-variation--templates .template-card {
+  box-shadow: var(--dashboard-panels-shadow) !important;
+  border: 1px solid var(--dashboard-panels-border) !important;
+  border-radius: 7px !important;
+  overflow: hidden;
+}
+
+.hl_template-own--tuple[data-v-91b2ef6e] {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+#agency-reselling #tab-header {
+  background: var(--dashboard-panels-background) !important;
+}
+
+#wp_resell .color-success,
+#yext_resell .color-success,
+#wp_resell .card .card-body .playground .settings .selection .option .option-heading {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#yext_resell .card,
+#wp_resell .card,
+.hl_settings--body .table-wrap table.table tr td {
+  background: var(--dashboard-panels-background) !important;
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+#wp_resell .card-body,
+#wp_resell .card-header {
+  background: var(--dashboard-panels-background) !important;
+}
+
+.hl_affiliate--header[data-v-01a21858] {
+  border-top: 0px solid var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  box-shadow: none !important;
+}
+
+.sidebar-v2-agency .hl_wrapper .hl_agency-sales-resources {
+  overflow: auto !important;
+  padding-bottom: 50px !important;
+}
+
+.custom-link[data-v-46166498],
+section#ideas {
+  padding-top: 0px !important;
+}
+
+.saas-dash__top-bar .saas-dash__top-bar__page-menu li.--active {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+.theme-dark[data-v-11e48fae] {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border: 1px solid var(--dashboard-panels-border) !important;
+  padding-bottom: 7px !important;
+}
+
+.saas-plan-builder__wrap .saas-plan-builder__plans .saas-plan-builder__plans-row .saas-plan-builder__plan-col {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.saas-plan-builder__wrap .saas-plan-builder__plans .saas-plan-builder__plans-row .saas-plan-builder__plan-col:nth-child(2n).--custom {
+  background: var(--dashboard-panels-background) !important;
+}
+
+input.hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800 {
+  background-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-black) !important;
+  border-radius: 2px !important;
+}
+
+.saas-plan-builder__wrap,
+.profit-boxes .boxes,
+section.hl_agency.hl_agency-sales-resources .card {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.saas-plan-builder__wrap .saas-plan-builder__overall .saas-plan-builder__overall-card {
+  border-bottom: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.saas-plan-builder__wrap .saas-plan-builder__plans {
+  border-top: 1px solid var(--dashboard-panels-border) !important;
+  border-left: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.profit-boxes .boxes.label {
+  border: none !important;
+}
+
+.highcharts-axis-labels.highcharts-xaxis-labels,
+.highcharts-axis-labels.highcharts-xaxis-labels text tspan,
+.highcharts-axis-labels.highcharts-yaxis-labels text tspan {
+  stroke: var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+}
+
+.highcharts-axis-labels.highcharts-xaxis-labels text,
+.highcharts-axis-labels.highcharts-yaxis-labels text,
+.highcharts-axis-labels.highcharts-xaxis-labels text span,
+.highcharts-axis-labels.highcharts-yaxis-labels text span,
+.highcharts-axis-labels.highcharts-xaxis-labels text tspan,
+.highcharts-axis-labels.highcharts-yaxis-labels text tspan,
+.highcharts-legend-item.highcharts-column-series.highcharts-color-0.highcharts-series-0 tspan,
+.highcharts-legend-item.highcharts-column-series.highcharts-color-1.highcharts-series-1 tspan,
+.highcharts-legend-item.highcharts-column-series.highcharts-color-2.highcharts-series-2 tspan,
+.highcharts-legend-item.highcharts-column-series.highcharts-color-3.highcharts-series-3 tspan,
+.highcharts-legend-item.highcharts-column-series.highcharts-color-4.highcharts-series-4 tspan,
+.highcharts-legend-item.highcharts-line-series.highcharts-color-2.highcharts-series-2 text tspan {
+  fill: var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+}
+
+.agency-dash .card-value.--green,
+.agency-dash .card-value.--yellow {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.connected-acc__overview-status {
+  background-color: var(--hlpt-primary-theme-color) !important;
+}
+
+section#settings input.vs__search {
+  border: 0px solid var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.hl_controls .hl_controls--right .bootstrap-select>.btn.dropdown-toggle,
+.hl_billing--account .card .card-body,
+.billing-alert.success,
+.billing-alert,
+.shimmer-card,
+.hl_billing--method .card,
+.hl_billing--services .card,
+.hl_billing--method .card .card-footer,
+section#settings .table-wrap .table,
+.table tbody tr td,
+.hl_billing--account,
+.darkMode .ghl-table-container .n-data-table-tr,
+.hl-card {
+  background: var(--dashboard-panels-background) !important;
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.n-data-table .n-data-table-tr:not(.n-data-table-tr--summary) .n-data-table-td {
+  border-bottom: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.n-data-table .n-data-table-tr:not(.n-data-table-tr--summary):hover .n-data-table-td,
+.n-tag.n-tag--round {
+  background: var(--dashboard-panels-background) !important;
+}
+
+.hl_billing--account {
+  border: 0px solid var(--dashboard-panels-border) !important;
+}
+
+section#settings .table-wrap {
+  width: 100% !important;
+  margin: auto !important;
+  border: 0px !important;
+}
+
+.hl_billing--method .card .card-footer,
+.n-data-table .n-data-table-td {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .card,
+.table-container:not(.ghl-transparent-heading),
+.darkMode #app .hl_settings--main .card {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.card-footer {
+  border-top: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.page-item.disabled a,
+.page-item a,
+.n-button .n-button__content,
+.n-button .n-button__content svg path {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.table-container:not(.ghl-transparent-heading),
+.table-container .ghl-table-container,
+.hl-card,
+.n-input .n-input-wrapper {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+#settings .hl_settings--main .card a {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+section#settings .hl_settings--main.col-lg-6 .card .row.compliance_row .card {
+  overflow: auto !important;
+}
+
+section#settings .hipaa-icon,
+section#settings .card-icon.absolute {
+  top: 5px !important;
+}
+
+section#settings .feature-name,
+section#settings .live-text,
+.flex.items-center.gap-2.hl-text-lg-medium {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#sidebar-v2 .hl_new_badge {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+tspan {
+  fill: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.w-\[25px\],
+.integration-icon.mx-4,
+img.bg-white.h-16.flex-shrink-0.mx-auto {
+  filter: invert(100%);
+  border: 0px !important;
+}
+
+path.highcharts-grid-line {
+  stroke: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.dropdown .dropdown-menu {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+#dashboard .hl_tasks-list button.dropdown-toggle:hover,
+.pending-manual-actions .bootstrap-select>.btn.dropdown-toggle:after,
+.pending-task-value~div,
+section#dashboard i.fas.fa-tasks,
+section#dashboard i.fas.fa-phone,
+section#dashboard i.fas.fa-sms,
+p.mt-1,
+.btn.btn-outline.flex-none.p-0,
+.message-body--conversation .messages-group-heading svg path {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem.active,
+#conversations a.btn.btn-primary.btn-sched {
+  border: 1px solid var(--hlpt-primary-theme-color) !important;
+}
+
+.hl_wrapper--inner .nav.nav-tabs .nav-link {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+#dashboard .card.task-list-card {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+#hl_v2-user_switcher,
+.darkMode .hl_conversations--message-body .message-input-wrap {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+  padding-bottom: 10px !important;
+}
+
+header.hl_header .justify-start,
+.hl_v2-user_switcher {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+#yext_promo_banner,
+#wordpress_promo_banner,
+.darkMode .card-group>.card,
+.message-wrapper .email-group,
+#conversations a.btn.btn-primary.btn-sched:hover {
+  background: var(--dashboard-panels-background) !important;
+}
+
+.flex.flex-row.items-center.justify-start.py-2.my-2.hl_account:hover,
+.border-gray-200 {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.flex.flex-row.items-center.justify-start.py-2.my-1.font-medium.cursor-text.hl_swicher-heading {
+  border: 0px solid var(--dashboard-panels-border) !important;
+}
+
+.hl_v2-user_switcher[data-v-3b36b51e] {
+  overflow: hidden !important;
+  border-radius: 10px !important;
+}
+
+.hl_v2-user_switcher[data-v-3b36b51e] .hl_text-overflow {
+  background-color: none !important;
+}
+
+.mx-1.flex.flex-col.justify-center.items-start.leading-4.truncate {
+  background: none !important;
+}
+
+#sidebar-overlay {
+  display: none !important;
+}
+
+/* #location-list > div > div > div:hover {
+  background: var(--dashboard-panels-background) !important;
+} */
+
+.sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_v2_tip-arrow {
+  left: -11px !important;
+  border-right: 10px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+#location-list .flex.flex-row.items-center.justify-start.py-2.my-2.hl_account:hover {
+  background: unset !important;
+  background: var(--dashboard-panels-background) !important;
+  background-color: var(--dashboard-panels-background) !important;
+}
+
+#sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account {
+  padding: 10px;
+}
+
+#sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_account:hover,
+
+/*  locations css dark mode */
+#dashboard.hl_dashboard .card-header,
+#dashboard .table tbody tr:hover,
+.py-2\.5.cursor-pointer.messages-list--item-v2.relative:hover,
+.sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem.active a.active,
+section#conversations button.btn.btn-light.btn-sm,
+.sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem.active {
+  background: var(--dashboard-panels-background) !important;
+}
+
+.hl_settings--body .table-wrap table.table tr td {
+  border-radius: 0px !important;
+}
+
+#dashboard.hl_dashboard .card-header,
+.border-b-2,
+.hl_conversations--messages-list-v2,
+.darkMode #conversations .message-body--aside input,
+.hl_contact-details-new--wrap .hl_contact-details-right .hl_contact-details-right-tabs {
+  border-bottom: 1px solid var(--dashboard-panels-border) !important;
+}
+
+.darkMode .launchpad-item-container,
+.sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem,
+.hl_contact-details-new--wrap .hl_contact-details-left,
+.hl_settings--body .table-wrap {
+  border: 1px solid var(--dashboard-panels-border) !important;
+}
+
+#conversations .aside-texts {
+  padding-bottom: 50px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #quickActions .hl_v2-quick-actions-list {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+}
+
+.sidebar-v2-location #sidebar-v2.default-bg-color {
+  box-shadow: var(--dashboard-leftsidebar-shadow) !important;
+}
+
+#dashboard .table tbody tr td:first-child {
+  border-radius: 0px !important;
+}
+
+#quickFilterDropdownOuter svg path {
+  fill: var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+  stroke: var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+}
+
+/* conversatoins */
+
+#conversations .messages-list--item-v2 {
+  border-left-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.hl_conversations--message-body .message-body--conversation {
+  border-right: 1px solid var(--dashboard-panels-border) !important;
+  z-index: 5;
+}
+
+#conversations .btn.btn-xs,
+#contact-details .btn.btn-xs,
+#conversations button.btn.btn-light2.btn-xs,
+#contact-details button.btn.btn-light2.btn-xs {
+  background: var(--hlpt-primary-theme-color) !important;
+  border: var(--hlpt-primary-theme-color) !important;
+}
+
+#conversations .messages-group-heading svg path,
+#contact-details .messages-group-heading svg path {
+  fill: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#conversations .messages-group-heading svg,
+#contact-details .messages-group-heading svg {
+  margin-bottom: 10px !important;
+}
+
+#contact-details .py-3.px-3.border-b:hover {
+  background: unset !important;
+}
+
+span.inline-flex.items-center.ml-1.px-2.py-0\.5.text-xs.font-medium.rounded.bg-purple-100.text-purple-800 {
+  background-color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.hl_new-variation--header ul li.active a {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#yext_resell .playground .logo img.sidebar-icon {
+  filter: invert(100%);
+}
+
+.hl_affiliate--header .hl_affiliate--nav li.active a,
+.hl_affiliate--nav li.--active a,
+.flex.flex-col.items-center.justify-center.rounded-full.h-5.w-5.switcher-caret-holder i,
+.hl_affiliate--header .hl_affiliate--nav li a:hover,
+.hl_affiliate--nav li a:hover,
+.invoice-value,
+.link-text,
+i.icon.icon-pencil.pointer.--light,
+.hl-text-xs-regular,
+i.icon.icon-repeat.pointer.--light {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.page-item:last-child .page-link,
+.page-item .page-link {
+  color: var(--hlpt-primary-theme-bg-color) !important;
+}
+
+.page-item .page-link,
+.pagination li {
+  border: 1px solid !important;
+}
+
+.page-item:last-child .page-link,
+.page-item.disabled .page-link {
+  border-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+button.btn.dropdown-toggle.btn-light,
+.hl_billing--method .form-control {
+  background-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  height: 55px;
+}
+
+.n-button .n-button__content svg,
+.message.flex.items-center.gap-1.text-primary-500 svg {
+  stroke: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+i.icon.icon-repeat.pointer.--light {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.n-switch.n-switch--active .n-switch__rail {
+  background-color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode .sidebar-v2-agency #sidebar-v2:before,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.sidebar-v2-location .green-btn {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+/* location side of css for dark mode */
+.sidebar-v2-location #dashboard .card-header h2 {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location #globalSearchOpener,
+.darkMode .sidebar-v2-location .modal-content,
+.darkMode .sidebar-v2-location .modal-body {
+  background-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.sidebar-v2-location .modal .modal-header {
+  border-bottom-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.sidebar-v2-location .modal .modal-footer {
+  border-top: 2px solid var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .sidebar-v2-location .modal-content {
+  border-radius: 10px !important;
+  box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+.darkMode .sidebar-v2-location .modal .modal-header,
+.darkMode .sidebar-v2-location .modal-content,
+.darkMode .sidebar-v2-location .modal-body,
+.sidebar-v2-location .selecteditem {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.sidebar-v2-location .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+.modal-footer--inner button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+.darkMode .sidebar-v2-location .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+.modal-footer--inner button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+.darkMode .sidebar-v2-location button {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.sidebar-v2-location .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+.modal-footer--inner button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+.darkMode .sidebar-v2-location .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+.modal-footer--inner button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover {
+  border-radius: 7px !important;
+}
+
+.darkMode .sidebar-v2-location button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+.darkMode .sidebar-v2-location button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40,
+.darkMode .sidebar-v2-location button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+.darkMode .sidebar-v2-location .bg-white.py-3.mx-3.rounded.shadow,
+li.text-center.bg-white.rounded-lg.shadow-md.divide-y.divide-gray-200.hover\:border-curious-blue-100.border,
+.sidebar-v2-location #instagram-tab,
+a#email-tab,
+a#facebook-tab,
+a#review-tab,
+a#sms-tab,
+.sidebar-v2-location .hl_settings--body .table-wrap table.table tr td {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .sidebar-v2-location .search-placeholder {
+  color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.darkMode .sidebar-v2-location .ml-1.flex.items-center.justify-center.rounded-full.text-xl {
+  border-color: none !important;
+}
+
+.darkMode .sidebar-v2-location #invites-goal,
+.darkMode .sidebar-v2-location #review-received,
+.darkMode .sidebar-v2-location #avg-rating,
+.darkMode .sidebar-v2-location #review-sentiment,
+.darkMode .sidebar-v2-location #invite-trend,
+.darkMode .sidebar-v2-location #review-trends,
+.darkMode .sidebar-v2-location #latest-review-requests,
+.darkMode .sidebar-v2-location #latest-reviews,
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .sidebar-v2-location button#send_review_request_btn {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode .sidebar-v2-location .n-button-group:not(.n-button-group--vertical):not(.n-button-group--rtl) .n-button:first-child:not(:last-child),
+.darkMode .sidebar-v2-location .n-button-group:not(.n-button-group--vertical):not(.n-button-group--rtl) .n-button:last-child:not(:first-child),
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar .dragdrop-wrap .nav.nav-tabs li a.active,
+#conversations .hl_conversations--messages-list-v2,
+.darkMode .sidebar-v2-location .hl_header .topmenu-nav,
+#contact-details .bg-gray-100,
+#contact-details .mt-1.py-2.pr-3.pl-3,
+.d-flex.py-3.body.align-items-center.bg-white.font-weight-normal,
+.hl_settings--body .table-wrap table.table tr:hover td {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar .dragdrop-wrap {
+  background: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar .dragdrop-wrap,
+.darkMode .sidebar-v2-location .modal-content {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar .dragdrop-wrap .nav.nav-tabs li a.active {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightestgray) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar .dragdrop-wrap .dragdrop-items li {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_form-builder--sidebar .dragdrop-wrap .dragdrop-items li {
+  background: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.hl_tasks--item {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.hl_tasks--item-footer p strong {
+  color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.hl_tasks--item-footer i.icon.icon-edit.--blue,
+.absolute.inset-y-0.left-0.pl-3.flex.items-center.pointer-events-none {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#launchpad .card-body span {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+#launchpad #launchpad-invite-user,
+#launchpad-chatwidget-website,
+#launchpad .gmb-container .fb-container button {
+  background: var(--hlpt-primary-theme-color) !important;
+  border: 1px solid var(--hlpt-primary-theme-color) !important;
+}
+
+#launchpad .modal-container {
+  background: none !important;
+  box-shadow: var (--dashboard-panels-shadow) !important;
+}
+
+#launchpad .tag-input {
+  padding-top: 10px !important;
+  background: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  margin-bottom: 20px !important;
+}
+
+#launchpad .tag-input input.tag-input_text {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#launchpad input::placeholder,
+#launchpad textarea::placeholder {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.hl_error_text.text-center {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .modal-wrapper .card {
+  box-shadow: 0px 0px 10px 0px var(--hlpt-dashboard-darkmode-color-white) !important;
+  margin: 10px !important;
+}
+
+.darkMode .gmb-container,
+.darkMode .modal-container,
+.darkMode .nogmb-container,
+.darkMode .mobile-container,
+.darkMode .datepicker-buttons-container .datepicker-button.validate {
+  background-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .fb-container>div {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .custom-button.flex.align-center.justify-content-center.shortcut-button.with-border {
+  border-color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.darkMode .custom-button.flex.align-center.justify-content-center.shortcut-button.with-border span,
+.darkMode .datepicker-controls button span,
+.darkMode .week-days-container>div,
+.darkMode .week-days-container,
+.darkMode #conversations span,
+.darkMode .clear_quick_filter i,
+.title,
+.darkMode .message-input-wrap a i::before {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .datepicker-day.flex.align-center.justify-content-center.enable.between,
+.darkMode .datepicker-container .datepicker-days .datepicker-day.enable,
+.darkMode .datepicker-controls button {
+  border: 0px !important;
+}
+
+.darkMode .datepicker-container .datepicker-controls .datepicker-button svg {
+  fill: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #dashboard .dropdown .dropdown-menu .dropdown-item,
+.darkMode #dashboard .dropdown .dropdown-menu .dropdown-item span {
+  border: 0px solid transparent !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #dashboard .dropdown .dropdown-menu .dropdown-item:hover {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .mt-1.ml-1.relative.rounded-md {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .n-card.n-modal.hl-modal {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+.darkMode .n-card.n-modal.hl-modal,
+.darkMode .message-input-wrap,
+.darkMode #conversations .modal-container,
+.darkMode .hl_edit-event-modal-preview {
+  box-shadow: 0px 0px 10px 0px var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode footer.flex.justify-end {
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+.darkMode #quickFilterDropdown .w-9\/12 {
+  width: 60%;
+}
+
+.darkMode .bg-gray-200 {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.darkMode .message-header-actions button svg path {
+  fill: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode section#conversations button.btn.btn-light.btn-sm:nth-child(1) {
+  padding-top: 4px !important;
+}
+
+.darkMode #conversations .message-body--aside input {
+  border: 0px !important;
+  border-bottom: 1px solid var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #conversations .message-body--aside input.msgsndr2,
+.darkMode #conversations .modal-container>div {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #conversations .modal-container {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #conversations .modal-container .bg-gray-100 {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+}
+
+.darkMode #conversations .modal-container .add-email-font {
+  font-size: 14px;
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #conversations .modal-container #mandatory-email~button {
+  border: none !important;
+}
+
+.darkMode #conversations ul#conversation-list span,
+.darkMode #conversations .flex.content-center.truncate p {
+  color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.darkMode #conversations ul#conversation-list li:hover span,
+.darkMode #conversations ul#conversation-list li:hover .flex.content-center.truncate p {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #conversations ul#conversation-list .avatar_img:first-child,
+.darkMode #conversations button.close,
+.darkMode #conversations .modal-dialog button.close {
+  border: 0px !important;
+}
+
+.darkMode #conversations .header-picker,
+.darkMode .hl_edit-event-modal-preview,
+.darkMode #contact-details .hl_edit-event-modal-preview,
+.darkMode #contact-details .header-picker {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode #conversations .vs__selected-options .vs__selected,
+.darkMode #contact-details .vs__selected-options .vs__selected {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #conversations .selected-current-filter span,
+.darkMode #contact-details .selected-current-filter span,
+.darkMode #contact-details .selected-current-filter span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode #conversations span.vs__selected,
+.darkMode #contact-details span.vs__selected {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #conversations [type='search'],
+.darkMode #contact-details [type='search'] {
+  background: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem.active {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode .mt-1.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded-md.text-gray-800.pl-10.disabled\:opacity-50,
+.hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800 {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  padding: 15px !important;
+}
+
+.darkMode #conversations .emoji-mart-bar.emoji-mart-bar-anchors span svg,
+.darkMode #conversations .emoji-mart-bar.emoji-mart-bar-anchors span,
+.darkMode #conversations .vue-recycle-scroller.scroller.ready.direction-vertical span {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #conversations .vue-recycle-scroller.scroller.ready.direction-vertical input,
+.darkMode #calender-v2 .tui-view-9 {
+  background-color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #conversations #vs4__listbox,
+.darkMode #trigger-links .hl-text-input-container.form-light input.hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.pl-10 {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .ml-1.flex.items-center.justify-center.rounded-full.text-xl {
+  border: 0px !important;
+}
+
+.darkMode #campaign-picker .hl_controls li a.dropdown-item span,
+.darkMode li a.dropdown-item span,
+.darkMode #edit-event-modal button span,
+.darkMode .hl_campaign-configuration~button span,
+.darkMode .hl_campaign-configuration+button span,
+#trigger-links #hl_datepicker i,
+#trigger-links #__BVID__218__BV_tab_container_ .hl_customer-acquisition--table .table-wrap .table.table-sort tr td,
+#trigger-links .hl_customer-acquisition--table .table tbody tr td:first-child {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #campaign-picker .hl_controls li:hover {
+  background-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode #edit-event-modal button,
+.darkMode .hl_campaign-configuration~button,
+.darkMode .hl_campaign-configuration+button {
+  border: 0px !important;
+}
+
+.darkMode .hl_sms-preview-footer,
+#trigger-links #hl_datepicker #undefined-input,
+#trigger-links #__BVID__218__BV_tab_container_ .hl_customer-acquisition--table .table-wrap .table.table-sort tr:hover td,
+#trigger-links #__BVID__218__BV_tab_container_ .hl_customer-acquisition--table .table-wrap .table.table-sort tr td:hover,
+#trigger-links table.table tr:hover td {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+#trigger-links #hl_datepicker {
+  border: 0px !important;
+}
+
+#trigger-links .hl_wrapper--inner .nav.nav-tabs .nav-link {
+  padding: 5px 20px !important;
+}
+
+#trigger-links #__BVID__218__BV_tab_container_ .hl_customer-acquisition--table .table-wrap .table.table-sort tr td,
+#trigger-links .hl_customer-acquisition--table .table tbody tr td:last-child,
+#trigger-links .hl_customer-acquisition--table .table tbody tr td:first-child {
+  border-radius: 0px !important;
+}
+
+.darkMode #trigger-links .hl-text-input-container.form-light input.hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.pl-10 {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  padding-left: 50px !important;
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.darkMode #trigger-links #__BVID__94__BV_tab_controls_ {
+  padding-top: 10px !important;
+}
+
+.darkMode .sidebar-v2-location .modal-header .close button {
+  border: 0px solid transparent !important;
+}
+
+.darkMode #calender-v2 ul li #dropdown-header-label,
+.darkMode ul li #dropdown-header-label {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode #calender-v2 ul li:hover a {
+  background-color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.darkMode #calender-v2 .dropdown .dropdown-menu .dropdown-item {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  border: 0px !important;
+}
+
+.darkMode #calender-v2 #pg-calendar-v2__btn--event-guide {
+  border: 0px !important;
+}
+
+.darkMode #calender-v2 .dropdown .dropdown-menu:hover {
+  border-bottom: 1px solid var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+.darkMode #calender-v2 .tui-full-calendar-dayname.tui-full-calendar-today .tui-full-calendar-dayname-name,
+.darkMode #tb_calendar-settings-top:hover {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode #tb_calendar-settings-top {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .events-guide .general {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .bootstrap-select>.dropdown-menu .inner .dropdown-menu li.active a.active {
+  background-color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode .bootstrap-select>.dropdown-menu .inner .dropdown-menu li.active a,
+.bootstrap-select>.dropdown-menu .inner .dropdown-menu li a {
+  border: 0px !important;
+  border-bottom: 1px solid var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode td.appointment-actions button.btn.dropdown-toggle.btn-light {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode span.mx-1.my-2.text-muted,
+.darkMode .bootstrap-select>.btn.dropdown-toggle::after,
+.darkMode .text-2xl.font-light.text-gray-600.mb-3.hl_contact-restore {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode ul li:hover a,
+.darkMode .dropdown .dropdown-menu .dropdown-item {
+  background: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  border: 0px !important;
+  border-bottom: 1px solid var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .modal-content--service .radio--distribution label {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+  padding-bottom: 10px;
+}
+
+.darkMode .full.cursor-pointer.transition-colors.ease-in-out.duration-200.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500.bg-gray-200 {
+  background: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  padding: 1px !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover .h-5 i,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span~span,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active .h-5 i,
+.darkMode .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span~span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+section#opportunities .hl_opportunities-item .card-body:hover {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblack) !important;
+  border: 0px !important;
+}
+
+section#opportunities .hl_opportunities-item .card-body {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  border: 0px !important;
+}
+
+#undefined-wrapper #undefined-input {
+  background: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+}
+
+.darkMode #opportunities .hl-text-input-container.form-light input.hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.pl-10 {
+  background-color: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  border: var(--hlpt-dashboard-darkmode-color-softblackk) !important;
+  border-radius: var(--search-bar-radius) !important;
+  box-shadow: var(--search-bar-shadow) !important;
+  padding-left: 40px !important;
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode #opportunities #myTab {
+  padding: 15px !important;
+  padding-top: 15px;
+  padding-top: 20px !important;
+}
+
+.darkMode #opportunities .smooth-dnd-container.vertical>.smooth-dnd-draggable-wrapper {
+  padding-bottom: 14px !important;
+}
+
+.darkMode .hl_triggers--item {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .hl_triggers--item:hover {
+  background-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .table tbody tr:hover td {
+  background-color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .card.hl_dashboard--latest-review-requests .table tbody tr td {
+  border-radius: 0px !important;
+}
+
+.darkMode .ad-reporting-container #ads-date-picker-wrapper svg path {
+  fill: none !important;
+}
+
+.darkMode .date-display.--blue {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode section#smartlists button.btn.btn-light.btn-sm {
+  background-color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode section#smartlists button.btn.btn-light.btn-sm:hover {
+  background-color: var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode .hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.form-light {
+  padding-left: 40px !important;
+}
+
+section#smartlists .hl_controls .hl_controls--right .bootstrap-select>.btn.dropdown-toggle::after {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #smartlists #colViewButton div,
+.darkMode .text-2xl.font-light.text-gray-600.mb-3.hl_contact-restore {
+  border: 0px !important;
+}
+
+#contact-details .hl_tasks-list .dropdown.b-dropdown.btn-group,
+#contact-details .btn.dropdown-toggle.btn-secondary {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+#contact-details .btn.dropdown-toggle.btn-secondary {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+#contact-details .btn.dropdown-toggle.btn-secondary:after,
+#contact-details .hl_conversations--message-header .message-header-actions .dropdown .dropdown-toggle {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+#contact-details #contact-hide-empty-fields~div {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #contact-details [type='text'] {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+  padding: 10px 20px !important;
+}
+
+.darkMode #contact-details input::placeholder,
+textarea::placeholder,
+.dummy-table.min-w-full tr th>div span {
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode button#dropdownMenuButton {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.darkMode .text-center.whitespace-nowrap.py-2\.5.px-1.border-b-2.font-medium.text-sm.capitalize.w-1\/2.cursor-pointer.border-\[\#188bf6\].text-\[\#188bf6\] {
+  border-bottom: 1px solid var(--hlpt-primary-theme-color) !important;
+}
+
+.darkMode .bg-teal.rounded.w-full.pb-1,
+.darkMode .bg-teal.rounded.w-full.pb-1 span {
+  padding: 5px !important;
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode .bg-teal.rounded.w-full.pb-1 span {
+  padding: unset !important;
+  color: var(--hlpt-dashboard-darkmode-color-softwhite) !important;
+}
+
+.darkMode #funnels .search-form .hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.pl-10 {
+  padding-left: 50px !important;
+}
+
+.darkMode #funnels .dropdown-menu.show,
+.darkMode #funnels .dropdown-menu.show:hover {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #funnels .dropdown-item-div>div i {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels .dropdown-item-div>div>div,
+.darkMode #funnels .hl_funnels--overview>div {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels .steps-item--header.header-disabled {
+  background: var(--hlpt-dashboard-darkmode-color-black) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels .step-item.active {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels .step-item .title h5 {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #funnels .step-item.active .title h5 {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels .hl_funnels--card-main-header ul,
+.darkMode #funnels .nav.nav-tabs.hl_funnels--nav {
+  border: 0px solid #000 !important;
+}
+
+.darkMode #funnels .btn.btn-sm.btn-yellow-lt.dropdown-toggle,
+.darkMode #funnels .hl_funnels--steps li a,
+.darkMode #funnels .nav.nav-tabs.hl_funnels--nav li a {
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels .hl_funnels--steps-items li>.icon::after {
+  border-color: var(--hlpt-dashboard-darkmode-color-lightgray) transparent transparent transparent !important;
+}
+
+.darkMode #funnels #hl-table-forms-list-filter-text-search input {
+  border: 0px !important;
+}
+
+.darkMode #funnels button#forms-btn-primary>span {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode #funnels button#forms-btn-secondary {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode .avatar {
+  z-index: 0 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher .hl_v2_tip-arrow {
+  border-right: 10px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+  left: -10px !important;
+}
+
+.darkMode .hl_v2-location_switcher {
+  border: 1px solid #999 !important;
+  top: 130px !important;
+  z-index: 99 !important;
+  position: absolute !important;
+  width: 370px !important;
+  right: -370px !important;
+  box-shadow: 3px -8px 15px 0 hsla(240, 5%, 41%, 0.2) !important;
+}
+
+.darkMode .sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2 .hl_v2-location_switcher {
+  box-shadow: 0px 0px 15px 0 rgba(255, 255, 255, 0.7) !important;
+}
+
+#hl_v2-user_switcher {
+  right: 270px !important;
+}
+
+.darkMode #location-switcher-sidbar-v2 .mx-1.flex.flex-col.justify-center.items-center.bg-gray-200.font-medium.text-sm.h-6.w-6.rounded-full.capitalize {
+  border: 2px solid var(--hlpt-dashboard-darkmode-color-white) !important;
+  width: 10% !important;
+}
+
+#opportunities #undefined-input::placeholder,
+#opportunities input#undefined-input::-webkit-input-placeholder,
+#opportunities input#undefined-input::placeholder {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#opportunities .hl_controls--right button.btn.btn-sm.btn-primary,
+#opportunities .hl_controls--right button#dropdown-columns__BV_toggle_ {
+  background: var(--hlpt-primary-theme-bg-color) !important;
+  border: 1px solid #666 !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+section.hl_wrapper.hl_topbar-tabs button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500 {
+  border: 2px solid var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 nav a:hover span {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.sidebar-v2-agency .hl_header .topmenu-nav .topmenu-navitem:hover {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#copy-clipboard {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#phone-integration #btn-use-lc-phone span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#phone-integration .h-5.w-5.text-gray-600 {
+  border: 0px solid var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.n-pagination {
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.text-gray-600.hl-text-sm-normal {
+  border: 0px !important;
+}
+
+#hl-table-phone-settings-table-filter-text-search input[type='text'] {
+  border: 0px !important;
+}
+
+.hl_settings--controls-right .search-form .relative.rounded-md.shadow-sm .hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.pl-10,
+.hl_settings--body.hl_v2_stettings--body.hl_without-topbar .search-form .relative.rounded-md.shadow-sm .hl-text-input.shadow-sm.focus\:ring-curious-blue-500.focus\:border-curious-blue-500.block.w-full.sm\:text-sm.border-gray-300.rounded.disabled\:opacity-50.text-gray-800.pl-10 {
+  padding-left: 40px !important;
+}
+
+#vs8__listbox {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+#form-builder h2 span,
+#form-builder i.fa.fa-edit.pointer.hint-icon.center-inside {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#forms-btn-primary span,
+#surveys-btn-primary span {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#hl-table-forms-list-filter-text-search input[type='text'].n-input__input-el,
+#hl-table-surveys-list-filter-text-search input[type='text'].n-input__input-el {
+  border: 0px !important;
+}
+
+#forms-btn-secondary .n-button__content svg,
+#surveys-btn-secondary .n-button__content svg {
+  stroke: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.emulator-component .emulator-control .controlButtons {
+  background: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.emulator-component .emulator .emulator__mobile .mobile-structure,
+.emulator__tab,
+.emulator-component .emulator .emulator__laptop .emulator__laptop__browser {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.dropdown .dropdown-menu {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.hl-header--themegen-header-btn .custom-theme-generator-header-btn {
+  background-color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+/* bug fixes 23-6-2023 */
+:root {
+  --hlpt-primary-theme-color: var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+}
+
+.hl_header--controls a i {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+.darkMode #conversations ul#conversation-list .avatar_img:first-child {
+  color: #999 !important;
+}
+
+#conversations span {
+  color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.messages-single.--own-message .message-bubble,
+#app .hl_header div.avatar_img {
+  color: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.messages-single .message-bubble,
+.messages-single.--own-message .message-bubble {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+}
+
+.messages-single .message-bubble::before {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) var(--hlpt-dashboard-darkmode-color-darkgray) transparent transparent !important;
+}
+
+.messages-single.--own-message .message-bubble,
+.messages-single.--own-message .message-bubble p,
+.messages-single.--own-message .message-bubble p span {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.messages-single.--own-message .message-bubble::before {
+  border-color: var(--hlpt-dashboard-darkmode-color-darkgray) transparent transparent transparent !important;
+}
+
+#conversations .btn.btn-xs,
+#contact-details .btn.btn-xs,
+#conversations button.btn.btn-light2.btn-xs,
+#contact-details button.btn.btn-light2.btn-xs {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  border: 1px solid var(--hlpt-dashboard-darkmode-color-lightgray) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.darkMode .sidebar-v2-agency #sidebar-v2::before,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a,
+.darkMode .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a:hover,
+.sidebar-v2-location .green-btn {
+  background: var(--hlpt-dashboard-darkmode-color-darkgray) !important;
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+.messages-single.--own-message .message-bubble a {
+  color: var(--hlpt-dashboard-darkmode-color-white) !important;
+}
+
+#app .hl_header div.avatar_img,
+#app .hl_header .conversation-selected-v2 div.avatar_img {
+  color: var(--hlpt-dashboard-darkmode-color-black) !important;
+}
+
+/* bug fixed 27-6-2023 */
+section#contact-details {
+  z-index: 0 !important;
+  position: relative !important;
+}

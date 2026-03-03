@@ -1,0 +1,557 @@
+:root {
+  --scrollbar-sidebar-track-background: rgba(0, 0, 0, 0);
+  --scrollbar-sidebar-track-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  --scrollbar-sidebar-track-border-radius: 100px;
+  --scrollbar-sidebar-handle-background: rgba(0, 0, 0, 0.05);
+  --scrollbar-sidebar-handle-background-hover: rgba(26, 3, 3, 0.05);
+}
+
+/* HEADER CONTROLS COMPACT BOTTOM LEFT CICULAR ICONS */
+div#userflow-ui {
+  position: fixed !important;
+  width: 200px !important;
+  height: 35px !important;
+  left: 10px !important;
+  bottom: 62px !important;
+  z-index: 199 !important;
+  margin-top: 15px !important;
+}
+
+div#userflow-ui div.userflowjs-launcher {
+  position: absolute !important;
+  transform: none !important;
+  position: absolute !important;
+  transform: none !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  left: 0 !important;
+  right: 0 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav {
+  width: 221px !important;
+  padding-bottom: 115px !important;
+  position: relative !important;
+  margin-bottom: -20px;
+}
+
+body #app .sidebar-v2-agency .hl_header,
+body #app .sidebar-v2-location .hl_header {
+  background: transparent !important;
+  z-index: 105 !important;
+  border: 0px !important;
+  width: 0px !important;
+  position: absolute !important;
+  left: 10px !important;
+}
+
+.sidebar-v2-location .hl_header .container-fluid,
+.sidebar-v2-agency .hl_header .container-fluid {
+  padding: 0px !important;
+  position: relative !important;
+  top: 93vh !important;
+  left: -7px !important;
+  height: 50px !important;
+  width: 200px !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid .dropdown.bootstrap-select.hl_header--picker.fit-width.show,
+#app .sidebar-v2-location .hl_header .container-fluid .dropdown.bootstrap-select.hl_header--picker.fit-width.show {
+  display: none !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>*+*,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>*+* {
+  margin-left: 5px !important;
+}
+
+body #app .sidebar-v2-location .hl_header #hl_header--help-icon span.left-nav-icon.hl_header--help-icon,
+body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span.left-nav-icon.recent_activities-toggle,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  font-size: 18px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  background-color: var(--hlpt-adv-help-btn-icon-bg-hover-col) !important;
+  border-radius: 500px !important;
+  padding-top: 2px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle {
+  background-color: var(--hlpt-adv-notification-btn-icon-bg-hover-col) !important;
+  border-radius: 500px !important;
+}
+
+body #app .sidebar-v2-agency .hl_header .hl_header--controls #canny_logs-toggle,
+body #app .sidebar-v2-location .hl_header .hl_header--controls #canny_logs-toggle {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-col) !important;
+  border-radius: 500px !important;
+}
+
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access:hover,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access:hover {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+  /* background: transparent !important; */
+  background-color: var(--tertiary-color) !important;
+  border-radius: 500px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img {
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-col) !important;
+}
+
+body #app .sidebar-v2-location .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities),
+body #app .sidebar-v2-agency .hl_header .hl_header--controls .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities),
+body #app .sidebar-v2-agency .hl_header .hl_header--controls .btn.btn-circle:not(#phone_dialer_access),
+body #app .sidebar-v2-location .hl_header .hl_header--controls .btn.btn-circle:not(#phone_dialer_access) {
+  border-radius: 500px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-hover-col) !important;
+}
+
+#launchpad,
+#dashboard {
+  padding-top: 0px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings {
+  overflow: hidden !important;
+  margin-bottom: -15px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  background: none !important;
+}
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.75rem !important;
+  padding-left: 20px !important;
+  max-width: 230px !important;
+  white-space: pre-wrap !important;
+  overflow: visible !important;
+  left: 0px !important;
+  text-align: left;
+  line-height: 1.25;
+  color: var(--hlpt-adv-guidetour-btn-icon-col) !important;
+  padding-left: 32px !important;
+  padding-right: 0px !important;
+  border-radius: 5px !important;
+  color: var(--sidebar-font) !important;
+} */
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 0.75rem !important;
+  padding-left: 20px !important;
+  max-width: 230px !important;
+  white-space: pre-wrap !important;
+  overflow: visible !important;
+  left: 0px !important;
+  text-align: left;
+  line-height: 1.25;
+  color: var(--hlpt-adv-guidetour-btn-icon-col) !important;
+  padding-left: 32px !important;
+  padding-right: 0px !important;
+  border-radius: 5px !important;
+  color: var(--sidebar-font) !important;
+} */
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+  outline: none !important;
+  border: none !important;
+} */
+
+body #app .sidebar-v2-location .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show,
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show {
+  left: 230px !important;
+}
+
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show {
+  left: 80px !important;
+  top: -350px !important;
+}
+
+body #app .sidebar-v2-location .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher,
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher {
+  max-height: 500px !important;
+  top: -300px !important;
+  left: 280px !important;
+}
+
+body #app .sidebar-v2-location .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher .hl_v2_tip-arrow-right,
+body #app .sidebar-v2-agency .hl_header--dropdown:not(.hl_header--phone)>.dropdown-menu.show .dropdown-item.py-2.cursor-pointer div#hl_v2-user_switcher .hl_v2_tip-arrow-right {
+  right: unset !important;
+  left: -10px !important;
+  border-right: 10px solid var(--hlpt-main-white-color) !important;
+  border-left: unset !important;
+  bottom: unset !important;
+  top: 85% !important;
+}
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher::before {
+  content: '\e53d' !important;
+  font-size: 22px !important;
+  font-weight: 900 !important;
+  font-family: 'Font Awesome 6 Pro' !important;
+  --fa-primary-color: var(--hlpt-left-nav-color) !important;
+  opacity: 1 !important;
+  color: var(--hlpt-left-nav-color) !important;
+  margin-left: -14px !important;
+  padding-right: 14px !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  /* font-size: 0.72rem !important; */
+  font-family: 'Roboto', Helvetica, Arial, sans-serif !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover::before {
+  color: var(--hlpt-adv-guidetour-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#azFaqCtrl {
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+  margin-right: 1px !important;
+}
+
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  background: none !important;
+}
+
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.dropdown.--no-caret:not(.hl_header--phone) a:not(.dropdown-item) {
+  margin-left: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav {
+  background: #fff !important;
+  margin-left: -3px !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls {
+  transform: scale(0.9);
+}
+
+body #app .sidebar-v2-location .bg-blue-100.px-4.py-1.rounded-lg.font-medium {
+  position: absolute !important;
+  top: -14px !important;
+  left: 230px !important;
+}
+
+/* #app .hl_header .container-fluid {
+  background: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher,
+div#userflow-ui div.userflowjs-launcher {
+  background: none !important;
+  outline: 0px solid transparent !important;
+  border: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher,
+div#userflow-ui div.userflowjs-launcher {
+  color: var(--sidebar-font) !important;
+} */
+
+/* ENDS HERE */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover::before {
+  /* color: var(--hlpt-adv-mainnav-text-hover-color) !important; */
+  color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+}
+
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--dropdown .call-info-box {
+  position: absolute !important;
+  z-index: 99999999999 !important;
+  left: 190px !important;
+  bottom: 29px !important;
+}
+
+#app .dropdown-menu.dropdown-menu-right.show.dialer-center {
+  bottom: unset !important;
+  right: unset !important;
+  left: 200px !important;
+  top: -560px !important;
+}
+
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  border-radius: 500px !important;
+}
+
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer {
+  max-height: calc(100vh - 335px) !important;
+}
+
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings {
+  max-height: calc(100vh - 14.625rem) !important;
+}
+
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav {
+  padding-bottom: 85px !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid {
+  left: 5px !important;
+}
+
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle {
+  margin-right: 5px !important;
+}
+
+#app .sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  max-height: calc(100vh - 280px) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .container-fluid {
+  background: transparent !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access:hover {
+  border-radius: 500px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access:hover {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  background-color: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl:hover i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  opacity: 1 !important;
+}
+
+#app .sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  left: -5px !important;
+}
+
+#app .sidebar-v2-agency .hl_header.--agency .container-fluid .hl_header--controls a#canny_logs-toggle {
+  left: -3px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #langTranslate {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+  border-radius: 500px !important;
+}
+
+.dropdown_lang ul {
+  top: -430px !important;
+  left: 40px !important;
+}
+
+/* agency side margins */
+#locationCRMBuilder {
+  margin-top: 0px !important;
+}
+
+body #app .sidebar-v2-agency .hl_wrapper {
+  padding-top: 0px !important;
+}
+
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer {
+  height: calc(100vh - 300px) !important;
+}
+
+body #app .undefined.flex.v2-open.sidebar-v2-agency .hl_wrapper--inner {
+  padding-top: 0px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a {
+  width: 90%;
+}
+
+.sidebar-v2-location .hl_wrapper #conversations.hl_wrapper--inner {
+  margin-top: -11px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar {
+  padding-top: 15px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar #calendarSetupPage {
+  padding-top: 50px !important;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar .hl_reputation {
+  padding-top: 0rem;
+}
+
+body[data-name='company-settings-v2'] #app .sidebar-v2-location .hl_without-topbar .card-integration {
+  margin-top: 45px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  outline: 0px solid var(--hlpt-adv-guidetour-btn-icon-bg-col) !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.expandleftnav {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 999 !important;
+  border: 0px solid #e2e2e2 !important;
+  width: 15px !important;
+  height: 15px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 3px !important;
+  cursor: pointer;
+  color: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer .expandleftnav {
+  display: none;
+}
+
+.show-button {
+  display: block;
+}
+
+.show-button {
+  position: absolute;
+  top: 8px;
+  right: 0;
+  rotate: 0deg;
+  z-index: 9999999;
+  transition: all 0.3s;
+  font-size: 15px;
+}
+
+.hl_nav-settings.showhide-btn .show-button i {
+  rotate: 0deg;
+  transition: all 0.3s;
+}
+
+.hl_nav-settings.showhide-btn.showhide-mainnav .show-button i {
+  rotate: 180deg;
+  transition: all 0.3s;
+}
+
+.hl_nav-settings .btn-expand-menu {
+  padding: 15px !important;
+  background: var(--hlpt-primary-theme-tint-color) !important;
+  width: 22px;
+  height: 22px;
+}
+
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--dropdown .call-info-box {
+  left: 240px !important;
+  bottom: 0px !important;
+}
+
+#phone_dialer_access .btn.btn-circle.d-flex.justify-content-center.align-items-center.btn-green-light svg {
+  background: #fff !important;
+  filter: grayscale(9) !important;
+  opacity: 0 !important;
+}
+
+body #app .sidebar-v2-agency .hl_header.--agency {
+  z-index: 111 !important;
+}
+
+body #app #location-dashboard {
+  margin-top: -48px !important;
+}
+
+body #app #CalendarsFeatureDiscovery .feature-discovery-main-container .absolute.right-\[20px\].bg-white.border-\[1px\].border-gray-200.rounded-2xl.z-10.shadow-lg.w-\[370px\].pb-\[16px\].max-h-\[850px\].h-auto.overflow-y-scroll.mt-\[15px\] {
+  left: 40px !important;
+  bottom: 0px !important;
+  z-index: 9999;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #CalendarsFeatureDiscovery {
+  position: absolute;
+  z-index: 9999999;
+  left: 240px;
+  width: 210px;
+}
+
+#app .v2-collapse.sidebar-v2-location #sidebar-v2 .hl_nav-header {
+  max-height: calc(100vh - 370px) !important;
+}
+
+body:not([data-location-name='location_billing-v2']):not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location #sidebar-v2 .hl_nav-header {
+  max-height: calc(100vh - 370px) !important;
+}

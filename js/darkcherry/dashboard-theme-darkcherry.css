@@ -1,0 +1,815 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://kit.fontawesome.com/5e5db45630.css);
+
+/************** Turbo Mode  Theme ***************/
+:root {
+  /* turbo mode */
+
+  --hlpt-primary-theme-color: #c23e00;
+  --hlpt-primary-theme-color-tint: #c23e001a;
+  --hlpt-primary-theme-bg-color: #000000;
+  --hlpt-primary-theme-bg-color-tint: #2222221a;
+  --hlpt-secondary-theme-bg-color: #111111;
+  --hlpt-secondary-theme-bg-color-tint: #1111111a;
+
+  --hlpt-left-nav-color: #ffffffff;
+  --hlpt-left-nav-hover-color: var(--hlpt-primary-theme-color);
+  --hlpt-left-nav-active-color: var(--hlpt-left-nav-color);
+  --hlpt-left-nav-bg-color: #222222;
+
+  /* Dashboard panel hide */
+  --dashboard-panels-display: none !important;
+
+  /* --hlpt-login-logo-url: url('https://yourbrandimagehere.com/images');
+  --hlpt-main-body-image: url('https://yourbrandimagehere.com/images'); */
+
+  --hlpt-primary-input-text-color: var(--hlpt-primary-theme-color);
+  --custom-loading-icon: url('https://yourbrandimagehere.com/images');
+
+  --hlpt-tsg-primary-theme-color: var(--hlpt-primary-theme-color);
+  --hlpt-tgs-primary-theme-bg-color: var(--hlpt-primary-theme-bg-color);
+  --hlpt-tsg-primary-theme-color-tint: var(--hlpt-primary-theme-color-tint);
+}
+
+/**********************************/
+/**********************************/
+/*  Custom Header - Titan Style   */
+/**********************************/
+/**********************************/
+
+/* Custom Header */
+.hl_header .container-fluid {
+  background: var(--hlpt-lightmode-theme-bg-color-1);
+  background: -moz-linear-gradient(-45deg,
+      var(--hlpt-primary-theme-color) 0%,
+      var(--hlpt-primary-theme-color) 54.5%,
+      var(--hlpt-secondary-theme-bg-color) 54.5%,
+      var(--hlpt-secondary-theme-bg-color) 55%,
+      var(--hlpt-primary-theme-bg-color) 55%,
+      var(--hlpt-primary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  background: -webkit-linear-gradient(-45deg,
+      var(--hlpt-primary-theme-color) 0%,
+      var(--hlpt-primary-theme-color) 54.5%,
+      var(--hlpt-secondary-theme-bg-color) 54.5%,
+      var(--hlpt-secondary-theme-bg-color) 55%,
+      var(--hlpt-primary-theme-bg-color) 55%,
+      var(--hlpt-primary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-primary-theme-color)', endColorstr='var(--hlpt-primary-theme-bg-color)', GradientType=1);
+  box-shadow: 8px 0px 8px 3px #2e2e2e00 !important;
+  padding: 10px 20px !important;
+  border-bottom: 0px solid #fff;
+}
+
+/* left nav hover */
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  border: 0px solid #f4f4f4 !important;
+  border-radius: 5px !important;
+  background: var(--hlpt-left-nav-bg-color) !important;
+  color: #ffffff !important;
+  /* 
+  background: var(--hlpt-lightmode-theme-bg-color-1);
+  background: -moz-linear-gradient(
+      -45deg,
+      var(--hlpt-primary-theme-bg-color) 0%,
+      var(--hlpt-primary-theme-bg-color) 94.5%,
+      var(--hlpt-secondary-theme-bg-color) 94.5%,
+      var(--hlpt-secondary-theme-bg-color) 95%,
+      var(--hlpt-primary-theme-color) 95%,
+      var(--hlpt-primary-theme-color) 100%
+    ),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  background: -webkit-linear-gradient(
+      -45deg,
+      var(--hlpt-primary-theme-bg-color) 0%,
+      var(--hlpt-primary-theme-bg-color) 94.5%,
+      var(--hlpt-secondary-theme-bg-color) 94.5%,
+      var(--hlpt-secondary-theme-bg-color) 95%,
+      var(--hlpt-primary-theme-color) 95%,
+      var(--hlpt-primary-theme-color) 100%
+    ),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--hlpt-primary-theme-bg-color)', endColorstr='var(--hlpt-primary-theme-color)',GradientType=1 );
+  box-shadow: 8px 0px 8px 3px #2e2e2e1a !important;
+  padding: 10px 20px !important;
+  border-bottom: 0px solid #fff; */
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover {
+  border: 0px solid #f4f4f4 !important;
+  border-radius: 5px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a {
+  border: 0px solid #fff0 !important;
+  border-radius: 0px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active.divider {
+  border: 2px solid #0000 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a {
+  border: 0px solid #f4f4f400 !important;
+  border-radius: 0px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  border: 0px solid #f4f4f4 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active.divider {
+  background: transparent !important;
+  border: none !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover {
+  border: 0px solid #f4f4f4 !important;
+  border-radius: 0px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a {
+  border: 0px solid #f0f0f000 !important;
+  border-radius: 0px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  border: 0px solid #f0f0f0 !important;
+  border-radius: 0px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a {
+  border: 0px solid #f0f0f000 !important;
+  border-radius: 0px !important;
+}
+
+.hl_nav-header-without-footer a#sb_calendars::before {
+  display: none !important;
+}
+
+.flex.flex-row.justify-start.items-center.topmenu-nav a,
+.flex.flex-row.justify-start.items-center.topmenu-nav a:first-child,
+.flex.flex-row.justify-start.items-center.topmenu-nav a:nth-child(2),
+.flex.flex-row.justify-start.items-center.topmenu-nav a:last-child,
+.flex.flex-row.justify-start.items-center.topmenu-nav a .hidden.group-hover\:block.origin-top-right.absolute.right-0.mt-2.w-max.rounded-md.shadow-lg.py-1.bg-white.ring-1.ring-black.ring-opacity-5.focus\:outline-none.z-40 a {
+  border-radius: 5px !important;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+#tb_calendar-settings-top {
+  margin-left: -5px !important;
+}
+
+#tb_contacts-settings-top,
+#tb_url-redirects {
+  border-radius: 5px !important;
+  margin-right: 0px !important;
+}
+
+#quickActions img+span::before {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#globalSearch .search-area svg path,
+#globalSearchOpener .search-area svg path {
+  fill: var(--hlpt-primary-theme-color) !important;
+  stroke: var(--hlpt-primary-theme-color) !important;
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a span::after,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a span,
+#sidebar-v2 nav a span i::before {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+#sidebar-v2 nav a:hover span i::before,
+#sidebar-v2 nav a.active span i::before,
+.sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+.sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+.sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+.sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block {
+  color: var(--hlpt-left-nav-hover-color) !important;
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 nav a:hover span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+/* location icons */
+
+#sb_app-media:hover::before,
+#sb_launchpad:hover::before,
+#sb_ai-employee-promo:hover::before,
+#sb_dashboard:hover::before,
+#sb_conversations:hover::before,
+#sb_calendars:hover::before,
+#sb_contacts:hover::before,
+#sb_opportunities:hover::before,
+#sb_payments:hover::before,
+#sb_email-marketing:hover::before,
+#sb_automation:hover::before,
+#sb_sites:hover::before,
+#sb_reputation:hover::before,
+#sb_reporting:hover::before,
+#sb_app-marketplace:hover::before,
+#sb_location-mobile-app:hover::before,
+#sb_settings:hover::before,
+#sb_agency-dashboard:hover::before,
+#sb_agency-saas-configurator:hover::before,
+#sb_agency-accounts:hover::before,
+#sb_agency-account-snapshots:hover::before,
+#sb_agency-account-reselling:hover::before,
+#sb_agency-marketplace:hover::before,
+#sb_agency-partners:hover::before,
+#sb_agency-university:hover::before,
+#sb_saas-education:hover::before,
+#sb_ghl-swag:hover::before,
+#sb_saas-fasttrack:hover::before,
+#sb_agency-ideas:hover::before,
+#sb_1b37a2ee-3948-424b-9ddb-ea3c2009feb4:hover::before,
+#sb_agency-settings:hover::before,
+#sb_app-media.active::before,
+#sb_launchpad.active::before,
+#sb_ai-employee-promo.active::before,
+#sb_dashboard.active::before,
+#sb_conversations.active::before,
+#sb_calendars.active::before,
+#sb_contacts.active::before,
+#sb_opportunities.active::before,
+#sb_payments.active::before,
+#sb_email-marketing.active::before,
+#sb_automation.active::before,
+#sb_sites.active::before,
+#sb_reputation.active::before,
+#sb_reporting.active::before,
+#sb_app-marketplace.active::before,
+#sb_location-mobile-app.active::before,
+#sb_settings.active::before,
+#sb_agency-dashboard.active::before,
+#sb_agency-saas-configurator.active::before,
+#sb_agency-accounts.active::before,
+#sb_agency-account-snapshots.active::before,
+#sb_agency-account-reselling.active::before,
+#sb_agency-marketplace.active::before,
+#sb_agency-partners.active::before,
+#sb_agency-university.active::before,
+#sb_saas-education.active::before,
+#sb_ghl-swag.active::before,
+#sb_saas-fasttrack.active::before,
+#sb_agency-ideas.active::before,
+#sb_1b37a2ee-3948-424b-9ddb-ea3c2009feb4.active::before,
+#sb_agency-settings.active::before,
+#sb_app-media.active span::after,
+#sb_launchpad.active span::after,
+#sb_ai-employee-promo.active span::after,
+#sb_dashboard.active span::after,
+#sb_conversations.active span::after,
+#sb_calendars.active span::after,
+#sb_contacts.active span::after,
+#sb_opportunities.active span::after,
+#sb_payments.active span::after,
+#sb_email-marketing.active span::after,
+#sb_automation.active span::after,
+#sb_sites.active span::after,
+#sb_reputation.active span::after,
+#sb_reporting.active span::after,
+#sb_app-marketplace.active span::after,
+#sb_location-mobile-app.active span::after,
+#sb_settings.active span::after,
+#sb_agency-dashboard.active span::after,
+#sb_agency-saas-configurator.active span::after,
+#sb_agency-accounts.active span::after,
+#sb_agency-account-snapshots.active span::after,
+#sb_agency-account-reselling.active span::after,
+#sb_agency-marketplace.active span::after,
+#sb_agency-partners.active span::after,
+#sb_agency-university.active span::after,
+#sb_saas-education.active span::after,
+#sb_ghl-swag.active span::after,
+#sb_saas-fasttrack.active span::after,
+#sb_agency-ideas.active span::after,
+#sb_1b37a2ee-3948-424b-9ddb-ea3c2009feb4.active span::after,
+#sb_agency-settings.active span::after,
+body #app #sb_settings:hover span::after,
+body #app #sb_agency-settings:hover span::after {
+  color: var(--hlpt-left-nav-hover-color) !important;
+  /* color: var(--hlpt-primary-theme-color) !important; */
+}
+
+header.hl_header .justify-start {
+  box-shadow: 2px 0 10px #c2c2c2 !important;
+  border-bottom: 2px dotted #c2c2c2 !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before {
+  color: var(--hlpt-left-nav-hover-color) !important;
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.hl_quick-actions-list-container #quick-add-contact-v2 svg,
+.hl_quick-actions-list-container #quick-create-an-appointment-v2 svg,
+.hl_quick-actions-list-container #quick-create-opportunity-v2 svg {
+  stroke: var(--hlpt-primary-theme-color) !important;
+}
+
+.hl_header--controls a:hover i {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+/* .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a span i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span i
+{
+  color: var(--hlpt-left-nav-hover-color) !important;
+} */
+
+/***************************************/
+/***************************************/
+/*  Custom Sidebar - Gradient Style    */
+/***************************************/
+/***************************************/
+
+/*Sidebar Location View */
+/* #dashboard {
+  background: #f9f9f9 !important;
+} */
+
+/* 
+
+.sidebar-v2-location #sidebar-v2.default-bg-color {
+background: var(--hlpt-lightmode-theme-bg-color);
+background: -moz-linear-gradient(
+    45deg,
+        var(--hlpt-lightmode-theme-bg-color) 30%,
+        var(--hlpt-lightmode-theme-bg-color-1) 90%,
+        var(--hlpt-lightmode-theme-bg-color-1) 100%
+),
+url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+background: -webkit-linear-gradient(
+    45deg,
+        var(--hlpt-lightmode-theme-bg-color) 30%,
+        var(--hlpt-lightmode-theme-bg-color-1) 90%,
+        var(--hlpt-lightmode-theme-bg-color-1) 100%
+
+),
+url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+}
+
+ */
+
+/***********************************/
+/***********************************/
+/*  Custom Sidebar - Titan Style   */
+/***********************************/
+/***********************************/
+
+/* Custom Sidebar Background */
+
+/* 
+
+
+div#sidebar-v2 {
+background: var(--hlpt-lightmode-theme-bg-color);
+background: -moz-linear-gradient(
+    45deg,
+    var(--hlpt-lightmode-theme-bg-color) 30%,
+    var(--hlpt-lightmode-theme-bg-color-1) 90%,
+    var(--hlpt-lightmode-theme-bg-color-1) 100%
+),
+url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+background: -webkit-linear-gradient(
+    45deg,
+    var(--hlpt-lightmode-theme-bg-color) 30%,
+    var(--hlpt-lightmode-theme-bg-color-1) 90%,
+    var(--hlpt-lightmode-theme-bg-color-1) 100%
+),
+url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+background: linear-gradient(
+    45deg,
+    var(--hlpt-lightmode-theme-bg-color) 30%,
+    var(--hlpt-lightmode-theme-bg-color-1) 90%,
+    var(--hlpt-lightmode-theme-bg-color-1) 100%
+),
+url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-lightmode-theme-bg-color)', endColorstr='var(--hlpt-lightmode-theme-bg-color-1)', GradientType=1);
+box-shadow: var(--sidebar-shadow) !important;
+box-shadow: 2px 0px 4px 0px rgba(0,0,0,0.2) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #location-switcher-sidbar-v2, div#globalSearchOpener, div#quickActions,
+.sidebar-v2-agency #sidebar-v2 #location-switcher-sidbar-v2 {
+  border-color:  #999999 !important;
+  background: #fff !important;
+}
+
+
+ */
+
+body[data-theme='default'] .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.divider p span,
+body[data-theme='default'] .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.divider p span,
+body[data-theme='default'] .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.divider p span {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+/* .flex.flex-col.absolute.bottom-3\.5.w-full.hl_nav-settings {
+  background: var(--hlpt-primary-theme-color);
+  margin-top: 20px !important;
+  bottom: 0px !important;
+  padding-top: 4px !important;
+} */
+
+/* horizantal nav agency */
+.sidebar-v2-agency.horizontal-nav--active #sidebar-v2:before {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+div#userflow-ui div.userflowjs-launcher {
+  /* color: var(--hlpt-primary-theme-bg-color) !important; */
+  /* background: var(--hlpt-primary-theme-color) !important; */
+  height: 30px !important;
+  margin-top: 1px !important;
+  /* outline: 1px solid var(--hlpt-primary-theme-color) !important; */
+  /* color: #fff !important; */
+}
+
+div#userflow-ui div.userflowjs-launcher:hover {
+  /* color: #fff !important; */
+  margin-top: 1px !important;
+  /* color: var(--hlpt-primary-theme-bg-color) !important; */
+}
+
+.sidebar-v2-location #sidebar-v2 nav a:hover span,
+.sidebar-v2-location #sidebar-v2 nav a.active span,
+.sidebar-v2-agency #sidebar-v2 nav a:hover span,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#sb_integrations span::after,
+#sb_undefined span::after,
+a[id^="sb_common.sidebar.privateIntegrations"] span::after,
+a[id^="sb_common.sidebar.lcIntegrations"] span::after,
+#sb_brand-boards span::after,
+#sb_location-email-services span::after,
+#sb_conversations_providers span::after,
+#sb_labs span::after,
+#sb_audit-logs-location span::after,
+#sb_business-settings-v2 span::after,
+#sb_external-tracking span::after {
+  font-size: 0.875rem;
+}
+
+.nav-title.hl_text-overflow.sm\:hidden.md\:hidden.lg\:block.xl\:block {
+  font-size: 0.875rem;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+.sidebar-v2-location #sidebar-v2 nav a:hover span~span,
+.sidebar-v2-agency #sidebar-v2 nav a:hover span~span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 nav a:hover span i::before,
+.sidebar-v2-agency #sidebar-v2 nav a:hover span i::before {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a .nav-title {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover .nav-title,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active .nav-title {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 #sb_location-prospect .hl_new_badge,
+.sidebar-v2-agency #sidebar-v2 #sb_labs .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_labs .hl_new_badge,
+.sidebar-v2-agency #sidebar-v2 .hl_new_badge,
+.sidebar-v2-agency #sidebar-v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_brand-boards .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_conversation_ai_settings_v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_ai_agent_settings .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 a[id="sb_AI Agents"] .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_objects .hl_new_badge {
+  color: var(--hlpt-primary-theme-bg-color) !important;
+  color: #000 !important;
+}
+
+/* top right icons */
+/* bug fix 26-05-2023 */
+#sb_settings span::after,
+#sb_agency-settings span {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+/* added code for new bot icon */
+/* added code for new bot icon */
+a#azFaqCtrl i {
+  font-size: 20px;
+}
+
+a#azFaqCtrl {
+  background: var(--button-top-navbar-background) !important;
+  color: var(--button-top-navbar-font-color) !important;
+  border: var(--button-top-navbar-border) !important;
+  box-shadow: var(--button-top-navbar-shadow) !important;
+  border-radius: 45px !important;
+  padding: 0px;
+  transition: 0.6s !important;
+  line-height: 29px !important;
+}
+
+.hl_header a#azFaqCtrl.btn.btn-circle.az_faq_button.az_faq_list:hover {
+  background: var(--button-top-navbar-background-hover);
+  color: var(--button-top-navbar-font-color-hover);
+  border: var(--button-top-navbar-border-hover);
+  box-shadow: var(--button-top-navbar-shadow-hover);
+}
+
+/* new icon color change featured added */
+
+#sb_app-media::before,
+#sb_launchpad::before,
+#sb_ai-employee-promo::before,
+#sb_dashboard::before,
+#sb_conversations::before,
+#sb_calendars::before,
+#sb_contacts::before,
+#sb_opportunities::before,
+#sb_payments::before,
+a[id="sb_AI Agents"]::before,
+#sb_email-marketing::before,
+#sb_automation::before,
+#sb_sites::before,
+#sb_memberships::before,
+#sb_reputation::before,
+#sb_reporting::before,
+#sb_app-marketplace::before,
+#sb_location-mobile-app::before,
+#sb_settings::before,
+#sb_agency-dashboard::before,
+#sb_agency-saas-configurator::before,
+#sb_agency-accounts::before,
+#sb_agency-account-snapshots::before,
+#sb_agency-account-reselling::before,
+#sb_location-prospect::before,
+#sb_agency-marketplace::before,
+#sb_agency-partners::before,
+#sb_agency-university::before,
+#sb_saas-education::before,
+#sb_ghl-swag::before,
+#sb_saas-fasttrack::before,
+#sb_agency-ideas::before,
+#sb_1b37a2ee-3948-424b-9ddb-ea3c2009feb4::before,
+#sb_agency-settings::before,
+.sidebar-v2-agency #sidebar-v2 a span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-location #sidebar-v2 a span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a::before,
+/* hover and active color */
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before {
+  color: var(--hlpt-left-nav-icon-color) !important;
+  /* color: var(--hlpt-primary-theme-color) !important; */
+}
+
+/* hover and active color */
+/* .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before {
+  color: var(--hlpt-primary-theme-color) !important;
+} */
+
+/* advanced settins options for settings locations */
+
+/* sb_settings */
+/* replacenavlinks -  rename main nav lable and replace icon businessinfo  */
+
+#sb_business_info::before,
+#sb_saas-billing::before,
+#sb_profile::before,
+#sb_my-staff::before,
+#sb_conversation_ai_settings::before,
+#sb_conversation_ai_settings_v2::before,
+#sb_ai_agent_settings::before,
+a[id="sb_AI Agents"]::before,
+#sb_objects::before,
+#sb_pipeline::before,
+#sb_::before,
+#sb_Opportunities-Pipelines::before,
+#sb_phone-system::before,
+#sb_whatsapp::before,
+#sb_reputation-management::before,
+#sb_custom-fields-settings::before,
+#sb_custom-values::before,
+#sb_manage-scoring::before,
+#sb_domains::before,
+#sb_domains-urlRedirects::before,
+#sb_media::before,
+#sb_url-redirects::before,
+#sb_integrations::before,
+#sb_undefined::before,
+a[id^="sb_common.sidebar.privateIntegrations"]::before,
+a[id^="sb_common.sidebar.lcIntegrations"]::before,
+#sb_brand-boards::before,
+#sb_location-email-services::before,
+#sb_knowledge-base-settings::before,
+#sb_conversations_providers::before,
+#sb_tags::before,
+#sb_labs::before,
+#sb_audit-logs-location::before,
+#sb_business-settings-v2::before,
+#sb_external-tracking::before {
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  color: var(--hlpt-left-nav-color) !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+  margin-right: 10px !important;
+}
+
+/* .hl_nav-header-without-footer #sb_calendars:not(.hl_nav-header #sb_calendars::before */
+.flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars::before,
+.hl_nav-header-without-footer nav #sb_calendars::before,
+.hl_nav-header-without-footer nav #sb_calendars span::before {
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  margin-right: 10px !important;
+  color: var(--hlpt-left-nav-color) !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+}
+
+#sb_my-business,
+#sb_business-services,
+#sb_other-settings {
+  display: none !important;
+  outline: none;
+}
+
+/* #sb_settings::after {
+  color: var(--hlpt-left-nav-color) !important;
+} */
+.sidebar-v2-location #sidebar-v2 #sb_agency-settings span,
+.sidebar-v2-location #sidebar-v2 #sb_settings span,
+.sidebar-v2-agency #sidebar-v2 #sb_agency-settings span,
+.sidebar-v2-agency #sidebar-v2 #sb_settings span {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a {
+  margin-left: 8px !important;
+  top: 8px !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #sb_agency-settings span,
+.sidebar-v2-location #sidebar-v2 #sb_settings span,
+.sidebar-v2-agency #sidebar-v2 #sb_agency-settings span,
+.sidebar-v2-agency #sidebar-v2 #sb_settings span {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 #sb_agency-settings span::after,
+.sidebar-v2-location #sidebar-v2 #sb_settings span::after,
+.sidebar-v2-agency #sidebar-v2 #sb_agency-settings span::after,
+.sidebar-v2-agency #sidebar-v2 #sb_settings span::after {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a span::after,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a span i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a span,
+#sidebar-v2 nav a span i::before {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+/* body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header a#helpDeskCtrl span.h-5.w-5.mr-2 i::before,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header a#helpDeskCtrl span.sr-only1 {
+  color: var(--hlpt-left-nav-color) !important;
+} */
+
+#app .sidebar-v2-location .hl_header .container-fluid img.h-8 {
+  filter: brightness(100);
+  transform: scale(1.25);
+}
+
+/* hover and active color */
+body #app .sidebar-v2-agency #sidebar-v2 nav a.active span i::before,
+body #app .sidebar-v2-agency #sidebar-v2 nav a:hover span i::before,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+body #app .sidebar-v2-location #sidebar-v2 nav a.active span i::before,
+body #app .sidebar-v2-location #sidebar-v2 nav a:hover span i::before,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before {
+  /* color: var(--hlpt-left-nav-icon-color) !important; */
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+#app #tb_sites-domain-settings {
+  padding: 4px !important;
+  padding-right: 4px;
+  padding-left: 4px;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding-right: 0px !important;
+  margin-right: 0px !important;
+  padding-left: 10px !important;
+}
+
+#azFaqCtrl:hover i {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+header.hl_header .justify-start {
+  border-bottom: 0px dotted #c2c2c2 !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a {
+  top: 2px !important;
+}
+
+body #app #sidebar-v2 nav a.custom-link.active:hover span i::before {
+  color: var(--hlpt-left-nav-hover-color) !important;
+  outline: none;
+}

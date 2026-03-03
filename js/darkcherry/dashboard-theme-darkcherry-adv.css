@@ -1,0 +1,79 @@
+/* ****************************************** */
+/*               ADVANCE HEADER               */
+/* ****************************************** */
+@import url(https://kit.fontawesome.com/5e5db45630.css);
+
+/* ********************************************************************* */
+/*              THEME BUILDER ADVANCED SETTINGS                          */
+/* ********************************************************************* */
+/* headerbg color gradient with advance degree and percentage stop options */
+/* .hl_header .container-fluid {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(
+      var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) 0%,
+      var(--hlpt-adv-headerbgcolor-start-col) calc(var(--hlpt-adv-headerbgcolor-stop-perc)-0.5),
+      var(--hlpt-adv-headerbgcolor-start-col) calc(var(--hlpt-adv-headerbgcolor-stop-perc)-0.5),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%
+    ),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  background: -webkit-linear-gradient(
+      var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) 0%,
+      var(--hlpt-adv-headerbgcolor-start-col) calc(var(--hlpt-adv-headerbgcolor-stop-perc)-0.5),
+      var(--hlpt-adv-headerbgcolor-start-col) calc(var(--hlpt-adv-headerbgcolor-stop-perc)-0.5),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%
+    ),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)',GradientType=1 );
+} */
+
+/* team header for checking */
+/* headerbg color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .container-fluid {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) 0%,
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) 0%,
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/black-twill.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+}
+
+/* zappychatbot  btn */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl i {
+  color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl:hover i {
+  color: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl {
+  background-color: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl:hover {
+  background-color: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+}

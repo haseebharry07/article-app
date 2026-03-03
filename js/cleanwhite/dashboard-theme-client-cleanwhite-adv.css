@@ -1,0 +1,1718 @@
+@import url(https://kit.fontawesome.com/5e5db45630.css);
+
+/* ********************************************************************* */
+/*              THEME BUILDER ADVANCED SETTINGS                          */
+/* ********************************************************************* */
+/* advanced settings css starts here */
+:root {
+  --cp-lp-icon-col: var(--hlpt-primary-theme-bg-color) !important;
+  /* --cp-lp-icon-col: var(--fa-secondary-color) !important; */
+  --cp-lp-icon-col: var(--hlpt-primary-theme-color) !important;
+  --cp-lp-btn-col: var(--sidebar-button-background-hover) !important;
+  --cp-lp-txt-col: var(--cp-lp-txt-col) !important;
+  --cp-lp-title-col: var(--cp-lp-title-col) !important;
+
+  --cp-lp-title-col: var(--hlpt-adv-bodycontent-h1-text-col) !important;
+  --cp-lp-btn-col: var(--hlpt-adv-primary-btn-bg-color) !important;
+  --cp-lp-txt-col: var(--hlpt-adv-bodycontent-text-col) !important;
+
+  --login-input-background-color: var(--hlpt-primary-theme-color-tint);
+  /* primary buttons normal */
+  --hlpt-adv-primary-btn-bg-color: #2942ff;
+  --hlpt-adv-primary-btn-text-color: #2942ff;
+  --hlpt-adv-primary-btn-border-color: #2942ff;
+  --hlpt-adv-primary-btn-radius: 10px;
+  /* primary  buttons hover */
+  --hlpt-adv-primary-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-primary-btn-text-hover-color: #2942ff;
+  --hlpt-adv-primary-btn-border-hover-color: #2942ff;
+  /* secondary buttons normal */
+  --hlpt-adv-secondary-btn-bg-color: #ffffff;
+  --hlpt-adv-secondary-btn-text-color: #2942ff;
+  --hlpt-adv-secondary-btn-border-color: #e2e2e2;
+  --hlpt-adv-secondary-btn-radius: 10px;
+  /* secondary  buttons hover */
+  --hlpt-adv-secondary-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-secondary-btn-text-hover-color: #ffffff;
+  --hlpt-adv-secondary-btn-border-hover-color: #2942ff;
+  /* default buttons normal */
+  --hlpt-adv-default-btn-bg-color: #ffffff;
+  --hlpt-adv-default-btn-text-color: #2942ff;
+  --hlpt-adv-default-btn-border-color: #e2e2e2;
+  --hlpt-adv-default-btn-radius: 10px;
+  /* default  buttons hover */
+  --hlpt-adv-default-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-default-btn-text-hover-color: #ffffff;
+  --hlpt-adv-default-btn-border-hover-color: #2942ff;
+  /* default-light buttons normal */
+  --hlpt-adv-default-light-btn-bg-color: #ffffff;
+  --hlpt-adv-default-light-btn-text-color: #2942ff;
+  --hlpt-adv-default-light-btn-border-color: #e2e2e2;
+  --hlpt-adv-default-light-btn-radius: 10px;
+  /* default-light  buttons hover */
+  --hlpt-adv-default-light-btn-bg-hover-color: #2942ff;
+  --hlpt-adv-default-light-btn-text-hover-color: #ffffff;
+  --hlpt-adv-default-light-btn-border-hover-color: #2942ff;
+
+  /* header buttons profile color */
+  --hlpt-adv-profile-btn-icon-col: #ffffff;
+  --hlpt-adv-profile-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-profile-btn-icon-bg-col: #bd9275;
+  --hlpt-adv-profile-btn-icon-bg-hover-col: #bd9275;
+  /* header buttons help color */
+  --hlpt-adv-help-btn-icon-col: #ffffff;
+  --hlpt-adv-help-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-help-btn-icon-bg-col: #188bf6;
+  --hlpt-adv-help-btn-icon-bg-hover-col: #188bf6;
+  /* header buttons notification color */
+  --hlpt-adv-notification-btn-icon-col: #ffffff;
+  --hlpt-adv-notification-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-notification-btn-icon-bg-col: #ff6600;
+  --hlpt-adv-notification-btn-icon-bg-hover-col: #ff6600;
+  /* header buttons viewchangelogs color */
+  --hlpt-adv-viewchangelogs-btn-icon-col: #ffffff;
+  --hlpt-adv-viewchangelogs-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-viewchangelogs-btn-icon-bg-col: #036146;
+  --hlpt-adv-viewchangelogs-btn-icon-bg-hover-col: #036146;
+  /* header buttons phone color */
+  --hlpt-adv-phone-btn-icon-col: #ffffff;
+  --hlpt-adv-phone-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-phone-btn-icon-bg-col: #30ca30;
+  --hlpt-adv-phone-btn-icon-bg-hover-col: #30ca30;
+  /* header buttons zappychatbot color */
+  --hlpt-adv-zappychatbot-btn-icon-col: #ffffff;
+  --hlpt-adv-zappychatbot-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-zappychatbot-btn-icon-bg-col: #0f45f5;
+  --hlpt-adv-zappychatbot-btn-icon-bg-hover-col: #0f45f5;
+  /* header buttons guidetour color */
+  --hlpt-adv-guidetour-btn-icon-col: #492cdd;
+  --hlpt-adv-guidetour-btn-icon-hover-col: #ffffff;
+  --hlpt-adv-guidetour-btn-icon-bg-col: #cc97fd;
+  --hlpt-adv-guidetour-btn-icon-bg-hover-col: #cc97fd;
+  /* header gradient color */
+  --hlpt-adv-headerbgcolor-start-col: #ffffff;
+  --hlpt-adv-headerbgcolor-end-col: #ffffff;
+  --hlpt-adv-headerbgcolor-stop-perc: 50;
+  --hlpt-adv-headerbgcolor-gradient-deg: 90;
+
+  /* bodycontent gradient color */
+  --hlpt-adv-bodycontentbgcolor-start-col: #ffffff;
+  --hlpt-adv-bodycontentbgcolor-end-col: #ffffff;
+  --hlpt-adv-bodycontentbgcolor-stop-perc: 50;
+  --hlpt-adv-bodycontentbgcolor-gradient-deg: 90;
+
+  /* bodycontent - text color */
+  --hlpt-adv-bodycontent-text-col: #ff0000;
+
+  /* bodycontent - h1 and h2 color and size  */
+  --hlpt-adv-bodycontent-h1-text-col: #ff00ff;
+  --hlpt-adv-bodycontent-h2-text-col: #ff00ff;
+  --hlpt-adv-bodycontent-h1-text-size: 55;
+  --hlpt-adv-bodycontent-h2-text-size: 35;
+
+  /* leftsidebar gradient color */
+  --hlpt-adv-leftsidebarbgcolor-start-col: #ffffff;
+  --hlpt-adv-leftsidebarbgcolor-end-col: #ffffff;
+  --hlpt-adv-leftsidebarbgcolor-stop-perc: 50;
+  --hlpt-adv-leftsidebarbgcolor-gradient-deg: 90;
+
+  /* mainnav - text hover, icon hover, hover-active background colors */
+  --hlpt-adv-mainnav-text-hover-color: #666666;
+  --hlpt-adv-mainnav-icon-hover-color: #999999;
+  --hlpt-adv-mainnav-hover-active-bg-color: rgba(15, 69, 245, 0.178);
+  --hlpt-adv-mainnav-text-hover-color-tint: #66666673;
+
+  /* replacenavlinks -  rename main nav lable and replace icon Media Storage  */
+  --hlpt-adv-mainnav-replace-mediastorage-label: 'Media Storage';
+  --hlpt-adv-mainnav-replace-mediastorage-icon: 'image';
+
+  /* replacenavlinks -  rename main nav lable and replace icon LAUNCHPAD  */
+  --hlpt-adv-mainnav-replace-launchpad-label: 'Launch Pad';
+  --hlpt-adv-mainnav-replace-launchpad-icon: 'rocket-launch';
+  /* replacenavlinks -  rename main nav lable and replace icon dashboard  */
+  --hlpt-adv-mainnav-replace-dashboard-label: 'Dashboard';
+  --hlpt-adv-mainnav-replace-dashboard-icon: 'grid-2';
+  /* replacenavlinks -  rename main nav lable and replace icon conversations  */
+  --hlpt-adv-mainnav-replace-conversations-label: 'Inbox';
+  --hlpt-adv-mainnav-replace-conversations-icon: 'inbox-in';
+  /* replacenavlinks -  rename main nav lable and replace icon calendars  */
+  --hlpt-adv-mainnav-replace-calendars-label: 'Calendars';
+  --hlpt-adv-mainnav-replace-calendars-icon: 'calendar-days';
+  /* replacenavlinks -  rename main nav lable and replace icon contacts  */
+  --hlpt-adv-mainnav-replace-contacts-label: 'Contacts';
+  --hlpt-adv-mainnav-replace-contacts-icon: 'user-large';
+  /* replacenavlinks -  rename main nav lable and replace icon opportunities  */
+  --hlpt-adv-mainnav-replace-opportunities-label: 'Pipelines';
+  --hlpt-adv-mainnav-replace-opportunities-icon: 'filter-circle-dollar';
+  /* replacenavlinks -  rename main nav lable and replace icon payments  */
+  --hlpt-adv-mainnav-replace-payments-label: 'Invoices';
+  --hlpt-adv-mainnav-replace-payments-icon: 'receipt';
+  /* replacenavlinks -  rename main nav lable and replace icon marketing  */
+  --hlpt-adv-mainnav-replace-marketing-label: 'Marketing';
+  --hlpt-adv-mainnav-replace-marketing-icon: 'bullhorn';
+  /* replacenavlinks -  rename main nav lable and replace icon automation  */
+  --hlpt-adv-mainnav-replace-automation-label: 'Automation';
+  --hlpt-adv-mainnav-replace-automation-icon: 'webhook';
+  /* replacenavlinks -  rename main nav lable and replace icon sites  */
+  --hlpt-adv-mainnav-replace-sites-label: 'Sites';
+  --hlpt-adv-mainnav-replace-sites-icon: 'database';
+  /* replacenavlinks -  rename main nav lable and replace icon memberships  */
+  --hlpt-adv-mainnav-replace-memberships-label: 'Memberships';
+  --hlpt-adv-mainnav-replace-memberships-icon: 'award';
+  /* replacenavlinks -  rename main nav lable and replace icon reputation  */
+  --hlpt-adv-mainnav-replace-reputation-label: 'Reputation';
+  --hlpt-adv-mainnav-replace-reputation-icon: 'star-shooting';
+  /* replacenavlinks -  rename main nav lable and replace icon reporting  */
+  --hlpt-adv-mainnav-replace-reporting-label: 'Reporting';
+  --hlpt-adv-mainnav-replace-reporting-icon: 'chart-pie-simple';
+  /* replacenavlinks -  rename main nav lable and replace icon settings  */
+  --hlpt-adv-mainnav-replace-settings-label: 'Settings';
+  --hlpt-adv-mainnav-replace-settings-icon: '\\e5e9';
+  /* replacenavlinks -  rename settings lable and replace icon businessinfo  */
+  --hlpt-adv-mainnav-replace-businessinfo-label: 'Business Info';
+  --hlpt-adv-mainnav-replace-businessinfo-icon: 'briefcase';
+  /* replacenavlinks -  rename settings lable and replace icon myprofile  */
+  --hlpt-adv-mainnav-replace-myprofile-label: 'My Profile';
+  --hlpt-adv-mainnav-replace-myprofile-icon: 'user-large';
+  /* replacenavlinks -  rename settings lable and replace icon mystaff  */
+  --hlpt-adv-mainnav-replace-mystaff-label: 'My Staff';
+  --hlpt-adv-mainnav-replace-mystaff-icon: 'user-group-simple';
+  /* replacenavlinks -  rename settings lable and replace icon pipelines  */
+  --hlpt-adv-mainnav-replace-pipelines-label: 'Pipelines';
+  --hlpt-adv-mainnav-replace-pipelines-icon: 'filter-circle-dollar';
+  /* replacenavlinks -  rename settings lable and replace icon calendar  */
+  --hlpt-adv-mainnav-replace-calendar-label: 'Calendar';
+  --hlpt-adv-mainnav-replace-calendar-icon: 'calendar-days';
+  /* replacenavlinks -  rename settings lable and replace icon phonenumbers  */
+  --hlpt-adv-mainnav-replace-phonenumbers-label: 'Phone System';
+  --hlpt-adv-mainnav-replace-phonenumbers-icon: 'phone-arrow-down-left';
+  /* replacenavlinks -  rename settings lable and replace icon whatsapp  */
+  --hlpt-adv-mainnav-replace-whatsapp-label: 'WhatsApp';
+  --hlpt-adv-mainnav-replace-whatsapp-icon: 'comment-lines';
+  /* replacenavlinks -  rename settings lable and replace icon reputationmanagement  */
+  --hlpt-adv-mainnav-replace-reputationmanagement-label: 'Reputation Management';
+  --hlpt-adv-mainnav-replace-reputationmanagement-icon: 'star-shooting';
+  /* replacenavlinks -  rename settings lable and replace icon customfields  */
+  --hlpt-adv-mainnav-replace-customfields-label: 'Custom Fields';
+  --hlpt-adv-mainnav-replace-customfields-icon: 'route-interstate';
+  /* replacenavlinks -  rename settings lable and replace icon customvalues  */
+  --hlpt-adv-mainnav-replace-customvalues-label: 'Custom Values';
+  --hlpt-adv-mainnav-replace-customvalues-icon: 'brackets-curly';
+
+  /* replacenavlinks -  rename settings lable and replace icon managescoring  */
+  --hlpt-adv-mainnav-replace-managescoring-label: 'Manage Scoring';
+  --hlpt-adv-mainnav-replace-managescoring-icon: 'hundred-points';
+
+  /* replacenavlinks -  rename settings lable and replace icon domains  */
+  --hlpt-adv-mainnav-replace-domains-label: 'Domains';
+  --hlpt-adv-mainnav-replace-domains-icon: 'globe';
+  /* replacenavlinks -  rename settings lable and replace icon media  */
+  --hlpt-adv-mainnav-replace-media-label: 'Media';
+  --hlpt-adv-mainnav-replace-media-icon: 'video';
+  /* replacenavlinks -  rename settings lable and replace icon urlredirects  */
+  --hlpt-adv-mainnav-replace-urlredirects-label: 'URL Redirects';
+  --hlpt-adv-mainnav-replace-urlredirects-icon: 'diamond-turn-right';
+  /* replacenavlinks -  rename settings lable and replace icon integrations  */
+  --hlpt-adv-mainnav-replace-integrations-label: 'Integrations';
+  --hlpt-adv-mainnav-replace-integrations-icon: 'code-branch';
+  /* replacenavlinks -  rename settings lable and replace icon pintegrations  */
+  --hlpt-adv-mainnav-replace-pintegrations-label: 'Private Integrations';
+  --hlpt-adv-mainnav-replace-pintegrations-icon: 'anchor-lock';
+  /* replacenavlinks -  rename settings lable and replace icon brandboards  */
+  --hlpt-adv-mainnav-replace-brandboards-label: 'Brand Boards';
+  --hlpt-adv-mainnav-replace-brandboards-icon: 'palette';
+  /* replacenavlinks -  rename settings lable and replace icon emailservices  */
+  --hlpt-adv-mainnav-replace-emailservices-label: 'Email Services';
+  --hlpt-adv-mainnav-replace-emailservices-icon: 'envelope-dot';
+  /* replacenavlinks -  rename settings lable and replace icon conversationproviders  */
+  --hlpt-adv-mainnav-replace-conversationproviders-label: 'Conversation Providers';
+  --hlpt-adv-mainnav-replace-conversationproviders-icon: 'clipboard';
+  /* replacenavlinks -  rename settings lable and replace icon tags  */
+  --hlpt-adv-mainnav-replace-tags-label: 'Tags';
+  --hlpt-adv-mainnav-replace-tags-icon: 'tags';
+  /* replacenavlinks -  rename settings lable and replace icon labs  */
+  --hlpt-adv-mainnav-replace-labs-label: 'Labs';
+  --hlpt-adv-mainnav-replace-labs-icon: 'flask-gear';
+  /* replacenavlinks -  rename settings lable and replace icon auditlogs  */
+  --hlpt-adv-mainnav-replace-auditlogs-label: 'Audit Logs';
+  --hlpt-adv-mainnav-replace-auditlogs-icon: 'chart-mixed-up-circle-currency';
+  /* replacenavlinks -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-companies-label: 'Companies';
+  --hlpt-adv-mainnav-replace-companies-icon: 'building-circle-check';
+  /* conversationaisettings -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-conversationaisettings-label: 'Conversation AI';
+  --hlpt-adv-mainnav-replace-conversationaisettings-icon: 'robot';
+  /* conversationaisettingsv2 -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-conversationaisettingsv2-label: ' Conversation AI V2';
+  --hlpt-adv-mainnav-replace-conversationaisettingsv2-icon: 'user-robot-xmarks';
+  /* aiagents -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-aiagents-label: ' AI Agents';
+  --hlpt-adv-mainnav-replace-aiagents-icon: 'user-astronaut';
+  /* objects -  rename settings lable and replace icon companies  */
+  --hlpt-adv-mainnav-replace-objects-label: ' Objects';
+  --hlpt-adv-mainnav-replace-objects-icon: 'object-subtract';
+  /* conversationaisettingsv2 -  rename settings lable and replace icon companies  */
+  /* --hlpt-adv-mainnav-replace-conversationaisettingsv2-icon: '\e4a7'; */
+  /* Ai agent -  rename settings lable and replace icon companies  */
+  /* --hlpt-adv-mainnav-replace-aiagent-icon: '\f4fb'; */
+  /* objects -  rename settings lable and replace icon companies  */
+  /* --hlpt-adv-mainnav-replace-objects-icon: '\e49e'; */
+  /* --hlpt-adv-mainnav-replace-conversationaisettings-icon: '\\f544'; */
+  /* new dashboard advanced settings colors */
+  --hlpt-adv-chart-won-color: #30ca30;
+  --hlpt-adv-chart-lost-color: #df0303;
+  --hlpt-adv-chart-lead-color: #2439d4;
+}
+
+/* headerbg color gradient with advance degree and percentage stop options */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .container-fluid {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg), var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc), var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+}
+
+/* leftsidebar color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-settings nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-settings nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header-without-footer nav {
+  /* background: unset !important; */
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open #sidebar-v2 .hl_nav-header nav {
+  background: unset !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app div#sidebar-v2.default-bg-color,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2.default-bg-color,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .h-screen .h-screen,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .h-screen .h-screen,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav {
+  background: var(--hlpt-adv-leftsidebarbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-leftsidebarbgcolor-gradient-deg),
+      var(--hlpt-adv-leftsidebarbgcolor-start-col) var(--hlpt-adv-leftsidebarbgcolor-stop-perc),
+      var(--hlpt-adv-leftsidebarbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-leftsidebarbgcolor-gradient-deg),
+      var(--hlpt-adv-leftsidebarbgcolor-start-col) var(--hlpt-adv-leftsidebarbgcolor-stop-perc),
+      var(--hlpt-adv-leftsidebarbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-leftsidebarbgcolor-gradient-deg),
+      var(--hlpt-adv-leftsidebarbgcolor-start-col) var(--hlpt-adv-leftsidebarbgcolor-stop-perc),
+      var(--hlpt-adv-leftsidebarbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-leftsidebarbgcolor-start-col)', endColorstr='var(--hlpt-adv-leftsidebarbgcolor-end-col)', GradientType=1);
+}
+
+/* bodycontent color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_wrapper {
+  background: var(--hlpt-adv-bodycontent-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-bodycontent-gradient-deg), var(--hlpt-adv-bodycontent-start-col) var(--hlpt-adv-bodycontent-stop-perc), var(--hlpt-adv-bodycontent-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-bodycontent-gradient-deg), var(--hlpt-adv-bodycontent-start-col) var(--hlpt-adv-bodycontent-stop-perc), var(--hlpt-adv-bodycontent-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-bodycontent-gradient-deg), var(--hlpt-adv-bodycontent-start-col) var(--hlpt-adv-bodycontent-stop-perc), var(--hlpt-adv-bodycontent-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-bodycontent-start-col)', endColorstr='var(--hlpt-adv-bodycontent-end-col)', GradientType=1);
+}
+
+/* profile btn */
+/* original 
+.hl_header div.avatar_img,
+.hl_header div.avatar_img:hover {
+  background-color: #bd9275 !important;
+}
+*/
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img {
+  color: var(--hlpt-adv-profile-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img:hover {
+  color: var(--hlpt-adv-profile-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img {
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header div.avatar_img:hover {
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+}
+
+/* help btn */
+/*
+.hl_header a#hl_header--help-icon,
+.hl_header a#hl_header--help-icon:hover {
+  outline: none;
+  background: #188bf6 !important;
+}
+*/
+
+/* in case the header control icons needs to have customized colors icon hover, text background etc. then activate the commented code */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon {
+  border-radius: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header--controls a#hl_header--help-icon span.left-nav-icon.hl_header--help-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header--controls a#hl_header--help-icon span.left-nav-icon.hl_header--help-icon i {
+  color: var(--hlpt-adv-help-btn-icon-col) !important;
+  --fa-primary-color: var(--hlpt-adv-help-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-help-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon:hover i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon.hl_header--help-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon.hl_header--help-icon i {
+  color: var(--hlpt-adv-help-btn-icon-hover-col) !important;
+  --fa-primary-color: var(--hlpt-adv-help-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-help-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  background-color: var(--hlpt-adv-help-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-help-btn-icon-bg-col) !important;
+  /* background: none !important; */
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon:hover {
+  background-color: var(--hlpt-adv-help-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+  /* background-color: none !important; */
+}
+
+/* notifications  recent activities toggle  btn */
+/*
+.hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities,
+.hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover,
+.hl_header a#recent_activities-toggle,
+.hl_header a#recent_activities-toggle:hover {
+  outline: none;
+  background-color: #f60 !important;
+  background: #f60 !important;
+  border-color: #f60 !important;
+  color: #fff !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle {
+  border-radius: 5px !important;
+}
+
+/* body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle span.left-nav-icon i, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span.left-nav-icon.recent_activities-toggle i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span.left-nav-icon.recent_activities-toggle i {
+  color: var(--hlpt-adv-notification-btn-icon-col) !important;
+  --fa-primary-color: var(--hlpt-adv-notification-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-notification-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+/* body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon.recent_activities-toggle i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon.recent_activities-toggle i {
+  color: var(--hlpt-adv-notification-btn-icon-hover-col) !important;
+  --fa-primary-color: var(--hlpt-adv-notification-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-notification-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle {
+  background-color: var(--hlpt-adv-notification-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-notification-btn-icon-bg-col) !important;
+  /* background-color: none !important; */
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#recent_activities-toggle.btn.btn-circle.btn-yellow.hl_header--recent-activities:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle:hover {
+  background-color: var(--hlpt-adv-notification-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+}
+
+/* viewchangelogs canny_logs-toggle  btn */
+/*
+.hl_header a#canny_logs-toggle,
+.hl_header a#canny_logs-toggle:hover {
+  outline: none;
+  background-color: #036146 !important;
+  border-color: #036146 !important;
+  color: #fff !important;
+} */
+
+/* #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+#app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover  */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .Canny_Badge,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .Canny_Badge {
+  top: -4px !important;
+  right: -2px !important;
+  border: orange !important;
+  background: orange !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#canny_logs-toggle i {
+  border-radius: 5px !important;
+}
+
+
+/* body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle span.left-nav-icon i, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span.left-nav-icon.canny_logs-toggle i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span.left-nav-icon.canny_logs-toggle i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle i {
+  color: var(--hlpt-adv-viewchangelogs-btn-icon-hover-col) !important;
+  --fa-primary-color: var(--hlpt-adv-viewchangelogs-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-viewchangelogs-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+/* body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i, */
+/* body #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#canny_logs-toggle:hover i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover i {
+  color: var(--hlpt-adv-viewchangelogs-btn-icon-hover-col) !important;
+  --fa-primary-color: var(--hlpt-adv-viewchangelogs-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-viewchangelogs-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .btn-changelog,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-viewchangelogs-btn-icon-bg-col) !important;
+  /* background-color: none !important; */
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .v2-open.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .btn-changelog:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle:hover,
+body #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .btn-changelog:hover {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+}
+
+/* body[data-hlpt-tsg='hlpt-advanced-settings']
+  #app
+  .hl_header
+  .hl_header--controls
+  .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities):not(#phone_dialer_access):not(#azFaqCtrl) {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-col) !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings']
+  #app
+  .hl_header
+  .hl_header--controls
+  .btn.btn-circle:not(#hl_header--help-icon):not(.hl_header--recent-activities):not(#phone_dialer_access):not(#azFaqCtrl):hover {
+  background-color: var(--hlpt-adv-viewchangelogs-btn-icon-bg-hover-col) !important;
+} */
+
+/* phone  btn */
+/*
+.btn.btn-green-dark,
+.btn.btn-green-dark:hover,
+.hl_header span.btn.btn-green-dark,
+.hl_header span.btn.btn-circle.btn-green-lt,
+.hl_header span.btn.btn-green-dark:hover,
+.hl_header span.btn.btn-circle.btn-green-lt:hover {
+  background-color: #27ae60 !important;
+  border-color: #27ae60 !important;
+  color: var(--button-icon-color) !important;
+} */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a .btn.btn-green-dark i {
+  border-radius: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a#phone_dialer_access span.left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a#phone_dialer_access span.left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-adv-phone-btn-icon-col) !important;
+  --fa-primary-color: var(--hlpt-adv-phone-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-phone-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a#phone_dialer_access:hover span.left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .hl_header--dropdown.hl_header--phone.dropdown.--no-caret a#phone_dialer_access:hover span.left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-adv-phone-btn-icon-hover-col) !important;
+  --fa-primary-color: var(--hlpt-adv-phone-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-phone-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #phone_dialer_access {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+  background-color: none !important;
+  border-radius: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #phone_dialer_access:hover {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+  border-radius: 5px !important;
+}
+
+/* zappychatbot  btn */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .hl_header--controls a#azFaqCtrl {
+  border-radius: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  margin-top: 0px !important;
+  color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  --fa-primary-color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .hl_header--controls a#azFaqCtrl:hover i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot {
+  color: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  --fa-primary-color: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  opacity: 1 !important;
+  --fa-secondary-color: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  background-color: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  background: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a#azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#azFaqCtrl:hover {
+  background-color: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+}
+
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle svg path,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle svg path {
+  fill: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  stroke: var(--hlpt-adv-zappychatbot-btn-icon-col) !important;
+  outline: none;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle:hover svg path,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .hl_header--controls #hl_header--copilot-icon.btn.btn-circle:hover svg path {
+  fill: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  stroke: var(--hlpt-adv-zappychatbot-btn-icon-hover-col) !important;
+  outline: none;
+}
+
+/* body #app #hl_header--copilot-icon svg circle, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon svg circle {
+  fill: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  fill: none !important;
+}
+
+/* body #app #hl_header--copilot-icon svg, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon svg {
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-zappychatbot-btn-icon-bg-col) !important;
+  border-radius: 5px !important;
+}
+
+/* body #app #hl_header--copilot-icon:hover svg, */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #hl_header--copilot-icon:hover svg {
+  background: var(--hlpt-adv-zappychatbot-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+  border-radius: 5px !important;
+}
+
+/* PHONE BTN --hlpt-adv-phone-btn-icon-col: #ffffff;
+--hlpt-adv-phone-btn-icon-hover-col: #ffffff;
+--hlpt-adv-phone-btn-icon-bg-col: #30ca30;
+--hlpt-adv-phone-btn-icon-bg-hover-col: #30ca30; */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600 {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+  border-color: var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+  border: 1px solid var(--hlpt-adv-phone-btn-icon-bg-col) !important;
+  border-radius: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600:hover {
+  background-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+  border-color: var(--hlpt-adv-phone-btn-icon-bg-hover-col) !important;
+  border: 1px solid var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+  border-radius: 5px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600 svg {
+  fill: var(--hlpt-adv-phone-btn-icon-col) !important;
+  stroke: var(--hlpt-adv-phone-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #template-power-dialer .flex.h-8.w-8.cursor-pointer.items-center.justify-center.rounded-full.bg-success-600:hover svg {
+  fill: var(--hlpt-adv-phone-btn-icon-hover-col) !important;
+  stroke: var(--hlpt-adv-phone-btn-icon-hover-col) !important;
+}
+
+
+/* guidetour  btn */
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  color: var(--hlpt-adv-guidetour-btn-icon-col) !important;
+  height: 30px !important;
+  margin-top: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  --userflow-launcher-button-height: 29px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover {
+  color: var(--hlpt-adv-guidetour-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  background-color: var(--hlpt-adv-guidetour-btn-icon-bg-col) !important;
+  outline: 1px solid var(--hlpt-adv-guidetour-btn-icon-bg-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher:hover {
+  background-color: var(--hlpt-adv-guidetour-btn-icon-bg-hover-col) !important;
+  outline: 1px solid var(--hlpt-adv-guidetour-btn-icon-bg-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] div#userflow-ui div.userflowjs-launcher {
+  color: var(--hlpt-adv-guidetour-btn-icon-col) !important;
+}
+
+/* header control ends here below is the code to color header controls as per the left sidebar menu items */
+
+body #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-left-nav-color) !important;
+  opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-secondary-color: var(--hlpt-left-nav-icon-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-primary-color: var(--hlpt-left-nav-icon-color) !important;
+  opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl i.fa-solid.fa-duotone.fa-user-robot {
+  --fa-secondary-color: var(--hlpt-left-nav-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+/* ends here */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location #sidebar-v2 .hl_collapse-button::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_collapse-button::before {
+  rotate: 0deg;
+  font-weight: 200 !important;
+}
+
+#app #launchpad .launchpad-title p {
+  color: var(--hlpt-adv-bodycontent-h1-text-col) !important;
+  font-size: var(--hlpt-adv-bodycontent-h1-text-size) !important;
+  line-height: auto !important;
+  font-weight: 800 !important;
+}
+
+#app #launchpad .launchpad-title p::after {
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav {
+  background-color: transparent !important;
+}
+
+/* DEFAULT LIGHT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active {
+  background: #fff !important;
+  border-color: none !important;
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+  border: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover {
+  background: #fff !important;
+  border-color: none !important;
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+}
+
+/* left side bar icon hover color */
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-secondary-opacity: 0.3 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency .hl_header,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-location .hl_header {
+  box-shadow: 10px 2px 12px 0 rgba(0, 0, 0, 0.001) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover:not(.divider),
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover:not(.divider),
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+.sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover,
+.sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  background: var(--hlpt-primary-theme-color-tint) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover:not(.divider),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover:not(.divider),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret:hover {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active:not(.divider),
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active:not(.divider),
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active:not(.divider),
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active:not(.divider),
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active {
+  background: var(--hlpt-primary-theme-color-tint) !important;
+}
+
+/* mainnav - text hover, icon hover, hover-active background colors */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a:hover span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a.active span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a:hover span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.active span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header a#sb_divider-1:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header a#sb_divider-1 {
+  background: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #conversations .message-body--aside a.btn.btn-primary.btn-sched {
+  background: none !important;
+  border-radius: 500px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #conversations .message-body--aside a.btn.btn-primary.btn-sched:hover {
+  background-color: none !important;
+}
+
+/* //////////// top header controls */
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls>*+*,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls>*+* {
+  margin-left: 5px !important;
+}
+
+body #app .sidebar-v2-location .hl_header #hl_header--help-icon span.left-nav-icon.hl_header--help-icon,
+body #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span.left-nav-icon.recent_activities-toggle,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span,
+#app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#recent_activities-toggle span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#canny_logs-toggle span:after,
+#app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls .hl_header--dropdown.hl_header--phone.dropdown.--no-caret #phone_dialer_access {
+  font-size: 18px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header .container-fluid .hl_header--controls a#hl_header--help-icon {
+  padding-top: 2px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem {
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+}
+
+/* BUTTONS */
+
+/* PRIMARY BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .agency-dash .processing-stats,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .green-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .n-button.n-button--primary-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a.btn.btn-primary.btn-sched,
+body[data-hlpt-tsg='hlpt-advanced-settings'] section.hl_wrapper.hl_topbar-tabs button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-select__BV_toggle_,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-filters__BV_toggle_,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle_,
+body[data-hlpt-tsg='hlpt-advanced-settings'] section#calender-v2 button.btn.btn-light.btn-sm,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-prev,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-next,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#send_review_request_btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.hl-table-button.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-success,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_billing--method button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.btn.add-balance,
+body[data-hlpt-tsg='hlpt-advanced-settings'] span.btn.btn-primary.btn-keep-height,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_save_btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#smsChangePhoto,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#sms_settings_save,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.w-full.justify-center.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white.bg-curious-blue-500.hover\:bg-curious-blue-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-600,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-intSettings__btn--connect-shopify,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#emil_settings_save,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-form-builder__btn--refresh-data,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper.hl_topbar-tabs section#smartlists.hl_wrapper--inner>div.hl_controls.hl_smartlists--controls .hl_controls--right button#hl_smartlists--filter-btn,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper.hl_topbar-tabs section#smartlists.hl_wrapper--inner>div.hl_controls.hl_smartlists--controls .hl_controls--right button#hl_smartlists--filter-btn>span {
+  background: var(--hlpt-adv-primary-btn-bg-color) !important;
+  border-color: var(--hlpt-adv-primary-btn-border-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-primary-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .agency-dash .processing-stats:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .green-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] a.btn.btn-primary.btn-sched:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] section.hl_wrapper.hl_topbar-tabs button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_controls--right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-filters__BV_toggle_:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-view__BV_toggle_:hover body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__drpdwn--calendars-select__BV_toggle_:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-prev:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-calendar-v2__btn--pagination-next:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#send_review_request_btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.hl-table-button.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-success:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border-2.border-curious-blue-400.text-sm.font-medium.rounded.text-curious-blue-500.hover\:bg-curious-blue-100.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.inline-flex.items-center.justify-center.rounded.transition.ease-in-out.duration-150.border.border-transparent.font-medium.text-white.bg-primary-500.hover\:bg-primary-400.focus\:outline-none.focus\:border-primary-700.focus\:shadow-outline-primary.px-4.py-2.leading-5.text-sm.hl-btn.w-40:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_billing--method button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.btn.add-balance:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] span.btn.btn-primary.btn-keep-height:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#generate_link_save_btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#smsChangePhoto:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#sms_settings_save:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-gray-300.shadow-sm.text-sm.font-medium.rounded.text-gray-700.hover\:bg-gray-50.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_settings--controls-right button.hl-btn.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.shadow-sm.text-white.bg-apple-500.hover\:bg-apple-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-apple-500:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button.hl-btn.w-full.justify-center.inline-flex.items-center.px-4.py-2.border.border-transparent.text-sm.font-medium.rounded.text-white.bg-curious-blue-500.hover\:bg-curious-blue-600.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-curious-blue-600:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-intSettings__btn--connect-shopify:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#emil_settings_save:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] button#pg-form-builder__btn--refresh-data,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper.hl_topbar-tabs section#smartlists.hl_wrapper--inner>div.hl_controls.hl_smartlists--controls .hl_controls--right button#hl_smartlists--filter-btn:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_wrapper.hl_topbar-tabs section#smartlists.hl_wrapper--inner>div.hl_controls.hl_smartlists--controls .hl_controls--right button#hl_smartlists--filter-btn:hover>span {
+  background: var(--hlpt-adv-primary-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-primary-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-primary-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-primary-btn-radius) !important;
+}
+
+/* SECONDARY BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #funnel-website-btn-secondary.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #forms-btn-secondary.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #surveys-btn-secondary.n-button.n-button--default-type.n-button--medium-type,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-outline-primary {
+  background: var(--hlpt-adv-secondary-btn-bg-color) !important;
+  color: var(--hlpt-adv-secondary-btn-text-color) !important;
+  border-color: var(--hlpt-adv-secondary-btn-border-color) !important;
+  border-radius: var(--hlpt-adv-secondary-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #funnel-website-btn-secondary.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #forms-btn-secondary.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #surveys-btn-secondary.n-button.n-button--default-type.n-button--medium-type:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .btn-outline-primary:hover {
+  background: var(--hlpt-adv-secondary-btn-bg-hover-color) !important;
+  color: var(--hlpt-adv-secondary-btn-text-hover-color) !important;
+  border-color: var(--hlpt-adv-secondary-btn-border-hover-color) !important;
+  border-radius: var(--hlpt-adv-secondary-btn-radius) !important;
+}
+
+/* DEFAULT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active {
+  background: var(--hlpt-adv-default-btn-bg-color) !important;
+  color: var(--hlpt-adv-default-btn-text-color) !important;
+  border-color: var(--hlpt-adv-default-btn-border-color) !important;
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  padding-bottom: 2px !important;
+  padding-top: 2px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a#tb_contact-custom-fields-settings.topmenu-navitem span.flex.items-center::before {
+  color: var(--hlpt-adv-default-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a#tb_contact-custom-fields-settings.topmenu-navitem:hover span.flex.items-center::before {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem span body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem:hover span {
+  border: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem.active:hover {
+  background: var(--hlpt-adv-default-btn-bg-hover-color) !important;
+  color: var(--hlpt-adv-default-btn-text-hover-color) !important;
+  border-color: var(--hlpt-adv-default-btn-border-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem:hover span {
+  color: var(--hlpt-adv-default-btn-text-hover-color) !important;
+}
+
+/* DEFAULT LIGHT BTN */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem {
+  background: var(--hlpt-adv-default-light-btn-bg-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem span {
+  color: var(--hlpt-adv-default-light-btn-text-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem:hover {
+  background: var(--hlpt-adv-default-light-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem:hover span {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+#app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem.active {
+  border-color: var(--primary-color);
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i {
+  --fa-primary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-primary-opacity: 1 !important;
+}
+
+body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+/* body #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i, */
+body #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-secondary-opacity: 0.3 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] body #app .sidebar-v2-location .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl:hover i.fa-solid.fa-duotone.fa-user-robot body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings {
+  margin-bottom: -10px !important;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body #app a:hover span .sidebar-v2-agency,
+body #app a.active span .sidebar-v2-agency,
+body #app #sidebar-v2 .hl_nav-header nav a.active span,
+body #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app #sidebar-v2 nav a:hover span i::before,
+body #app #sidebar-v2 nav a.active span i::before,
+body #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-primary-theme-color) !important;
+  outline: none;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active:not(.divider),
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active:not(.divider),
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active {
+  background: var(--hlpt-primary-theme-color-tint) !important;
+}
+
+/* left nav text and icon */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a:hover span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.active span .sidebar-v2-agency,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a:hover span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #sidebar-v2 nav a.active span i::before,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body[data-hlpt-tsg='hlpt-advanced-settings']
+  #app
+  .sidebar-v2-location.v2-open
+  .hl_header
+  .container-fluid
+  .hl_header--dropdown.hl_header--phone
+  a#phone_dialer_access.active
+  .left-nav-icon.phone_dialer_access
+  i,
+body[data-hlpt-tsg='hlpt-advanced-settings']
+  #app
+  .sidebar-v2-location.v2-open
+  .hl_header
+  .container-fluid
+  .hl_header--dropdown.hl_header--phone
+  a#phone_dialer_access:hover
+  .left-nav-icon.phone_dialer_access
+  i,
+body[data-hlpt-tsg='hlpt-advanced-settings']
+  #app
+  .sidebar-v2-agency.v2-open
+  .hl_header
+  .container-fluid
+  .hl_header--dropdown.hl_header--phone
+  a#phone_dialer_access.active
+  .left-nav-icon.phone_dialer_access
+  i,
+body[data-hlpt-tsg='hlpt-advanced-settings']
+  #app
+  .sidebar-v2-agency.v2-open
+  .hl_header
+  .container-fluid
+  .hl_header--dropdown.hl_header--phone
+  a#phone_dialer_access:hover
+  .left-nav-icon.phone_dialer_access
+  i {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+  outline: none;
+} */
+
+/* left side bar icon hover color */
+/* body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i {
+  --fa-primary-color: var(--hlpt-primary-theme-color) !important;
+  opacity: 1 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#hl_header--help-icon:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#recent_activities-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#canny_logs-toggle:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls a#phone_dialer_access:hover span.left-nav-icon i,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls a#phone_dialer_access span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  --fa-secondary-opacity: 1 !important;
+} */
+
+/* left side bar icon hover color */
+/* #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+#app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+#app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+#app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+#app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-secondary-opacity: 0.6 !important;
+} */
+
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+#app .sidebar-v2-location #sidebar-v2 nav a#sb_settings.active span.left-nav-icon.sb_settings i,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span.left-nav-icon i,
+#app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings.active span.left-nav-icon.sb_agency-settings i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span.left-nav-icon i,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+#app .sidebar-v2-location #sidebar-v2 nav a#sb_settings:hover span.left-nav-icon.sb_settings i,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.left-nav-icon i,
+#app .sidebar-v2-agency #sidebar-v2 nav a#sb_agency-settings:hover span.left-nav-icon.sb_agency-settings i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span.left-nav-icon i {
+  --fa-secondary-color: var(--hlpt-primary-theme-color) !important;
+  --fa-secondary-opacity: 0.3 !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active:not(.divider),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active:not(.divider),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active:not(.divider),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active:not(.divider),
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a.active {
+  background: var(--hlpt-adv-mainnav-hover-active-bg-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header--controls #azFaqCtrl,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency .hl_header--controls #azFaqCtrl {
+  background: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .v2-open.sidebar-v2-location #sidebar-v2 #sb_settings:hover span~span {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body #app .sidebar-v2-agency .hl_wrapper .hl_wrapper--inner,
+body #app .sidebar-v2-agency .hl_wrapper .hl_wrapper--inner.hl_settings {
+  background: transparent !important;
+}
+
+/* updated */
+.sidebar-v2-agency #sidebar-v2 .hl_nav-settings,
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings {
+  margin-bottom: 10px !important;
+}
+
+/* new css added for translation of left sidebar */
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='app-media']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='launchpad']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='ai-employee-promo']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='dashboard']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='conversations']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='calendars']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='opportunities']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='payments']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='contacts']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='email-marketing']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='automation']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='sites']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='memberships']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='reputation']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='reporting']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='app-marketplace']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='location-mobile-app']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-dashboard']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='ai-employee-promo']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-saas-configurator']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-accounts']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-account-snapshots']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-account-reselling']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-marketplace']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-partners']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-university']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='saas-education']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='saas-fasttrack']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header>nav>a[meta='agency-ideas']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='business_info']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='saas-billing']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='profile']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='my-staff']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='pipeline']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='Opportunities-Pipelines']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='calendars']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='conversation_ai_settings']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='phone-system']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='whatsapp']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='reputation-management']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='custom-fields-settings']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='custom-values']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='manage-scoring']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='domains']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='domains-urlRedirects']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='media']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='url-redirects']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='integrations']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[id='sb_undefined']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[id='sb_brand-boards']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='location-email-services']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='conversations_providers']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='tags']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='audit-logs-location']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='business-settings-v2']>span,
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='brand-boards']>span {
+  font-size: 14px !important;
+}
+
+.sidebar-v2-location.v2-open #sidebar-v2 .hl_nav-header-without-footer>nav>a[meta='whatsapp']>span~span.hl_new_badge {
+  font-size: 10px !important;
+}
+
+/* new bug fixed */
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-profile-settings.active span.left-nav-icon.sb_agency-profile-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-company-settings.active span.left-nav-icon.sb_agency-company-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-team-settings.active span.left-nav-icon.sb_agency-team-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-billing-settings.active span.left-nav-icon.sb_agency-billing-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-snapshot-settings.active span.left-nav-icon.sb_agency-snapshot-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-twilio-settings.active span.left-nav-icon.sb_agency-twilio-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-email-settings.active span.left-nav-icon.sb_agency-email-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav #sb_workflow-premium-actions-setting.active span.left-nav-icon.sb_workflow-premium-actions-setting~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-affiliate-settings.active span.left-nav-icon.sb_agency-affiliate-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-custom-link-settings.active span.left-nav-icon.sb_agency-custom-link-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-stripe-settings.active span.left-nav-icon.sb_agency-stripe-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-api-keys-settings.active span.left-nav-icon.sb_agency-api-keys-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-compliance-settings.active span.left-nav-icon.sb_agency-compliance-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-labs-settings.active span.left-nav-icon.sb_agency-labs-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-audit-logs-settings.active span.left-nav-icon.sb_agency-audit-logs-settings~span {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-profile-settings:hover span.left-nav-icon.sb_agency-profile-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-company-settings:hover span.left-nav-icon.sb_agency-company-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-team-settings:hover span.left-nav-icon.sb_agency-team-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-billing-settings:hover span.left-nav-icon.sb_agency-billing-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-snapshot-settings:hover span.left-nav-icon.sb_agency-snapshot-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-twilio-settings:hover span.left-nav-icon.sb_agency-twilio-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-email-settings:hover span.left-nav-icon.sb_agency-email-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav #sb_workflow-premium-actions-setting:hover span.left-nav-icon.sb_workflow-premium-actions-setting~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-affiliate-settings:hover span.left-nav-icon.sb_agency-affiliate-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-custom-link-settings:hover span.left-nav-icon.sb_agency-custom-link-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-stripe-settings:hover span.left-nav-icon.sb_agency-stripe-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-api-keys-settings:hover span.left-nav-icon.sb_agency-api-keys-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-compliance-settings:hover span.left-nav-icon.sb_agency-compliance-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-labs-settings:hover span.left-nav-icon.sb_agency-labs-settings~span,
+body[data-hlpt-tsg='hlpt-advanced-settings'] .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a#sb_agency-audit-logs-settings:hover span.left-nav-icon.sb_agency-audit-logs-settings~span {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_wrapper.hl_topbar-tabs.hl_without-topbar .modal .modal-dialog.merge-modal,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_wrapper.hl_topbar-tabs.hl_without-topbar .modal .modal-dialog.merge-modal .modal-header h2.modal-title {
+  color: white !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem.divider {
+  margin-bottom: 0rem;
+  height: unsest !important;
+  width: 1px !important;
+  opacity: 0.05 !important;
+}
+
+body #app .topmenu-nav #tb_contacts-divider {
+  opacity: 0 !important;
+  display: none !important;
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings {
+  overflow: hidden !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a {
+  padding-top: 3px !important;
+  padding-bottom: 6px !important;
+  margin-top: 7px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a {
+  padding-top: 7px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.custom-link {
+  padding-top: 6px !important;
+  margin-top: 8px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_app-media {
+  padding-top: 8px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_launchpad {
+  padding-top: 8px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a#sb_ai-employee-promo {
+  padding-top: 8px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location #sidebar-v2 nav a#sb_conversations .hide-menu-icon {
+  right: 50px !important;
+}
+
+/* bug fixed 02-03-2024 */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app a.flex.cursor-pointer.sort-option.inline-flex.items-center.px-2\.5.py-0\.5.border.border-transparent.text-xs.font-medium.rounded.shadow-sm.text-white.bg-blue-600:hover {
+  background: var(--hlpt-adv-primary-btn-bg-color) !important;
+}
+
+/* bug fixed on 13-05-2024 */
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem>div>a:hover {
+  background: var(--hlpt-adv-default-light-btn-bg-hover-color) !important;
+  border-color: var(--hlpt-adv-default-light-btn-border-hover-color) !important;
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+  border-radius: var(--hlpt-adv-default-light-btn-radius) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .hl_header .topmenu-nav a.topmenu-navitem>div>a:hover>span.flex.items-center {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header .topmenu-nav a.topmenu-navitem span~div a:hover>span.flex.items-center {
+  color: var(--hlpt-adv-default-light-btn-text-hover-color) !important;
+}
+
+body #app #launcpad .launchpad-item-sub-container:hover i.integration-icon {
+  color: var(--hlpt-adv-primary-btn-bg-color) !important;
+}
+
+body #app #launchpad #launchpadHome .launchpad-center-containter .launchpad-item-sub-container i.integration-icon.fa-3x,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app #launchpad #launchpadHome .launchpad-center-containter .launchpad-item-sub-container:hover i.integration-icon.fa-3x {
+  color: var(--hlpt-primary-theme-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_controlpanel:hover span.cpanel svg.cp-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-settings nav a#sb_controlpanel.active:hover span.cpanel svg.cp-icon {
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.cpanel,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span.cpanel svg.cp-icon,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active:hover span.cpanel svg.cp-icon {
+  color: var(--hlpt-adv-mainnav-icon-hover-color) !important;
+  color: var(--hlpt-adv-mainnav-text-hover-color) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app header.hl_header .justify-start,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-location .hl_header {
+  background: white !important;
+  outline: none;
+}
+
+@media only screen and (max-width: 1500px) {
+
+  body[data-hlpt-tsg='hlpt-advanced-settings'].topnav-hscroll #app .sidebar-v2-location .hl_header,
+  body[data-hlpt-tsg='hlpt-advanced-settings'].topnav-hscroll #app header.hl_header .justify-start {
+    background-color: none !important;
+    background: none !important;
+    outline: none;
+  }
+}
+
+/* smart buttons */
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-avatar_img,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-hl_header--help-icon,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-recent_activities-toggle,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-canny_logs-toggle,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-hl_header--phone-icon {
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-col) !important;
+  border-color: var(--hlpt-adv-profile-btn-icon-bg-col) !important;
+  color: var(--hlpt-adv-profile-btn-icon-col) !important;
+}
+
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-avatar_img:hover,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-hl_header--help-icon:hover,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-recent_activities-toggle:hover,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-canny_logs-toggle:hover,
+body[data-hlpt-tsg="hlpt-advanced-settings"] #app .smart-buttons--btn-wrap .smartbtn-hl_header--phone-icon:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.0) !important;
+  background-color: var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+  border-color: var(--hlpt-adv-profile-btn-icon-bg-hover-col) !important;
+  color: var(--hlpt-adv-profile-btn-icon-hover-col) !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_header.--agency a#phone_dialer_access span.left-nav-icon.phone_dialer_access,
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency #sidebar-v2 .hl_header.--agency a#phone_dialer_access span.left-nav-icon {
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency a#phone_dialer_access span.left-nav-icon {
+  display: none !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings'] #app .sidebar-v2-agency a#phone_dialer_access {
+  padding-top: 0px !important;
+  margin: 0px !important;
+  margin-left: 0px !important;
+}
+
+body[data-hlpt-tsg='hlpt-advanced-settings']:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location .hl_header .topmenu-nav {
+  background: var(--sidebar-menu-bg-color) !important;
+  height: 42px !important;
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg), var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc), var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+}
+
+@media only screen and (max-width: 1800px) {
+  body[data-hlpt-tsg='hlpt-advanced-settings']:not([data-location-name='custom-fields-settings-v2']):not([data-location-name='company-settings-v2']):not([data-location-name='audit-location-v2']):not([data-location-name='settings-reputation-v2']):not([data-location-name='phone-number-v2']):not([data-location-name='labs']):not([data-location-name='tags-settings-v2']):not([data-location-name='smtp-service-v2']):not([data-location-name='integrations-settings-v2']):not([data-location-name='redirect-settings-v2']):not([data-location-name='media-settings-v2']):not([data-location-name='domain-settings-v2']):not([data-location-name='custom-values-settings-v2']):not([data-location-name='calendar-settings-v2']):not([data-location-name='profile-v2']):not([data-location-name='team-v2']):not([data-location-name='pipeline-settings-v2']) #app .sidebar-v2-location .hl_header .topmenu-nav {
+    background: var(--sidebar-menu-bg-color) !important;
+    outline: none;
+  }
+}

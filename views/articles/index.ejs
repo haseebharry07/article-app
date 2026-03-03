@@ -7,7 +7,7 @@
         <% const latest = articles[0]; %>
         <section class="featured-article">
             <% if (latest.image) { %>
-                <img src="/uploads/<%= latest.image %>" alt="<%= latest.title %>" class="featured-image">
+                <img src="<%= latest.image %>" alt="<%= latest.title %>" class="featured-image">
             <% } %>
             <div class="featured-content">
                 <h1><%= latest.title %></h1>
@@ -28,8 +28,8 @@
         <section class="articles-grid">
             <% articles.slice(1).forEach(article => { %>
                 <div class="article-card">
-                    <% if (article.image) { %>
-                        <img src="/uploads/<%= article.image %>" alt="<%= article.title %>" class="article-image">
+                    <% if (articles.image) { %>
+                        <img src="<%= articles.image %>" alt="<%= latest.title %>" class="featured-image">
                     <% } %>
                     <h3><%= article.title %></h3>
                     <p class="meta"><%= new Date(article.createdAt).toLocaleString() %></p>

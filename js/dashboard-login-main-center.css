@@ -1,0 +1,1011 @@
+:root {
+  --loading-url: var(--custom-loading-icon);
+  --loading-background-color: #ffffff;
+  --loading-logo-width: auto;
+  --loading-logo-height: 100%;
+  --loading-duration: 3s;
+  --login-button-font-weight: 500;
+  --login-main-background-url: var(--hlpt-main-body-image);
+  --login-tagline: "Let's get started!";
+  --login-link-color: #ff502c;
+  --login-header-text-color: var(--hlpt-primary-theme-color);
+  --login-input-background-color: var(--hlpt-primary-theme-color-tint);
+  --loginbtncolor: #23496d;
+  --loginbtnhover: #3b658c;
+  --bodybgcolor: #fff;
+  --login-button-background-color: #23496d;
+  --login-button-background-hover-color: var(--hlpt-primary-theme-color);
+  --login-button-text-color: #ffffff;
+  --hlpt-footer-note: 'Having trouble logging in or resetting your password? Contact your admin.';
+  --blur-value: 10px;
+  --hlpt-adv-loginlogo-size: 70px;
+  --hlpt-adv-loginlogo-img: '';
+}
+
+/* 
+  url('https://cdn2.locationapi.co/themegenerator/images/thedemologo_upload.svg'); 
+  url('https://cdn2.locationapi.co/themegenerator/images/loginimage.png');
+  url('https://cdn2.locationapi.co/themegenerator/images/hlpt_login_image_1.jpg'); 
+  url('https://cdn2.locationapi.co/themegenerator/images/hlpt_login_image_2.jpg'); */
+
+/* Spinning */
+
+/* new loader letancy */
+/* body #app[class='']::after {
+  content: 'Loading fresh data...';
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999999;
+  background: #f0fdfe;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #607179;
+  padding-top: 67px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  animation: 7s forwards fadeOut;
+}
+body #app[class='']::before {
+  content: '';
+  height: 42px;
+  width: 42px;
+  border: 4px solid #188bf6ff;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  will-change: transform;
+  position: absolute;
+  top: calc(50% - 38px);
+  left: calc(50% - 25px);
+  z-index: 9999999999;
+  animation: 1s ease-in-out infinite spin;
+  -webkit-animation: 1s ease-in-out infinite spin, 7s forwards fadeOut;
+}
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0%,
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    visibility: hidden;
+    z-index: -100;
+  }
+} */
+
+body #app[class=''] .hl-loader-container[style*='display: none'] {
+  background: #f0fdfe;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 999999;
+  width: 100vw;
+  animation: 4s forwards fadeOut;
+
+}
+
+/* .lds-ring {
+  margin-bottom: 10px !important;
+  outline: none;
+} */
+.hl-loader-info {
+  padding-top: 0px !important;
+}
+
+@keyframes fadeOut {
+
+  0%,
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -100;
+    display: none;
+  }
+}
+
+/* end of  new loader letancy */
+
+#app.loading+.app-loader {
+  background: var(--loading-background-color);
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  background: var(--loading-url);
+}
+
+[class~='lds-grid'] div:nth-child(1),
+[class~='lds-grid'] div {
+  position: absolute;
+}
+
+[class~='lds-grid'] div {
+  border-radius: 0;
+}
+
+[class~='lds-grid'] div:nth-child(1),
+[class~='lds-grid'] {
+  width: var(--loading-logo-width);
+}
+
+#app.loading+.app-loader {
+  opacity: 1;
+}
+
+[class~='lds-grid'] {
+  display: inline-block;
+}
+
+[class~='lds-grid'] div {
+  background: #fff;
+}
+
+[class~='lds-grid'] div:nth-child(1),
+[class~='lds-grid'] {
+  height: var(--loading-logo-height);
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  background-color: transparent !important;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  background-size: cover !important;
+}
+
+[class~='lds-grid'] div {
+  animation: lds-grid 1.2s linear infinite;
+}
+
+[class~='lds-grid'] {
+  position: relative;
+}
+
+[class~='lds-grid'] div {
+  display: none !important;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  background-repeat: no-repeat !important;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  background-position: center center !important;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  display: block !important;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  -webkit-animation: spin var(--loading-duration) linear infinite;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  -moz-animation: spin var(--loading-duration) linear infinite;
+}
+
+[class~='lds-grid'] div:nth-child(1) {
+  animation: spin var(--loading-duration) linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.hl_login--body .card,
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  max-width: 100% !important;
+}
+
+.hl_login--body .card,
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  width: 100% !important;
+}
+
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  margin-left: auto;
+}
+
+section[class~='hl_login'] [class~='hl_login--body'] [class~='container-fluid'] [class~='card'] [class~='card-body'] [class~='form-group']+[class~='form-group']:not([class~='button-holder']) {
+  display: flex !important;
+}
+
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  margin-bottom: 0;
+}
+
+.hl_login--body .card {
+  margin-left: 0 !important;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus,
+.hl_login .btn.btn-blue,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active {
+  background-color: var(--loginBtnColor);
+}
+
+.hl_login--body .card {
+  margin-bottom: 0 !important;
+}
+
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  margin-right: auto;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active,
+.hl_login .btn.btn-blue {
+  border-left-color: var(--loginBtnColor);
+}
+
+section.hl_login p.foot-note {
+  transform: translate(0, -60px);
+}
+
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  margin-top: 0;
+}
+
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  padding-top: 1.25in;
+}
+
+.hl_login .btn.btn-blue,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus {
+  border-bottom-color: var(--loginBtnColor);
+}
+
+section.hl_login .hl_login--body input#email,
+section[class~='hl_login'] [class~='hl_login--body'] input#password {
+  background: var(--login-input-background-color);
+  /* background: var(--hlpt-primary-theme-color) !important; */
+}
+
+[class~='hl_login--body'] [class~='card'] [class~='card-body'] {
+  padding-bottom: 0.53333333in;
+}
+
+.hl_login--body .card {
+  margin-right: 0 !important;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active {
+  border-right-color: var(--loginBtnColor);
+}
+
+[class~='hl_login'] {
+  background-image: var(--login-main-background-url) !important;
+  background-color: var(--hlpt-primary-theme-color) !important;
+  /* filter: blur(var(--blur-value)) !important;
+  transition: filter 1.5s ease-in-out; */
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active {
+  border-top-color: var(--loginBtnColor);
+}
+
+.hl_login--body .card {
+  margin-top: 0 !important;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active {
+  color: #fff;
+}
+
+[class~='hl_login'] [class~='button-holder'][class~='form-group'],
+[class~='hl_login'] {
+  margin-left: auto !important;
+}
+
+.hl_login--body .card {
+  box-shadow: none !important;
+}
+
+section.hl_login .button-holder.form-group>div:not(.global-error) {
+  transform: translate(0, 100px);
+}
+
+section[class~='hl_login'] [class~='hl_login--body'] [class~='login-card-heading']:after {
+  content: var(--login-tagline);
+  margin-top: -5px !important;
+  display: block;
+}
+
+section[class~='hl_login'] [class~='hl_login--body'] [class~='container-fluid'] [class~='card'] [class~='card-body'] [class~='form-group']+[class~='form-group']:not([class~='button-holder']) {
+  flex-direction: column-reverse !important;
+}
+
+[class~='hl_login'] [class~='button-holder'][class~='form-group'] {
+  margin-bottom: 0.104166667in !important;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:focus,
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:active {
+  transition: 0.3s ease-in;
+}
+
+section[class~='hl_login'] [class~='hl_login--body'] a {
+  color: var(--login-link-color) !important;
+}
+
+div[class~='hl_login--body'] {
+  max-width: 28.125pc !important;
+}
+
+[class~='hl_login'],
+.hl_login--body .card {
+  padding-left: 0 !important;
+}
+
+[class~='hl_login'] {
+  background-position: center center;
+}
+
+[class~='hl_login'] [class~='button-holder'][class~='form-group'],
+[class~='hl_login'] {
+  margin-right: auto !important;
+}
+
+.hl_login--body .card,
+[class~='hl_login'] {
+  padding-bottom: 0 !important;
+}
+
+[class~='hl_login'] [class~='button-holder'][class~='form-group'] {
+  margin-top: 0.104166667in !important;
+}
+
+[class~='hl_login'] {
+  background-size: cover;
+}
+
+[class~='hl_login'] {
+  background-repeat: no-repeat;
+}
+
+[class~='hl_login'],
+.hl_login--body .card {
+  padding-right: 0 !important;
+}
+
+[class~='hl_login'],
+.hl_login--body .card {
+  padding-top: 0 !important;
+}
+
+[class~='hl_login'] {
+  display: flex !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  background: var(--bodyBgColor) !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  font-size: 0.875rem;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-left-width: 0.0625pc !important;
+}
+
+.hl_login button:hover {
+  background-color: var(--login-button-background-hover-color) !important;
+}
+
+[class~='hl_login'] {
+  flex-direction: column !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-bottom-width: 0.0625pc !important;
+}
+
+[class~='hl_login'] {
+  justify-content: center !important;
+}
+
+div[class~='hl_login--body'] {
+  width: 100% !important;
+}
+
+[class~='hl_login'] {
+  align-items: center !important;
+}
+
+[class~='hl_login'] {
+  margin-bottom: 0 !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-right-width: 0.0625pc !important;
+}
+
+[class~='hl_login'] {
+  margin-top: -82px !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-top-width: 0.0625pc !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-left-style: solid !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-bottom-style: solid !important;
+}
+
+.hl_login .btn.btn-blue {
+  border-right-color: var(--loginBtnColor);
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-right-style: solid !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-top-style: solid !important;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover {
+  background-color: var(--loginBtnHover);
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover {
+  border-left-color: var(--loginBtnHover);
+}
+
+[class~='hl_login'] {
+  height: 109vh;
+}
+
+.hl_login .btn.btn-blue {
+  border-top-color: var(--loginBtnColor);
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover {
+  border-bottom-color: var(--loginBtnHover);
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover {
+  border-right-color: var(--loginBtnHover);
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover {
+  border-top-color: var(--loginBtnHover);
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover,
+.hl_login .btn.btn-blue {
+  color: #fff;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-left-color: #bdbdbd !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-bottom-color: #bdbdbd !important;
+}
+
+[class~='hl_login--header'] {
+  background: 0 0 !important;
+}
+
+[class~='hl_login--header'] {
+  border-bottom-width: 0 !important;
+}
+
+[class~='hl_login--header'] {
+  border-bottom-style: none !important;
+}
+
+[class~='hl_login--header'] {
+  border-bottom-color: currentColor !important;
+}
+
+[class~='hl_login--header'] {
+  border-image: none !important;
+}
+
+[class~='hl_login--header'] {
+  padding-left: 0 !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-right-color: #bdbdbd !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-top-color: #bdbdbd !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-image: none !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  border-radius: 0.3125pc !important;
+}
+
+[class~='hl_login'] [class~='btn'][class~='btn-blue']:hover,
+.hl_login .btn.btn-blue {
+  transition: 0.3s ease-in;
+}
+
+div[class~='hl_login--body'] {
+  background: var(--bodyBgColor) !important;
+}
+
+div[class~='hl_login--body'] {
+  border-radius: 0.625pc !important;
+  position: relative !important;
+  z-index: 1;
+}
+
+[class~='hl_login--header'] {
+  padding-bottom: 0 !important;
+}
+
+[class~='hl_login'] [class~='hover']\:bg-curious-blue-600:hover {
+  background-color: var(--login-button-background-hover-color) !important;
+}
+
+[class~='hl_login--header'] {
+  padding-right: 0 !important;
+}
+
+[class~='hl_login--header'] {
+  padding-top: 0 !important;
+}
+
+[class~='hl_login--header'] {
+  margin-bottom: -1.1in !important;
+}
+
+div[class~='hl_login--body'] {
+  /* box-shadow: 0 0 0.833333333in rgba(0, 0, 0, 0.08); */
+  outline: none;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  padding-left: 0.625pc !important;
+}
+
+[class~='hl_login--header'] {
+  z-index: 99;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  padding-bottom: 0.625pc !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  padding-right: 0.625pc !important;
+}
+
+[class~='hl_login'] [class~='form-control'] {
+  padding-top: 0.625pc !important;
+}
+
+[class~='hl_login--body'] [class~='login-card-heading'] {
+  margin-bottom: 1.25pc;
+}
+
+[class~='hl_login--body'] [class~='login-card-heading'] {
+  text-align: center;
+}
+
+section[class~='hl_login'] [class~='hl_login--body'] [class~='login-card-heading'] h2[class~='heading2'] {
+  color: var(--login-header-text-color) !important;
+  padding-top: 10px !important;
+}
+
+[class~='hl_login--body'] [class~='heading2'] {
+  margin-bottom: 0.625pc;
+}
+
+[class~='hl_login--body'] [class~='heading2'] {
+  font-size: 0.260416667in;
+}
+
+[class~='hl_login'] button {
+  background-color: var(--login-button-background-color);
+  background-color: var(--hlpt-primary-theme-color);
+}
+
+[class~='hl_login'] button {
+  color: var(--login-button-text-color);
+}
+
+section[class~='hl_login'] [class~='hl_login--body'] [class~='login-card-heading']:after {
+  opacity: 0.6;
+}
+
+[class~='hl_login'] button {
+  font-weight: var(--login-button-font-weight);
+}
+
+section.hl_login .hl_login--body .container-fluid .card .card-body .form-group+.form-group:not(.button-holder) a#forgot_passowrd_btn {
+  transform: translate(-2px, 20px) !important;
+}
+
+[class~='hl_login'] button {
+  min-height: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+  div.hl_login--body {
+    border-radius: 0;
+  }
+}
+
+div.hl_login--body p.foot-note a::after {
+  content: var(--hlpt-footer-note) !important;
+  display: block !important;
+  color: #666 !important;
+  font-weight: normal !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+div.hl_login--body .form-group {
+  margin-bottom: 0.8rem;
+}
+
+div.hl_login--body .focus\:border-curious-blue-500:focus {
+  border-color: var(--hlpt-primary-theme-color) !important;
+}
+
+div.hl_login--body .focus\:ring-curious-blue-500:focus {
+  --tw-ring-color: var(--hlpt-primary-theme-color) !important;
+}
+
+.hl_login::after {
+  background-color: var(--hlpt-primary-theme-color) !important;
+  height: 110vh !important;
+  width: 110vw !important;
+  content: ' ';
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .text-curious-blue-500 {
+  color: var(--hlpt-primary-theme-color) !important;
+  position: relative;
+  top: -55px;
+} */
+
+/* 
+[class~='hl_login'] button {
+  border: 10px solid #fff !important;
+  height: 60px;
+} */
+
+.text-curious-blue-500.hover\:text-curious-blue-800.font-semibold {
+  position: relative;
+  /* top: 0px; */
+  outline: none;
+}
+
+section.hl_login .button-holder.form-group>div:not(.global-error) {
+  transform: translate(0, 30px);
+}
+
+section.hl_login p.foot-note {
+  transform: translate(0, 30px);
+}
+
+section.hl_login .card .card-body .font-semibold.cursor-pointer.w-full.text-center.text-curious-blue-500.hover\:text-curious-blue-800 {
+  top: 40px !important;
+  color: var(--hlpt-primary-theme-color) !important;
+  margin-bottom: 20px !important;
+}
+
+#app .hl_login .hl_login--body .card-body {
+  box-shadow: 0px 5px 15px 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+.hl_login--body .card .card-body input {
+  color: var(--hlpt-left-nav-hover-color) !important;
+}
+
+body #app .sidebar-v2-agency .hl_login .hl_login--header .container-fluid a img {
+  max-width: var(--hlpt-adv-loginlogo-size) !important;
+}
+
+body #app .sidebar-v2-agency .hl_login .hl_login--header .container-fluid {
+  background: var(--hlpt-adv-loginlogo-img) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center center !important;
+  max-height: 75px !important;
+}
+
+/* forget password screen as per brand */
+/* ********************************* */
+#auth-set-password,
+#auth-header .hl-card {
+  background: var(--hlpt-primary-theme-color) !important;
+}
+
+#auth-header .hl-card {
+  border: 0px solid var(--gray-200) !important;
+  box-shadow: none !important;
+  border-radius: 0px !important;
+}
+
+#auth-header .hl-card .hl-card-header {
+  padding: 20px 24px 21px !important;
+  border-bottom: 0px solid var(--gray-200) !important;
+}
+
+#auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+  background: none !important;
+}
+
+#auth-header .hl-card .hl-card-header .flex.items-center.w-full {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#auth-body #auth-setPassword-body .hl-card .hl-card-content .card-body {
+  padding-top: 30px !important;
+}
+
+button#set-password-btn {
+  background: var(--hlpt-primary-theme-color) !important;
+  border: 1px solid var(--hlpt-primary-theme-color) !important;
+  outline: none !important;
+}
+
+#auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+  background: none !important;
+  width: 462px !important;
+  height: auto !important;
+  position: relative !important;
+  top: 120px !important;
+  top: 10px !important;
+  background: #000 !important;
+  border-radius: 10px 10px 0px 0px !important;
+  padding: 15px !important;
+}
+
+/* end of forget password screen as per brand */
+
+/* set password and broken link for set password css */
+#auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+  padding: 5px 15px !important;
+}
+
+#auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 img {
+  width: auto !important;
+  height: 80px !important;
+  margin: auto !important;
+}
+
+body #auth-set-password #auth-setPassword-body .max-w-2xl.hl-card {
+  margin-top: -200px !important;
+  min-width: 28.75rem !important;
+}
+
+body #auth-set-password #auth-setPassword-body .max-w-2xl.hl-card .hl-card-content {
+  max-width: 28.75rem !important;
+  display: flex !important;
+  align-items: center !important;
+  min-height: 200px !important;
+  min-height: 450px !important;
+  min-width: 28.75rem !important;
+}
+
+/* end here */
+#auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+  position: relative !important;
+  transition: 0.1s ease-in;
+}
+
+#auth-set-password .hl-card .n-input .n-input__input-el+.n-input__placeholder {
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1.0 !important;
+}
+
+#auth-set-password .n-input .n-input__placeholder {
+  display: flex !important;
+  align-items: center !important;
+  line-height: 1.0 !important;
+}
+
+body #app .hl_login--header .language-dropdown-container,
+body #app #auth-header .language-dropdown-container {
+  position: fixed !important;
+  top: 10px !important;
+  right: 10px !important;
+}
+
+body #app .hl_login--header .language-dropdown-container .language-label,
+body #app #auth-header .language-dropdown-container .language-label {
+  color: #fff !important;
+  text-shadow: 1px 1px 4px #000 !important;
+}
+
+
+@media only screen and (max-height: 1600px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 320px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1500px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 280px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1400px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 240px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1300px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 200px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1200px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 160px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1150px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 140px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1100px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 120px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1050px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 100px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 1000px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 80px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 950px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 60px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 40px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 850px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 20px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: 10px !important;
+    transition: 0.1s ease-in;
+  }
+  body #app .hl_login--header .language-dropdown-container .language-label,
+  body #app #auth-header .language-dropdown-container .language-label {
+    color: #FFF !important;
+    text-shadow: 1px 1px 4px #000 !important;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: -15px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  #auth-set-password #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    top: -20px !important;
+    transition: 0.1s ease-in;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  body #app #auth-set-password #auth-setPassword-body .max-w-2xl.hl-card,
+  body #app #auth-set-password #auth-setPassword-body .card-body,
+  body #app #auth-header .hl-card .hl-card-header .n-avatar.w-full.h-20 {
+    max-width: 21.75rem !important;
+    min-width: 21.75rem !important;
+    top: 40px !important;
+  }
+
+  body #app #auth-body #auth-setPassword-body .hl-card .hl-card-content .card-body {
+    padding-top: 80px !important;
+  }
+
+  body #app .hl_login--body .card .card-body {
+    padding-top: 50px !important;
+  }
+}

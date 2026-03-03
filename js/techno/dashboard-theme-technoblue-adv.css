@@ -1,0 +1,45 @@
+/* headerbg color gradient with advance degree and percentage stop options */
+body[data-hlpt-tsg='hlpt-advanced-settings'] .hl_header .container-fluid {
+  background: var(--hlpt-adv-headerbgcolor-start-col) !important;
+  background: -moz-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg),
+      var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc),
+      var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(var(--hlpt-adv-headerbgcolor-gradient-deg), var(--hlpt-adv-headerbgcolor-start-col) var(--hlpt-adv-headerbgcolor-stop-perc), var(--hlpt-adv-headerbgcolor-end-col) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-adv-headerbgcolor-start-col)', endColorstr='var(--hlpt-adv-headerbgcolor-end-col)', GradientType=1);
+}
+
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+body #app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+body #app a:hover span .sidebar-v2-agency,
+body #app a.active span .sidebar-v2-agency,
+body #app #sidebar-v2 .hl_nav-header nav a.active span,
+body #app #sidebar-v2 .hl_nav-header nav a:hover span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+body #app #sidebar-v2 nav a:hover span i::before,
+body #app #sidebar-v2 nav a.active span i::before,
+body #app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+body #app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-left-nav-color) !important;
+  outline: none;
+}

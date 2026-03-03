@@ -1,0 +1,386 @@
+/************** Dark ocean  Theme ***************/
+:root {
+  outline: none;
+
+  --hlpt-tsg-primary-theme-color: var(--hlpt-primary-theme-color);
+  --hlpt-tgs-primary-theme-bg-color: var(--hlpt-primary-theme-bg-color);
+  --hlpt-tsg-primary-theme-color-tint: var(--hlpt-primary-theme-color-tint);
+}
+
+.hl_header .container-fluid {
+  background: var(--hlpt-secondary-theme-bg-color) !important;
+  background: -moz-linear-gradient(-45deg,
+      var(--hlpt-secondary-theme-bg-color) 0%,
+      var(--hlpt-secondary-theme-bg-color) 59.5%,
+      var(--hlpt-secondary-theme-bg-color) 59.5%,
+      var(--hlpt-secondary-theme-bg-color) 60%,
+      var(--hlpt-secondary-theme-bg-color) 60%,
+      var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(-45deg,
+      var(--hlpt-secondary-theme-bg-color) 0%,
+      var(--hlpt-secondary-theme-bg-color) 59.5%,
+      var(--hlpt-secondary-theme-bg-color) 59.5%,
+      var(--hlpt-secondary-theme-bg-color) 60%,
+      var(--hlpt-secondary-theme-bg-color) 60%,
+      var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-secondary-theme-bg-color)', endColorstr='var(--hlpt-secondary-theme-bg-color)', GradientType=1);
+  box-shadow: 2px 0px 4px 3px #2e2e2e61 !important;
+  padding: 10px 20px !important;
+  border-bottom: 0px solid #fff;
+  box-shadow: none !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  margin-bottom: 7px !important;
+  margin-top: 7px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover {
+  text-decoration: none !important;
+  width: 94% !important;
+  border: 2px solid #f4f4f4 !important;
+  border-radius: 100px !important;
+  margin-left: 10px !important;
+  margin-bottom: 5px !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a span,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a span {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-agency #sidebar-v2 #sb_location-prospect .hl_new_badge,
+.sidebar-v2-agency #sidebar-v2 #sb_labs .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_labs .hl_new_badge,
+.sidebar-v2-agency #sidebar-v2 .hl_new_badge,
+.sidebar-v2-agency #sidebar-v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_brand-boards .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_conversation_ai_settings_v2 .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_ai_agent_settings .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 a[id="sb_AI Agents"] .hl_new_badge,
+.sidebar-v2-location #sidebar-v2 #sb_objects .hl_new_badge {
+  color: var(--hlpt-primary-theme-bg-color) !important;
+  color: #000 !important;
+}
+
+/* added code for new bot icon */
+a#azFaqCtrl i {
+  font-size: 20px;
+}
+
+a#azFaqCtrl {
+  background: var(--button-top-navbar-background) !important;
+  color: var(--button-top-navbar-font-color) !important;
+  border: var(--button-top-navbar-border) !important;
+  box-shadow: var(--button-top-navbar-shadow) !important;
+  border-radius: 45px !important;
+  padding: 0px;
+  transition: 0.6s !important;
+  line-height: 29px !important;
+}
+
+.hl_header a#azFaqCtrl.btn.btn-circle.az_faq_button.az_faq_list:hover {
+  background: var(--button-top-navbar-background-hover) !important;
+  color: var(--button-top-navbar-font-color-hover) !important;
+  border: var(--button-top-navbar-border-hover) !important;
+  box-shadow: var(--button-top-navbar-shadow-hover) !important;
+}
+
+/* new icon color change featured added */
+#sb_app-media::before,
+#sb_launchpad::before,
+#sb_ai-employee-promo::before,
+#sb_dashboard::before,
+#sb_conversations::before,
+#sb_calendars::before,
+#sb_contacts::before,
+#sb_opportunities::before,
+#sb_payments::before,
+a[id="sb_AI Agents"]::before,
+#sb_email-marketing::before,
+#sb_automation::before,
+#sb_sites::before,
+#sb_memberships::before,
+#sb_reputation::before,
+#sb_reporting::before,
+#sb_app-marketplace::before,
+#sb_location-mobile-app::before,
+#sb_settings::before,
+#sb_agency-dashboard::before,
+#sb_agency-saas-configurator::before,
+#sb_agency-accounts::before,
+#sb_agency-account-snapshots::before,
+#sb_agency-account-reselling::before,
+#sb_location-prospect::before,
+#sb_agency-marketplace::before,
+#sb_agency-partners::before,
+#sb_agency-university::before,
+#sb_saas-education::before,
+#sb_ghl-swag::before,
+#sb_saas-fasttrack::before,
+#sb_agency-ideas::before,
+#sb_1b37a2ee-3948-424b-9ddb-ea3c2009feb4::before,
+#sb_agency-settings::before,
+.sidebar-v2-agency #sidebar-v2 a span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-location #sidebar-v2 a span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a::before,
+/* hover and active color */
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before {
+  color: var(--hlpt-left-nav-icon-color) !important;
+}
+
+/* hover and active color */
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span~span,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span~span {
+  color: var(--hlpt-left-nav-hover-color) !important;
+}
+
+/* added from the theme client to not to be generic for all the themes */
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover {
+  text-decoration: none !important;
+  transition: 0.2s !important;
+  width: 94% !important;
+  border: 2px solid #f4f4f4 !important;
+  border-radius: 100px !important;
+  margin-left: 7px !important;
+  margin-bottom: 5px !important;
+  background: var(--sidebar-button-background-hover) !important;
+  border: 0px solid #f4f4f4 !important;
+}
+
+#sb_business_info::before,
+#sb_profile::before,
+#sb_my-staff::before,
+#sb_conversation_ai_settings::before,
+#sb_conversation_ai_settings_v2::before,
+#sb_ai_agent_settings::before,
+a[id="sb_AI Agents"]::before,
+#sb_objects::before,
+#sb_pipeline::before,
+#sb_::before,
+#sb_Opportunities-Pipelines::before,
+#sb_phone-system::before,
+#sb_whatsapp::before,
+#sb_reputation-management::before,
+#sb_custom-fields-settings::before,
+#sb_custom-values::before,
+#sb_manage-scoring::before,
+#sb_domains::before,
+#sb_domains-urlRedirects::before,
+#sb_media::before,
+#sb_url-redirects::before,
+#sb_integrations::before,
+#sb_undefined::before,
+a[id^="sb_common.sidebar.privateIntegrations"]::before,
+a[id^="sb_common.sidebar.lcIntegrations"]::before,
+#sb_brand-boards::before,
+#sb_location-email-services::before,
+#sb_knowledge-base-settings::before,
+#sb_conversations_providers::before,
+#sb_tags::before,
+#sb_labs::before,
+#sb_audit-logs-location::before,
+#sb_business-settings-v2::before,
+#sb_external-tracking::before {
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  color: var(--hlpt-left-nav-color) !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+  margin-right: 10px !important;
+}
+
+/* .hl_nav-header-without-footer #sb_calendars:not(.hl_nav-header #sb_calendars::before */
+.flex.flex-col.overflow-y-auto.overflow-x-hidden.w-full.hl_nav-header-without-footer nav #sb_calendars::before,
+.hl_nav-header-without-footer nav #sb_calendars::before,
+.hl_nav-header-without-footer nav #sb_calendars span::before {
+  font-family: 'Font Awesome 6 Pro' !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  margin-right: 10px !important;
+  color: var(--hlpt-left-nav-color) !important;
+  color: var(--hlpt-left-nav-icon-color) !important;
+}
+
+#sb_my-business,
+#sb_business-services,
+#sb_other-settings {
+  display: none !important;
+  outline: none;
+}
+
+/* #sb_settings::after {
+  color: var(--hlpt-left-nav-color) !important;
+} */
+.sidebar-v2-location #sidebar-v2 #sb_agency-settings span,
+.sidebar-v2-location #sidebar-v2 #sb_settings span {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+.sidebar-v2-location #sidebar-v2 .hl_nav-settings nav a {
+  margin-left: 8px !important;
+  top: 8px !important;
+}
+
+/* body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header a#helpDeskCtrl span.h-5.w-5.mr-2 i::before,
+body #app .sidebar-v2-location #sidebar-v2 .hl_nav-header a#helpDeskCtrl span.sr-only1 {
+  color: var(--hlpt-left-nav-color) !important;
+} */
+
+#app .sidebar-v2-location .hl_header .container-fluid img.h-8 {
+  filter: brightness(100);
+  transform: scale(1.25);
+}
+
+/* bug fix 26-05-2023 */
+/* #sb_settings span::after,
+#sb_agency-settings span {
+  color: var(--hlpt-primary-theme-color) !important;
+} */
+
+#sb_agency-settings span {
+  color: var(--hlpt-left-nav-color) !important;
+}
+
+/* hover and active color */
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active::before,
+.sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span~span,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span~span {
+  color: var(--hlpt-secondary-theme-bg-color) !important;
+}
+
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a:hover span i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header nav a.active span i,
+#app .sidebar-v2-agency #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+#app .sidebar-v2-agency #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+#app .sidebar-v2-agency #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a:hover span::after,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header nav a.active span::after,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav,
+#app a:hover span .sidebar-v2-agency,
+#app a.active span .sidebar-v2-agency,
+#app #sidebar-v2 .hl_nav-header nav a.active span,
+#app #sidebar-v2 .hl_nav-header nav a:hover span,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a.active span,
+#app .sidebar-v2-location #sidebar-v2 .hl_nav-header-without-footer nav a:hover span,
+#app #sidebar-v2 nav a:hover span i::before,
+#app #sidebar-v2 nav a.active span i::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+#app .sidebar-v2-location #sidebar-v2 nav a:hover span.hl_text-overflow.hidden.md\:hidden.nav-title.lg\:block.xl\:block,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+#app .sidebar-v2-location.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access.active .left-nav-icon.phone_dialer_access i,
+#app .sidebar-v2-agency.v2-open .hl_header .container-fluid .hl_header--dropdown.hl_header--phone a#phone_dialer_access:hover .left-nav-icon.phone_dialer_access i {
+  color: var(--hlpt-secondary-theme-bg-color) !important;
+}
+
+#app .hl_header .topmenu-nav a#tb_sites-domain-settings {
+  background: none !important;
+  border: none !important;
+}
+
+#tb_sites-divider {
+  display: none !important;
+}
+
+#app #tb_url-redirects {
+  border-radius: 0px 5px 5px 0px !important;
+}
+
+/* bug fixed 3-8-2023 */
+
+#app .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem:hover {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+}
+
+#sb_labs span::after {
+  font-size: 0.875rem;
+}
+
+body #app .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem:hover {
+  min-height: 32px !important;
+}
+
+body.topnav-hscroll #app .sidebar-v2-location .hl_header .topmenu-nav .topmenu-navitem:hover {
+  margin-top: 0px !important;
+  position: relative !important;
+  min-height: 32px !important;
+}
+
+body #app #sidebar-v2 nav a.custom-link:hover span i::before,
+body #app #sidebar-v2 nav a.custom-link.active:hover span i::before,
+body #app #sidebar-v2 nav a.custom-link.active span i::before,
+.sidebar-v2-agency #sidebar-v2 a:hover span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-location #sidebar-v2 a:hover span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-agency #sidebar-v2 a.active:hover span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-location #sidebar-v2 a.active:hover span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-agency #sidebar-v2 a.active span.h-5.w-5.mr-2 i:before,
+.sidebar-v2-location #sidebar-v2 a.active span.h-5.w-5.mr-2 i:before,
+body #app .sidebar-v2-agency #sidebar-v2 a:hover span.h-5.w-5.mr-2 i:before,
+body #app .sidebar-v2-location #sidebar-v2 a:hover span.h-5.w-5.mr-2 i:before {
+  color: var(--hlpt-secondary-theme-bg-color) !important;
+  outline: none;
+}
+
+/* #app .sidebar-v2-location #sidebar-v2 nav a:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.custom-link:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.active:hover span.h-5 i.nav-fa-icon::before,
+#app .sidebar-v2-location #sidebar-v2 nav a.custom-link.active:hover span.h-5 i.nav-fa-icon::before {
+  color: var(--hlpt-left-nav-hover-color) !important;
+}
+body #app #sidebar-v2 nav a.custom-link.active:hover span i::before {
+  color: var(--hlpt-left-nav-hover-color) !important;
+  outline: none;
+} */

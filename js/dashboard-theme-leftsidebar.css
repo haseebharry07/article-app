@@ -1,0 +1,54 @@
+/************** Light Mode  Theme ***************/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+:root {
+  /* light mode */
+  --hlpt-primary-theme-color-lightmode: #dfb603;
+  --hlpt-primary-theme-bg-color-lightmode: #f2f2f2ff;
+  --hlpt-primary-theme-bg-color-1-lightmode: #eaf1fbff;
+
+  /* light mode */
+  --hlpt-primary-theme-color: var(--hlpt-primary-theme-color-lightmode);
+
+  --hlpt-left-nav-hover-color: var(--hlpt-secondary-theme-bg-color);
+  --hlpt-left-nav-active-color: var(--hlpt-left-nav-color);
+
+  --hlpt-lightmode-theme-color: var(--hlpt-primary-theme-color-lightmode);
+  --hlpt-lightmode-theme-bg-color: var(--hlpt-primary-theme-bg-color-lightmode);
+  --hlpt-lightmode-theme-bg-color-1: var(--hlpt-primary-theme-bg-color-1-lightmode);
+
+  --hlpt-login-logo-url: url('https://yourbrandimagehere.com/images');
+  --hlpt-main-body-image: url('https://yourbrandimagehere.com/images');
+}
+
+.hl_navbar {
+  background: var(--sidebar-gradient-1);
+  background: -moz-linear-gradient(45deg, var(--sidebar-gradient-1) -15%, var(--sidebar-gradient-2) 77%), url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(45deg, var(--sidebar-gradient-1) -15%, var(--sidebar-gradient-2) 77%), url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(45deg, var(--sidebar-gradient-1) 0%, var(--sidebar-gradient-2) 77%), url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--sidebar-gradient-1)', endColorstr='var(--sidebar-gradient-2)', GradientType=1);
+}
+
+/*Sidebar Location View */
+
+.sidebar-v2-location #sidebar-v2.default-bg-color {
+  background: var(--hlpt-primary-theme-bg-color);
+  background: -moz-linear-gradient(45deg, var(--hlpt-primary-theme-bg-color) 30%, var(--hlpt-secondary-theme-bg-color) 90%, var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(45deg, var(--hlpt-primary-theme-bg-color) 30%, var(--hlpt-secondary-theme-bg-color) 90%, var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  /* box-shadow: 2px 0px 4px 0px #00000036 !important; */
+}
+
+div#sidebar-v2 {
+  background: var(--hlpt-primary-theme-bg-color);
+  background: -moz-linear-gradient(45deg, var(--hlpt-primary-theme-bg-color) 30%, var(--hlpt-secondary-theme-bg-color) 90%, var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: -webkit-linear-gradient(45deg, var(--hlpt-primary-theme-bg-color) 30%, var(--hlpt-secondary-theme-bg-color) 90%, var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  background: linear-gradient(45deg, var(--hlpt-primary-theme-bg-color) 30%, var(--hlpt-secondary-theme-bg-color) 90%, var(--hlpt-secondary-theme-bg-color) 100%),
+    url(https://cdn2.locationapi.co/themegenerator/images/icons/brilliant.png) repeat !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--hlpt-primary-theme-bg-color)', endColorstr='var(--hlpt-secondary-theme-bg-color)', GradientType=1);
+  box-shadow: var(--sidebar-shadow) !important;
+  box-shadow: 2px 0px 4px 0px rgba(0, 0, 0, 0.1) !important;
+}
