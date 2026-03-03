@@ -6607,7 +6607,6 @@ function get_user_data() {
     if (document.body.classList.contains('IsAdmin') || document.body.classList.contains('IsAdminTB')) {
       user_allowed = true;
     }
-    console.log('is_user_allowed',user_allowed);
     return user_allowed = true;
   };
 
@@ -6660,7 +6659,6 @@ function get_user_data() {
         tb_btn.style.display = 'none';
       }
     }
-    console.log('here is tballowed',tb_allowed);
     return tb_allowed = true;
   };
 console.log('Code came heretb_init_btn');
