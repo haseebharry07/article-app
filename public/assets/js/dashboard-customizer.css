@@ -4840,3 +4840,8 @@ body #app #dashboard-customizer-panel #publish-location-settings-wrap
 #menugroups-settings-wrap.adv-settings-hidden {
   display: none !important;
 }
+
+.company-logo{
+  height: 60px !important;
+  width: 60px !important;
+}

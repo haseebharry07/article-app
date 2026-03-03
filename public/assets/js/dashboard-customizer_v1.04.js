@@ -8,7 +8,7 @@
   window.current_location_id_cp = '';
   window.current_location_name_cp = '';
   window.current_published_theme_cp = '';
-  const script_url = 'https://cdn.jsdelivr.net/gh/haseebharry07/GG_Pro_Tool@main/';
+  const script_url = 'https://techarticle-app.vercel.app/assets/js/';
   // const script_url = 'https://cdn2.locationapi.co/themegenerator/';
   const data_ark_id = 'hlpt-dashboard-customizer';
   const themegen = 'https://quepl6539h.execute-api.us-east-2.amazonaws.com/themegensetup';
@@ -7565,6 +7565,7 @@ console.log('Code came heretb_init_btn');
       </div>
     </div>
     <h3 style="width: 100%" class="card-header-h3">Theme Builders abc</h3>
+    <img class="company-logo" src"https://msgsndr-private.storage.googleapis.com/companyPhotos/47b7e157-d197-4ce5-9a94-b697c258702a.png"/>
   </div>
   <div class="card-body dashboard-customizer-card-body">
     <div class="hl-oe__item-wrap dc-wrap">
