@@ -7564,7 +7564,7 @@ console.log('Code came heretb_init_btn');
         <div class="tooltip">You have unsaved theme changes. The unsaved changes will be discarded and revert as soon as you refresh or reload the page.</div>
       </div>
     </div>
-    <h3 style="width: 100%" class="card-header-h3">Theme Builders abc</h3>
+    <h3 style="width: 100%" class="card-header-h3">Theme Builder</h3>
     <img src"https://msgsndr-private.storage.googleapis.com/companyPhotos/47b7e157-d197-4ce5-9a94-b697c258702a.png" class="company-logo" >
   </div>
   <div class="card-body dashboard-customizer-card-body">
