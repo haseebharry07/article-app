@@ -7565,7 +7565,7 @@ console.log('Code came heretb_init_btn');
       </div>
     </div>
     <h3 style="width: 100%" class="card-header-h3">Theme Builders abc</h3>
-    <img class="company-logo" src"https://msgsndr-private.storage.googleapis.com/companyPhotos/47b7e157-d197-4ce5-9a94-b697c258702a.png"/>
+    <img src"https://msgsndr-private.storage.googleapis.com/companyPhotos/47b7e157-d197-4ce5-9a94-b697c258702a.png" class="company-logo" >
   </div>
   <div class="card-body dashboard-customizer-card-body">
     <div class="hl-oe__item-wrap dc-wrap">

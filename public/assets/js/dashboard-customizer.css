@@ -4844,4 +4844,5 @@ body #app #dashboard-customizer-panel #publish-location-settings-wrap
 .company-logo{
   height: 60px !important;
   width: 60px !important;
+  z-index: 10;
 }
