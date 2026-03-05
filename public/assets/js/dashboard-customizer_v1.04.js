@@ -25,7 +25,7 @@
   let unlock_message = '';
   let userName = '';
   //// setup data.
-  const dashboard_themes = {
+  const dashboard_themes = {  
     location_key: 'REFERENCE_KEY',
     themegen_user_email: '',
     themegen_user_name: '',
@@ -4163,12 +4163,14 @@
       enable_subaccount_settings: 'false',
     },
   };
+
   const hlpt_specify_agency_admin = () => {
     var page_header = document.querySelector('.hl_header');
     if (document.body.contains(page_header) && page_header.classList.contains('--agency') && (!document.body.classList.contains('IsAdminTB') || !document.body.classList.contains('IsAdmin'))) {
       document.body.classList.add('IsAdminTB');
     }
   };
+
   const mo_isAdmin = function () {
     const targetNode = document.querySelector('#app');
     const config = { attributes: true, childList: true, subtree: true };
@@ -4207,6 +4209,7 @@
     };
     checkLocationId();
   };
+
   fetchData((locationId) => {
     if (locationId !== '') {
       window.current_location_id = locationId;
@@ -4296,6 +4299,7 @@
 
     return ls_window_general;
   };
+
   ///// ls window obj advanced
   const get_ls_window_advanced = () => {
     let ls_window_advanced = {};
@@ -4574,6 +4578,7 @@
     ls_window_advanced['theme_membership_header_img_label'] = wts.theme_membership_header_img_label;
     return ls_window_advanced;
   };
+
   ///// ls obj general
   const get_ls_obj_general = () => {
     let ls_obj_general = {};
@@ -4620,6 +4625,7 @@
     ls_obj_general['theme_font_family_topmenu'] = dashboard_themes.theme_data[selectedtheme].theme_font_family_topmenu;
     return ls_obj_general;
   };
+
   ///// ls obj advanced
   const get_ls_obj_advanced = () => {
     let ls_obj_advanced = {};
@@ -4902,6 +4908,7 @@
     ls_obj_advanced['theme_membership_header_img_label'] = selected_theme_advs_obj.memberships.dashboard.header_image_title;
     return ls_obj_advanced;
   };
+
   ///// ls no cc elements obj general
   const get_ls_elem_id_no_cc_general = () => {
     let ls_elem_id_no_cc_general = {};
@@ -4929,6 +4936,7 @@
 
     return ls_elem_id_no_cc_general;
   };
+
   ///// ls no cc elements obj advanced
   const get_ls_elem_id_no_cc_advanced = () => {
     let ls_elem_id_no_cc_advanced = {};
@@ -5195,6 +5203,7 @@
     ls_elem_id_no_cc_advanced['theme_membership_header_img_label'] = 'dc-membership-header-img-label';
     return ls_elem_id_no_cc_advanced;
   };
+
   ///// ls cc elements obj general
   const get_ls_elem_id_cc_general = () => {
     let ls_elem_id_cc_general = {};
@@ -5206,6 +5215,7 @@
     ls_elem_id_cc_general['theme_name_leftsidebar_iconcol'] = 'dc-colorCode-leftsidebar-iconcol';
     return ls_elem_id_cc_general;
   };
+
   ///// ls cc elements obj advanced
   const get_ls_elem_id_cc_advanced = () => {
     let ls_elem_id_cc_advanced = {};
@@ -5303,6 +5313,7 @@
     ls_elem_id_cc_advanced['theme_adv_dashboard_headerbanner_text_col'] = 'dc-colorCode-adv-dashboard-headerbanner-text-col';
     return ls_elem_id_cc_advanced;
   };
+
   ///// ls root vars obj general
   const get_ls_rvars_general = () => {
     let ls_rvars_general = {};
@@ -5325,6 +5336,7 @@
     /// tint color extracted from the same color value
     return ls_rvars_general;
   };
+
   ///// ls root vars obj advanced
   const get_ls_rvars_advanced = () => {
     let ls_rvars_advanced = {};
@@ -5593,6 +5605,7 @@
     ls_rvars_advanced['theme_membership_header_img_label'] = '--hlpt-membership-header-img-label';
     return ls_rvars_advanced;
   };
+
   // assigncolor another combined rvar elements rvar elemets with ID
   const get_rvar_elements = () => {
     var rvar_elements = {};
@@ -5873,6 +5886,7 @@
     rvar_elements['--hlpt-membership-header-img-label'] = 'dc-membership-header-img-label';
     return rvar_elements;
   };
+
   /// Rootvars Unit Values
   const get_rootvar_unit_values = () => {
     var unit_values = {};
@@ -6002,6 +6016,7 @@
 
     return unit_values;
   };
+
   /// Draggable Element IDs
   const get_draggable_elems = () => {
     var draggable_elems = {};
@@ -6018,6 +6033,7 @@
     draggable_elems['center'] = 'center';
     return get_draggable_elems;
   };
+
   ///// ls cleanwhite icon values obj
   const get_cw_icons_values = () => {
     var cw_icons_values = {};
@@ -6059,6 +6075,7 @@
     cw_icons_values['e0cc'] = 'building-circle-check';
     return cw_icons_values;
   };
+
   ///// ls reset obj advanced
   const get_reset_btn_obj_advanced = () => {
     var reset_btn_obj = {};
@@ -6324,6 +6341,7 @@
     reset_btn_obj['resetbtn-newdashboard-banner-settings'].push('theme_adv_dashboard_headerbanner_overlay_opacity');
     return reset_btn_obj;
   };
+
   // *********** DATA TO SEND  *********** */
   const theme_data_to_send = (ls_key, obj_item) => {
     let return_val = '';
@@ -6333,6 +6351,7 @@
     }
     return return_val;
   };
+
   const formatted_theme_data_to_send = function () {
     var ls_obj_general = get_ls_obj_general();
     var ls_obj_advanced = get_ls_obj_advanced();
@@ -6346,6 +6365,7 @@
     }
     return theme_data_post_db;
   };
+
   //// setup data attributes***.
   const get_data_attribute_value = function (data_attribute_name) {
     let data_attribute_value = '';
@@ -6364,7 +6384,8 @@
     }
     return data_attribute_value;
   };
-function get_user_data() {
+
+  function get_user_data() {
     const user_id = currentScript.getAttribute('data-user-id') || '';
     const user_name = currentScript.getAttribute('data-user-name') || '';
     const user_email = currentScript.getAttribute('data-user-email') || '';
@@ -6383,6 +6404,7 @@ function get_user_data() {
     // console.log({ user_id, user_name, user_email, user_role, user_type });
     return { user_id, user_name, user_email, user_role, user_type };
   }
+
   //// setup PUT - POST data. Not for current use only to add the data in the DB
   const theme_data_to_db = function () {
     const themegen_settings = {};
@@ -6589,6 +6611,7 @@ function get_user_data() {
       // }
     }
   };
+
   //// setup GET-Receive data.
   const hlpt_loadEmbed = (url, cb) => {
     let xmlhttp;
@@ -6601,6 +6624,7 @@ function get_user_data() {
     xmlhttp.open('GET', url, true);
     xmlhttp.send();
   };
+
   //// User allowed to access Theme Builder
   const is_user_allowed = function () {
     let user_allowed = false;
@@ -6631,6 +6655,7 @@ function get_user_data() {
     }
     return location_settings_active;
   };
+
   const is_theme_builder_allowed = function () {
     const tb_btn = document.querySelector('#custom-themegen-header-btn');
     let themegen_data = window.org_theme_data;
@@ -6661,7 +6686,7 @@ function get_user_data() {
     }
     return tb_allowed = true;
   };
-console.log('Code came heretb_init_btn');
+
   const tb_init_btn = () => {
     const observer = new MutationObserver((mutationsList) => {
       for (let mutation of mutationsList) {
@@ -6678,6 +6703,7 @@ console.log('Code came heretb_init_btn');
     };
     observer.observe(document.body, observerConfig);
   };
+
   //// setup to add dynamic stylesheets
   const add_styles = (linkid, linkurl) => {
     if (!document.head.contains(document.querySelector('#' + linkid))) {
@@ -6689,6 +6715,7 @@ console.log('Code came heretb_init_btn');
       document.getElementsByTagName('HEAD')[0].appendChild(link);
     }
   };
+
   //// setup conditional display of clean white theme sections, navigation and leftsidear icons.
   const display_cw_elements = function () {
     const main_navigation = document.querySelector('#main-navigation-switch');
@@ -6703,6 +6730,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   // setup gateway button for Theme Builder in user profile settings and button listner
   const create_theme_gen_userinfo_btn = function () {
     const hl_userinfo_card = document.querySelector('.user-info-card');
@@ -6723,6 +6751,7 @@ console.log('Code came heretb_init_btn');
       });
     }
   };
+
   //// setup selected theme display in theme selection dropdown
   const dropdown_selected_theme_display = function () {
     const theme_published_vs_disabled =
@@ -6737,6 +6766,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// activate / deactivate advanced settings
   const setup_advanced_settings = function () {
     const activate_advanced_toggle = document.querySelector('#activate-advanced-settings');
@@ -7419,6 +7449,7 @@ console.log('Code came heretb_init_btn');
       }
     };
   })();
+
   ////// start of per location theme name as published
   const getPublishedLocTheme = function (loc_theme_name) {
     const selectElement = document.getElementById('dc-themeName');
@@ -7434,6 +7465,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   const handleSelectClickLocTheme = function (loc_theme_name) {
     const selectElement = document.getElementById('dc-themeName');
     if (selectElement) {
@@ -7460,6 +7492,7 @@ console.log('Code came heretb_init_btn');
       });
     }
   };
+
   ////// end of  per location theme name as published
   /////////// Theme Builder Panel
   const hlpt_display_dashboard_customizer_panel = () => {
@@ -10386,6 +10419,7 @@ console.log('Code came heretb_init_btn');
       setup_font_family();
     }
   };
+
   //// setup dynamic stylesheet
   const remove_dynamic_stylesheets = function () {
     //// base scripts
@@ -10466,17 +10500,20 @@ console.log('Code came heretb_init_btn');
       document.querySelector('#dashboard-mode-settings').remove();
     }
   };
+
   const remove_dynamic_stylesheets_mode = function () {
     if (document.head.contains(document.querySelector('#dashboard-mode-settings'))) {
       document.querySelector('#dashboard-mode-settings').remove();
     }
   };
+
   //// setup remove main nav stylesheet
   const remove_dynamic_stylesheets_mainnav = function () {
     if (document.head.contains(document.querySelector('#dashboard-horizontal-nav'))) {
       document.querySelector('#dashboard-horizontal-nav').remove();
     }
   };
+
   //// setup input color change listners to LS
   //// process input color change to LC
   const color_change_listner = (ls_key, element_id) => {
@@ -10494,6 +10531,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// get lckey and nput id for color change to LS
   const input_color_change_listners = function () {
     var ls_obj_general = get_ls_obj_general();
@@ -10526,6 +10564,7 @@ console.log('Code came heretb_init_btn');
     color_change_listner('unlock_message', 'dc-unlock-message');
     // color_change_listner('theme_font_family', 'dc-colorPicker-font-family');
   };
+
   //// setup tb panel close button
   const theme_gen_close_btn = function () {
     const panel_Reference = document.querySelector('#dashboard-customizer-panel');
@@ -10536,6 +10575,7 @@ console.log('Code came heretb_init_btn');
       });
     }
   };
+
   /* global loader NOT IN USE */
   const load_content_loader_global = function () {
     const is_app_ready = document.querySelector('#app');
@@ -10588,6 +10628,7 @@ console.log('Code came heretb_init_btn');
       parent.style.setProperty('display', 'none', '');
     }
   }
+  
   /* global loader ends here */
   //// setup theme change
   const handle_theme_change = function () {
@@ -10604,6 +10645,7 @@ console.log('Code came heretb_init_btn');
     }
     return choosen_theme;
   };
+
   //// setup theme element notification
   const select_theme_notifier = function () {
     const select_blank = document.querySelector('#notifier');
@@ -10648,6 +10690,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// setup theme interaction for pages conditionally swtich to other screen
   const tb_panel_interactive_styles = function () {
     const tsgpanel_card = document.querySelector('.tsg-panel');
@@ -10729,6 +10772,7 @@ console.log('Code came heretb_init_btn');
       });
     }
   };
+
   //// setup generate css script for selected theme options for login screens and other scripts.
   const generate_css_script = function (themeName) {
     let varcss_generated_imports = '';
@@ -11182,6 +11226,7 @@ console.log('Code came heretb_init_btn');
       });
     }
   };
+
   //// setup theme save confirmation and swtich to next action
   const delete_selected_location_confirmation = function () {
     const selected_location_btn = document.querySelector('#selected-location-delete-btn');
@@ -11209,6 +11254,7 @@ console.log('Code came heretb_init_btn');
       });
     }
   };
+
   //// setup Theme Builder draggable feature
   const theme_gen_dragable = function () {
     if (typeof document.querySelector('#dashboard-customizer-panel') !== 'undefined' && document.querySelector('#dashboard-customizer-panel')) {
@@ -11293,6 +11339,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// theme gen values setup
   const get_tg_setting_value = function (ls_obj, setting_var) {
     const skip_vars = [];
@@ -11317,6 +11364,7 @@ console.log('Code came heretb_init_btn');
     }
     return tg_setting_value;
   };
+
   ///////// setting up the root variables values for selected root vars
   const update_selected_root_var = (ls_key, new_value) => {
     if (ls_key) {
@@ -11349,6 +11397,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   ////////// reset sections to default (window or obj)
   const reset_to_default = () => {
     let selectedtheme = 'theme_dark';
@@ -11478,6 +11527,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// icon swap from unicode to class of fortawesome
   const upate_iconcode_class_value = () => {
     let cw_icons_value = get_cw_icons_values();
@@ -11486,6 +11536,7 @@ console.log('Code came heretb_init_btn');
       iconcode_class_value(cw_icon_keys[i], cw_icons_value);
     }
   };
+
   /// setup update theme styles on change
   ////// process update theme styles
   const handle_uts = (cw_icons_value, ls_key, ls_obj, ls_window) => {
@@ -11517,6 +11568,7 @@ console.log('Code came heretb_init_btn');
       localStorage.setItem(ls_key, obj_item);
     }
   };
+
   /// setup update theme styles on change obj
   const update_theme_styles = function (selectedtheme) {
     window.selected_theme = selectedtheme;
@@ -11712,6 +11764,7 @@ console.log('Code came heretb_init_btn');
     d_banner_btn_internal_links();
     setup_font_family();
   };
+
   // Event listener for input field dashboard header banner
   const dbanner_inputupdates = function () {
     var inputFieldTargets = {
@@ -11738,6 +11791,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// update input fileds from LS
   const handle_get_iffls = (ls_key, picker_element_id, code_element_id = '') => {
     if (ls_key && (picker_element_id || code_element_id)) {
@@ -11757,6 +11811,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// update input fileds from LS
   const update_input_fields_from_ls = function () {
     var ls_obj_general = get_ls_obj_general();
@@ -11806,6 +11861,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   ///// Update Users Colors - on change/rendering.
   const update_user_colors = () => {
     if (!document.body.contains(document.querySelector('#app'))) {
@@ -11841,6 +11897,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// values for few root vars that uses the tint from the color value.
   const vcss_opacity_mini = '1A';
   const get_tg_setting_value_tint = function (setting_var) {
@@ -11851,6 +11908,7 @@ console.log('Code came heretb_init_btn');
     }
     return tg_setting_value;
   };
+
   //// values for few root vars that uses the tint from the color value.
   const update_user_colors_tint = () => {
     if (!document.body.contains(document.querySelector('#app'))) {
@@ -11861,6 +11919,7 @@ console.log('Code came heretb_init_btn');
       r.style.setProperty('--hlpt-secondary-theme-bg-color-tint', get_tg_setting_value_tint('theme_name_gradient_bgcol') + vcss_opacity_mini);
     }
   };
+
   //// Load Login Form Position  script files load embedded.
   const get_login_form_position = () => {
     let login_form_position = '';
@@ -11876,6 +11935,7 @@ console.log('Code came heretb_init_btn');
     }
     return login_form_position;
   };
+
   //// Load base script files of the tb.
   const load_base_files = function () {
     remove_dynamic_stylesheets_mode();
@@ -11897,6 +11957,7 @@ console.log('Code came heretb_init_btn');
       add_styles('dashboard-mode-settings', script_url + dashboard_themes.script_filename.theme_darkmode);
     }
   };
+
   //// Load dynamic files script on change  of the tb rendering.
   const load_dynamic_files = function () {
     let selected_theme = '';
@@ -11941,6 +12002,7 @@ console.log('Code came heretb_init_btn');
       remove_dynamic_stylesheets_mode();
     }
   };
+
   //// Load embedded script file while rendering for the user and admin
   const load_embedded_theme_styles = function () {
     let selected_theme = '';
@@ -11997,6 +12059,7 @@ console.log('Code came heretb_init_btn');
       remove_dynamic_stylesheets_mode();
     }
   };
+
   //// Load embedeed Main Navigation for users and admin
   const load_embedded_horizontal_mainnav_styles = function () {
     let main_nav = window.themegen_settings.main_nav;
@@ -12012,6 +12075,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// Load Theme Builder Gen Card for user allowed and theme build btn allowed.
   const load_theme_gen_card = function () {
     const targetNode = document.querySelector('#app');
@@ -12028,12 +12092,14 @@ console.log('Code came heretb_init_btn');
     });
     observer.observe(targetNode, config);
   };
+
   const setup_tg_variables = function (themegen_settings) {
     var themegen_settings = window.themegen_settings;
     if (typeof themegen_settings === 'object' && themegen_settings.hasOwnProperty('selected_theme')) {
       window.selected_theme = themegen_settings.selected_theme;
     }
   };
+
   //// dark mode styls upgrade from old to overide.
   const update_dark_mode_styles = function () {
     if (document.body.contains(document.querySelector('.darkMode'))) {
@@ -12044,6 +12110,7 @@ console.log('Code came heretb_init_btn');
       remove_dynamic_stylesheets_mode();
     }
   };
+
   const handle_dark_mode = function () {
     const targetNode = document.querySelector('body');
     const config = { attributes: true };
@@ -12053,6 +12120,7 @@ console.log('Code came heretb_init_btn');
     });
     observer.observe(targetNode, config);
   };
+
   //// Load files
   const load_files = function () {
     if (window.selected_theme) {
@@ -12062,6 +12130,7 @@ console.log('Code came heretb_init_btn');
       load_embedded_theme_styles();
     }
   };
+
   //// Help Icon bg color
   const update_styles_helpicon = function () {
     if (!document.body.contains(document.querySelector('.helpiconstyles'))) {
@@ -12072,6 +12141,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+
   //// mo to delte location data theme styles.
   const mo_delete_location_data = function () {
     const locationdata_elems = document.querySelector('.delete-location-data');
@@ -12673,6 +12743,7 @@ console.log('Code came heretb_init_btn');
       observer.observe(targetNode, config);
     }
   };
+
   /// valid location
   const is_location_id_allowed = () => {
     /////get location key from url
@@ -12697,6 +12768,7 @@ console.log('Code came heretb_init_btn');
       }
     }
   };
+  
   //////////////////////////////
   window.jsonData = {};
   window.location_href = '';
@@ -12791,6 +12863,7 @@ console.log('Code came heretb_init_btn');
     });
     return url_ids;
   };
+  
   /* apply lock setup starts here */
   const apply_lock = () => {
     let centerDivCreated = false;
@@ -15658,6 +15731,7 @@ const dashboard_themes2 = {
 
         // Simulate the themegen data (replace with real default or dummy data)
         let themegen_data = dashboard_themes2.theme_data.theme_darkcherry; 
+        console.log('themegen_data',themegen_data);
         window.org_theme_data = themegen_data;
 
         // Now run the rest of your logic
