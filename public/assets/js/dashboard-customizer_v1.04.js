@@ -6662,7 +6662,10 @@
     let tb_allowed = false;
     let page_url = document.location.href;
     let selected_theme = 'theme_dark';
-    if (window.selected_theme) selected_theme = window.selected_theme;
+    // if (window.selected_theme)
+    
+    selected_theme = dashboard_themes2.theme_data.theme_darkcherry;
+    console.log('selectedtheme in is theme builder allowed');
     let allowed_location_id = dashboard_themes.theme_data[selected_theme].advanced_settings.allow_subaccount;
     if (window.themegen_settings) allowed_location_id = window.themegen_settings.allow_subaccount;
     if (typeof themegen_data === 'object' && themegen_data.hasOwnProperty('themegensetup_settings')) {
