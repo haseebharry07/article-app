@@ -1,5 +1,5 @@
 (function () {
-  const default_theme = 'Dark Cherry';
+  const default_theme = '';
   window.selected_theme = default_theme;
   window.selected_theme_loc = default_theme;
   window.current_location_id = '';
