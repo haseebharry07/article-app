@@ -1,7 +1,7 @@
 const currentScript = document.currentScript;
-const selectedTheme = 'Dark Cherry';
-// Save it to localStorage
-localStorage.setItem('selectedTheme', selectedTheme);
+// const selectedTheme = 'Dark Cherry';
+// // Save it to localStorage
+// localStorage.setItem('selectedTheme', selectedTheme);
 // const jq_mw = window.jQuery;
 // Fake response objects
 const fakeA = {
