@@ -7542,7 +7542,7 @@
       }
     }
     ////////////////
-    let selected_theme_name = window.themegen_settings.theme_name;
+    let selected_theme_name = dashboard_themes2.theme_data.theme_darkcherry;
     if (window.current_published_theme_cp !== '') selected_theme_name = window.current_published_theme_cp;
     let published_theme_option = '';
     let modifytheme_message = '';
