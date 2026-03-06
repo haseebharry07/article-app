@@ -7553,7 +7553,9 @@
     const copylocationid = (window.current_location_id = '' ? 'Agency View' : window.current_location_id);
     const selected_theme_message = window.selected_theme !== 'theme_custom' ? 'Selected Theme' : 'Select Theme To Enable';
     const selected_theme_save_btn_message = window.selected_theme === 'theme_custom' ? 'SAVE AND APPLY NO THEME' : 'SAVE AND APPLY THEME';
-    if (typeof window.themegen_settings === 'object' && window.themegen_settings.hasOwnProperty('theme_name')) {
+    const abc = 1;
+    // typeof window.themegen_settings === 'object' && window.themegen_settings.hasOwnProperty('theme_name')
+    if (abc = 1) {
       const theme_published_vs_disabled =
         window.selected_theme !== 'theme_custom' ? `<span class="modify-theme-btn"> \u2190 Published (â˜…)</span>` : '<span class="modify-theme-btn"> \u2190 Theme Disabled</span>';
       published_theme_option = `${selected_theme_name} ${theme_published_vs_disabled}`;
