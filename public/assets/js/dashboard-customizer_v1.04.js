@@ -6759,7 +6759,7 @@
   //// setup selected theme display in theme selection dropdown
   const dropdown_selected_theme_display = function () {
     const theme_published_vs_disabled =
-      window.selected_theme !== 'theme_custom' ? `<span class="modify-theme-btn"> \u2190 Published (â˜…)</span>` : '<span class="modify-theme-btn"> \u2190 Theme Disabled</span>';
+      window.selected_theme !== 'theme_custom' ? `<span class="modify-theme-btn"> \u2190 Published (\u2713)</span>` : '<span class="modify-theme-btn"> \u2190 Theme Disabled</span>';
     const dropdown_options = document.querySelector('#dc-themeName');
     if (typeof dropdown_options !== 'undefined' && dropdown_options) {
       for (let i = 0; i < dropdown_options.options.length; i++) {
@@ -7462,7 +7462,7 @@
       for (let i = 0; i < options.length; i++) {
         if (options[i].textContent.includes('Published (â˜…)')) {
           if (!options[i].textContent.includes(loc_theme_name)) {
-            options[i].textContent = `${loc_theme_name} \u2190 Published (â˜…)`;
+            options[i].textContent = `${loc_theme_name} \u2190 Published (\u2713)`;
           }
           return;
         }
@@ -7477,20 +7477,20 @@
         const options = selectElement.options;
         for (let i = 0; i < options.length; i++) {
           const spanElement = options[i].querySelector('.modify-theme-btn');
-          if (options[i].textContent.includes('Published (â˜…)')) {
+          if (options[i].textContent.includes('Published (\u2713)')) {
             if (spanElement) {
               spanElement.remove();
             }
           }
           if (!options[i].textContent.includes(loc_theme_name)) {
-            if (options[i].textContent.includes('Published (â˜…)')) {
+            if (options[i].textContent.includes('Published (\u2713)')) {
               options[i].textContent = options[i].textContent.replace('â† Published (â˜…)', '').trim();
             }
           }
         }
         for (let i = 0; i < options.length; i++) {
           if (selectElement.options[i].textContent.includes(loc_theme_name)) {
-            selectElement.options[i].textContent = `${loc_theme_name} \u2190 Published (â˜…)`;
+            selectElement.options[i].textContent = `${loc_theme_name} \u2190 Published (\u2713)`;
           }
         }
       });
@@ -7562,7 +7562,7 @@
     // typeof window.themegen_settings === 'object' && window.themegen_settings.hasOwnProperty('theme_name')
     if (typeof window.themegen_settings === 'object' && window.themegen_settings.hasOwnProperty('theme_name')) {
       const theme_published_vs_disabled =
-        window.selected_theme !== 'theme_custom' ? `<span class="modify-theme-btn"> \u2190 Published (â˜…)</span>` : '<span class="modify-theme-btn"> \u2190 Theme Disabled</span>';
+        window.selected_theme !== 'theme_custom' ? `<span class="modify-theme-btn"> \u2190 Published (\u2713)</span>` : '<span class="modify-theme-btn"> \u2190 Theme Disabled</span>';
       published_theme_option = `${selected_theme_name} ${theme_published_vs_disabled}`;
       modifytheme_message = selected_theme_message;
     } else {
@@ -7717,7 +7717,7 @@
                       <div id="dashboard-banner" class="hl-card buttons-settings dashboard-banner-settings">
                         <div class="hl-card-header">
                           <div class="flex reset-wrap">
-                            <div class="hl-text-md-normal"><strong>Dashboard Banner âŸ¶ Settings</strong></div>
+                            <div class="hl-text-md-normal"><strong>Dashboard Banner ▶ Settings</strong></div>
                             <button id="resetbtn-newdashboard-banner-settings" class="btn reset-option-profilebtn" data-toggle="tooltip" data-placement="top" title="Reset">
                               <i class="fa-solid fa-arrow-rotate-left"></i>
                             </button>
