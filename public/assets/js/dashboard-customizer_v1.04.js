@@ -7501,7 +7501,9 @@
   /////////// Theme Builder Panel
   const hlpt_display_dashboard_customizer_panel = () => {
     let selectedtheme = 'theme_dark';
-    if (window.selected_theme) selectedtheme = dashboard_themes2.theme_data.theme_darkcherry;
+    // FIX: was 'dashboard_themes2.theme_data.theme_darkcherry' which doesn't exist
+    // OLD CODE: if (window.selected_theme) selectedtheme = dashboard_themes2.theme_data.theme_darkcherry;
+    if (window.selected_theme) selectedtheme = window.selected_theme;
     let selected_theme_advs_obj = dashboard_themes.theme_data[selectedtheme].advanced_settings;
 
     let ls_obj_general = get_ls_obj_general();
