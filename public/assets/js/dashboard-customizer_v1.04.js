@@ -6361,6 +6361,7 @@
     };
     const theme_data_post_db = {};
     for (const [key, value] of Object.entries(ls_obj)) {
+      console.log(key,'Key',value,'Value');
       theme_data_post_db[key] = theme_data_to_send(key, value);
     }
     return theme_data_post_db;
