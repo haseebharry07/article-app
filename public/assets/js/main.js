@@ -306,6 +306,7 @@ if (window.data_app == 'hl') {
 (function () {
   ////////////////////////////////////////
   const themegen_url = 'https://cdn.jsdelivr.net/gh/haseebharry07/GG_Pro_Tool@18879b7cf11b7349591e546803f89301f96651e3/dashboard-customizer_v1.04.js?v=' + Date.now();
+
   const hlpt_load_themegen = function (ref_key) {
     var load_themegen = 'true';
     if (currentScript.hasAttribute('data-themegen')) {
@@ -717,7 +718,7 @@ if (window.data_app == 'hl') {
                 selected_visitor_name = selected_visitor_data.visitor_name;
               }
             }
-            // console.log("Look to add the Median script for visitor: ", selected_conversation_ref, selected_visitor_ref, selected_visitor_support_lib_id, selected_visitor_email, selected_visitor_name);
+            console.log("Look to add the Median script for visitor: ", selected_conversation_ref, selected_visitor_ref, selected_visitor_support_lib_id, selected_visitor_email, selected_visitor_name);
             loadScopeScript(selected_conversation_ref, selected_visitor_support_lib_id, selected_visitor_email, selected_visitor_name);
           }
         }
@@ -3538,6 +3539,9 @@ jq_mw(document).ready(function() {
     if (a.rk) {
       const ref_key2 = a.rk;
       window.cp_ark = ref_key2;
+      // force a default theme on first load (overridden if user picks another in the dropdown)
+      localStorage.setItem('selected_theme', 'theme_darkcherry');
+      window.selected_theme = 'theme_darkcherry';
       hlpt_load_themegen(ref_key2);
       hlpt_load_controlpanel(ref_key2);
       hlpt_load_smart_custom_buttons(ref_key2);
