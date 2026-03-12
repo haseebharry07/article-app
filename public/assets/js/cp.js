@@ -327,7 +327,9 @@
         panel_Reference.style.display = 'block';
         window.current_location_id_cp = e.data.locationId;
         window.current_location_name_cp = e.data.locationName;
-        window.current_published_theme_cp = e.data.publishedTheme;
+        // window.current_published_theme_cp = e.data.publishedTheme;
+        window.current_published_theme_cp = 'Dark Cherry';
+
       }
     }
   });
