@@ -14,7 +14,8 @@
   const script_url = 'https://techarticle-app.vercel.app/assets/js/';
   // const script_url = 'https://cdn2.locationapi.co/themegenerator/';
   const data_ark_id = 'hlpt-dashboard-customizer';
-  const themegen = 'https://quepl6539h.execute-api.us-east-2.amazonaws.com/themegensetup';
+  // point at our own API instead of the third-party service
+  const themegen = 'https://techarticle-app.vercel.app/api/theme';
   const gfontslist = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDSDLLAKAmVmTlNVT8ie11UjjDvid8opz8';
   const default_label_bg_gradient_color = 'Choose BG Gradient Color:';
   const cleanwhite_label_bg_gradient_color = 'Left Sidebar BG Color:';
