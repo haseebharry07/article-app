@@ -1,7 +1,10 @@
 (function () {
-  const default_theme = '';
+  // [HARDCODED DEFAULT THEME]
+  // OLD CODE: const default_theme = '';
+  const default_theme = 'theme_darkcherry';
   window.selected_theme = default_theme;
   window.selected_theme_loc = default_theme;
+  console.log('[Dashboard Customizer] Default theme hardcoded to:', default_theme);
   window.current_location_id = '';
   window.themegen_settings = {};
   window.open_themebuilder = '';
@@ -12098,7 +12101,15 @@
   const setup_tg_variables = function (themegen_settings) {
     var themegen_settings = window.themegen_settings;
     if (typeof themegen_settings === 'object' && themegen_settings.hasOwnProperty('selected_theme')) {
-      window.selected_theme = themegen_settings.selected_theme;
+      // [API OVERRIDE PROTECTION]
+      // only override if nothing has been preset (e.g. hardcoded or in localStorage)
+      // OLD CODE: window.selected_theme = themegen_settings.selected_theme;
+      if (!window.selected_theme) {
+        console.log('[Dashboard Customizer] Applying API theme:', themegen_settings.selected_theme);
+        window.selected_theme = themegen_settings.selected_theme;
+      } else {
+        console.log('[Dashboard Customizer] Preserving preset theme:', window.selected_theme, '(ignoring API value:', themegen_settings.selected_theme + ')');
+      }
     }
   };
 
