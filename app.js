@@ -16,12 +16,15 @@ mongoose.connect("mongodb+srv://article_app:article_app01@cluster0.x2fadie.mongo
 // Middleware
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
+app.use(express.json()); // allow JSON bodies for API endpoints
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "public")));  // 👈 ADD THIS
 app.use(expressLayouts);
 app.set("layout", "layout");  // default layout file: layout.ejs
 // Routes
 const Article = require("./models/Article");
+const Theme = require("./models/Theme"); // new model for theme settings
+
 // Multer Storage config
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -99,6 +102,50 @@ app.delete("/articles/:id", async (req, res) => {
   await Article.findByIdAndDelete(req.params.id);
   res.redirect("/");
 });
+
+// ----------- Theme API ----------
+// save a theme configuration (client sends { settings: {...}, user_id?, domain?, location_id? })
+app.post("/api/theme", async (req, res) => {
+  try {
+    const { settings, user_id, domain, location_id } = req.body;
+    if (!settings || typeof settings !== "object") {
+      return res.status(400).json({ error: "settings object is required" });
+    }
+    const theme = await Theme.create({ settings, user_id, domain, location_id });
+    res.json({ success: true, id: theme._id });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to save theme" });
+  }
+});
+
+// fetch a theme by id
+app.get("/api/theme/:id", async (req, res) => {
+  try {
+    const theme = await Theme.findById(req.params.id);
+    if (!theme) return res.status(404).json({ error: "Not found" });
+    res.json(theme);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// list themes, optional query parameters (domain, user_id, location_id)
+app.get("/api/theme", async (req, res) => {
+  try {
+    const query = {};
+    ["domain", "user_id", "location_id"].forEach((k) => {
+      if (req.query[k]) query[k] = req.query[k];
+    });
+    const list = await Theme.find(query).sort({ updatedAt: -1 });
+    res.json(list);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
 
 app.listen(3000, () => {
   console.log("Server running on http://localhost:3000");
