@@ -112,7 +112,7 @@ app.delete("/articles/:id", async (req, res) => {
 
 // ----------- Theme API ----------
 // save a theme configuration (client sends { settings: {...}, user_id?, domain?, location_id? })
-app.post("/api/theme", async (req, res) => {
+app.put("/api/theme", async (req, res) => {
   try {
     const { settings, user_id, domain, location_id } = req.body;
     if (!settings || typeof settings !== "object") {
@@ -123,6 +123,22 @@ app.post("/api/theme", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to save theme" });
+  }
+});
+
+// delete a theme by location_id (from query param ?l=...)
+app.delete("/api/theme", async (req, res) => {
+  try {
+    const location_id = req.query.l; // script sends &l=location_id
+    if (!location_id) {
+      return res.status(400).json({ error: "location_id required in query param ?l=" });
+    }
+    const deleted = await Theme.findOneAndDelete({ location_id });
+    if (!deleted) return res.status(404).json({ error: "No theme found for that location" });
+    res.json({ success: true });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to delete theme" });
   }
 });
 
