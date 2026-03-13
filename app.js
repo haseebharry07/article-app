@@ -4,6 +4,8 @@ const path = require("path");  // Add at the top with other requires
 const express = require("express");
 const mongoose = require("mongoose");
 const methodOverride = require("method-override");
+const cors = require("cors");
+
 
 
 const app = express();
@@ -13,6 +15,11 @@ mongoose.connect("mongodb+srv://article_app:article_app01@cluster0.x2fadie.mongo
   .then(() => console.log("MongoDB Connected")).catch(err => console.error(err));
 ;
 
+app.use(cors({
+  origin: "*", // allow all domains
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"]
+}));
 // Middleware
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
