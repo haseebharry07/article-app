@@ -39,7 +39,8 @@
       .then((data) => {
         if (!data) return;
         const theme = Array.isArray(data) ? data[0] : data;
-        if (!theme || !theme.settings) return;d
+        if (!theme || !theme.settings) return;
+        console.log('[Theme Loader] Loaded theme from API:', theme);
         Object.entries(theme.settings).forEach(([key, value]) => {
           try {
             localStorage.setItem(key, value);
@@ -51,6 +52,12 @@
           window.selected_theme = theme.settings.selected_theme;
           window.selected_theme_loc = theme.settings.selected_theme;
         }
+
+        console.log(
+          '[Theme Loader] Applying loaded theme:',
+          window.selected_theme,
+          ' (stored selected_theme_name:', theme.settings.selected_theme_name || theme.settings.theme_name, ')',
+        );
 
         // reload so the new values are applied immediately
         location.reload();
@@ -6804,6 +6811,7 @@
   };
 
   applyStoredSelectedTheme();
+  console.log('[Theme Loader] Final selected_theme after applyStoredSelectedTheme():', window.selected_theme);
 
   const add_styles = (linkid, linkurl) => {
     if (!document.head.contains(document.querySelector('#' + linkid))) {
