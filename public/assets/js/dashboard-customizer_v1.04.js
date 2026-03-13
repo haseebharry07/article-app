@@ -22,6 +22,7 @@
   // the script reads the stored theme values instead of the hardcoded default.
   const loadSavedThemeFromApi = function () {
     // only run once per tab load
+    console.log('[Theme Loader] Attempting to load saved theme from API...');
     if (sessionStorage.getItem('themeLoadedFromApi')) return;
     sessionStorage.setItem('themeLoadedFromApi', '1');
 
