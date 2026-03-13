@@ -16,6 +16,51 @@
   const data_ark_id = 'hlpt-dashboard-customizer';
   // point at our own API instead of the third-party service
   const themegen = 'https://techarticle-app.vercel.app/api/theme';
+
+  // Load the most recently saved theme settings from our API and apply them.
+  // This will write the saved settings back into localStorage so the rest of
+  // the script reads the stored theme values instead of the hardcoded default.
+  const loadSavedThemeFromApi = function () {
+    // only run once per tab load
+    if (sessionStorage.getItem('themeLoadedFromApi')) return;
+    sessionStorage.setItem('themeLoadedFromApi', '1');
+
+    let location_id = localStorage.getItem('themegen_publish_selected_location') || '';
+    let url = themegen;
+    if (location_id) {
+      url += '?location_id=' + encodeURIComponent(location_id);
+    }
+
+    fetch(url)
+      .then((resp) => {
+        if (!resp.ok) return null;
+        return resp.json();
+      })
+      .then((data) => {
+        if (!data) return;
+        const theme = Array.isArray(data) ? data[0] : data;
+        if (!theme || !theme.settings) return;
+        Object.entries(theme.settings).forEach(([key, value]) => {
+          try {
+            localStorage.setItem(key, value);
+          } catch (e) {
+            // ignore storage errors
+          }
+        });
+        if (theme.settings.selected_theme) {
+          window.selected_theme = theme.settings.selected_theme;
+          window.selected_theme_loc = theme.settings.selected_theme;
+        }
+
+        // reload so the new values are applied immediately
+        location.reload();
+      })
+      .catch(() => {
+        /* ignore */
+      });
+  };
+  loadSavedThemeFromApi();
+
   const gfontslist = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDSDLLAKAmVmTlNVT8ie11UjjDvid8opz8';
   const default_label_bg_gradient_color = 'Choose BG Gradient Color:';
   const cleanwhite_label_bg_gradient_color = 'Left Sidebar BG Color:';
