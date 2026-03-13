@@ -39,7 +39,7 @@
       .then((data) => {
         if (!data) return;
         const theme = Array.isArray(data) ? data[0] : data;
-        if (!theme || !theme.settings) return;
+        if (!theme || !theme.settings) return;d
         Object.entries(theme.settings).forEach(([key, value]) => {
           try {
             localStorage.setItem(key, value);
@@ -6755,6 +6755,56 @@
   };
 
   //// setup to add dynamic stylesheets
+  const applyStoredSelectedTheme = function () {
+    try {
+      const storedSelectedTheme = localStorage.getItem('selected_theme');
+      if (
+        storedSelectedTheme &&
+        typeof dashboard_themes === 'object' &&
+        dashboard_themes.theme_data &&
+        dashboard_themes.theme_data[storedSelectedTheme]
+      ) {
+        window.selected_theme = storedSelectedTheme;
+        window.selected_theme_loc = storedSelectedTheme;
+        return;
+      }
+
+      const storedName =
+        localStorage.getItem('selected_theme_name') || localStorage.getItem('theme_name');
+      if (!storedName) return;
+
+      const matchKey = Object.keys(dashboard_themes.theme_data).find((key) => {
+        const name =
+          dashboard_themes.theme_data[key] && dashboard_themes.theme_data[key].theme_name;
+        return (
+          typeof name === 'string' &&
+          name.trim().toLowerCase() === storedName.trim().toLowerCase()
+        );
+      });
+      if (matchKey) {
+        console.log(
+          '[Theme Loader] Found matching theme key for',
+          storedName,
+          '→',
+          matchKey,
+        );
+        localStorage.setItem('selected_theme', matchKey);
+        window.selected_theme = matchKey;
+        window.selected_theme_loc = matchKey;
+      } else {
+        console.log(
+          '[Theme Loader] No matching theme key found for',
+          storedName,
+          '(falling back to default)',
+        );
+      }
+    } catch (e) {
+      // ignore
+    }
+  };
+
+  applyStoredSelectedTheme();
+
   const add_styles = (linkid, linkurl) => {
     if (!document.head.contains(document.querySelector('#' + linkid))) {
       let link = document.createElement('link');
