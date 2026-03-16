@@ -37,6 +37,22 @@
     if (!shouldFetch) {
       console.log('[Theme Loader] Skipping API load (already loaded this session, selected_theme=', storedTheme, ')');
       // If we already have the theme in localStorage, apply it and proceed.
+      // Reconstruct themegen_settings from localStorage for "Published Theme" display
+      const reconstructedSettings = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && !key.startsWith('themeLoadedFromApi') && !key.startsWith('themeReloadedFromApi')) {
+          try {
+            reconstructedSettings[key] = localStorage.getItem(key);
+          } catch (e) {
+            // ignore storage errors
+          }
+        }
+      }
+      if (Object.keys(reconstructedSettings).length > 0) {
+        window.themegen_settings = reconstructedSettings;
+        console.log('[Theme Loader] Reconstructed themegen_settings from localStorage:', window.themegen_settings);
+      }
       applyStoredSelectedTheme();
       applyThemeFromSelectedKey();
       window.themeLoaderApplied = true;
@@ -72,6 +88,22 @@
       .then((data) => {
         if (!data) {
           console.warn('[Theme Loader] No data returned from API');
+          // Try to reconstruct themegen_settings from localStorage
+          const reconstructedSettings = {};
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && !key.startsWith('themeLoadedFromApi') && !key.startsWith('themeReloadedFromApi')) {
+              try {
+                reconstructedSettings[key] = localStorage.getItem(key);
+              } catch (e) {
+                // ignore storage errors
+              }
+            }
+          }
+          if (Object.keys(reconstructedSettings).length > 0) {
+            window.themegen_settings = reconstructedSettings;
+            console.log('[Theme Loader] Reconstructed themegen_settings from localStorage (API failed):', window.themegen_settings);
+          }
           applyStoredSelectedTheme();
           applyThemeFromSelectedKey();
           window.themeLoaderApplied = true;
@@ -83,6 +115,22 @@
         const theme = Array.isArray(data) ? data[0] : data;
         if (!theme || !theme.settings) {
           console.warn('[Theme Loader] No theme.settings found in API response');
+          // Try to reconstruct themegen_settings from localStorage
+          const reconstructedSettings = {};
+          for (let i = 0; i < localStorage.length; i++) {
+            const key = localStorage.key(i);
+            if (key && !key.startsWith('themeLoadedFromApi') && !key.startsWith('themeReloadedFromApi')) {
+              try {
+                reconstructedSettings[key] = localStorage.getItem(key);
+              } catch (e) {
+                // ignore storage errors
+              }
+            }
+          }
+          if (Object.keys(reconstructedSettings).length > 0) {
+            window.themegen_settings = reconstructedSettings;
+            console.log('[Theme Loader] Reconstructed themegen_settings from localStorage (no API settings):', window.themegen_settings);
+          }
           applyStoredSelectedTheme();
           applyThemeFromSelectedKey();
           window.themeLoaderApplied = true;
@@ -109,6 +157,10 @@
           theme_name: localStorage.getItem('theme_name'),
         });
 
+        // Set window.themegen_settings to the API response settings so it shows as "Published Theme"
+        window.themegen_settings = theme.settings;
+        console.log('[Theme Loader] Set window.themegen_settings to API response:', window.themegen_settings);
+
         // Now that localStorage is updated, apply the stored theme value
         applyStoredSelectedTheme();
         applyThemeFromSelectedKey();
@@ -120,6 +172,8 @@
           const oldSelectedTheme = window.selected_theme;
           window.selected_theme = newSelectedTheme;
           window.selected_theme_loc = newSelectedTheme;
+          // Ensure themegen_settings is set for the new theme
+          window.themegen_settings = theme.settings;
           applyThemeFromSelectedKey();
 
           console.log(
@@ -151,6 +205,22 @@
       })
       .catch((err) => {
         console.error('[Theme Loader] Fetch error:', err);
+        // Try to reconstruct themegen_settings from localStorage even on API error
+        const reconstructedSettings = {};
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && !key.startsWith('themeLoadedFromApi') && !key.startsWith('themeReloadedFromApi')) {
+            try {
+              reconstructedSettings[key] = localStorage.getItem(key);
+            } catch (e) {
+              // ignore storage errors
+            }
+          }
+        }
+        if (Object.keys(reconstructedSettings).length > 0) {
+          window.themegen_settings = reconstructedSettings;
+          console.log('[Theme Loader] Reconstructed themegen_settings from localStorage (API error):', window.themegen_settings);
+        }
         // Fallback: still apply stored theme even if API fetch failed
         applyStoredSelectedTheme();
         window.themeLoaderApplied = true;
@@ -163,6 +233,22 @@
   setTimeout(() => {
     if (!window.themeLoaderApplied) {
       console.log('[Theme Loader] Fallback: applying stored theme (API took too long)');
+      // Try to reconstruct themegen_settings from localStorage for fallback
+      const reconstructedSettings = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && !key.startsWith('themeLoadedFromApi') && !key.startsWith('themeReloadedFromApi')) {
+          try {
+            reconstructedSettings[key] = localStorage.getItem(key);
+          } catch (e) {
+            // ignore storage errors
+          }
+        }
+      }
+      if (Object.keys(reconstructedSettings).length > 0) {
+        window.themegen_settings = reconstructedSettings;
+        console.log('[Theme Loader] Reconstructed themegen_settings from localStorage (fallback):', window.themegen_settings);
+      }
       applyStoredSelectedTheme();
       window.themeLoaderApplied = true;
     }
