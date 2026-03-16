@@ -6954,13 +6954,13 @@
       const storedName =
         localStorage.getItem('selected_theme_name') || localStorage.getItem('theme_name');
 
-      console.log(
-        '[Theme Loader] applyStoredSelectedTheme()',
-        'storedSelectedTheme=',
-        storedSelectedTheme,
-        'storedName=',
-        storedName,
-      );
+      // console.log(
+      //   '[Theme Loader] applyStoredSelectedTheme()',
+      //   'storedSelectedTheme=',
+      //   storedSelectedTheme,
+      //   'storedName=',
+      //   storedName,
+      // );
 
       if (
         storedSelectedTheme &&
@@ -15591,7 +15591,7 @@ const menugroups_settings_allowed = function () {
       (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data[selectedThemeKey]) ||
       (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data.theme_darkcherry);
 
-    console.log('[Theme Loader] Applying theme from key', selectedThemeKey, selectedThemeData);
+    // console.log('[Theme Loader] Applying theme from key', selectedThemeKey, selectedThemeData);
     window.org_theme_data = selectedThemeData;
 
     // Re-run the theme refresh (this applies the CSS/variables for the current theme)
