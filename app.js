@@ -154,8 +154,27 @@ app.get("/api/theme/:id", async (req, res) => {
   }
 });
 
-// list themes, optional query parameters (domain, user_id, location_id)
+// fetch most recent theme (by updatedAt desc) optionally filtered by domain/user_id/location_id
 app.get("/api/theme", async (req, res) => {
+  try {
+    const query = {};
+    ["domain", "user_id", "location_id"].forEach((k) => {
+      if (req.query[k]) query[k] = req.query[k];
+    });
+
+    const theme = await Theme.findOne(query).sort({ updatedAt: -1 });
+    if (!theme) {
+      return res.status(404).json({ error: "No theme found" });
+    }
+    res.json(theme);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Server error" });
+  }
+});
+
+// list themes (optional query parameters: domain, user_id, location_id)
+app.get("/api/themes", async (req, res) => {
   try {
     const query = {};
     ["domain", "user_id", "location_id"].forEach((k) => {
