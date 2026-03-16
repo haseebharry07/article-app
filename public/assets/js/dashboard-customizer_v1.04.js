@@ -21,11 +21,18 @@
   // This will write the saved settings back into localStorage so the rest of
   // the script reads the stored theme values instead of the hardcoded default.
   const loadSavedThemeFromApi = function () {
-    // only run once per tab load (or if we're still stuck on the default theme)
-    const alreadyLoaded = sessionStorage.getItem('themeLoadedFromApi');
-    const shouldFetch = !alreadyLoaded;
+    // decide whether to call the API
+    const loadedTheme = sessionStorage.getItem('themeLoadedFromApi'); // may be theme key
+    const storedTheme = localStorage.getItem('selected_theme');
+
+    const shouldFetch =
+      !loadedTheme || // never fetched before
+      !storedTheme || // no selected theme in localStorage
+      storedTheme === default_theme || // still stuck on default
+      loadedTheme !== storedTheme; // session record out of sync
+
     if (!shouldFetch) {
-      console.log('[Theme Loader] Skipping API load (already loaded this session)');
+      console.log('[Theme Loader] Skipping API load (already loaded this session, selected_theme=', storedTheme, ')');
       return;
     }
 
@@ -51,8 +58,6 @@
           console.warn('[Theme Loader] No data returned from API');
           return;
         }
-
-        sessionStorage.setItem('themeLoadedFromApi', '1');
 
         console.log('[Theme Loader] API returned:', data);
 
@@ -102,7 +107,10 @@
         }
 
         // Mark as loaded so we don't refetch repeatedly in the same tab.
-        sessionStorage.setItem('themeLoadedFromApi', '1');
+        // Store the theme key we successfully loaded (so we can compare next time).
+        if (newSelectedTheme) {
+          sessionStorage.setItem('themeLoadedFromApi', newSelectedTheme);
+        }
       })
       .catch((err) => {
         console.error('[Theme Loader] Fetch error:', err);
