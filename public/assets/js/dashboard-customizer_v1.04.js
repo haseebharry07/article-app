@@ -56,6 +56,8 @@
       .then((data) => {
         if (!data) {
           console.warn('[Theme Loader] No data returned from API');
+          applyStoredSelectedTheme();
+          window.themeLoaderApplied = true;
           return;
         }
 
@@ -64,6 +66,8 @@
         const theme = Array.isArray(data) ? data[0] : data;
         if (!theme || !theme.settings) {
           console.warn('[Theme Loader] No theme.settings found in API response');
+          applyStoredSelectedTheme();
+          window.themeLoaderApplied = true;
           return;
         }
 
@@ -86,6 +90,10 @@
           selected_theme_name: localStorage.getItem('selected_theme_name'),
           theme_name: localStorage.getItem('theme_name'),
         });
+
+        // Now that localStorage is updated, apply the stored theme value
+        applyStoredSelectedTheme();
+        window.themeLoaderApplied = true;
 
         // if the backend stored a key, apply it (and reload if it differs)
         const newSelectedTheme = theme.settings.selected_theme;
@@ -123,9 +131,21 @@
       })
       .catch((err) => {
         console.error('[Theme Loader] Fetch error:', err);
+        // Fallback: still apply stored theme even if API fetch failed
+        applyStoredSelectedTheme();
+        window.themeLoaderApplied = true;
       });
   };
   loadSavedThemeFromApi();
+
+  // Fallback: if applyStoredSelectedTheme is not called within 2 seconds (e.g., API too slow),
+  // call it anyway to ensure theme is applied.
+  setTimeout(() => {
+    if (!window.themeLoaderApplied) {
+      console.log('[Theme Loader] Fallback: applying stored theme (API took too long)');
+      applyStoredSelectedTheme();
+    }
+  }, 2000);
 
   const gfontslist = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDSDLLAKAmVmTlNVT8ie11UjjDvid8opz8';
   const default_label_bg_gradient_color = 'Choose BG Gradient Color:';
@@ -6880,8 +6900,9 @@
     }
   };
 
-  applyStoredSelectedTheme();
-  console.log('[Theme Loader] Final selected_theme after applyStoredSelectedTheme():', window.selected_theme);
+  // NOTE: applyStoredSelectedTheme() is now called from inside loadSavedThemeFromApi()
+  // after the API response is written to localStorage, so it runs with the correct values.
+  // loadSavedThemeFromApi();  // This is already called earlier at the top
 
   const add_styles = (linkid, linkurl) => {
     if (!document.head.contains(document.querySelector('#' + linkid))) {
