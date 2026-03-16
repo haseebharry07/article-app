@@ -67,6 +67,9 @@
           return;
         }
 
+        console.log('[Theme Loader] theme.settings keys:', Object.keys(theme.settings));
+        console.log('[Theme Loader] theme.settings.selected_theme:', theme.settings.selected_theme);
+
         Object.entries(theme.settings).forEach(([key, value]) => {
           try {
             localStorage.setItem(key, value);
@@ -97,12 +100,18 @@
             ' (stored selected_theme_name:', theme.settings.selected_theme_name || theme.settings.theme_name, ')',
           );
 
-          // If the selected theme changed, reload so the rest of the script picks it up.
+          // If the selected theme changed, reload once so the rest of the script picks it up.
           if (oldSelectedTheme !== newSelectedTheme) {
-            console.log('[Theme Loader] selected_theme changed (', oldSelectedTheme, '→', newSelectedTheme, '); reloading');
-            sessionStorage.setItem('themeLoadedFromApi', '1');
-            location.reload();
-            return;
+            const alreadyReloaded = sessionStorage.getItem('themeReloadedFromApi');
+            if (!alreadyReloaded) {
+              console.log('[Theme Loader] selected_theme changed (', oldSelectedTheme, '→', newSelectedTheme, '); reloading once');
+              sessionStorage.setItem('themeLoadedFromApi', newSelectedTheme);
+              sessionStorage.setItem('themeReloadedFromApi', '1');
+              location.reload();
+              return;
+            } else {
+              console.log('[Theme Loader] already reloaded once; not reloading again.');
+            }
           }
         }
 
