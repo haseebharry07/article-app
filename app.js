@@ -122,11 +122,11 @@ app.put("/api/theme", async (req, res) => {
 
     // If themegen_user_id is provided, delete any existing theme for this user
     // Check both the top-level user_id field and inside settings for backward compatibility
-    if (themegen_user_id) {
+    if (settings.themegen_user_id) {
       await Theme.deleteMany({
         $or: [
-          { user_id: themegen_user_id },
-          { "settings.themegen_user_id": themegen_user_id }
+          { user_id: settings.themegen_user_id },
+          { "settings.themegen_user_id": settings.themegen_user_id }
         ]
       });
       console.log(`Deleted existing themes for themegen_user_id: ${themegen_user_id}`);
