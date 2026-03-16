@@ -10345,7 +10345,7 @@
                               <strong>Setting Up Feature Lock & Hide Side Menu Links:</strong><br /><br />
                               Create a new Google Spreadsheet by following the provided instructions and sample spreadsheet <a
                                 style="display: inline !important; text-decoration: underline; color: blue; padding: 0px"
-                                href="https://docs.google.com/spreadsheets/d/1GENDLB7nuCYl5YJr-2a514DGT-usPbn0CXYd9dA9AaE/edit#gid=0"
+                                href="https://docs.google.com/spreadsheets/d/1REi1kImZSAZ3R0HLvz5vv0IPLLOmt2tTrR7FlE0XzO8/edit?gid=0#gid=0"
                                 target="_blank"
                                 >Click to View Sample Spreadsheet <badge class="badge badge-success ms-1 fa-fade">New</badge></a
                               >. Ensure that all headings in the sample sheet are accurately replicated (exept the last four columns, these columns belongs to custom menu link), and the sheet name
