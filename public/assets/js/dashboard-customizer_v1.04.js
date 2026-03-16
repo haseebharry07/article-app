@@ -23,14 +23,9 @@
   const loadSavedThemeFromApi = function () {
     // only run once per tab load (or if we're still stuck on the default theme)
     const alreadyLoaded = sessionStorage.getItem('themeLoadedFromApi');
-    const storedTheme = localStorage.getItem('selected_theme');
-    const shouldFetch = !alreadyLoaded || storedTheme === default_theme;
+    const shouldFetch = !alreadyLoaded;
     if (!shouldFetch) {
-      console.log(
-        '[Theme Loader] Skipping API load (already loaded this session, selected_theme=',
-        storedTheme,
-        ')',
-      );
+      console.log('[Theme Loader] Skipping API load (already loaded this session)');
       return;
     }
 
@@ -70,6 +65,9 @@
         Object.entries(theme.settings).forEach(([key, value]) => {
           try {
             localStorage.setItem(key, value);
+            if (key === 'selected_theme') {
+              console.log('[Theme Loader] localStorage.selected_theme set to', value, 'read back as', localStorage.getItem('selected_theme'));
+            }
           } catch (e) {
             // ignore storage errors
           }
