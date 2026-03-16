@@ -138,14 +138,14 @@
   };
   loadSavedThemeFromApi();
 
-  // Fallback: if applyStoredSelectedTheme is not called within 2 seconds (e.g., API too slow),
+  // Fallback: if applyStoredSelectedTheme is not called within 10 seconds (e.g., API too slow),
   // call it anyway to ensure theme is applied.
   setTimeout(() => {
     if (!window.themeLoaderApplied) {
       console.log('[Theme Loader] Fallback: applying stored theme (API took too long)');
       applyStoredSelectedTheme();
     }
-  }, 2000);
+  }, 10000);
 
   const gfontslist = 'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDSDLLAKAmVmTlNVT8ie11UjjDvid8opz8';
   const default_label_bg_gradient_color = 'Choose BG Gradient Color:';
