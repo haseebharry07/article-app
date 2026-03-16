@@ -7852,7 +7852,12 @@
     }
     ////////////////
     let selected_theme_name = 'Dark Cherry';
-    if (window.current_published_theme_cp !== '') selected_theme_name = window.current_published_theme_cp;
+    // Use theme name from themegen_settings if available (published theme), otherwise use current_published_theme_cp
+    if (typeof window.themegen_settings === 'object' && window.themegen_settings && window.themegen_settings.theme_name) {
+      selected_theme_name = window.themegen_settings.theme_name;
+    } else if (window.current_published_theme_cp !== '') {
+      selected_theme_name = window.current_published_theme_cp;
+    }
     let published_theme_option = '';
     let modifytheme_message = '';
     let bg_gradient_color = default_label_bg_gradient_color;
