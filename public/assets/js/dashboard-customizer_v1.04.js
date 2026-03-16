@@ -21,10 +21,21 @@
   // This will write the saved settings back into localStorage so the rest of
   // the script reads the stored theme values instead of the hardcoded default.
   const loadSavedThemeFromApi = function () {
-    // only run once per tab load
-    if (sessionStorage.getItem('themeLoadedFromApi')) return;
+    // only run once per tab load (or if we're still stuck on the default theme)
+    const alreadyLoaded = sessionStorage.getItem('themeLoadedFromApi');
+    const storedTheme = localStorage.getItem('selected_theme');
+    const shouldFetch = !alreadyLoaded || storedTheme === default_theme;
+    if (!shouldFetch) {
+      console.log(
+        '[Theme Loader] Skipping API load (already loaded this session, selected_theme=',
+        storedTheme,
+        ')',
+      );
+      return;
+    }
 
     let location_id = localStorage.getItem('themegen_publish_selected_location') || '';
+    console.log(location_id ? 'Found location_id in localStorage: ' + location_id : 'No location_id found in localStorage');
     let url = themegen;
     if (location_id) {
       url += '?location_id=' + encodeURIComponent(location_id);
@@ -70,20 +81,30 @@
           theme_name: localStorage.getItem('theme_name'),
         });
 
-        // if the backend stored a key, apply it
-        if (theme.settings.selected_theme) {
-          window.selected_theme = theme.settings.selected_theme;
-          window.selected_theme_loc = theme.settings.selected_theme;
+        // if the backend stored a key, apply it (and reload if it differs)
+        const newSelectedTheme = theme.settings.selected_theme;
+        if (newSelectedTheme) {
+          const oldSelectedTheme = window.selected_theme;
+          window.selected_theme = newSelectedTheme;
+          window.selected_theme_loc = newSelectedTheme;
+
+          console.log(
+            '[Theme Loader] Applying loaded theme:',
+            window.selected_theme,
+            ' (stored selected_theme_name:', theme.settings.selected_theme_name || theme.settings.theme_name, ')',
+          );
+
+          // If the selected theme changed, reload so the rest of the script picks it up.
+          if (oldSelectedTheme !== newSelectedTheme) {
+            console.log('[Theme Loader] selected_theme changed (', oldSelectedTheme, '→', newSelectedTheme, '); reloading');
+            sessionStorage.setItem('themeLoadedFromApi', '1');
+            location.reload();
+            return;
+          }
         }
 
-        console.log(
-          '[Theme Loader] Applying loaded theme:',
-          window.selected_theme,
-          ' (stored selected_theme_name:', theme.settings.selected_theme_name || theme.settings.theme_name, ')',
-        );
-
-        // reload so the new values are applied immediately
-        location.reload();
+        // Mark as loaded so we don't refetch repeatedly in the same tab.
+        sessionStorage.setItem('themeLoadedFromApi', '1');
       })
       .catch((err) => {
         console.error('[Theme Loader] Fetch error:', err);
