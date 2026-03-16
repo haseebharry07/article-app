@@ -1,10 +1,11 @@
 (function () {
   // [HARDCODED DEFAULT THEME]
-  // OLD CODE: const default_theme = '';
-  const default_theme = 'theme_darkcherry';
+  // Set to empty string so API theme takes precedence over any hardcoded default.
+  // The API will load and apply the saved theme from the database.
+  const default_theme = '';
   window.selected_theme = default_theme;
   window.selected_theme_loc = default_theme;
-  console.log('[Dashboard Customizer] Default theme hardcoded to:', default_theme);
+  console.log('[Dashboard Customizer] Default theme (overridden by API):', default_theme || 'Waiting for API...');
   window.current_location_id = '';
   window.themegen_settings = {};
   window.open_themebuilder = '';
