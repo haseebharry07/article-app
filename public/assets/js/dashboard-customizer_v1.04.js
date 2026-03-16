@@ -5,6 +5,8 @@
   const default_theme = '';
   window.selected_theme = default_theme;
   window.selected_theme_loc = default_theme;
+  // Track whether the API-loaded theme has been applied.
+  window.themeLoaderApplied = false;
   console.log('[Dashboard Customizer] Default theme (overridden by API):', default_theme || 'Waiting for API...');
   window.current_location_id = '';
   window.themegen_settings = {};
@@ -34,6 +36,10 @@
 
     if (!shouldFetch) {
       console.log('[Theme Loader] Skipping API load (already loaded this session, selected_theme=', storedTheme, ')');
+      // If we already have the theme in localStorage, apply it and proceed.
+      applyStoredSelectedTheme();
+      applyThemeFromSelectedKey();
+      window.themeLoaderApplied = true;
       return;
     }
 
@@ -58,6 +64,7 @@
         if (!data) {
           console.warn('[Theme Loader] No data returned from API');
           applyStoredSelectedTheme();
+          applyThemeFromSelectedKey();
           window.themeLoaderApplied = true;
           return;
         }
@@ -68,6 +75,7 @@
         if (!theme || !theme.settings) {
           console.warn('[Theme Loader] No theme.settings found in API response');
           applyStoredSelectedTheme();
+          applyThemeFromSelectedKey();
           window.themeLoaderApplied = true;
           return;
         }
@@ -94,6 +102,7 @@
 
         // Now that localStorage is updated, apply the stored theme value
         applyStoredSelectedTheme();
+        applyThemeFromSelectedKey();
         window.themeLoaderApplied = true;
 
         // if the backend stored a key, apply it (and reload if it differs)
@@ -102,6 +111,7 @@
           const oldSelectedTheme = window.selected_theme;
           window.selected_theme = newSelectedTheme;
           window.selected_theme_loc = newSelectedTheme;
+          applyThemeFromSelectedKey();
 
           console.log(
             '[Theme Loader] Applying loaded theme:',
@@ -145,6 +155,7 @@
     if (!window.themeLoaderApplied) {
       console.log('[Theme Loader] Fallback: applying stored theme (API took too long)');
       applyStoredSelectedTheme();
+      window.themeLoaderApplied = true;
     }
   }, 10000);
 
@@ -15931,56 +15942,73 @@ const dashboard_themes2 = {
   //     });
   //   }
   // });
-  // Simulate the response object `r`
-    let r = { e: true, p: 'lifetime' }; // this will satisfy the if condition
+  const applyThemeFromSelectedKey = () => {
+    const selectedThemeKey =
+      window.selected_theme ||
+      localStorage.getItem('selected_theme') ||
+      'theme_darkcherry';
 
-    // Now run the inner code directly
-  // Add the styles and handle dark mode
-        add_styles('lockout-styles', script_url + 'lockout/' + dashboard_themes.script_filename.lockout_page_styles);
-        add_styles('dashboardcustomizer', script_url + dashboard_themes.script_filename.theme_generator_style);
-        handle_dark_mode();
-        hlpt_load_hl_menu_structure(get_data_attribute_value('data-ark'));
+    const selectedThemeData =
+      (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data[selectedThemeKey]) ||
+      (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data.theme_darkcherry);
 
-        // Use the selected theme (from localStorage/API) as the source of theme data.
-        // Fallback to Dark Cherry when the selection is missing or invalid.
-        const selectedThemeKey = window.selected_theme || 'theme_darkcherry';
-        const selectedThemeData =
-          (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data[selectedThemeKey]) ||
-          (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data.theme_darkcherry);
-        console.log('[Theme Loader] Using themegen_data for', selectedThemeKey, selectedThemeData);
-        window.org_theme_data = selectedThemeData;
+    console.log('[Theme Loader] Applying theme from key', selectedThemeKey, selectedThemeData);
+    window.org_theme_data = selectedThemeData;
 
-        // Now run the rest of your logic
-        lc_load_content_loader_global_hl();
-        mo_loader();
-        handle_agency_tb_location_change();         
-        refresh_settings();
+    // Re-run the theme refresh (this applies the CSS/variables for the current theme)
+    if (typeof refresh_settings === 'function') {
+      refresh_settings();
+    }
+  };
 
-        $(function () {
-            setInterval(function () {
-                if (window.location.href !== handlePgChange.lastUrl) {
-                    handlePgChange.lastUrl = window.location.href;
-                    handlePgChange();
-                }
-            }, 100);
-        });
+  const initThemeBuilder = () => {
+    if (window.themeInitDone) return;
+    window.themeInitDone = true;
+
+    // Add the styles and handle dark mode
+    add_styles('lockout-styles', script_url + 'lockout/' + dashboard_themes.script_filename.lockout_page_styles);
+    add_styles('dashboardcustomizer', script_url + dashboard_themes.script_filename.theme_generator_style);
+    handle_dark_mode();
+    hlpt_load_hl_menu_structure(get_data_attribute_value('data-ark'));
+
+    // Apply whatever the current selected theme is (API/localStorage/default)
+    applyThemeFromSelectedKey();
+
+    // Now run the rest of your logic
+    lc_load_content_loader_global_hl();
+    mo_loader();
+    handle_agency_tb_location_change();
+
+    $(function () {
+      setInterval(function () {
+        if (window.location.href !== handlePgChange.lastUrl) {
+          handlePgChange.lastUrl = window.location.href;
+          handlePgChange();
+        }
+      }, 100);
+    });
+
     // Supportify event listener
     window.addEventListener('message', async function (e) {
-        if (e.data.event === 'open_themebuilder') {
-          const panel_Reference = document.querySelector('#dashboard-customizer-panel');
-          if (panel_Reference) {
-            panel_Reference.style.display = 'block';
-            window.current_location_id_cp = e.data.locationId;
-            window.current_location_name_cp = e.data.locationName;
-            // window.current_published_theme_cp = e.data.publishedTheme;
-            window.current_published_theme_cp = 'Dark Cherry';
-            console.log('Worked');
-            getPublishedLocTheme(e.data.publishedTheme);
-            handleSelectClickLocTheme(e.data.publishedTheme);
-            get_location_info();
-          }
+      if (e.data.event === 'open_themebuilder') {
+        const panel_Reference = document.querySelector('#dashboard-customizer-panel');
+        if (panel_Reference) {
+          panel_Reference.style.display = 'block';
+          window.current_location_id_cp = e.data.locationId;
+          window.current_location_name_cp = e.data.locationName;
+          // window.current_published_theme_cp = e.data.publishedTheme;
+          window.current_published_theme_cp = 'Dark Cherry';
+          console.log('Worked');
+          getPublishedLocTheme(e.data.publishedTheme);
+          handleSelectClickLocTheme(e.data.publishedTheme);
+          get_location_info();
         }
+      }
     });
-  console.log(`Theme Builder v1.04-a`);
-  mo_isAdmin();
+
+    console.log(`Theme Builder v1.04-a`);
+    mo_isAdmin();
+  };
+
+  initThemeBuilder();
 })();
