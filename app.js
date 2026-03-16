@@ -156,6 +156,7 @@ app.get("/api/theme/:id", async (req, res) => {
 
 // fetch most recent theme (by updatedAt desc) optionally filtered by domain/user_id/location_id
 app.get("/api/theme", async (req, res) => {
+  console.log('API Hit till here');
   try {
     const query = {};
     ["domain", "user_id", "location_id"].forEach((k) => {
@@ -166,6 +167,7 @@ app.get("/api/theme", async (req, res) => {
     if (!theme) {
       return res.status(404).json({ error: "No theme found" });
     }
+    console.log('theme found:', theme);
     res.json(theme);
   } catch (err) {
     console.error(err);
