@@ -44,10 +44,19 @@
     }
 
     let location_id = localStorage.getItem('themegen_publish_selected_location') || '';
+    let user_id = localStorage.getItem('themegen_user_id') || '';
     console.log(location_id ? 'Found location_id in localStorage: ' + location_id : 'No location_id found in localStorage');
+    console.log(user_id ? 'Found user_id in localStorage: ' + user_id : 'No user_id found in localStorage');
     let url = themegen;
+    const params = [];
     if (location_id) {
-      url += '?location_id=' + encodeURIComponent(location_id);
+      params.push('location_id=' + encodeURIComponent(location_id));
+    }
+    if (user_id) {
+      params.push('user_id=' + encodeURIComponent(user_id));
+    }
+    if (params.length > 0) {
+      url += '?' + params.join('&');
     }
 
     console.log('[Theme Loader] Fetching saved theme from API:', url);
