@@ -121,9 +121,15 @@ app.put("/api/theme", async (req, res) => {
     }
 
     // If themegen_user_id is provided, delete any existing theme for this user
+    // Check both the top-level user_id field and inside settings for backward compatibility
     if (themegen_user_id) {
-      await Theme.deleteOne({ user_id: themegen_user_id });
-      console.log(`Deleted existing theme for themegen_user_id: ${themegen_user_id}`);
+      await Theme.deleteMany({
+        $or: [
+          { user_id: themegen_user_id },
+          { "settings.themegen_user_id": themegen_user_id }
+        ]
+      });
+      console.log(`Deleted existing themes for themegen_user_id: ${themegen_user_id}`);
     }
 
     // Create the new theme record
@@ -169,9 +175,15 @@ app.get("/api/theme", async (req, res) => {
   console.log('API Hit till here');
   try {
     const query = {};
-    ["domain", "themegen_user_id", "location_id"].forEach((k) => {
-      if (req.query[k]) query.user_id = req.query[k]; // map themegen_user_id to user_id field
-    });
+    if (req.query.themegen_user_id) {
+      // Check both top-level user_id and settings.themegen_user_id for backward compatibility
+      query.$or = [
+        { user_id: req.query.themegen_user_id },
+        { "settings.themegen_user_id": req.query.themegen_user_id }
+      ];
+    }
+    if (req.query.domain) query.domain = req.query.domain;
+    if (req.query.location_id) query.location_id = req.query.location_id;
 
     const theme = await Theme.findOne(query).sort({ updatedAt: -1 });
     if (!theme) {
@@ -189,9 +201,16 @@ app.get("/api/theme", async (req, res) => {
 app.get("/api/themes", async (req, res) => {
   try {
     const query = {};
-    ["domain", "themegen_user_id", "location_id"].forEach((k) => {
-      if (req.query[k]) query.user_id = req.query[k]; // map themegen_user_id to user_id field
-    });
+    if (req.query.themegen_user_id) {
+      // Check both top-level user_id and settings.themegen_user_id for backward compatibility
+      query.$or = [
+        { user_id: req.query.themegen_user_id },
+        { "settings.themegen_user_id": req.query.themegen_user_id }
+      ];
+    }
+    if (req.query.domain) query.domain = req.query.domain;
+    if (req.query.location_id) query.location_id = req.query.location_id;
+
     const list = await Theme.find(query).sort({ updatedAt: -1 });
     res.json(list);
   } catch (err) {
