@@ -112,13 +112,23 @@ app.delete("/articles/:id", async (req, res) => {
 
 // ----------- Theme API ----------
 // save a theme configuration (client sends { settings: {...}, user_id?, domain?, location_id? })
+// First deletes any existing theme for this user_id, then creates a new one
 app.put("/api/theme", async (req, res) => {
   try {
     const { settings, user_id, domain, location_id } = req.body;
     if (!settings || typeof settings !== "object") {
       return res.status(400).json({ error: "settings object is required" });
     }
+
+    // If user_id is provided, delete any existing theme for this user
+    if (user_id) {
+      await Theme.deleteOne({ user_id });
+      console.log(`Deleted existing theme for user_id: ${user_id}`);
+    }
+
+    // Create the new theme record
     const theme = await Theme.create({ settings, user_id, domain, location_id });
+    console.log(`Created new theme for user_id: ${user_id}, theme id: ${theme._id}`);
     res.json({ success: true, id: theme._id });
   } catch (err) {
     console.error(err);
