@@ -3540,8 +3540,8 @@ jq_mw(document).ready(function() {
       const ref_key2 = a.rk;
       window.cp_ark = ref_key2;
       // force a default theme on first load (overridden if user picks another in the dropdown)
-      // localStorage.setItem('selected_theme', 'theme_darkcherry');
-      // window.selected_theme = 'theme_darkcherry';
+      localStorage.setItem('selected_theme', 'theme_darkcherry');
+      window.selected_theme = 'theme_darkcherry';
       // console.log('Came till here.');
       hlpt_load_themegen(ref_key2);
       hlpt_load_controlpanel(ref_key2);
