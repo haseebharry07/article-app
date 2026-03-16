@@ -14,7 +14,7 @@
   const script_url = 'https://techarticle-app.vercel.app/assets/js/';
   // const script_url = 'https://cdn2.locationapi.co/themegenerator/';
   const data_ark_id = 'hlpt-dashboard-customizer';
-  // point at our own API instead of the third-party service
+  // point at our remote API endpoint (works when this file is loaded from other host/origin)
   const themegen = 'https://techarticle-app.vercel.app/api/theme';
 
   // Load the most recently saved theme settings from our API and apply them.
@@ -62,6 +62,12 @@
           } catch (e) {
             // ignore storage errors
           }
+        });
+
+        console.log('[Theme Loader] Stored theme values in localStorage:', {
+          selected_theme: localStorage.getItem('selected_theme'),
+          selected_theme_name: localStorage.getItem('selected_theme_name'),
+          theme_name: localStorage.getItem('theme_name'),
         });
 
         // if the backend stored a key, apply it
@@ -15877,10 +15883,14 @@ const dashboard_themes2 = {
         handle_dark_mode();
         hlpt_load_hl_menu_structure(get_data_attribute_value('data-ark'));
 
-        // Simulate the themegen data (replace with real default or dummy data)
-        let themegen_data = dashboard_themes2.theme_data.theme_darkcherry; 
-        console.log('themegen_data',themegen_data);
-        window.org_theme_data = themegen_data;
+        // Use the selected theme (from localStorage/API) as the source of theme data.
+        // Fallback to Dark Cherry when the selection is missing or invalid.
+        const selectedThemeKey = window.selected_theme || 'theme_darkcherry';
+        const selectedThemeData =
+          (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data[selectedThemeKey]) ||
+          (dashboard_themes && dashboard_themes.theme_data && dashboard_themes.theme_data.theme_darkcherry);
+        console.log('[Theme Loader] Using themegen_data for', selectedThemeKey, selectedThemeData);
+        window.org_theme_data = selectedThemeData;
 
         // Now run the rest of your logic
         lc_load_content_loader_global_hl();
