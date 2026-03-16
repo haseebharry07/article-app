@@ -352,7 +352,7 @@
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log('Editor status updated successfully:', data);
+          // console.log('Editor status updated successfully:', data);
         })
         .catch((error) => {
           console.error('Error updating editor status:', error);

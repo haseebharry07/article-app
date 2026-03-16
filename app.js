@@ -129,12 +129,12 @@ app.put("/api/theme", async (req, res) => {
           { "settings.themegen_user_id": settings.themegen_user_id }
         ]
       });
-      console.log(`Deleted existing themes for themegen_user_id: ${themegen_user_id}`);
+      // console.log(`Deleted existing themes for themegen_user_id: ${themegen_user_id}`);
     }
 
     // Create the new theme record
     const theme = await Theme.create({ settings, user_id: themegen_user_id, domain, location_id });
-    console.log(`Created new theme for themegen_user_id: ${themegen_user_id}, theme id: ${theme._id}`);
+    // console.log(`Created new theme for themegen_user_id: ${themegen_user_id}, theme id: ${theme._id}`);
     res.json({ success: true, id: theme._id });
   } catch (err) {
     console.error(err);
@@ -172,7 +172,7 @@ app.get("/api/theme/:id", async (req, res) => {
 
 // fetch most recent theme (by updatedAt desc) optionally filtered by domain/themegen_user_id/location_id
 app.get("/api/theme", async (req, res) => {
-  console.log('API Hit till here');
+  // console.log('API Hit till here');
   try {
     const query = {};
     if (req.query.themegen_user_id) {
@@ -189,7 +189,7 @@ app.get("/api/theme", async (req, res) => {
     if (!theme) {
       return res.status(404).json({ error: "No theme found" });
     }
-    console.log('theme found:', theme);
+    // console.log('theme found:', theme);
     res.json(theme);
   } catch (err) {
     console.error(err);
