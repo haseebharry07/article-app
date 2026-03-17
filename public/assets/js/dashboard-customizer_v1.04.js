@@ -6948,7 +6948,7 @@
   };
 
   //// setup to add dynamic stylesheets
-  const applyStoredSelectedTheme = function () {
+  function applyStoredSelectedTheme() {
     try {
       const storedSelectedTheme = localStorage.getItem('selected_theme');
       const storedName =
@@ -15581,7 +15581,7 @@ const menugroups_settings_allowed = function () {
   //     });
   //   }
   // });
-  const applyThemeFromSelectedKey = () => {
+  function applyThemeFromSelectedKey() {
     const selectedThemeKey =
       window.selected_theme ||
       localStorage.getItem('selected_theme') ||
