@@ -4452,9 +4452,7 @@
     checkLocationId();
   };
 
-  // Call theme load after dashboard_themes and helpers are declared
-  loadSavedThemeFromApi();
-
+  // Theme load is now triggered after refresh_settings is available (later in init flow)
   fetchData((locationId) => {
     if (locationId !== '') {
       window.current_location_id = locationId;
@@ -15504,6 +15502,9 @@ const menugroups_settings_allowed = function () {
     hideLoader_hl();
     removeScrollOnHover();  
   };
+
+  // Now that refresh_settings and all required theme functions are in place, load the saved theme.
+  loadSavedThemeFromApi();
   
   function handlePgChange() {
     menugroups_settings_allowed();
