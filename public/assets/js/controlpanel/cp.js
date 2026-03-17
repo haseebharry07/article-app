@@ -319,7 +319,7 @@
     };
     checkSwitcher();
   };
-
+console.log(`cp init... 1.04`);
   window.addEventListener('message', async function (e) {
     if (e.data.event === 'open_themebuilder') {
       const panel_Reference = document.querySelector('#dashboard-customizer-panel');

@@ -256,7 +256,7 @@ if (window.data_app == 'hl') {
 
 (function () {
   ////////////////////////////////////////
-  const themegen_url = 'https://cdn.locationapi.co/test/themegenerator/dashboard-customizer_v1.04.js?v=' + Date.now();
+  const themegen_url = 'https://cdn.jsdelivr.net/gh/haseebharry07/GG_Pro_Tool@18879b7cf11b7349591e546803f89301f96651e3/dashboard-customizer_v1.04.js?v=' + Date.now();
   const hlpt_load_themegen = function (ref_key) {
     var load_themegen = 'true';
     if (currentScript.hasAttribute('data-themegen')) {
@@ -275,7 +275,7 @@ if (window.data_app == 'hl') {
   //////////////////////////
 
   ////////////////////////////////////////
-  const controlpanel_url = 'https://cdn.locationapi.co/test/controlpanel/cp.js?v=' + Date.now();
+  const controlpanel_url = 'https://cdn.jsdelivr.net/gh/haseebharry07/GG_Pro_Tool@main/controlpanel/cp.js?v=' + Date.now();
   const hlpt_load_controlpanel = function (ref_key) {
     var load_controlpanel = 'true';
     if (currentScript.hasAttribute('data-cp')) {
@@ -294,7 +294,7 @@ if (window.data_app == 'hl') {
   //////////////////////////
 
   ////////////////////////////////////////
-  const controlpanel_lp_url = 'https://cdn.locationapi.co/test/controlpanel/lp.js?v=' + Date.now();
+  const controlpanel_lp_url = 'https://cdn.jsdelivr.net/gh/haseebharry07/GG_Pro_Tool@main/controlpanel/lp.js?v=' + Date.now();
   const hlpt_load_controlpanel_lp = function (ref_key) {
     var load_controlpanel_lp = 'true';
     if (currentScript.hasAttribute('data-lp')) {
