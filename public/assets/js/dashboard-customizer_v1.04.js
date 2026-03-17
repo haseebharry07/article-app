@@ -7852,7 +7852,7 @@
       }
     }
     ////////////////
-    let selected_theme_name = 'Dark Cherry';
+    let selected_theme_name = '';
     // Use theme name from themegen_settings if available (published theme), otherwise use current_published_theme_cp
     if (typeof window.themegen_settings === 'object' && window.themegen_settings && window.themegen_settings.theme_name) {
       selected_theme_name = window.themegen_settings.theme_name;
