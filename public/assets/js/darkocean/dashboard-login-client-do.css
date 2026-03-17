@@ -214,9 +214,9 @@ textarea:focus {
   /* content: var(--hlpt-login-logo-url) !important; */
 }
 
-div.hl_login--body .cursor-pointer::after {
+/* div.hl_login--body .cursor-pointer::after {
   content: var(--hlpt-footer-note) !important;
-}
+} */
 
 .hl_login--body .card .login-card-heading h2.heading2:before {
   display: none !important;
