@@ -226,7 +226,7 @@
         window.themeLoaderApplied = true;
       });
   };
-  loadSavedThemeFromApi();
+  // loadSavedThemeFromApi(); // Moved to later after dashboard_themes is initialized
 
   // Fallback: if applyStoredSelectedTheme is not called within 10 seconds (e.g., API too slow),
   // call it anyway to ensure theme is applied.
@@ -4451,6 +4451,9 @@
     };
     checkLocationId();
   };
+
+  // Call theme load after dashboard_themes and helpers are declared
+  loadSavedThemeFromApi();
 
   fetchData((locationId) => {
     if (locationId !== '') {
