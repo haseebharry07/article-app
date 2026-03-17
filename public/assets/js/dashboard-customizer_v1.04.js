@@ -226,7 +226,7 @@
         window.themeLoaderApplied = true;
       });
   };
-  loadSavedThemeFromApi();
+  // loadSavedThemeFromApi(); // Moved to later after dashboard_themes is initialized
 
   // Fallback: if applyStoredSelectedTheme is not called within 10 seconds (e.g., API too slow),
   // call it anyway to ensure theme is applied.
@@ -4452,6 +4452,9 @@
     checkLocationId();
   };
 
+  // Call theme load after dashboard_themes and helpers are declared
+  loadSavedThemeFromApi();
+
   fetchData((locationId) => {
     if (locationId !== '') {
       window.current_location_id = locationId;
@@ -6948,7 +6951,7 @@
   };
 
   //// setup to add dynamic stylesheets
-  const applyStoredSelectedTheme = function () {
+  function applyStoredSelectedTheme() {
     try {
       const storedSelectedTheme = localStorage.getItem('selected_theme');
       const storedName =
@@ -15581,7 +15584,7 @@ const menugroups_settings_allowed = function () {
   //     });
   //   }
   // });
-  const applyThemeFromSelectedKey = () => {
+  function applyThemeFromSelectedKey() {
     const selectedThemeKey =
       window.selected_theme ||
       localStorage.getItem('selected_theme') ||
