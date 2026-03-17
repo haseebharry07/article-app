@@ -319,11 +319,11 @@
     };
     checkSwitcher();
   };
-
+console.log(`cp init... 1.04`);
   window.addEventListener('message', async function (e) {
     if (e.data.event === 'open_themebuilder') {
-      // console.log('Received open_themebuilder event:', e.data);
-      // console.log('Published theme:', e.data.publishedTheme);
+      console.log('Received open_themebuilder event:', e.data);
+      console.log('Published theme:', e.data.publishedTheme);
       const panel_Reference = document.querySelector('#dashboard-customizer-panel');
       if (panel_Reference) {
         panel_Reference.style.display = 'block';
